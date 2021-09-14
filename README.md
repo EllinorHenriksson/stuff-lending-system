@@ -9,3 +9,5 @@ A project template based on gradle and a gitlab pipeline. You should always buil
 `./gradlew run -q --console=plain`
 
 Adhere to the git versioning instructions according to the assignment.
+
+Note that this assignment will be automatically checked for plagiarism of source code.

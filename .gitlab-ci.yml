@@ -18,10 +18,10 @@ variables:
   GRADLE_OPTS: "-Dorg.gradle.daemon=false"
 
 stages:
+  - check_plagiarism
   - build
   - test
-  - check_plagiarism
-
+  
 check_plagiarism:
     variables:
         BOILERPLATE_REPO: "git@gitlab.lnu.se:course/template/a2.git"
