@@ -1,0 +1,78 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+    id "com.github.spotbugs" version "4.6.0"
+    id "application"
+}
+
+spotbugsMain {
+    ignoreFailures = true   // failures are handled via automatic testing
+    showStackTraces = false
+    reports {
+        html {
+            enabled = false
+            destination = file("$buildDir/reports/spotbugs/main/spotbugs.html")
+            //stylesheet = 'fancy-hist.xsl'
+        }
+        xml {
+            enabled = true
+            destination = file("$buildDir/reports/spotbugs/spotbugs.xml")
+        }
+    }
+}
+
+// we dont wan't to run the spotbugs on the unit tests
+spotbugsTest {
+    ignoreFailures = false
+    showStackTraces = false
+    enabled = false
+}
+
+checkstyle {
+    // assign the latest checkstyle version explicitly
+    // default version is very old, likes 5.9
+    toolVersion = '8.38'
+    // checkstyle.xml copy from:
+    // https://raw.githubusercontent.com/checkstyle/checkstyle/checkstyle-8.6/src/main/resources/google_checks.xml
+    // the version should be as same as plugin version
+    configFile = rootProject.file('config/checkstyle/google_checks.xml')    // you can of course change this to something else
+    sourceSets = [] // remove from default build only explicit calls ig.e. gradlew checkStyleMain
+}
+
+
+test {
+    useJUnitPlatform()
+
+    // make sure we run the code quality stuff first
+    // we need the generated reports when testing
+    dependsOn checkstyleMain
+    dependsOn spotbugsMain
+
+    // also some verbose output so we get some info in the console when we run tests
+    testLogging {
+        outputs.upToDateWhen {false}
+        showStandardStreams = true
+    }
+}
+
+application {
+    mainClass = 'controller.App'
+}
+
+run {
+    standardInput = System.in
+}
+
+group 'se.lnu.ooad'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(platform('org.junit:junit-bom:5.8.0'))
+	testImplementation('org.junit.jupiter:junit-jupiter')
+}
