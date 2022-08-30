@@ -10,9 +10,11 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
+import java.nio.file.CopyOption;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -23,12 +25,14 @@ import org.junit.jupiter.api.Test;
 public class CodeQualityTests {
   final static String checkStyleXmlFile = "./build/reports/checkstyle/main.xml";
   final static String findBugsXmlFile = "./build/reports/spotbugs/spotbugs.xml";
+  final static String findBugsXmlBackupFile = "./build/reports/spotbugs/spotbugs_bak.xml";
   final static String codeQualityJSONFile = "./build/reports/gl-code-quality-report.json";
   final static String checkStyleJUnitFile = "./build/test-results/TEST-checkstyle.xml";
   final static String findBugsJUnitFile = "./build/test-results/TEST-findbugs.xml";
-  final static int maxQualityErrors = 50;
+  final static int maxQualityErrors = 5;
   final static String srcRoot = "src/main/java";  // set this accordingly
   final static String buildRoot = "build/classes/java/main";  // set this accordingly
+  final static boolean deleteFindBugsXmlFile = true; // deletes the findbugs file after parsing, this is a fix to prevent bad xml in the file
 
   static class TestCase {
     String name;
@@ -47,8 +51,66 @@ public class CodeQualityTests {
   public void codeQuality() {
     int errors = 0;
     errors = checkStyleTest();
-    errors += findBugsTest();
+
+
+    // for some reason the findbugs xml can be corrupted and not parse
+    // we create a complex system of backups to use in that case...
+    // for some reason the findbugs xml is also not regenerated if it is not there in about 50% of the cases
+    // odd
+    Path findBugsXML = Paths.get(findBugsXmlFile);
+    Path findBugsXMLBackup = Paths.get(findBugsXmlBackupFile);
+    if (hasFindBugsFile(findBugsXML, findBugsXMLBackup)) {
+      errors += findBugsTest();
+      if (deleteFindBugsXmlFile) {
+        createBackup(findBugsXML, findBugsXMLBackup);
+        
+      }
+    }
+
     assertTrue(errors < maxQualityErrors, "Max amount (" + maxQualityErrors +") of quality issues exceeded:" + errors);
+  }
+
+  private boolean createBackup(Path original, Path backup) {
+    try {
+      Files.move(original, backup, StandardCopyOption.REPLACE_EXISTING );   
+    } catch (Exception e) {
+      System.out.println("Could not create backup: " + original.toString() + " -> " + backup.toString());
+      
+      if (deleteFindBugsXmlFile) {
+        deleteFindBugsXmlFile();
+        System.out.println("Running subsequent builds without code changes could be problematic.");
+      } else {
+        System.out.println("There is a high chance that the original xml will be corrupted: " + original.toString() + " (You could consider deleting it manually)");
+      }
+    }
+    return true;
+  }
+
+  private boolean hasFindBugsFile(Path original, Path backup) {
+    if (!Files.exists(original)) {
+      System.err.println("Findbugs xml file not found: " + original.toString());
+      System.err.println("Consider making code change to initiate regeneration of the xml (will try backup)");
+      try {
+        Files.move(backup, original, StandardCopyOption.REPLACE_EXISTING );
+        System.err.println("Restored xml from backup: " + backup.toString());
+      } catch (Exception e) {
+        System.err.println("Could not find or use the findbugx xml backup: " + backup.toString());
+        System.err.println("Aborting findbugs xml to JUnit xml conversion...");
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  private void deleteFindBugsXmlFile() {
+    try {
+      Files.deleteIfExists(Paths.get(findBugsXmlFile));
+      System.out.println("Deleted file: " + findBugsXmlFile);
+    } catch (IOException e) {
+      System.out.println("Could not delete findbugs XML: " + findBugsXmlFile);
+      System.out.println("You may need to do this manually...");
+    }
   }
 
   public int findBugsTest() {
@@ -73,20 +135,15 @@ public class CodeQualityTests {
       HashMap<String, TestCase> bugInstances = new HashMap<>();
 
       // we should actually add all the checked files first so we can get some passing tests too
-      NodeList classNodes = doc.getElementsByTagName("Jar");
+      // TODO: this should use the FileStats tag instead
+      NodeList classNodes = doc.getElementsByTagName("FileStats");
       for (int cnIx = 0; cnIx < classNodes.getLength(); cnIx++) {
-        String fileName = classNodes.item(cnIx).getTextContent();
-        fileName = fileName.replace("\\", "/");
-        fileName = fileName.substring(fileName.indexOf(buildRoot + "/") + buildRoot.length() + 1);
-        if (!fileName.contains("$")) {
-          fileName = fileName.replace(".class", ".java");
-          TestCase tc = new TestCase();
-          tc.fileName = fileName;
-          tc.className = "FindBugs Issues";
-          tc.name = fileName;
-          bugInstances.put(fileName, tc);
-        }
-
+        String fileName = classNodes.item(cnIx).getAttributes().getNamedItem("path").getNodeValue();
+        TestCase tc = new TestCase();
+        tc.fileName = fileName;
+        tc.className = "FindBugs Issues";
+        tc.name = fileName;
+        bugInstances.put(fileName, tc);
       }
 
       NodeList biNodes = doc.getElementsByTagName("BugInstance");
@@ -103,15 +160,18 @@ public class CodeQualityTests {
 
 
         TestCase tc = bugInstances.get(path);
+        if (tc == null) {
+          System.err.println("Could not find bug instance for:"  + path);
+        } else {
+          Failure f = new Failure();
+          tc.failures.add(f);
 
-        Failure f = new Failure();
-        tc.failures.add(f);
 
+          f.type = "FindBugs Issue";
+          f.message = "FindBugs Issues";
 
-        f.type = "FindBugs Issue";
-        f.message = "FindBugs Issues";
-
-        f.text += "lines: " + line + System.lineSeparator() + longMessage + System.lineSeparator() + bugPatterns.get(type);
+          f.text += "lines: " + line + System.lineSeparator() + longMessage + System.lineSeparator() + bugPatterns.get(type);
+        }
 
         errors++;
       }
@@ -127,7 +187,10 @@ public class CodeQualityTests {
     } catch (IOException e) {
       e.printStackTrace();
     } catch (SAXException e) {
-      e.printStackTrace();
+      //e.printStackTrace();
+      System.out.println("XML parsing problem in: " + findBugsXmlFile + " (I will try to delete the file and you can then run the build again...)");
+      deleteFindBugsXmlFile();
+      assertTrue(false, "XML parsing problem in: " + findBugsXmlFile + " (You could try deleting the file and running again...)");
     }
 
     return errors;
@@ -170,9 +233,10 @@ public class CodeQualityTests {
       return out;
 
     } catch (ParserConfigurationException | SAXException | IOException e) {
-      e.printStackTrace();
+      System.err.println(e.getMessage());
     }
 
+    System.err.println("parsing of text failed possibly due to bad html/xml formatting for, start text --->" +  str + "<--- end text");
     // parsing seem to have failed so we revert so some crappy replacements instead...
     str = str.replace("    ", "\t");
     str = str.replace("\n    ", " ");

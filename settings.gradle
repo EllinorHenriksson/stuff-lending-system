@@ -1,2 +1,2 @@
-rootProject.name = 'monopoly'
-
+rootProject.name = 'stufflending'
+include('app')
