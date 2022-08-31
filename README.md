@@ -28,9 +28,17 @@ Removing or manipulating the code quality checks results in an immediate assignm
 The application should start by running console command:  
 `./gradlew run -q --console=plain`
 
+## Adding Your Own Code
+The `Simple` classes project should likely be removed do not forget to also remove the test case associated to `model.Simple`.  
+
+Add your own code to the packages respectively and feel free to add automatic test cases for your own code. A good process is to design a little - code a little - test a little one feature at a time and then iterate.
+
 ## Versioning
 
 Adhere to the git versioning instructions according to the assignment.
+
+## System test
+Adhere to the instructions according to the assigment.
 
 ## Handing In
 Adhere to the instructions according to the assigment.
