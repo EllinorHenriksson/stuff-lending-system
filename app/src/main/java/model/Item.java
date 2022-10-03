@@ -8,7 +8,8 @@ public class Item {
   private Day creationDay;
   private int costPerDay;
   private Type type;
-  // private ArrayList<Contract> contracts;
+  private Member owner;
+  private ArrayList<Contract> contracts;
 
   public Item (String name, String description, Day creationDay, int costPerDay, Type type) {
     setName(name);
@@ -16,10 +17,10 @@ public class Item {
     setCreationDay(creationDay);
     setCostPerDay(costPerDay);
     this.type = type;
-    // contracts = new ArrayList<>();
+    contracts = new ArrayList<>();
   }
 
-  private void setName(String name) {
+  public void setName(String name) {
     if (name == null) {
       throw new IllegalArgumentException("Name must be specified.");
     }
@@ -30,7 +31,7 @@ public class Item {
     return name;
   }
 
-  private void setDescription(String description) {
+  public void setDescription(String description) {
     if (description == null) {
       throw new IllegalArgumentException("The description must be specified.");
     }
@@ -52,7 +53,7 @@ public class Item {
     return new Day(creationDay.getDayNumber());
   }
 
-  private void setCostPerDay(int costPerDay) {
+  public void setCostPerDay(int costPerDay) {
     if (costPerDay < 0) {
       throw new IllegalArgumentException("The cost per day must be a positive number.");
     }
@@ -61,6 +62,18 @@ public class Item {
 
   public int getCostPerDay() {
     return costPerDay;
+  }
+
+  public void setOwner(Member owner) {
+    if (owner == null) {
+      throw new IllegalArgumentException("Owner must be specified.");
+    }
+
+    this.owner = owner;
+  }
+
+  public Member getOwner() {
+    return new Member(owner.getName(), owner.getEmail(), owner.getPhoneNumber(), owner.getId(), owner.getCreationDay());
   }
 
   // public boolean isAvailable() {

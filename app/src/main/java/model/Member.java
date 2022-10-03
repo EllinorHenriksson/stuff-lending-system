@@ -112,6 +112,18 @@ public class Member {
     }
     items.add(item);
     addCredits(creditsForItem);
+
+    item.setOwner(this);
+  }
+
+  public void removeItem(Item item) {
+    if (item == null) {
+      throw new IllegalArgumentException("Item must be specified.");
+    }
+
+    if (!items.remove(item)) {
+      throw new IllegalArgumentException("Item was not found.");
+    }
   }
 
   private void addCredits(int credits) {
@@ -126,5 +138,21 @@ public class Member {
       throw new IllegalArgumentException("Credits must be a positive number.");
     }
     this.credits -= credits;
+  }
+
+  public Contract createContract(Item item, Interval interval) throws Exception {
+    if (item == null) {
+      throw new IllegalArgumentException("Item must be specified.");
+    }
+
+    if (interval == null) {
+      throw new IllegalArgumentException("Interval must be specified.");
+    }
+
+    if (credits >= item.getCostPerDay() * interval.getNumberOfDays()) {
+      throw new Exception("The member doesn't have enough credits to lend the item.");
+    }
+
+    return new Contract(item, interval, this);
   }
 }

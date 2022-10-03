@@ -1,55 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.1" sequence="0" timestamp="1664799317476" analysisTimestamp="1664799317547" release="unspecified">
+<BugCollection version="4.7.1" sequence="0" timestamp="1664812879068" analysisTimestamp="1664812879487" release="unspecified">
   <Project projectName="app (spotbugsMain)">
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/App.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/IdGenerator.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Registry.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Member.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console.class</Jar>
-    <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/30.1.1-jre/87e0fd1df874ea3cbe577702fe6f17068b790fd8/guava-30.1.1-jre.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.8.0/6b83e4a33220272c3a08991498ba9dc09519f190/checker-qual-3.8.0.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.5.1/562d366678b89ce5d6b6b82c1a073880341e3fba/error_prone_annotations-2.5.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/ba035118bc8bac37d7eff77700720999acd9986d/j2objc-annotations-1.3.jar</AuxClasspathEntry>
-    <SrcDir>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/resources</SrcDir>
-    <SrcDir>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java</SrcDir>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\App.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Contract.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Day.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\DayCounter.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\IdGenerator.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Interval.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Item.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Member.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Registry.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Type.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\Console.class</Jar>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\30.1.1-jre\87e0fd1df874ea3cbe577702fe6f17068b790fd8\guava-30.1.1-jre.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.8.0\6b83e4a33220272c3a08991498ba9dc09519f190\checker-qual-3.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.5.1\562d366678b89ce5d6b6b82c1a073880341e3fba\error_prone_annotations-2.5.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.3\ba035118bc8bac37d7eff77700720999acd9986d\j2objc-annotations-1.3.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\resources</SrcDir>
+    <SrcDir>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java</SrcDir>
   </Project>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE" instanceHash="be77e4d2f09168cf5196e77f21601bfe" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="597">
+    <ShortMessage>Comparison of String objects using == or !=</ShortMessage>
+    <LongMessage>Comparison of String objects using == or != in model.Contract.getTotalCost()</LongMessage>
+    <Class classname="model.Contract" primary="true">
+      <SourceLine classname="model.Contract" start="8" end="42" sourcefile="Contract.java" sourcepath="model/Contract.java" relSourcepath="java\model\Contract.java">
+        <Message>At Contract.java:[lines 8-42]</Message>
+      </SourceLine>
+      <Message>In class model.Contract</Message>
+    </Class>
+    <Method classname="model.Contract" name="getTotalCost" signature="()I" isStatic="false" primary="true">
+      <SourceLine classname="model.Contract" start="39" end="42" startBytecode="0" endBytecode="17" sourcefile="Contract.java" sourcepath="model/Contract.java" relSourcepath="java\model\Contract.java"/>
+      <Message>In method model.Contract.getTotalCost()</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="140" end="4652" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 140-4652]</Message>
+      </SourceLine>
+      <Message>Actual type String</Message>
+    </Type>
+    <Method classname="model.Member" name="getId" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="model.Member" start="84" end="84" startBytecode="0" endBytecode="46" sourcefile="Member.java" sourcepath="model/Member.java" relSourcepath="java\model\Member.java"/>
+      <Message>Return value of model.Member.getId() of type String</Message>
+    </Method>
+    <SourceLine classname="model.Contract" primary="true" start="39" end="39" startBytecode="17" endBytecode="17" sourcefile="Contract.java" sourcepath="model/Contract.java" relSourcepath="java\model\Contract.java">
+      <Message>At Contract.java:[line 39]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="1859b8852a315822e30b99354f58f5f8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>model.Item.setOwner(Member) may expose internal representation by storing an externally mutable object into Item.owner</LongMessage>
+    <Class classname="model.Item" primary="true">
+      <SourceLine classname="model.Item" start="14" end="76" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+        <Message>At Item.java:[lines 14-76]</Message>
+      </SourceLine>
+      <Message>In class model.Item</Message>
+    </Class>
+    <Method classname="model.Item" name="setOwner" signature="(Lmodel/Member;)V" isStatic="false" primary="true">
+      <SourceLine classname="model.Item" start="68" end="73" startBytecode="0" endBytecode="92" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java"/>
+      <Message>In method model.Item.setOwner(Member)</Message>
+    </Method>
+    <Field classname="model.Item" name="owner" signature="Lmodel/Member;" isStatic="false" primary="true">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+        <Message>In Item.java</Message>
+      </SourceLine>
+      <Message>Field model.Item.owner</Message>
+    </Field>
+    <LocalVariable name="owner" register="1" pc="16" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named owner</Message>
+    </LocalVariable>
+    <SourceLine classname="model.Item" primary="true" start="72" end="72" startBytecode="16" endBytecode="16" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+      <Message>At Item.java:[line 72]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="98c2f51d75c0e25f9b59d80bbc00a0a3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field</ShortMessage>
+    <LongMessage>Unread field: model.Item.contracts</LongMessage>
+    <Class classname="model.Item" primary="true">
+      <SourceLine classname="model.Item" start="14" end="76" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+        <Message>At Item.java:[lines 14-76]</Message>
+      </SourceLine>
+      <Message>In class model.Item</Message>
+    </Class>
+    <Field classname="model.Item" name="contracts" signature="Ljava/util/ArrayList;" isStatic="false" primary="true">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+        <Message>In Item.java</Message>
+      </SourceLine>
+      <Message>Field model.Item.contracts</Message>
+    </Field>
+    <SourceLine classname="model.Item" primary="true" start="20" end="20" startBytecode="39" endBytecode="39" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+      <Message>At Item.java:[line 20]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="41634873fb3cf3b2d31cfa11d094981b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field</ShortMessage>
+    <LongMessage>Unread field: model.Item.type</LongMessage>
+    <Class classname="model.Item" primary="true">
+      <SourceLine classname="model.Item" start="14" end="76" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+        <Message>At Item.java:[lines 14-76]</Message>
+      </SourceLine>
+      <Message>In class model.Item</Message>
+    </Class>
+    <Field classname="model.Item" name="type" signature="Lmodel/Type;" isStatic="false" primary="true">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+        <Message>In Item.java</Message>
+      </SourceLine>
+      <Message>Field model.Item.type</Message>
+    </Field>
+    <SourceLine classname="model.Item" primary="true" start="19" end="19" startBytecode="28" endBytecode="28" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+      <Message>At Item.java:[line 19]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="e5a3111fb9ec56c09326d1bd3e236493" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field: should this field be static?</ShortMessage>
+    <LongMessage>Unread field: model.Member.creditsForItem; should this field be static?</LongMessage>
+    <Class classname="model.Member" primary="true">
+      <SourceLine classname="model.Member" start="13" end="156" sourcefile="Member.java" sourcepath="model/Member.java" relSourcepath="java\model\Member.java">
+        <Message>At Member.java:[lines 13-156]</Message>
+      </SourceLine>
+      <Message>In class model.Member</Message>
+    </Class>
+    <Field classname="model.Member" name="creditsForItem" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="model.Member" sourcefile="Member.java" sourcepath="model/Member.java" relSourcepath="java\model\Member.java">
+        <Message>In Member.java</Message>
+      </SourceLine>
+      <Message>Field model.Member.creditsForItem</Message>
+    </Field>
+    <SourceLine classname="model.Member" primary="true" start="13" end="13" startBytecode="7" endBytecode="7" sourcefile="Member.java" sourcepath="model/Member.java" relSourcepath="java\model\Member.java">
+      <Message>At Member.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SS_SHOULD_BE_STATIC" abbrev="SS" category="PERFORMANCE">
+    <ShortDescription>Unread field: should this field be static?</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class contains an instance final field that
+   is initialized to a compile-time static value.
+   Consider making the field static.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Unread field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="ES_COMPARING_STRINGS_WITH_EQ" abbrev="ES" category="BAD_PRACTICE">
+    <ShortDescription>Comparison of String objects using == or !=</ShortDescription>
+    <Details><![CDATA[
+
+  <p>This code compares <code>java.lang.String</code> objects for reference
+equality using the == or != operators.
+Unless both strings are either constants in a source file, or have been
+interned using the <code>String.intern()</code> method, the same string
+value may be represented by two different String objects. Consider
+using the <code>equals(Object)</code> method instead.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SS">
+    <Description>Unread field should be static</Description>
+  </BugCode>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <BugCode abbrev="ES" cweid="597">
+    <Description>Checking String equality using == or !=</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Mon, 3 Oct 2022 14:15:17 +0200" total_classes="5" referenced_classes="30" total_bugs="0" total_size="149" num_packages="3" java_version="18.0.2.1" vm_version="18.0.2.1+1-1" cpu_seconds="4.56" clock_seconds="5.27" peak_mbytes="136.20" alloc_mbytes="2048.00" gc_seconds="0.06">
-    <FileStats path="controller/App.java" bugCount="0" size="18"/>
+  <FindBugsSummary timestamp="Mon, 3 Oct 2022 18:01:19 +0200" total_classes="11" referenced_classes="51" total_bugs="5" total_size="386" num_packages="3" java_version="17.0.1" vm_version="17.0.1+12" cpu_seconds="19.69" clock_seconds="14.40" peak_mbytes="140.02" alloc_mbytes="2022.00" gc_seconds="0.06" priority_2="5">
+    <FileStats path="controller/App.java" bugCount="0" size="28"/>
+    <FileStats path="model/Contract.java" bugCount="1" size="29" bugHash="63bf02c277cb8cf321ab94723da12338"/>
+    <FileStats path="model/Day.java" bugCount="0" size="13"/>
+    <FileStats path="model/DayCounter.java" bugCount="0" size="11"/>
     <FileStats path="model/IdGenerator.java" bugCount="0" size="16"/>
-    <FileStats path="model/Member.java" bugCount="0" size="46"/>
-    <FileStats path="model/Registry.java" bugCount="0" size="66"/>
+    <FileStats path="model/Interval.java" bugCount="0" size="22"/>
+    <FileStats path="model/Item.java" bugCount="3" size="52" bugHash="6b959662b8b5cbbb49a0c8a5e8867f60"/>
+    <FileStats path="model/Member.java" bugCount="1" size="98" bugHash="1e9f886bda8a4139635b0f5d73e066ea"/>
+    <FileStats path="model/Registry.java" bugCount="0" size="94"/>
+    <FileStats path="model/Type.java" bugCount="0" size="20"/>
     <FileStats path="view/Console.java" bugCount="0" size="3"/>
-    <PackageStats package="controller" total_bugs="0" total_types="1" total_size="18">
-      <ClassStats class="controller.App" sourceFile="App.java" interface="false" size="18" bugs="0"/>
+    <PackageStats package="controller" total_bugs="0" total_types="1" total_size="28">
+      <ClassStats class="controller.App" sourceFile="App.java" interface="false" size="28" bugs="0"/>
     </PackageStats>
-    <PackageStats package="model" total_bugs="0" total_types="3" total_size="128">
+    <PackageStats package="model" total_bugs="5" total_types="9" total_size="355" priority_2="5">
+      <ClassStats class="model.Contract" sourceFile="Contract.java" interface="false" size="29" bugs="1" priority_2="1"/>
+      <ClassStats class="model.Day" sourceFile="Day.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="model.DayCounter" sourceFile="DayCounter.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="model.IdGenerator" sourceFile="IdGenerator.java" interface="false" size="16" bugs="0"/>
-      <ClassStats class="model.Member" sourceFile="Member.java" interface="false" size="46" bugs="0"/>
-      <ClassStats class="model.Registry" sourceFile="Registry.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="model.Interval" sourceFile="Interval.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="model.Item" sourceFile="Item.java" interface="false" size="52" bugs="3" priority_2="3"/>
+      <ClassStats class="model.Member" sourceFile="Member.java" interface="false" size="98" bugs="1" priority_2="1"/>
+      <ClassStats class="model.Registry" sourceFile="Registry.java" interface="false" size="94" bugs="0"/>
+      <ClassStats class="model.Type" sourceFile="Type.java" interface="false" size="20" bugs="0"/>
     </PackageStats>
     <PackageStats package="view" total_bugs="0" total_types="1" total_size="3">
       <ClassStats class="view.Console" sourceFile="Console.java" interface="false" size="3" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1276" invocations="559" avgMicrosecondsPerInvocation="2284" maxMicrosecondsPerInvocation="70888" standardDeviationMicrosecondsPerInvocation="6336"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="356" invocations="30" avgMicrosecondsPerInvocation="11869" maxMicrosecondsPerInvocation="87844" standardDeviationMicrosecondsPerInvocation="22019"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="165" invocations="523" avgMicrosecondsPerInvocation="315" maxMicrosecondsPerInvocation="38447" standardDeviationMicrosecondsPerInvocation="1994"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="163" invocations="23" avgMicrosecondsPerInvocation="7099" maxMicrosecondsPerInvocation="145293" standardDeviationMicrosecondsPerInvocation="29579"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="157" invocations="561" avgMicrosecondsPerInvocation="280" maxMicrosecondsPerInvocation="20282" standardDeviationMicrosecondsPerInvocation="1208"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="152" invocations="179" avgMicrosecondsPerInvocation="849" maxMicrosecondsPerInvocation="22976" standardDeviationMicrosecondsPerInvocation="2506"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="116" invocations="23" avgMicrosecondsPerInvocation="5044" maxMicrosecondsPerInvocation="48859" standardDeviationMicrosecondsPerInvocation="11260"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="113" invocations="63" avgMicrosecondsPerInvocation="1796" maxMicrosecondsPerInvocation="38672" standardDeviationMicrosecondsPerInvocation="5422"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="97" invocations="30" avgMicrosecondsPerInvocation="3248" maxMicrosecondsPerInvocation="20778" standardDeviationMicrosecondsPerInvocation="5006"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="93" invocations="23" avgMicrosecondsPerInvocation="4067" maxMicrosecondsPerInvocation="22767" standardDeviationMicrosecondsPerInvocation="6400"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="91" invocations="23" avgMicrosecondsPerInvocation="3971" maxMicrosecondsPerInvocation="18160" standardDeviationMicrosecondsPerInvocation="5748"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="87" invocations="23" avgMicrosecondsPerInvocation="3800" maxMicrosecondsPerInvocation="26560" standardDeviationMicrosecondsPerInvocation="6554"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="81" invocations="30" avgMicrosecondsPerInvocation="2712" maxMicrosecondsPerInvocation="21396" standardDeviationMicrosecondsPerInvocation="4620"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="78" invocations="30" avgMicrosecondsPerInvocation="2617" maxMicrosecondsPerInvocation="36485" standardDeviationMicrosecondsPerInvocation="7833"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="2203" invocations="582" avgMicrosecondsPerInvocation="3786" maxMicrosecondsPerInvocation="209970" standardDeviationMicrosecondsPerInvocation="15742"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="780" invocations="51" avgMicrosecondsPerInvocation="15312" maxMicrosecondsPerInvocation="152791" standardDeviationMicrosecondsPerInvocation="33926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="679" invocations="229" avgMicrosecondsPerInvocation="2967" maxMicrosecondsPerInvocation="118507" standardDeviationMicrosecondsPerInvocation="12945"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="511" invocations="587" avgMicrosecondsPerInvocation="870" maxMicrosecondsPerInvocation="76682" standardDeviationMicrosecondsPerInvocation="4656"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="382" invocations="51" avgMicrosecondsPerInvocation="7503" maxMicrosecondsPerInvocation="74412" standardDeviationMicrosecondsPerInvocation="17151"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="350" invocations="64" avgMicrosecondsPerInvocation="5474" maxMicrosecondsPerInvocation="180368" standardDeviationMicrosecondsPerInvocation="23451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="343" invocations="64" avgMicrosecondsPerInvocation="5362" maxMicrosecondsPerInvocation="170340" standardDeviationMicrosecondsPerInvocation="21729"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="327" invocations="64" avgMicrosecondsPerInvocation="5120" maxMicrosecondsPerInvocation="122419" standardDeviationMicrosecondsPerInvocation="16386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="317" invocations="64" avgMicrosecondsPerInvocation="4961" maxMicrosecondsPerInvocation="131446" standardDeviationMicrosecondsPerInvocation="17268"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="250" invocations="64" avgMicrosecondsPerInvocation="3909" maxMicrosecondsPerInvocation="116244" standardDeviationMicrosecondsPerInvocation="14909"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="213" invocations="51" avgMicrosecondsPerInvocation="4181" maxMicrosecondsPerInvocation="70332" standardDeviationMicrosecondsPerInvocation="12738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="209" invocations="88" avgMicrosecondsPerInvocation="2385" maxMicrosecondsPerInvocation="138366" standardDeviationMicrosecondsPerInvocation="14756"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="202" invocations="51" avgMicrosecondsPerInvocation="3977" maxMicrosecondsPerInvocation="103499" standardDeviationMicrosecondsPerInvocation="15430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="164" invocations="11" avgMicrosecondsPerInvocation="14970" maxMicrosecondsPerInvocation="145826" standardDeviationMicrosecondsPerInvocation="41419"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="160" invocations="64" avgMicrosecondsPerInvocation="2506" maxMicrosecondsPerInvocation="50649" standardDeviationMicrosecondsPerInvocation="6963"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="153" invocations="55" avgMicrosecondsPerInvocation="2782" maxMicrosecondsPerInvocation="44246" standardDeviationMicrosecondsPerInvocation="7720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IntCast2LongAsInstant" totalMilliseconds="148" invocations="11" avgMicrosecondsPerInvocation="13509" maxMicrosecondsPerInvocation="133899" standardDeviationMicrosecondsPerInvocation="38216"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="146" invocations="51" avgMicrosecondsPerInvocation="2866" maxMicrosecondsPerInvocation="101395" standardDeviationMicrosecondsPerInvocation="14026"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="145" invocations="11" avgMicrosecondsPerInvocation="13270" maxMicrosecondsPerInvocation="141756" standardDeviationMicrosecondsPerInvocation="40632"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.HugeSharedStringConstants" totalMilliseconds="145" invocations="11" avgMicrosecondsPerInvocation="13196" maxMicrosecondsPerInvocation="144277" standardDeviationMicrosecondsPerInvocation="41451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="132" invocations="51" avgMicrosecondsPerInvocation="2603" maxMicrosecondsPerInvocation="115087" standardDeviationMicrosecondsPerInvocation="15923"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="129" invocations="622" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="110441" standardDeviationMicrosecondsPerInvocation="4426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.XMLFactoryBypass" totalMilliseconds="127" invocations="11" avgMicrosecondsPerInvocation="11558" maxMicrosecondsPerInvocation="123844" standardDeviationMicrosecondsPerInvocation="35511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="121" invocations="51" avgMicrosecondsPerInvocation="2376" maxMicrosecondsPerInvocation="83272" standardDeviationMicrosecondsPerInvocation="11518"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

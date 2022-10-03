@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.spotbugs" time="0" tests="5" errors="0" name="findbugs">
-<testcase time="0" name="view/Console.java" classname="FindBugs Issues">
+<testsuite package="org.spotbugs" time="0" tests="11" errors="5" name="findbugs">
+<testcase time="0" name="model/Day.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/DayCounter.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/Console.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/Contract.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 8-42 
+Comparison of String objects using == or != in getTotalCost() 
+Comparison of String objects using == or != 
+This code compares java.lang.String objects for reference equality using 
+  the == or != operators. Unless both strings are either constants in a 
+  source file, or have been interned using the String.intern() method, the 
+  same string value may be represented by two different String objects. 
+  Consider using the equals(Object) method instead.
+----------------
+]]></failure>
 </testcase><testcase time="0" name="model/Registry.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/Type.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/App.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/Item.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 14-76 
+setOwner(Member) may expose internal representation by storing an 
+  externally mutable object into Item.owner 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+lines: 14-76 
+Unread field: contracts 
+Unread field 
+This field is never read. Consider removing it from the class.
+----------------
+lines: 14-76 
+Unread field: type 
+Unread field 
+This field is never read. Consider removing it from the class.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="model/Interval.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Member.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 13-156 
+Unread field: creditsForItem; should this field be static? 
+Unread field: should this field be static? 
+This class contains an instance final field that is initialized to a 
+  compile-time static value. Consider making the field static.
+----------------
+]]></failure>
 </testcase><testcase time="0" name="model/IdGenerator.java" classname="FindBugs Issues">
 </testcase></testsuite>

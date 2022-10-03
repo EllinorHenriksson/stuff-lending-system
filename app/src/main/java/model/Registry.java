@@ -39,16 +39,18 @@ public class Registry {
     members.add(member);
   }
 
-  public boolean deleteMember(String id) {
-    boolean isDeleted = false;
-    for (int i = 0; i < members.size(); i++) {
-      if (members.get(i).getId().equals(id)) {
-        members.remove(i);
-        isDeleted = true;
+  public void removeMember(String id) {
+    boolean isRemoved = false;
+
+    for (Member m : members) {
+      if (m.getId().equals(id)) {
+        isRemoved = members.remove(m);
       }
     }
 
-    return isDeleted;
+    if (!isRemoved) {
+      throw new IllegalArgumentException("Member was not found.");
+    }
   }
 
   public Member getMember(String id) throws Exception {
