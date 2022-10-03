@@ -15,7 +15,7 @@ public class Member {
     setId(id);
   }
 
-  private void setName(String name) {
+  public void setName(String name) {
     if (name == null) {
       throw new IllegalArgumentException("Name must be specified.");
     }
@@ -26,6 +26,7 @@ public class Member {
   public String getName() {
     return name;
   }
+
 
   private void setEmail(String email) {
     if (email == null) {
