@@ -72,8 +72,8 @@ public class Registry {
 
   private boolean isEmailUnique(String email) {
     Boolean result = true;
-    for(Member m : members) {
-      if(m.getEmail().equals(email)) {
+    for (Member m : members) {
+      if (m.getEmail().equals(email)) {
         result = false;
       }
     }
@@ -82,8 +82,8 @@ public class Registry {
 
   private boolean isPhoneNumberUnique(String phoneNumber) {
     Boolean result = true;
-    for(Member m : members) {
-      if(m.getPhoneNumber().equals(phoneNumber)) {
+    for (Member m : members) {
+      if (m.getPhoneNumber().equals(phoneNumber)) {
         result = false;
       }
     }
@@ -92,8 +92,8 @@ public class Registry {
 
   private boolean isIdUnique(String id) {
     Boolean result = true;
-    for(Member m : members) {
-      if(m.getId().equals(id)) {
+    for (Member m : members) {
+      if (m.getId().equals(id)) {
         result = false;
       }
     }

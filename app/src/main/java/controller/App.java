@@ -1,7 +1,6 @@
 package controller;
 
 import java.util.ArrayList;
-
 import model.Member;
 import model.Registry;
 
@@ -16,7 +15,7 @@ public class App {
     registry.addMember(member);
 
     Member emmaCopy = registry.getMember(member.getId());
-    System.out.println("Member emma copy: " + emmaCopy );
+    System.out.println("Member emma copy: " + emmaCopy);
 
     Member member2 = registry.createMember("Ellen Nu", "lnu@student.lnu.se", "875764754");
 

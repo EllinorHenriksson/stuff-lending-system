@@ -1,18 +1,46 @@
-o1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/App.java
- text:line: 5 column: column:1 
-Missing a Javadoc comment.
-
-m2 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
- text:line: 5 column: column:1 
-Missing a Javadoc comment.
-
-!text:line: 11 column: column:3 
-Missing a Javadoc comment.
-
-m1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Console.java
- text:line: 3 column: column:1 
-Missing a Javadoc comment.
-
-(0 FindBugs Issues in view/Console.java
-*0 FindBugs Issues in controller/App.java
-(0 FindBugs Issues in model/Member.java
+è2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/App.java
+text:line: 7 column: column:1 
+Missing a Javadoc comment.
+
+text:line: 8 column: column:3 
+Missing a Javadoc comment.
+
+í1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/IdGenerator.java
+text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+ç3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Member.java
+text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+ text:line: 11 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 18 column: column:3 
+Missing a Javadoc comment.
+
+è5 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Registry.java
+text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+ text:line: 15 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 38 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 50 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 65 column: column:3 
+Missing a Javadoc comment.
+
+ç1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Console.java
+text:line: 3 column: column:1 
+Missing a Javadoc comment.
+
+'0 FindBugs Issues in view/Console.java
+)0 FindBugs Issues in model/Registry.java
+)0 FindBugs Issues in controller/App.java
+'0 FindBugs Issues in model/Member.java
+,0 FindBugs Issues in model/IdGenerator.java
