@@ -1,20 +1,11 @@
 package controller;
 
-/**
- * Responsible for staring the application.
- */
+import model.Member;
+
 public class App {
-  /**
-   * Application starting point.
-
-   * @param args command line arguments.
-   */
   public static void main(String[] args) {
-    // adapt to start the application in your way
-    model.Simple m = new model.Simple();
-    Simple c = new Simple();
-    view.Simple v = new view.Simple();
-
-    c.doSomethingSimple(m, v);
+    Member member = new Member("Emma Fransson", "emma@student.lnu.se", "1234567", "1x4jfn");
+    System.out.print(member.getName() + member.getEmail()
+        + member.getPhoneNumber() + member.getId());
   }
 }

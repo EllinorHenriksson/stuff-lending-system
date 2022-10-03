@@ -1,0 +1,18 @@
+o1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/App.java
+ text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+m2 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
+ text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+!text:line: 11 column: column:3 
+Missing a Javadoc comment.
+
+m1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Console.java
+ text:line: 3 column: column:1 
+Missing a Javadoc comment.
+
+(0 FindBugs Issues in view/Console.java
+*0 FindBugs Issues in controller/App.java
+(0 FindBugs Issues in model/Member.java

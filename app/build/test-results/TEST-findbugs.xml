@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite package="org.spotbugs" time="0" tests="3" errors="0" name="findbugs">
+<testcase time="0" name="view/Console.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="controller/App.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/Member.java" classname="FindBugs Issues">
+</testcase></testsuite>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.1" sequence="0" timestamp="1664789366432" analysisTimestamp="1664789366652" release="unspecified">
+  <Project projectName="app (spotbugsMain)">
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\App.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Member.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\Console.class</Jar>
+    <Jar>ass</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\Simple.class</Jar>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\30.1.1-jre\87e0fd1df874ea3cbe577702fe6f17068b790fd8\guava-30.1.1-jre.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.8.0\6b83e4a33220272c3a08991498ba9dc09519f190\checker-qual-3.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.5.1\562d366678b89ce5d6b6b82c1a073880341e3fba\error_prone_annotations-2.5.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.3\ba035118bc8bac37d7eff77700720999acd9986d\j2objc-annotations-1.3.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\resources</SrcDir>
+    <SrcDir>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 3 Oct 2022 11:29:26 +0200" total_classes="3" referenced_classes="24" total_bugs="0" total_size="54" num_packages="3" java_version="17.0.1" vm_version="17.0.1+12" cpu_seconds="12.58" clock_seconds="9.44" peak_mbytes="130.15" alloc_mbytes="2022.00" gc_seconds="0.04">
+    <FileStats path="controller/App.java" bugCount="0" size="7"/>
+    <FileStats path="model/Member.java" bugCount="0" size="44"/>
+    <FileStats path="view/Console.java" bugCount="0" size="3"/>
+    <PackageStats package="controller" total_bugs="0" total_types="1" total_size="7">
+      <ClassStats class="controller.App" sourceFile="App.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="model" total_bugs="0" total_types="1" total_size="44">
+      <ClassStats class="model.Member" sourceFile="Member.java" interface="false" size="44" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="view" total_bugs="0" total_types="1" total_size="3">
+      <ClassStats class="view.Console" sourceFile="Console.java" interface="false" size="3" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1749" invocations="529" avgMicrosecondsPerInvocation="3307" maxMicrosecondsPerInvocation="109482" standardDeviationMicrosecondsPerInvocation="10886"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="730" invocations="531" avgMicrosecondsPerInvocation="1375" maxMicrosecondsPerInvocation="159969" standardDeviationMicrosecondsPerInvocation="8318"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="606" invocations="24" avgMicrosecondsPerInvocation="25275" maxMicrosecondsPerInvocation="192331" standardDeviationMicrosecondsPerInvocation="43343"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="445" invocations="51" avgMicrosecondsPerInvocation="8738" maxMicrosecondsPerInvocation="296064" standardDeviationMicrosecondsPerInvocation="42930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="368" invocations="12" avgMicrosecondsPerInvocation="30684" maxMicrosecondsPerInvocation="358991" standardDeviationMicrosecondsPerInvocation="98993"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="284" invocations="24" avgMicrosecondsPerInvocation="11845" maxMicrosecondsPerInvocation="88236" standardDeviationMicrosecondsPerInvocation="23399"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="261" invocations="24" avgMicrosecondsPerInvocation="10905" maxMicrosecondsPerInvocation="132004" standardDeviationMicrosecondsPerInvocation="31299"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="238" invocations="493" avgMicrosecondsPerInvocation="482" maxMicrosecondsPerInvocation="29640" standardDeviationMicrosecondsPerInvocation="2552"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="233" invocations="139" avgMicrosecondsPerInvocation="1677" maxMicrosecondsPerInvocation="51687" standardDeviationMicrosecondsPerInvocation="5144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="210" invocations="3" avgMicrosecondsPerInvocation="70153" maxMicrosecondsPerInvocation="120857" standardDeviationMicrosecondsPerInvocation="50720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="185" invocations="24" avgMicrosecondsPerInvocation="7719" maxMicrosecondsPerInvocation="118230" standardDeviationMicrosecondsPerInvocation="24269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="170" invocations="24" avgMicrosecondsPerInvocation="7089" maxMicrosecondsPerInvocation="104758" standardDeviationMicrosecondsPerInvocation="20686"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
