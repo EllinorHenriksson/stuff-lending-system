@@ -1,11 +1,17 @@
 package controller;
 
+import model.IdGenerator;
 import model.Member;
 
 public class App {
   public static void main(String[] args) {
-    Member member = new Member("Emma Fransson", "emma@student.lnu.se", "1234567", "1x4jfn");
+
+    IdGenerator idGenerator = new IdGenerator(6);
+
+    Member member = new Member("Emma Fransson", "emma@student.lnu.se", "1234567", idGenerator.generateId());
     System.out.print(member.getName() + member.getEmail()
         + member.getPhoneNumber() + member.getId());
+
+    
   }
 }
