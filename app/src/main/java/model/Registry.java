@@ -6,15 +6,13 @@ public class Registry {
   ArrayList<Member> members;
   IdGenerator idGenerator;
   int idLength = 6;
-  DayCounter dayCounter;
   
   public Registry() {
     members = new ArrayList<>();
     idGenerator = new IdGenerator(idLength);
-    dayCounter = new DayCounter();
   }
 
-  public Member createMember(String name, String email, String phoneNumber) {
+  public Member createMember(String name, String email, String phoneNumber, Day currentDay) {
     if (!isEmailUnique(email)) {
       throw new IllegalArgumentException("Email must be unique.");
     }
@@ -29,11 +27,16 @@ public class Registry {
       isUnique = isIdUnique(id);
     }
 
-    return new Member(name, email, phoneNumber, id, dayCounter.getCurrentDay());
+    return new Member(name, email, phoneNumber, id, currentDay);
   }
 
-  public void addMember(Member m) {
-    members.add(m);
+  public void addMember(Member member) {
+    for (Member m : members) {
+      if (m == member) {
+        throw new IllegalArgumentException("Member already added to registry.");
+      }
+    }
+    members.add(member);
   }
 
   public boolean deleteMember(String id) {
@@ -59,14 +62,14 @@ public class Registry {
     if (member == null) {
       throw new Exception("Could not find a member with the provided ID.");
     } else {
-      return new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId(), dayCounter.getCurrentDay());
+      return new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId(), member.getCreationDay());
     }
   }
 
   public ArrayList<Member> getMembers() {
     ArrayList<Member> copies = new ArrayList<>();
     for (Member m : members) {
-      copies.add(new Member(m.getName(), m.getEmail(), m.getPhoneNumber(), m.getId(), dayCounter.getCurrentDay()));
+      copies.add(new Member(m.getName(), m.getEmail(), m.getPhoneNumber(), m.getId(), m.getCreationDay()));
     }
     return copies;
   }

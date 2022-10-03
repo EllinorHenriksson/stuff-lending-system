@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 public class Member {
@@ -8,6 +9,9 @@ public class Member {
   private String phoneNumber;
   private String id;
   private Day creationDay;
+  private int credits;
+  private final int creditsForItem = 100;
+  private ArrayList<Item> items;
 
   public Member(String name, String email, String phoneNumber, String id, Day creationDay) {
     setName(name);
@@ -15,6 +19,8 @@ public class Member {
     setPhoneNumber(phoneNumber);
     setId(id);
     setCreationDay(creationDay);
+    items = new ArrayList<>();
+    credits = 0;
   }
 
   public void setName(String name) {
@@ -88,5 +94,37 @@ public class Member {
 
   public Day getCreationDay() {
     return new Day(creationDay.getDayNumber());
+  }
+
+  public Item createItem(String name, String description, Day creationDay, int costPerDay, Type type) {
+    return new Item(name, description, creationDay, costPerDay, type);
+  }
+
+  public void addItem(Item item) {
+    if (item == null) {
+      throw new IllegalArgumentException("Item must be specified.");
+    }
+
+    for (Item i : items) {
+      if (i == item) {
+        throw new IllegalArgumentException("Item already added to member.");
+      }
+    }
+    items.add(item);
+    addCredits(creditsForItem);
+  }
+
+  private void addCredits(int credits) {
+    if (credits < 0) {
+      throw new IllegalArgumentException("Credits must be a positive number.");
+    }
+    this.credits += credits;
+  }
+
+  private void removeCredits(int credits) {
+    if (credits < 0) {
+      throw new IllegalArgumentException("Credits must be a positive number.");
+    }
+    this.credits -= credits;
   }
 }
