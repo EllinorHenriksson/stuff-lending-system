@@ -7,12 +7,14 @@ public class Member {
   private String email;
   private String phoneNumber;
   private String id;
+  private Day creationDay;
 
-  public Member(String name, String email, String phoneNumber, String id) {
+  public Member(String name, String email, String phoneNumber, String id, Day creationDay) {
     setName(name);
     setEmail(email);
     setPhoneNumber(phoneNumber);
     setId(id);
+    setCreationDay(creationDay);
   }
 
   public void setName(String name) {
@@ -28,7 +30,7 @@ public class Member {
   }
 
 
-  private void setEmail(String email) {
+  public void setEmail(String email) {
     if (email == null) {
       throw new IllegalArgumentException("Email must be specified.");
     }
@@ -44,7 +46,7 @@ public class Member {
     return email;
   }
 
-  private void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(String phoneNumber) {
     if (phoneNumber == null) {
       throw new IllegalArgumentException("Phone number must be specified.");
     }
@@ -74,5 +76,17 @@ public class Member {
 
   public String getId() {
     return id;
+  }
+
+  private void setCreationDay(Day creationDay) {
+    if (creationDay == null) {
+      throw new IllegalArgumentException("Creation day must not be null.");
+    }
+
+    this.creationDay = creationDay;
+  }
+
+  public Day getCreationDay() {
+    return new Day(creationDay.getDayNumber());
   }
 }

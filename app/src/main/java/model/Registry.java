@@ -6,18 +6,20 @@ public class Registry {
   ArrayList<Member> members;
   IdGenerator idGenerator;
   int idLength = 6;
+  DayCounter dayCounter;
   
   public Registry() {
     members = new ArrayList<>();
     idGenerator = new IdGenerator(idLength);
+    dayCounter = new DayCounter();
   }
 
   public Member createMember(String name, String email, String phoneNumber) {
     if (!isEmailUnique(email)) {
-      throw new IllegalArgumentException("The email must be unique.");
+      throw new IllegalArgumentException("Email must be unique.");
     }
     if (!isPhoneNumberUnique(phoneNumber)) {
-      throw new IllegalArgumentException("The phone number must be unique.");
+      throw new IllegalArgumentException("Phone number must be unique.");
     }
 
     String id = "";
@@ -27,8 +29,7 @@ public class Registry {
       isUnique = isIdUnique(id);
     }
 
-    return new Member(name, email, phoneNumber, id);
-
+    return new Member(name, email, phoneNumber, id, dayCounter.getCurrentDay());
   }
 
   public void addMember(Member m) {
@@ -47,7 +48,7 @@ public class Registry {
     return isDeleted;
   }
 
-  public Member getMember(String id) {
+  public Member getMember(String id) throws Exception {
     Member member = null;
     for (int i = 0; i < members.size(); i++) {
       if (members.get(i).getId().equals(id)) {
@@ -56,16 +57,16 @@ public class Registry {
     }
 
     if (member == null) {
-      return null;
+      throw new Exception("Could not find a member with the provided ID.");
     } else {
-      return new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId());
+      return new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId(), dayCounter.getCurrentDay());
     }
   }
 
   public ArrayList<Member> getMembers() {
     ArrayList<Member> copies = new ArrayList<>();
     for (Member m : members) {
-      copies.add(new Member(m.getName(), m.getEmail(), m.getPhoneNumber(), m.getId()));
+      copies.add(new Member(m.getName(), m.getEmail(), m.getPhoneNumber(), m.getId(), dayCounter.getCurrentDay()));
     }
     return copies;
   }
@@ -98,5 +99,43 @@ public class Registry {
       }
     }
     return result;
+  }
+
+  public void updateEmail(String memberId, String newEmail) throws Exception {
+    Member member = null;
+    for (int i = 0; i < members.size(); i++) {
+      if (members.get(i).getId().equals(memberId)) {
+        member =  members.get(i);
+      }
+    }
+
+    if (member == null) {
+      throw new Exception("Could not find a member with the provided ID.");
+    } else {
+      if (isEmailUnique(newEmail)) {
+        member.setEmail(newEmail);
+      } else {
+        throw new Exception("Email must be unique.");
+      }
+    }
+  }
+
+  public void updatePhoneNumber(String memberId, String newPhoneNumber) throws Exception {
+    Member member = null;
+    for (int i = 0; i < members.size(); i++) {
+      if (members.get(i).getId().equals(memberId)) {
+        member =  members.get(i);
+      }
+    }
+
+    if (member == null) {
+      throw new Exception("Could not find a member with the provided ID.");
+    } else {
+      if (isPhoneNumberUnique(newPhoneNumber)) {
+        member.setPhoneNumber(newPhoneNumber);
+      } else {
+        throw new Exception("Phone number must be unique.");
+      }
+    }
   }
 }
