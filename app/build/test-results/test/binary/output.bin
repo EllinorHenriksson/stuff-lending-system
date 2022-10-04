@@ -2,23 +2,26 @@
  text:line: 5 column: column:1 
 <Extra separation in import group before 'model.DayCounter'
 
- text:line: 9 column: column:1 
+!text:line: 11 column: column:1 
 Missing a Javadoc comment.
 
-!text:line: 10 column: column:3 
+!text:line: 12 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 15 column: 
+text:line: 18 column: 
 1Line is longer than 120 characters (found 123).
 
-o3 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Contract.java
+o4 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Contract.java
  text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
  text:line: 8 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 38 column: column:3 
+text:line: 23 column: 
+1Line is longer than 120 characters (found 125).
+
+!text:line: 46 column: column:3 
 Missing a Javadoc comment.
 
 j1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Day.java
@@ -33,55 +36,82 @@
  text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
-o1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Interval.java
- text:line: 3 column: column:1 
+o4 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Interval.java
+ text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
-k7 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Item.java
+!text:line: 10 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 50 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 62 column: column:3 
+Missing a Javadoc comment.
+
+l10 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Item.java
  text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
 !text:line: 14 column: column:3 
 Missing a Javadoc comment.
 
-"text:line: 14 column: column:15 
-"'(' is preceded with whitespace.
-
-!text:line: 23 column: column:3 
+!text:line: 27 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 34 column: column:3 
+!text:line: 38 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 56 column: column:3 
+!text:line: 60 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 67 column: column:3 
+!text:line: 71 column: column:3 
 Missing a Javadoc comment.
 
-m8 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
+!text:line: 87 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 116 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 126 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 136 column: column:3 
+Missing a Javadoc comment.
+
+n11 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
  text:line: 6 column: column:1 
 Missing a Javadoc comment.
 
-!text:line: 16 column: column:3 
+!text:line: 17 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 26 column: column:3 
+!text:line: 27 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 39 column: column:3 
+text:line: 31 column: 
+1Line is longer than 120 characters (found 127).
+
+!text:line: 37 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 55 column: column:3 
+!text:line: 50 column: column:3 
 Missing a Javadoc comment.
 
-"text:line: 103 column: column:3 
+!text:line: 66 column: column:3 
 Missing a Javadoc comment.
 
-"text:line: 119 column: column:3 
+"text:line: 114 column: column:3 
 Missing a Javadoc comment.
 
-"text:line: 143 column: column:3 
+"text:line: 130 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 144 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 151 column: column:3 
 Missing a Javadoc comment.
 
 o9 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Registry.java
@@ -123,20 +153,12 @@
 %0 FindBugs Issues in model/Day.java
 ,0 FindBugs Issues in model/DayCounter.java
 (0 FindBugs Issues in view/Console.java
-*1 FindBugs Issues in model/Contract.java
-text:lines: 8-42 
-@Comparison of String objects using == or != in getTotalCost() 
-.Comparison of String objects using == or != 
-cThis code compares java.lang.String objects for reference equality using the == or != operators. 
-_  Unless both strings are either constants in a source file, or have been interned using the 
-f  String.intern() method, the same string value may be represented by two different String objects. 
-5  Consider using the equals(Object) method instead.
-
+*0 FindBugs Issues in model/Contract.java
 *0 FindBugs Issues in model/Registry.java
 &0 FindBugs Issues in model/Type.java
 *0 FindBugs Issues in controller/App.java
-&3 FindBugs Issues in model/Item.java
-text:lines: 14-76 
+&1 FindBugs Issues in model/Item.java
+text:lines: 14-142 
 csetOwner(Member) may expose internal representation by storing an externally mutable object into 
   Item.owner 
 RMay expose internal representation by incorporating reference to mutable object 
@@ -145,22 +167,6 @@
 f  would compromise security or other important properties, you will need to do something different. 
 G  Storing a copy of the object is better approach in many situations.
 
-text:lines: 14-76 
-Unread field: contracts 
-Unread field 
-@This field is never read. Consider removing it from the class.
-
-text:lines: 14-76 
-Unread field: type 
-Unread field 
-@This field is never read. Consider removing it from the class.
-
 *0 FindBugs Issues in model/Interval.java
-(1 FindBugs Issues in model/Member.java
-text:lines: 13-156 
-=Unread field: creditsForItem; should this field be static? 
--Unread field: should this field be static? 
-bThis class contains an instance final field that is initialized to a compile-time static value. 
-%  Consider making the field static.
-
+(0 FindBugs Issues in model/Member.java
 -0 FindBugs Issues in model/IdGenerator.java

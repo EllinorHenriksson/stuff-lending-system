@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CodeQualityTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-03T16:01:45" hostname="LAPTOP-0OC159EC" time="0.833">
+<testsuite name="CodeQualityTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-04T14:45:46" hostname="LAPTOP-0OC159EC" time="0.808">
   <properties/>
-  <testcase name="codeQuality()" classname="CodeQualityTests" time="0.833">
-    <failure message="org.opentest4j.AssertionFailedError: Max amount (5) of quality issues exceeded:42 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Max amount (5) of quality issues exceeded:42 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+  <testcase name="codeQuality()" classname="CodeQualityTests" time="0.808">
+    <failure message="org.opentest4j.AssertionFailedError: Max amount (5) of quality issues exceeded:48 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Max amount (5) of quality issues exceeded:48 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
 	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:193)
@@ -98,23 +98,26 @@
 text:line: 5 column: column:1 
 Extra separation in import group before 'model.DayCounter'
 
-text:line: 9 column: column:1 
+text:line: 11 column: column:1 
 Missing a Javadoc comment.
 
-text:line: 10 column: column:3 
+text:line: 12 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 15 column: 
+text:line: 18 column: 
 Line is longer than 120 characters (found 123).
 
-3 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Contract.java
+4 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Contract.java
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
 text:line: 8 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 38 column: column:3 
+text:line: 23 column: 
+Line is longer than 120 characters (found 125).
+
+text:line: 46 column: column:3 
 Missing a Javadoc comment.
 
 1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Day.java
@@ -129,55 +132,82 @@ Missing a Javadoc comment.
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Interval.java
-text:line: 3 column: column:1 
+4 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Interval.java
+text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
-7 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Item.java
+text:line: 10 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 50 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 62 column: column:3 
+Missing a Javadoc comment.
+
+10 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Item.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
 text:line: 14 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 14 column: column:15 
-'(' is preceded with whitespace.
-
-text:line: 23 column: column:3 
+text:line: 27 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 34 column: column:3 
+text:line: 38 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 56 column: column:3 
+text:line: 60 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 67 column: column:3 
+text:line: 71 column: column:3 
 Missing a Javadoc comment.
 
-8 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
+text:line: 87 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 116 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 126 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 136 column: column:3 
+Missing a Javadoc comment.
+
+11 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
 text:line: 6 column: column:1 
 Missing a Javadoc comment.
 
-text:line: 16 column: column:3 
+text:line: 17 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 26 column: column:3 
+text:line: 27 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 39 column: column:3 
+text:line: 31 column: 
+Line is longer than 120 characters (found 127).
+
+text:line: 37 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 55 column: column:3 
+text:line: 50 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 103 column: column:3 
+text:line: 66 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 119 column: column:3 
+text:line: 114 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 143 column: column:3 
+text:line: 130 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 144 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 151 column: column:3 
 Missing a Javadoc comment.
 
 9 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Registry.java
@@ -219,20 +249,12 @@ Missing a Javadoc comment.
 0 FindBugs Issues in model/Day.java
 0 FindBugs Issues in model/DayCounter.java
 0 FindBugs Issues in view/Console.java
-1 FindBugs Issues in model/Contract.java
-text:lines: 8-42 
-Comparison of String objects using == or != in getTotalCost() 
-Comparison of String objects using == or != 
-This code compares java.lang.String objects for reference equality using the == or != operators. 
-  Unless both strings are either constants in a source file, or have been interned using the 
-  String.intern() method, the same string value may be represented by two different String objects. 
-  Consider using the equals(Object) method instead.
-
+0 FindBugs Issues in model/Contract.java
 0 FindBugs Issues in model/Registry.java
 0 FindBugs Issues in model/Type.java
 0 FindBugs Issues in controller/App.java
-3 FindBugs Issues in model/Item.java
-text:lines: 14-76 
+1 FindBugs Issues in model/Item.java
+text:lines: 14-142 
 setOwner(Member) may expose internal representation by storing an externally mutable object into 
   Item.owner 
 May expose internal representation by incorporating reference to mutable object 
@@ -241,24 +263,8 @@ This code stores a reference to an externally mutable object into the internal r
   would compromise security or other important properties, you will need to do something different. 
   Storing a copy of the object is better approach in many situations.
 
-text:lines: 14-76 
-Unread field: contracts 
-Unread field 
-This field is never read. Consider removing it from the class.
-
-text:lines: 14-76 
-Unread field: type 
-Unread field 
-This field is never read. Consider removing it from the class.
-
 0 FindBugs Issues in model/Interval.java
-1 FindBugs Issues in model/Member.java
-text:lines: 13-156 
-Unread field: creditsForItem; should this field be static? 
-Unread field: should this field be static? 
-This class contains an instance final field that is initialized to a compile-time static value. 
-  Consider making the field static.
-
+0 FindBugs Issues in model/Member.java
 0 FindBugs Issues in model/IdGenerator.java
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

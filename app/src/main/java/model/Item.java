@@ -11,13 +11,17 @@ public class Item {
   private Member owner;
   private ArrayList<Contract> contracts;
 
-  public Item (String name, String description, Day creationDay, int costPerDay, Type type) {
+  public Item(String name, String description, Day creationDay, int costPerDay, Type type) {
     setName(name);
     setDescription(description);
     setCreationDay(creationDay);
     setCostPerDay(costPerDay);
     this.type = type;
     contracts = new ArrayList<>();
+  }
+
+  public Type getType() {
+    return type;
   }
 
   public void setName(String name) {
@@ -90,14 +94,18 @@ public class Item {
       throw new IllegalArgumentException("Interval must be specified.");
     }
 
-    // isAvailable(interval);
-    transferCredits(interval, lender);
-    return new Contract(this, interval, lender);
+    if (isAvailable(interval)) {
+      transferCredits(interval, lender);
+      return new Contract(this, interval, lender);
+    } else {
+      throw new Exception("Item not available during the specified interval.");
+    }
+
   }
 
   private void transferCredits(Interval interval, Member lender) throws Exception {
     int totalCost = this.getCostPerDay() * interval.getNumberOfDays();
-    if ( lender.getCredits() >= totalCost) {
+    if (lender.getCredits() >= totalCost) {
       throw new Exception("The lender doesn't have enough credits to lend the item.");
     }
 
@@ -105,7 +113,13 @@ public class Item {
     payTotalCost(totalCost);
   }
 
-  public void addContract(Contract contract) {
+  public void addContract(Contract contract) throws Exception {
+    for (Contract c : contracts) {
+      if (contract == c) {
+        throw new Exception("The contract is already added to the item.");
+      }
+    }
+
     contracts.add(contract);
   }
 

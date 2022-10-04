@@ -39,7 +39,7 @@ public class Contract {
     if (item == null) {
       throw new IllegalArgumentException("Item must be specified.");
     }
-
+  
     this.item = item;
   }
 

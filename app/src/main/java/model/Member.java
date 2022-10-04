@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 public class Member {
+  static final int creditsForItem = 100;
+
   private String name;
   private String email;
   private String phoneNumber;
   private String id;
   private Day creationDay;
   private int credits;
-  private final int creditsForItem = 100;
   private ArrayList<Item> items;
-  private ArrayList<Contract> contracts;
 
   public Member(String name, String email, String phoneNumber, String id, Day creationDay) {
     setName(name);
@@ -22,6 +22,16 @@ public class Member {
     setCreationDay(creationDay);
     items = new ArrayList<>();
     credits = 0;
+  }
+
+  public ArrayList<Item> getItems() {
+    ArrayList<Item> copies = new ArrayList<>();
+
+    for (Item item : items) {
+      copies.add(new Item(item.getName(), item.getDescription(), item.getCreationDay(), item.getCostPerDay(), item.getType()));
+    }
+
+    return copies;
   }
 
   public void setName(String name) {

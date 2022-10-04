@@ -2,9 +2,14 @@ package controller;
 
 import java.util.ArrayList;
 
+import model.Day;
 import model.DayCounter;
+import model.Interval;
+import model.Item;
 import model.Member;
 import model.Registry;
+import model.Type;
+import model.persistence.Persistence;
 
 public class App {
   public static void main(String[] args) {
@@ -12,34 +17,26 @@ public class App {
     try {
       DayCounter dayCounter = new DayCounter();
       Registry registry =  new Registry();
-      Member member = registry.createMember("Emma Fransson", "emma@student.lnu.se", "1234567", dayCounter.getCurrentDay());
-  
-      System.out.println("Member emma: " + member);
-      
-      registry.addMember(member);
-  
-      Member emmaCopy = registry.getMember(member.getId());
-      System.out.println("Member emma copy: " + emmaCopy);
-  
-      Member member2 = registry.createMember("Ellen Nu", "lnu@student.lnu.se", "875764754", dayCounter.getCurrentDay());
-  
-      System.out.println("Member 2: " + member2);
-  
-      registry.addMember(member2);
-  
-      ArrayList<Member> members = registry.getMembers();
-      
+
+      ArrayList<Member> members = new Persistence().loadData();
       for (Member m : members) {
-        System.out.println(m);
+        registry.addMember(m);
       }
 
-      System.out.println(member.getEmail());
-      registry.updateEmail(member.getId(), "frasse@lnu.se");
-      System.out.println(member.getEmail());
+      for (Member m : registry.getMembers()) {
+        System.out.println(m.getName());
+      }
+      
+      /*
+      Member member1 = registry.createMember("Emma Fransson", "emma@student.lnu.se", "1234567", dayCounter.getCurrentDay());
+      Member member2 = registry.createMember("Ellen Nu", "ellennu@student.lnu.se", "1111111", dayCounter.getCurrentDay());
+  
+      Item item = member1.createItem("Tent", "A nice tent", dayCounter.getCurrentDay(), 10, Type.OTHER);
+      member1.addItem(item);
 
-      System.out.println(member.getPhoneNumber());
-      registry.updatePhoneNumber(member.getId(), "9876543");
-      System.out.println(member.getPhoneNumber());
+      item.addContract(item.createContract(member2, new Interval(new Day(3), new Day(5))));
+      item.addContract(item.createContract(member2, new Interval(new Day(2), new Day(4))));
+      */
     } catch (Exception e) {
       System.out.println(e.getMessage());
     }

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.checkstyle" time="0" tests="11" errors="37" name="checkstyle">
+<testsuite package="org.checkstyle" time="0" tests="11" errors="47" name="checkstyle">
 <testcase time="0" name="controller/App.java" classname="CheckStyle Issues">
 <failure message="issues" ><![CDATA[line: 5 column: column:1 
 Extra separation in import group before 'model.DayCounter'
 ----------------
-line: 9 column: column:1 
+line: 11 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 10 column: column:3 
+line: 12 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 15 column: 
+line: 18 column: 
 Line is longer than 120 characters (found 123).
 ----------------
 ]]></failure>
@@ -21,7 +21,10 @@ Missing a Javadoc comment.
 line: 8 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 38 column: column:3 
+line: 23 column: 
+Line is longer than 120 characters (found 125).
+----------------
+line: 46 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
@@ -41,7 +44,16 @@ Missing a Javadoc comment.
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="model/Interval.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 3 column: column:1 
+<failure message="issues" ><![CDATA[line: 5 column: column:1 
+Missing a Javadoc comment.
+----------------
+line: 10 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 50 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 62 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
@@ -52,19 +64,28 @@ Missing a Javadoc comment.
 line: 14 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 14 column: column:15 
-'(' is preceded with whitespace.
-----------------
-line: 23 column: column:3 
+line: 27 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 34 column: column:3 
+line: 38 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 56 column: column:3 
+line: 60 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 67 column: column:3 
+line: 71 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 87 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 116 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 126 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 136 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
@@ -72,25 +93,34 @@ Missing a Javadoc comment.
 <failure message="issues" ><![CDATA[line: 6 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 16 column: column:3 
+line: 17 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 26 column: column:3 
+line: 27 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 39 column: column:3 
+line: 31 column: 
+Line is longer than 120 characters (found 127).
+----------------
+line: 37 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 55 column: column:3 
+line: 50 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 103 column: column:3 
+line: 66 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 119 column: column:3 
+line: 114 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 143 column: column:3 
+line: 130 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 144 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 151 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
