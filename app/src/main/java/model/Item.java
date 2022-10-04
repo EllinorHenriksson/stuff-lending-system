@@ -76,8 +76,56 @@ public class Item {
     return new Member(owner.getName(), owner.getEmail(), owner.getPhoneNumber(), owner.getId(), owner.getCreationDay());
   }
 
-  // public boolean isAvailable() {
+  public void payTotalCost(int totalCost) {
+    owner.addCredits(totalCost);
+  }
 
-  // }
+  public Contract createContract(Member lender, Interval interval) throws Exception {
+
+    if (lender == null) {
+      throw new IllegalArgumentException("Lender must be specified.");
+    }
+
+    if (interval == null) {
+      throw new IllegalArgumentException("Interval must be specified.");
+    }
+
+    // isAvailable(interval);
+    transferCredits(interval, lender);
+    return new Contract(this, interval, lender);
+  }
+
+  private void transferCredits(Interval interval, Member lender) throws Exception {
+    int totalCost = this.getCostPerDay() * interval.getNumberOfDays();
+    if ( lender.getCredits() >= totalCost) {
+      throw new Exception("The lender doesn't have enough credits to lend the item.");
+    }
+
+    lender.removeCredits(totalCost);
+    payTotalCost(totalCost);
+  }
+
+  public void addContract(Contract contract) {
+    contracts.add(contract);
+  }
+
+  public ArrayList<Contract> getContracts() {
+    ArrayList<Contract> copies = new ArrayList<>();
+
+    for (Contract contract : contracts) {
+      copies.add(new Contract(this, contract.getInterval(), contract.getLender()));
+    }
+
+    return copies;
+  }
+
+  public boolean isAvailable(Interval interval) {
+    for (Contract contract : contracts) {
+      if (contract.getInterval().isOverlappingWith(interval)) {
+        return false;
+      }
+    }
+    return true;
+  }
 
 }

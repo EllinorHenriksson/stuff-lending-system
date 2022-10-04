@@ -12,6 +12,7 @@ public class Member {
   private int credits;
   private final int creditsForItem = 100;
   private ArrayList<Item> items;
+  private ArrayList<Contract> contracts;
 
   public Member(String name, String email, String phoneNumber, String id, Day creationDay) {
     setName(name);
@@ -126,33 +127,21 @@ public class Member {
     }
   }
 
-  private void addCredits(int credits) {
+  public int getCredits() {
+    return credits;
+  }
+
+  public void addCredits(int credits) {
     if (credits < 0) {
       throw new IllegalArgumentException("Credits must be a positive number.");
     }
     this.credits += credits;
   }
 
-  private void removeCredits(int credits) {
+  public void removeCredits(int credits) {
     if (credits < 0) {
       throw new IllegalArgumentException("Credits must be a positive number.");
     }
     this.credits -= credits;
-  }
-
-  public Contract createContract(Item item, Interval interval) throws Exception {
-    if (item == null) {
-      throw new IllegalArgumentException("Item must be specified.");
-    }
-
-    if (interval == null) {
-      throw new IllegalArgumentException("Interval must be specified.");
-    }
-
-    if (credits >= item.getCostPerDay() * interval.getNumberOfDays()) {
-      throw new Exception("The member doesn't have enough credits to lend the item.");
-    }
-
-    return new Contract(item, interval, this);
   }
 }

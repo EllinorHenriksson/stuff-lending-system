@@ -19,12 +19,20 @@ public class Contract {
     this.lender = lender;
   }
 
+  public Member getLender() {
+    return new Member(lender.getName(), lender.getEmail(), lender.getPhoneNumber(), lender.getId(), lender.getCreationDay());
+  }
+
   private void setInterval(Interval interval) {
     if (interval == null) {
       throw new IllegalArgumentException("Interval must be specified.");
     }
 
     this.interval = interval;
+  }
+
+  public Interval getInterval() {
+    return new Interval(interval.getStartDay(), interval.getEndDay());
   }
 
   private void setItem(Item item) {
