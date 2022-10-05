@@ -6,7 +6,7 @@ public class App {
 
     try {
       User user = new User(new Persistence());
-      user.startSystem();
+      user.startProgram();
     } catch (Exception e) {
       System.out.println(e.getMessage());
       System.out.println(e.getStackTrace());
