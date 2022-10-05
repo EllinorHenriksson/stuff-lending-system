@@ -1,3 +1,5 @@
+package view;
+
 public enum MainChoice {
     SIMPLE,
     FULL,

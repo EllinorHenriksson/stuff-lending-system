@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.spotbugs" time="0" tests="11" errors="1" name="findbugs">
-<testcase time="0" name="model/Day.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="model/DayCounter.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="view/Console.java" classname="FindBugs Issues">
+<testsuite package="org.spotbugs" time="0" tests="18" errors="2" name="findbugs">
+<testcase time="0" name="view/Console.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Contract.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Registry.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/MemberChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/Interval.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/Member.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/Day.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/DayCounter.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="App.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Type.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="controller/App.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/ItemChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Item.java" classname="FindBugs Issues">
 <failure message="issues" ><![CDATA[lines: 14-142 
 setOwner(Member) may expose internal representation by storing an 
@@ -21,7 +25,20 @@ This code stores a reference to an externally mutable object into the
   many situations.
 ----------------
 ]]></failure>
-</testcase><testcase time="0" name="model/Interval.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="model/Member.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/Validator.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/MainChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="controller/User.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 19-167 
+quitProgram() invokes System.exit(...), which shuts down the entire virtual 
+  machine 
+Method invokes System.exit(...) 
+Invoking System.exit shuts down the entire Java virtual machine. This 
+  should only been done when it is appropriate. Such calls make it hard or 
+  impossible for your code to be invoked by other code. Consider throwing a 
+  RuntimeException instead.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="model/persistence/IfPersistence.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/persistence/Persistence.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/IdGenerator.java" classname="FindBugs Issues">
 </testcase></testsuite>

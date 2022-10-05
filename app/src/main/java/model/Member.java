@@ -13,6 +13,7 @@ public class Member {
   private Day creationDay;
   private int credits;
   private ArrayList<Item> items;
+  private Validator validator = new Validator();
 
   public Member(String name, String email, String phoneNumber, String id, Day creationDay) {
     setName(name);
@@ -35,10 +36,7 @@ public class Member {
   }
 
   public void setName(String name) {
-    if (name == null) {
-      throw new IllegalArgumentException("Name must be specified.");
-    }
-
+    validator.validateName(name);
     this.name = name;
   }
 
@@ -48,14 +46,6 @@ public class Member {
 
 
   public void setEmail(String email) {
-    if (email == null) {
-      throw new IllegalArgumentException("Email must be specified.");
-    }
-
-    if (!Pattern.matches("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$", email)) {
-      throw new IllegalArgumentException("Email must be written in the correct format.");
-    }
-
     this.email = email;
   }
 
@@ -64,14 +54,7 @@ public class Member {
   }
 
   public void setPhoneNumber(String phoneNumber) {
-    if (phoneNumber == null) {
-      throw new IllegalArgumentException("Phone number must be specified.");
-    }
-
-    if (!Pattern.matches("[0-9]+", phoneNumber)) {
-      throw new IllegalArgumentException("Phone number must only consist of numbers.");
-    }    
-    
+    validator.validatePhoneNumber(phoneNumber);   
     this.phoneNumber = phoneNumber; 
   }
 
@@ -80,14 +63,7 @@ public class Member {
   }
 
   private void setId(String id) {
-    if (id == null) {
-      throw new IllegalArgumentException("ID must be specified.");
-    }
-
-    if (id.length() != 6) {
-      throw new IllegalArgumentException("ID must be 6 characters long.");
-    }
-    
+    validator.validateId(id);
     this.id = id;
   }
 
@@ -96,10 +72,7 @@ public class Member {
   }
 
   private void setCreationDay(Day creationDay) {
-    if (creationDay == null) {
-      throw new IllegalArgumentException("Creation day must not be null.");
-    }
-
+    validator.checkNull(creationDay, "Creation day must be specified.");
     this.creationDay = creationDay;
   }
 
@@ -112,15 +85,14 @@ public class Member {
   }
 
   public void addItem(Item item) {
-    if (item == null) {
-      throw new IllegalArgumentException("Item must be specified.");
-    }
+    validator.checkNull(item, "Item must be specified.");
 
     for (Item i : items) {
       if (i == item) {
         throw new IllegalArgumentException("Item already added to member.");
       }
     }
+
     items.add(item);
     addCredits(creditsForItem);
 
@@ -128,9 +100,7 @@ public class Member {
   }
 
   public void removeItem(Item item) {
-    if (item == null) {
-      throw new IllegalArgumentException("Item must be specified.");
-    }
+    validator.checkNull(item, "Item must be specified.");
 
     if (!items.remove(item)) {
       throw new IllegalArgumentException("Item was not found.");
@@ -142,16 +112,12 @@ public class Member {
   }
 
   public void addCredits(int credits) {
-    if (credits < 0) {
-      throw new IllegalArgumentException("Credits must be a positive number.");
-    }
+    validator.validateCredits(credits);
     this.credits += credits;
   }
 
   public void removeCredits(int credits) {
-    if (credits < 0) {
-      throw new IllegalArgumentException("Credits must be a positive number.");
-    }
+    validator.validateCredits(credits);
     this.credits -= credits;
   }
 }

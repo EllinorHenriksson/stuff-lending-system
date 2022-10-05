@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.checkstyle" time="0" tests="11" errors="47" name="checkstyle">
-<testcase time="0" name="controller/App.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 5 column: column:1 
-Extra separation in import group before 'model.DayCounter'
-----------------
-line: 11 column: column:1 
+<testsuite package="org.checkstyle" time="0" tests="18" errors="63" name="checkstyle">
+<testcase time="0" name="App.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 4 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 12 column: column:3 
+line: 5 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 18 column: 
-Line is longer than 120 characters (found 123).
+]]></failure>
+</testcase><testcase time="0" name="controller/User.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 13 column: column:1 
+Missing a Javadoc comment.
+----------------
+line: 19 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 26 column: column:3 
+Missing a Javadoc comment.
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="model/Contract.java" classname="CheckStyle Issues">
@@ -93,34 +98,29 @@ Missing a Javadoc comment.
 <failure message="issues" ><![CDATA[line: 6 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 17 column: column:3 
+line: 18 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 27 column: column:3 
+line: 29 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 31 column: 
+line: 33 column: 
 Line is longer than 120 characters (found 127).
 ----------------
-line: 37 column: column:3 
+line: 88 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 50 column: column:3 
+line: 103 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 66 column: column:3 
+]]></failure>
+</testcase><testcase time="0" name="model/persistence/IfPersistence.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 6 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 114 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 130 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 144 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 151 column: column:3 
+]]></failure>
+</testcase><testcase time="0" name="model/persistence/Persistence.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 7 column: column:1 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
@@ -158,7 +158,69 @@ Missing a Javadoc comment.
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
+</testcase><testcase time="0" name="model/Validator.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 5 column: column:1 
+Missing a Javadoc comment.
+----------------
+line: 35 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 41 column: column:3 
+Missing a Javadoc comment.
+----------------
+]]></failure>
 </testcase><testcase time="0" name="view/Console.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 11 column: column:1 
+Missing a Javadoc comment.
+----------------
+line: 21 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 33 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 44 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 55 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 75 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 93 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 119 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 126 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 133 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 141 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 149 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 162 column: column:3 
+Missing a Javadoc comment.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="view/ItemChoice.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 3 column: column:1 
+Missing a Javadoc comment.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="view/MainChoice.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 3 column: column:1 
+Missing a Javadoc comment.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="view/MemberChoice.java" classname="CheckStyle Issues">
 <failure message="issues" ><![CDATA[line: 3 column: column:1 
 Missing a Javadoc comment.
 ----------------

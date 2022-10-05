@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import model.Day;
 import model.Member;
 
-public class Persistence implements IPersistence {
+public class Persistence implements IfPersistence {
 
   @Override
   public ArrayList<Member> loadData() {

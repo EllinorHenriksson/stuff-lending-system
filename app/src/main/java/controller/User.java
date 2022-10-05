@@ -1,21 +1,22 @@
 package controller;
 
 import java.util.ArrayList;
-
 import model.DayCounter;
 import model.Member;
 import model.Registry;
-import model.persistence.IPersistence;
+import model.persistence.IfPersistence;
 import view.Console;
-import view.*;
+import view.ItemChoice;
+import view.MainChoice;
+import view.MemberChoice;
 
 public class User {
   private Registry registry;
   private DayCounter dayCounter;
-  private IPersistence persistence;
+  private IfPersistence persistence;
   private Console console;
 
-  public User(IPersistence persistence) {
+  public User(IfPersistence persistence) {
     dayCounter = new DayCounter();
     registry = new Registry();
     this.persistence = persistence;
@@ -49,16 +50,16 @@ public class User {
 
     switch (choice) {
       case SIMPLE: 
-        doSimpleList();
+        showSimpleList();
         break;
       case FULL:
-        doFullList();
+        showFullList();
         break;
       case ADD:
         addMember();
         break;
       case SELECT:
-        doSelectMember();
+        selectMember();
         break;
       case TIME:
         advanceTime();
@@ -66,16 +67,104 @@ public class User {
       case QUIT:
         quitProgram();
         break;
+      default:
+        break;
     }
   }
 
+  private void showSimpleList() {
+    console.presentMembersSimple(registry.getMembers());
+    doMainMenu();
+  }
+
+  private void showFullList() {
+    console.presentMembersFull(registry.getMembers());
+    doMainMenu();
+  }
+
   private void addMember() {
-    
+    String name = getMemberName();
+    String email = getEmail();
+    String phoneNumber = getPhoneNumber();
+
+    try {
+      Member member = registry.createMember(name, email, phoneNumber, dayCounter.getCurrentDay());
+      registry.addMember(member);
+      console.presentMessage("Member was successfully added!");
+      doMainMenu();
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doMainMenu();
+    }
+  }
+
+  private String getMemberName() {
+    String name = null;
+    while (name == null) {
+      try {
+        name = console.getName();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    return name;
+  }
+
+  private String getEmail() {
+    String email = null;
+    while (email == null) {
+      try {
+        email = console.getEmail();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    return email;
+  }
+
+  private String getPhoneNumber() {
+    String phoneNumber = null;
+    while (phoneNumber == null) {
+      try {
+        phoneNumber = console.getPhoneNumber();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    return phoneNumber;
+  }
+
+  private void selectMember() {
+    String id = null;
+
+    while (id == null) {
+      try {
+        id = console.getMemberId();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    try {
+      Member member = registry.getMember(id);
+      doMemberMenu(member);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doMainMenu();
+    }
   }
 
   private void advanceTime() {
     dayCounter.advanceDay();
     console.presentCurrentDay(dayCounter.getCurrentDay());
+    doMainMenu();
+  }
+
+  private void doMemberMenu(Member member) {
+    // To do
   }
 
   private void quitProgram() {

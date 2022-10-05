@@ -1,15 +1,19 @@
-o4 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/App.java
- text:line: 5 column: column:1 
-<Extra separation in import group before 'model.DayCounter'
-
-!text:line: 11 column: column:1 
+d2 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/App.java
+ text:line: 4 column: column:1 
 Missing a Javadoc comment.
 
-!text:line: 12 column: column:3 
+ text:line: 5 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 18 column: 
-1Line is longer than 120 characters (found 123).
+p3 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/User.java
+!text:line: 13 column: column:1 
+Missing a Javadoc comment.
+
+!text:line: 19 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 26 column: column:3 
+Missing a Javadoc comment.
 
 o4 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Contract.java
  text:line: 3 column: column:1 
@@ -80,38 +84,31 @@
 "text:line: 136 column: column:3 
 Missing a Javadoc comment.
 
-n11 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
+m6 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
  text:line: 6 column: column:1 
 Missing a Javadoc comment.
 
-!text:line: 17 column: column:3 
+!text:line: 18 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 27 column: column:3 
+!text:line: 29 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 31 column: 
+text:line: 33 column: 
 1Line is longer than 120 characters (found 127).
 
-!text:line: 37 column: column:3 
+!text:line: 88 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 50 column: column:3 
+"text:line: 103 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 66 column: column:3 
+€1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/persistence/IfPersistence.java
+ text:line: 6 column: column:1 
 Missing a Javadoc comment.
 
-"text:line: 114 column: column:3 
-Missing a Javadoc comment.
-
-"text:line: 130 column: column:3 
-Missing a Javadoc comment.
-
-"text:line: 144 column: column:3 
-Missing a Javadoc comment.
-
-"text:line: 151 column: column:3 
+~1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/persistence/Persistence.java
+ text:line: 7 column: column:1 
 Missing a Javadoc comment.
 
 o9 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Registry.java
@@ -146,17 +143,79 @@
  text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-m1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Console.java
+p3 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Validator.java
+ text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+!text:line: 35 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 41 column: column:3 
+Missing a Javadoc comment.
+
+n13 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Console.java
+!text:line: 11 column: column:1 
+Missing a Javadoc comment.
+
+!text:line: 21 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 33 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 44 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 55 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 75 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 93 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 119 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 126 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 133 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 141 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 149 column: column:3 
+Missing a Javadoc comment.
+
+"text:line: 162 column: column:3 
+Missing a Javadoc comment.
+
+p1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/ItemChoice.java
  text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-%0 FindBugs Issues in model/Day.java
-,0 FindBugs Issues in model/DayCounter.java
+p1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/MainChoice.java
+ text:line: 3 column: column:1 
+Missing a Javadoc comment.
+
+r1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/MemberChoice.java
+ text:line: 3 column: column:1 
+Missing a Javadoc comment.
+
 (0 FindBugs Issues in view/Console.java
 *0 FindBugs Issues in model/Contract.java
 *0 FindBugs Issues in model/Registry.java
+-0 FindBugs Issues in view/MemberChoice.java
+*0 FindBugs Issues in model/Interval.java
+(0 FindBugs Issues in model/Member.java
+%0 FindBugs Issues in model/Day.java
+,0 FindBugs Issues in model/DayCounter.java
+0 FindBugs Issues in App.java
 &0 FindBugs Issues in model/Type.java
-*0 FindBugs Issues in controller/App.java
++0 FindBugs Issues in view/ItemChoice.java
 &1 FindBugs Issues in model/Item.java
 text:lines: 14-142 
 csetOwner(Member) may expose internal representation by storing an externally mutable object into 
@@ -167,6 +226,16 @@
 f  would compromise security or other important properties, you will need to do something different. 
 G  Storing a copy of the object is better approach in many situations.
 
-*0 FindBugs Issues in model/Interval.java
-(0 FindBugs Issues in model/Member.java
++0 FindBugs Issues in model/Validator.java
++0 FindBugs Issues in view/MainChoice.java
++1 FindBugs Issues in controller/User.java
+text:lines: 19-167 
+VquitProgram() invokes System.exit(...), which shuts down the entire virtual machine 
+"Method invokes System.exit(...) 
+fInvoking System.exit shuts down the entire Java virtual machine. This should only been done when it 
+e  is appropriate. Such calls make it hard or impossible for your code to be invoked by other code. 
+1  Consider throwing a RuntimeException instead.
+
+;0 FindBugs Issues in model/persistence/IfPersistence.java
+90 FindBugs Issues in model/persistence/Persistence.java
 -0 FindBugs Issues in model/IdGenerator.java

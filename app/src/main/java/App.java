@@ -9,7 +9,7 @@ public class App {
       user.startProgram();
     } catch (Exception e) {
       System.out.println(e.getMessage());
-      System.out.println(e.getStackTrace());
+      e.printStackTrace();
     }
   }
 }
