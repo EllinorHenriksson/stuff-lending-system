@@ -3,8 +3,10 @@ package controller;
 import java.security.spec.ECGenParameterSpec;
 import java.util.ArrayList;
 import model.DayCounter;
+import model.Item;
 import model.Member;
 import model.Registry;
+import model.Type;
 import model.persistence.IfPersistence;
 import view.Console;
 import view.ItemChoice;
@@ -93,10 +95,10 @@ public class User {
         doUpdateMemberMenu(id);;
         break;
       case INFO:
-        // getMemberInfo(id);
+        showMemberInfo(id);
         break;
       case ADD:
-        // addItem(id);
+        addItem(id);
         break;
       case MAIN:
         doMainMenu();
@@ -146,7 +148,7 @@ public class User {
   }
 
   private void addMember() {
-    String name = getMemberName();
+    String name = getName();
     String email = getEmail();
     String phoneNumber = getPhoneNumber();
 
@@ -167,14 +169,41 @@ public class User {
       console.presentMessage("Member was successfully deleted!");
       doMainMenu();
     } catch (Exception e) {
-      // console.presentErrorMessage(e.getMessage());
-      System.out.println(e);
+      console.presentErrorMessage(e.getMessage());
+      doMemberMenu(id);
+    }
+  }
+
+  private void showMemberInfo(String id) {
+    try {
+      Member member = registry.getMember(id);
+      console.showMemberInfo(member);
+      doMemberMenu(id);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doMemberMenu(id);
+    }
+  }
+
+  private void addItem(String id) {
+    String name = getName();
+    String description = getDescription();
+    Type type = getType();
+    int costPerDay = getCostPerDay();
+
+    try {
+      Item item = new Item(name, description, dayCounter.getCurrentDay(), costPerDay, type);
+      registry.addItemToMember(item, id);
+      console.presentMessage("Item was successfully added!");
+      doMemberMenu(id);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
       doMemberMenu(id);
     }
   }
 
   private void updateMemberName(String id) {
-    String name = getMemberName();
+    String name = getName();
     try {
       registry.updateName(id, name);
       console.presentMessage("Name was successfully updated!");
@@ -185,7 +214,7 @@ public class User {
     }
   }
 
-  private String getMemberName() {
+  private String getName() {
     String name = null;
     while (name == null) {
       try {
@@ -196,6 +225,45 @@ public class User {
     }
 
     return name;
+  }
+
+    private String getDescription() {
+    String description = null;
+    while (description == null) {
+      try {
+        description = console.getDescription();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    return description;
+  }
+
+  private Type getType() {
+    Type type = null;
+    while (type == null) {
+      try {
+        type = console.getType();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    return type;
+  }
+
+  private int getCostPerDay() {
+    int cost = 0;
+    while (cost == 0) {
+      try {
+        cost = console.getCostPerDay();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    return cost;  
   }
 
   private void updateMemberEmail(String id) {
@@ -277,5 +345,4 @@ public class User {
   private void quitProgram() {
     System.exit(0);
   }
-  
 }

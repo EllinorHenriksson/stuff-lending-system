@@ -28,8 +28,12 @@ public class Member {
   public ArrayList<Item> getItems() {
     ArrayList<Item> copies = new ArrayList<>();
 
-    for (Item item : items) {
-      copies.add(new Item(item.getName(), item.getDescription(), item.getCreationDay(), item.getCostPerDay(), item.getType()));
+    for (Item i : items) {
+      Item copy = new Item(i.getName(), i.getDescription(), i.getCreationDay(), i.getCostPerDay(), i.getType());
+      for (Contract c : i.getContracts()) {
+        copy.addContract(c);
+      }
+      copies.add(copy);
     }
 
     return copies;

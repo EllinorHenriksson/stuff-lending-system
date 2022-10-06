@@ -44,15 +44,19 @@ public class Registry {
     members.remove(memberToRemove);
   }
 
-  public Member getMember(String id) throws Exception {
+  public Member getMember(String id) {
     Member member = getActualMember(id);
-    return new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId(), member.getCreationDay());
+    Member copy = new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId(), member.getCreationDay());
+    for (Item i : member.getItems()) {
+      copy.addItem(i);
+    }
+    return copy;
   }
 
   public ArrayList<Member> getMembers() {
     ArrayList<Member> copies = new ArrayList<>();
     for (Member m : members) {
-      copies.add(new Member(m.getName(), m.getEmail(), m.getPhoneNumber(), m.getId(), m.getCreationDay()));
+      copies.add(getMember(m.getId()));
     }
     return copies;
   }
@@ -94,11 +98,11 @@ public class Registry {
 
   public void updateEmail(String memberId, String newEmail) throws Exception {
     Member member = getActualMember(memberId);
-      if (isEmailUnique(newEmail)) {
-        member.setEmail(newEmail);
-      } else {
-        throw new Exception("Email must be unique.");
-      }
+    if (isEmailUnique(newEmail)) {
+      member.setEmail(newEmail);
+    } else {
+      throw new Exception("Email must be unique.");
+    }
   }
 
   public void updatePhoneNumber(String memberId, String newPhoneNumber) throws Exception {
@@ -110,7 +114,7 @@ public class Registry {
     }
   }
 
-  private Member getActualMember(String id) throws Exception {
+  private Member getActualMember(String id) {
     Member member = null;
     for (int i = 0; i < members.size(); i++) {
       if (members.get(i).getId().equals(id)) {
@@ -118,8 +122,13 @@ public class Registry {
       }
     }
     if (member == null) {
-      throw new Exception("Could not find a member with the provided ID.");
+      throw new IllegalArgumentException("Could not find a member with the provided ID.");
     }
     return member;
+  }
+
+  public void addItemToMember(Item item, String id) throws Exception {
+    Member member = getActualMember(id);
+    member.addItem(item);
   }
 }

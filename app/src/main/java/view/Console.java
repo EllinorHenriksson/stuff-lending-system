@@ -6,6 +6,7 @@ import model.Contract;
 import model.Day;
 import model.Item;
 import model.Member;
+import model.Type;
 import model.Validator;
 
 public class Console {
@@ -177,47 +178,90 @@ public class Console {
     return id;
   }
 
+  public String getDescription() {
+    System.out.print("\nEnter description: ");
+    String description = scan.nextLine();
+    validator.validateDescription(description);
+    return description;
+  }
+  
+  public Type getType() throws Exception {
+    System.out.print("\nEnter type (game, sport, tool, toy, vehicle, other): ");
+    String type = scan.nextLine();
+
+    switch (type) {
+      case "game":
+        return Type.GAME;
+      case "sport":
+        return Type.SPORT;
+      case "tool":
+        return Type.TOOL;
+      case "toy":
+        return Type.TOY;
+      case "vehicle":
+        return Type.VEHICLE;
+      case "other":
+        return Type.OTHER;
+      default:
+        throw new Exception("Invalid type.");
+    }
+  }
+
+  public int getCostPerDay() throws Exception {
+    System.out.print("\nEnter cost per day (credits): ");
+
+    int costPerDay = 0;
+    try {
+      costPerDay = Integer.parseInt(scan.nextLine());
+    } catch (Exception e) {
+      throw new Exception("Cost per day must be a number.");
+    }
+
+    validator.validateCredits(costPerDay);
+    return costPerDay;  
+  }
 
   public void presentMembersSimple(ArrayList<Member> members) {
-    System.out.println("\n*** Members (simple) ***\n");
+    System.out.println("\n*** Members (simple) ***");
 
     for (Member m : members) {
+      System.out.println("\n--- " + m.getName() + " ---");
       System.out.println("ID: " + m.getId());
-      System.out.println("Name: " + m.getName());
       System.out.println("Email: " + m.getEmail());
       System.out.println("Phone number: " + m.getPhoneNumber());
       System.out.println("Credits: " + m.getCredits());
       System.out.println("Number of items: " + m.getItems().size());
-      System.out.println();
     }
   }
 
   public void presentMembersFull(ArrayList<Member> members) {
-    System.out.println("\n*** Members (full) ***\n");
-
+    System.out.println("\n*** Members (full) ***");
     for (Member m : members) {
-      System.out.println("ID: " + m.getId());
-      System.out.println("Name: " + m.getName());
-      System.out.println("Email: " + m.getEmail());
-      System.out.println("Phone number: " + m.getPhoneNumber());
-      System.out.println("Items: ");
-      for (Item i : m.getItems()) {
-        System.out.println("  Name: " + i.getName());
-        System.out.println("  Description: " + i.getDescription());
-        System.out.println("  Category: " + i.getType().name());
-        System.out.println("  Cost per day: " + i.getCostPerDay() + " credits");
-        System.out.println("  Contracts: ");
-        for (Contract c : i.getContracts()) {
-          System.out.println("    Start day: " + c.getInterval().getStartDay().getDayNumber());
-          System.out.println("    End day: " + c.getInterval().getEndDay().getDayNumber());
-          System.out.println("    Lender: ");
-          System.out.println("      ID: " + c.getLender().getId());
-          System.out.println("      Name: " + c.getLender().getName());
-          System.out.println("      Email: " + c.getLender().getEmail());
-          System.out.println("      Phone number: " + m.getPhoneNumber());
-        }
+      showMemberInfo(m);
+    }
+  }
+
+  public void showMemberInfo(Member member) {
+    System.out.println("\n--- " + member.getName() + " ---");
+    System.out.println("ID: " + member.getId());
+    System.out.println("Email: " + member.getEmail());
+    System.out.println("Phone number: " + member.getPhoneNumber());
+    System.out.println("Items: ");
+    for (Item i : member.getItems()) {
+      System.out.println("  Name: " + i.getName());
+      System.out.println("  Description: " + i.getDescription());
+      System.out.println("  Category: " + i.getType().name().toLowerCase());
+      System.out.println("  Cost per day: " + i.getCostPerDay() + " credits");
+      System.out.println("  Contracts: ");
+      for (Contract c : i.getContracts()) {
+        System.out.println("    Start day: " + c.getInterval().getStartDay().getDayNumber());
+        System.out.println("    End day: " + c.getInterval().getEndDay().getDayNumber());
+        System.out.println("    Lender: ");
+        System.out.println("      ID: " + c.getLender().getId());
+        System.out.println("      Name: " + c.getLender().getName());
+        System.out.println("      Email: " + c.getLender().getEmail());
+        System.out.println("      Phone number: " + c.getLender().getPhoneNumber());
       }
-      System.out.println();
     }
   }
 }

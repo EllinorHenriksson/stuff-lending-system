@@ -5,6 +5,8 @@ import java.util.regex.Pattern;
 public class Validator {
   private int nameMinLength = 3;
   private int nameMaxLength = 50;
+  private int descriptionMinLength = 3;
+  private int descriptionMaxLength = 200;
 
   public void validateName(String name) {
     checkNull(name, "Name must be specified.");
@@ -31,6 +33,11 @@ public class Validator {
     checkStringLength(id, errorMessage);
     checkIdPattern(id);
   }
+  
+  public void validateDescription(String description) {
+    checkNull(description, "Description must be specified.");
+    checkDescriptionLength(description);
+  }
 
   private void checkIdPattern(String id) {
     if (!Pattern.matches("^[a-z, A-Z, 0-9]{6}", id)) {
@@ -39,7 +46,7 @@ public class Validator {
   }
 
   public void validateCredits(int credits) {
-    if (credits < 0) {
+    if (credits <= 0) {
       throw new IllegalArgumentException("Credits must be a positive number.");
     }
   }
@@ -57,19 +64,24 @@ public class Validator {
   }
 
   private void checkNameLength(String name) {
-    checkNameMinLength(name);
-    checkNameMaxLength(name);
+    checkMinLength(name, nameMinLength);
+    checkMaxLength(name, nameMaxLength);
   }
 
-  private void checkNameMinLength(String name) {
-    if (name.length() < nameMinLength) {
-      throw new IllegalArgumentException("Name must be over " + nameMinLength + " characters long.");
+  private void checkDescriptionLength(String description) {
+    checkMinLength(description, descriptionMinLength);
+    checkMaxLength(description, descriptionMaxLength);
+  }
+
+  private void checkMinLength(String input, int minLength) {
+    if (input.length() < minLength) {
+      throw new IllegalArgumentException("Input must be over " + minLength + " characters long.");
     }
   }
 
-  private void checkNameMaxLength(String name) {
-    if (name.length() > nameMaxLength) {
-      throw new IllegalArgumentException("Name must not be over " + nameMaxLength + " characters long.");
+  private void checkMaxLength(String input, int maxLength) {
+    if (input.length() > maxLength) {
+      throw new IllegalArgumentException("Input must not be over " + maxLength + " characters long.");
     }
   }
 

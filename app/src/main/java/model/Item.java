@@ -113,10 +113,10 @@ public class Item {
     payTotalCost(totalCost);
   }
 
-  public void addContract(Contract contract) throws Exception {
+  public void addContract(Contract contract) {
     for (Contract c : contracts) {
       if (contract == c) {
-        throw new Exception("The contract is already added to the item.");
+        throw new IllegalArgumentException("The contract is already added to the item.");
       }
     }
 
