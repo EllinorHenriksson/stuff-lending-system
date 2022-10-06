@@ -6,7 +6,7 @@ import model.Contract;
 import model.Day;
 import model.Item;
 import model.Member;
-import model.Type;
+import model.ItemType;
 import model.Validator;
 
 public class Console {
@@ -60,6 +60,17 @@ public class Console {
         + "email : Update email\n"
         + "phone : Update phone\n"
         + "cancel : Back to member menu\n";
+
+    System.out.println(menu);
+  }
+
+  public void presentUpdateItemMenu() {
+    String menu = "\n*** Update Item Menu ***\n"
+    + "name : Update name\n"
+    + "desc : Update description\n"
+    + "type : Update type\n"
+    + "cost : Update cost per day\n"
+    + "cancel : Back to item menu\n";
 
     System.out.println(menu);
   }
@@ -137,7 +148,24 @@ public class Console {
     } else {
       throw new Exception("Not a valid choice.");
     }
+  }
 
+  public UpdateItemChoice getUpdateItemChoice() throws Exception {
+    String choice = scan.nextLine();
+
+    if (choice.equals("name")) {
+      return UpdateItemChoice.NAME;
+    } else if (choice.equals("desc")) {
+      return UpdateItemChoice.DESCRIPTION;
+    } else if (choice.equals("type")) {
+      return UpdateItemChoice.TYPE;
+    } else if (choice.equals("cost")) {
+      return UpdateItemChoice.COST;
+    } else if (choice.equals("cancel")) {
+      return UpdateItemChoice.CANCEL;
+    } else {
+      throw new Exception("Not a valid choice.");
+    }  
   }
 
   public void presentMessage(String message) {
@@ -195,23 +223,23 @@ public class Console {
     return description;
   }
   
-  public Type getType() throws Exception {
+  public ItemType getType() throws Exception {
     System.out.print("\nEnter type (game, sport, tool, toy, vehicle, other): ");
     String type = scan.nextLine();
 
     switch (type) {
       case "game":
-        return Type.GAME;
+        return ItemType.GAME;
       case "sport":
-        return Type.SPORT;
+        return ItemType.SPORT;
       case "tool":
-        return Type.TOOL;
+        return ItemType.TOOL;
       case "toy":
-        return Type.TOY;
+        return ItemType.TOY;
       case "vehicle":
-        return Type.VEHICLE;
+        return ItemType.VEHICLE;
       case "other":
-        return Type.OTHER;
+        return ItemType.OTHER;
       default:
         throw new Exception("Invalid type.");
     }

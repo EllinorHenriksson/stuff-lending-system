@@ -117,8 +117,8 @@ public class Member {
     item.setOwner(this);
   }
 
-  public void removeItem(Item item) {
-    validator.checkNull(item, "Item must be specified.");
+  public void removeItem(String id) {
+    Item item = getActualItem(id);
 
     if (!items.remove(item)) {
       throw new IllegalArgumentException("Item was not found.");
@@ -147,5 +147,25 @@ public class Member {
       }
     }
     return result;
+  }
+
+  public void updateItemName(String itemId, String newName) {
+    Item item = getActualItem(itemId);
+    item.setName(newName);
+  }
+
+  public void updateItemDescription(String itemId, String newDescription) {
+    Item item = getActualItem(itemId);
+    item.setDescription(newDescription);
+  }
+
+  public void updateItemType(String itemId, ItemType newType) {
+    Item item = getActualItem(itemId);
+    item.setType(newType);
+  }
+
+  public void updateItemCostPerDay(String itemId, int newCostPerDay) {
+    Item item = getActualItem(itemId);
+    item.setCostPerDay(newCostPerDay);
   }
 }

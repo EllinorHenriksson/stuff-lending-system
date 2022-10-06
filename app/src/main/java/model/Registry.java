@@ -44,6 +44,11 @@ public class Registry {
     members.remove(memberToRemove);
   }
 
+  public void removeItemFromMember(String itemId, String memberId) {
+    Member member = getActualMember(memberId);
+    member.removeItem(itemId);
+  }
+
   public Member getMember(String id) {
     Member member = getActualMember(id);
     Member copy = new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId(), member.getCreationDay());
@@ -103,12 +108,12 @@ public class Registry {
     return result;
   }
 
-  public void updateName(String memberId, String newName) throws Exception {
+  public void updateMemberName(String memberId, String newName) throws Exception {
     Member member = getActualMember(memberId);
     member.setName(newName);
   }
 
-  public void updateEmail(String memberId, String newEmail) throws Exception {
+  public void updateMemberEmail(String memberId, String newEmail) throws Exception {
     Member member = getActualMember(memberId);
     if (isEmailUnique(newEmail)) {
       member.setEmail(newEmail);
@@ -117,13 +122,33 @@ public class Registry {
     }
   }
 
-  public void updatePhoneNumber(String memberId, String newPhoneNumber) throws Exception {
+  public void updateMemberPhoneNumber(String memberId, String newPhoneNumber) throws Exception {
     Member member = getActualMember(memberId);
     if (isPhoneNumberUnique(newPhoneNumber)) {
       member.setPhoneNumber(newPhoneNumber);
     } else {
       throw new Exception("Phone number must be unique.");
     }
+  }
+
+  public void updateItemName(String itemId, String memberId, String newName) {
+    Member member = getActualMember(memberId);
+    member.updateItemName(itemId, newName);
+  }
+
+  public void updateItemDescription(String itemId, String memberId, String newDescription) {
+    Member member = getActualMember(memberId);
+    member.updateItemDescription(itemId, newDescription);
+  }
+
+  public void updateItemType(String itemId, String memberId, ItemType newType) {
+    Member member = getActualMember(memberId);
+    member.updateItemType(itemId, newType);
+  }
+
+  public void updateItemCostPerDay(String itemId, String memberId, int newCostPerDay) {
+    Member member = getActualMember(memberId);
+    member.updateItemCostPerDay(itemId, newCostPerDay);
   }
 
   private Member getActualMember(String id) {
@@ -143,7 +168,7 @@ public class Registry {
     return getMember(ownerId).getItem(itemId);
   }
 
-  public Item createItem(String name, String description, Type type, int costPerDay, Day currentDay) {
+  public Item createItem(String name, String description, ItemType type, int costPerDay, Day currentDay) {
     String id = "";
     Boolean isUnique = false; 
     while (!isUnique) {

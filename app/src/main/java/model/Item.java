@@ -7,23 +7,27 @@ public class Item {
   private String description;
   private Day creationDay;
   private int costPerDay;
-  private Type type;
+  private ItemType type;
   private String id;
   private Member owner;
   private ArrayList<Contract> contracts;
   private Validator validator = new Validator();
 
-  public Item(String name, String description, Day creationDay, int costPerDay, Type type, String id) {
+  public Item(String name, String description, Day creationDay, int costPerDay, ItemType type, String id) {
     setName(name);
     setDescription(description);
     setCreationDay(creationDay);
     setCostPerDay(costPerDay);
     setId(id);
-    this.type = type;
+    setType(type);
     contracts = new ArrayList<>();
   }
 
-  public Type getType() {
+  public void setType(ItemType type) {
+    this.type = type;
+  }
+
+  public ItemType getType() {
     return type;
   }
 

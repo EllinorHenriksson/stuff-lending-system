@@ -7,12 +7,13 @@ import model.IdGenerator;
 import model.Item;
 import model.Member;
 import model.Registry;
-import model.Type;
+import model.ItemType;
 import model.persistence.IfPersistence;
 import view.Console;
 import view.ItemChoice;
 import view.MainChoice;
 import view.MemberChoice;
+import view.UpdateItemChoice;
 import view.UpdateMemberChoice;
 
 public class User {
@@ -140,7 +141,39 @@ public class User {
     }
   }
 
-  public void doItemMenu(String itemId, String ownerId) {
+  private void doUpdateItemMenu(String itemId, String memberId) {
+    UpdateItemChoice choice = null;
+    while (choice == null) {
+      console.presentUpdateItemMenu();
+      try {
+        choice = console.getUpdateItemChoice();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }  
+    }
+
+    switch (choice) {
+      case NAME: 
+        updateItemName(itemId, memberId);
+        break;
+      case DESCRIPTION:
+        updateItemDescription(itemId, memberId);
+        break;
+      case TYPE:
+        updateItemType(itemId, memberId);
+        break;
+      case COST:
+        updateCostPerDay(itemId, memberId);
+        break;
+      case CANCEL:
+        doItemMenu(itemId, memberId);
+        break;
+      default:
+        break;
+    }
+  }
+
+  public void doItemMenu(String itemId, String memberId) {
     ItemChoice choice = null;
     while (choice == null) {
       console.presentItemMenu();
@@ -153,19 +186,19 @@ public class User {
 
     switch (choice) {
       case DELETE: 
-        // deleteItem(id);
+        deleteItem(itemId, memberId);
         break;
       case UPDATE:
-        // doUpdateItemMenu(id);;
+        doUpdateItemMenu(itemId, memberId);
         break;
       case INFO:
-        // showItemInfo(id);
+        // showItemInfo(itemId, memberId);
         break;
       case CONTRACT:
-        // establishContract(id);
+        // establishContract(itemId, memberId);
         break;
       case MEMBER:
-        doMemberMenu(ownerId);
+        doMemberMenu(memberId);
         break;
       default:
         break;
@@ -209,6 +242,17 @@ public class User {
     }
   }
 
+  private void deleteItem(String itemId, String memberId) {
+    try {
+      registry.removeItemFromMember(itemId, memberId);
+      console.presentMessage("Item was successfully deleted!");
+      doMemberMenu(memberId);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doItemMenu(itemId, memberId);
+    }
+  }
+
   private void showMemberInfo(String id) {
     try {
       Member member = registry.getMember(id);
@@ -223,7 +267,7 @@ public class User {
   private void addItem(String id) {
     String name = getName();
     String description = getDescription();
-    Type type = getType();
+    ItemType type = getItemType();
     int costPerDay = getCostPerDay();
 
     try {
@@ -240,13 +284,61 @@ public class User {
   private void updateMemberName(String id) {
     String name = getName();
     try {
-      registry.updateName(id, name);
+      registry.updateMemberName(id, name);
       console.presentMessage("Name was successfully updated!");
       doUpdateMemberMenu(id);
     } catch (Exception e) {
       console.presentErrorMessage(e.getMessage());
       doMemberMenu(id);
     }
+  }
+
+  private void updateItemName(String itemId, String memberId) {
+    String name = getName();
+    try {
+      registry.updateItemName(itemId, memberId, name);
+      console.presentMessage("Name was successfully updated!");
+      doUpdateItemMenu(itemId, memberId);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doItemMenu(itemId, memberId);
+    }    
+  }
+
+  private void updateItemDescription(String itemId, String memberId) {
+    String description = getDescription();
+    try {
+      registry.updateItemDescription(itemId, memberId, description);
+      console.presentMessage("Description was successfully updated!");
+      doUpdateItemMenu(itemId, memberId);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doItemMenu(itemId, memberId);
+    }    
+  }
+
+  private void updateItemType(String itemId, String memberId) {
+    ItemType itemType = getItemType();
+    try {
+      registry.updateItemType(itemId, memberId, itemType);
+      console.presentMessage("Type was successfully updated!");
+      doUpdateItemMenu(itemId, memberId);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doItemMenu(itemId, memberId);
+    }    
+  }
+
+  private void updateCostPerDay(String itemId, String memberId) {
+    int costPerDay = getCostPerDay();
+    try {
+      registry.updateItemCostPerDay(itemId, memberId, costPerDay);
+      console.presentMessage("Cost per day was successfully updated!");
+      doUpdateItemMenu(itemId, memberId);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doItemMenu(itemId, memberId);
+    }    
   }
 
   private String getName() {
@@ -275,8 +367,8 @@ public class User {
     return description;
   }
 
-  private Type getType() {
-    Type type = null;
+  private ItemType getItemType() {
+    ItemType type = null;
     while (type == null) {
       try {
         type = console.getType();
@@ -304,7 +396,7 @@ public class User {
   private void updateMemberEmail(String id) {
     String email = getEmail();
     try {
-      registry.updateEmail(id, email);
+      registry.updateMemberEmail(id, email);
       console.presentMessage("Email was successfully updated!");
       doUpdateMemberMenu(id);
     } catch (Exception e) {
@@ -329,7 +421,7 @@ public class User {
   private void updatePhoneNumber(String id) {
     String phoneNumber = getPhoneNumber();
     try {
-      registry.updatePhoneNumber(id, phoneNumber);
+      registry.updateMemberPhoneNumber(id, phoneNumber);
       console.presentMessage("Phone number was successfully updated!");
       doUpdateMemberMenu(id);
     } catch (Exception e) {

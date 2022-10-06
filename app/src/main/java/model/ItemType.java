@@ -1,6 +1,6 @@
 package model;
 
-public enum Type {  
+public enum ItemType {  
     GAME, 
     SPORT,
     TOOL,
