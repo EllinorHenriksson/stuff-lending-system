@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.339s</div>
+<div class="counter">0.374s</div>
 <p>duration</p>
 </div>
 </td>
@@ -69,9 +69,6 @@
 <li>
 <a href="#tab2">Standard output</a>
 </li>
-<li>
-<a href="#tab3">Standard error</a>
-</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
@@ -79,63 +76,63 @@
 <a name="codeQuality()"></a>
 <h3 class="failures">codeQuality()</h3>
 <span class="code">
-<pre>java.lang.NullPointerException: Cannot invoke &quot;org.w3c.dom.Node.getTextContent()&quot; because the return value of &quot;org.w3c.dom.NamedNodeMap.getNamedItem(String)&quot; is null
-	at CodeQualityTests.findBugsTest(CodeQualityTests.java:157)
-	at CodeQualityTests.codeQuality(CodeQualityTests.java:63)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+<pre>org.opentest4j.AssertionFailedError: Max amount (5) of quality issues exceeded:74 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:193)
+	at app//CodeQualityTests.codeQuality(CodeQualityTests.java:70)
+	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@18.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@18.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
@@ -149,10 +146,8 @@
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
@@ -165,8 +160,8 @@
 	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </pre>
 </span>
 </div>
@@ -183,7 +178,7 @@
 </thead>
 <tr>
 <td class="failures">codeQuality()</td>
-<td class="failures">3.339s</td>
+<td class="failures">0.374s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -191,24 +186,20 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/App.java
-text:line: 4 column: column:1 
+<pre>4 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/User.java
+text:line: 17 column: column:1 
 Missing a Javadoc comment.
 
-text:line: 5 column: column:3 
+text:line: 23 column: column:3 
 Missing a Javadoc comment.
 
-3 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/User.java
-text:line: 15 column: column:1 
+text:line: 30 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 21 column: column:3 
-Missing a Javadoc comment.
+text:line: 230 column: column:5 
+'method def modifier' has incorrect indentation level 4, expected level should be 2.
 
-text:line: 28 column: column:3 
-Missing a Javadoc comment.
-
-4 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Contract.java
+4 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Contract.java
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
@@ -221,19 +212,15 @@ Line is longer than 120 characters (found 125).
 text:line: 46 column: column:3 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Day.java
-text:line: 3 column: column:1 
-Missing a Javadoc comment.
-
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/DayCounter.java
-text:line: 3 column: column:1 
-Missing a Javadoc comment.
-
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/IdGenerator.java
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/IdGenerator.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
-4 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Interval.java
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Type.java
+text:line: 3 column: column:1 
+Missing a Javadoc comment.
+
+4 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Interval.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
@@ -246,7 +233,83 @@ Missing a Javadoc comment.
 text:line: 62 column: column:3 
 Missing a Javadoc comment.
 
-10 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Item.java
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/DayCounter.java
+text:line: 3 column: column:1 
+Missing a Javadoc comment.
+
+6 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Validator.java
+text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+text:line: 16 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 23 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 30 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 48 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 54 column: column:3 
+Missing a Javadoc comment.
+
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Day.java
+text:line: 3 column: column:1 
+Missing a Javadoc comment.
+
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/Persistence.java
+text:line: 7 column: column:1 
+Missing a Javadoc comment.
+
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/IfPersistence.java
+text:line: 6 column: column:1 
+Missing a Javadoc comment.
+
+5 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Member.java
+text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+text:line: 17 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 27 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 90 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 105 column: column:3 
+Missing a Javadoc comment.
+
+8 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Registry.java
+text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+text:line: 15 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 33 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 47 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 49 column: 
+Line is longer than 120 characters (found 132).
+
+text:line: 56 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 99 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 108 column: column:3 
+Missing a Javadoc comment.
+
+10 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Item.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
@@ -277,231 +340,122 @@ Missing a Javadoc comment.
 text:line: 136 column: column:3 
 Missing a Javadoc comment.
 
-6 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
-text:line: 6 column: column:1 
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/ItemChoice.java
+text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-text:line: 18 column: column:3 
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/MemberChoice.java
+text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-text:line: 28 column: column:3 
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/MainChoice.java
+text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-text:line: 32 column: 
-Line is longer than 120 characters (found 127).
+19 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Console.java
+text:line: 12 column: column:1 
+Missing a Javadoc comment.
+
+text:line: 22 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 34 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 45 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 56 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 66 column: column:3 
+Missing a Javadoc comment.
 
 text:line: 87 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 102 column: column:3 
+text:line: 105 column: column:3 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/persistence/IfPersistence.java
-text:line: 6 column: column:1 
+text:line: 123 column: column:3 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/persistence/Persistence.java
-text:line: 7 column: column:1 
+text:line: 152 column: column:3 
 Missing a Javadoc comment.
 
-7 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Registry.java
-text:line: 5 column: column:1 
+text:line: 159 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 15 column: column:3 
+text:line: 166 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 33 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 49 column: 
-Line is longer than 120 characters (found 125).
-
-text:line: 52 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 95 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 104 column: column:3 
-Missing a Javadoc comment.
-
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Type.java
-text:line: 3 column: column:1 
-Missing a Javadoc comment.
-
-6 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Validator.java
-text:line: 5 column: column:1 
-Missing a Javadoc comment.
-
-text:line: 14 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 21 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 28 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 41 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 47 column: column:3 
-Missing a Javadoc comment.
-
-16 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Console.java
-text:line: 11 column: column:1 
-Missing a Javadoc comment.
-
-text:line: 21 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 33 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 44 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 55 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 65 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 86 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 104 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 122 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 151 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 158 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 165 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 173 column: column:3 
+text:line: 174 column: column:3 
 Missing a Javadoc comment.
 
 text:line: 181 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 195 column: column:3 
+text:line: 188 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 203 column: column:3 
+text:line: 210 column: column:3 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/ItemChoice.java
+text:line: 224 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 237 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 244 column: column:3 
+Missing a Javadoc comment.
+
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/UpdateMemberChoice.java
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/MainChoice.java
-text:line: 3 column: column:1 
+2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/App.java
+text:line: 4 column: column:1 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/MemberChoice.java
-text:line: 3 column: column:1 
+text:line: 5 column: column:3 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/UpdateMemberChoice.java
-text:line: 3 column: column:1 
-Missing a Javadoc comment.
+0 FindBugs Issues in view/Console.java
+0 FindBugs Issues in model/Contract.java
+0 FindBugs Issues in model/Registry.java
+0 FindBugs Issues in view/MemberChoice.java
+0 FindBugs Issues in model/Interval.java
+0 FindBugs Issues in model/Member.java
+0 FindBugs Issues in model/Day.java
+0 FindBugs Issues in model/DayCounter.java
+0 FindBugs Issues in App.java
+0 FindBugs Issues in model/Type.java
+0 FindBugs Issues in view/ItemChoice.java
+1 FindBugs Issues in model/Item.java
+text:lines: 14-142 
+setOwner(Member) may expose internal representation by storing an externally mutable object into 
+  Item.owner 
+May expose internal representation by incorporating reference to mutable object 
+This code stores a reference to an externally mutable object into the internal representation of the 
+  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
+  would compromise security or other important properties, you will need to do something different. 
+  Storing a copy of the object is better approach in many situations.
 
-</pre>
-</span>
-</div>
-<div id="tab3" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>[Fatal Error] :7:33: Enhetsnamnet måste omedelbart följas av '&amp;' i enhetsreferensen.
-Enhetsnamnet måste omedelbart följas av '&amp;' i enhetsreferensen.
-parsing of text failed possibly due to bad html/xml formatting for, start text ---&gt;Check for oddness that won't work for negative numbers
-    
+0 FindBugs Issues in view/UpdateMemberChoice.java
+0 FindBugs Issues in model/Validator.java
+0 FindBugs Issues in view/MainChoice.java
+1 FindBugs Issues in controller/User.java
+text:lines: 23-347 
+quitProgram() invokes System.exit(...), which shuts down the entire virtual machine 
+Method invokes System.exit(...) 
+Invoking System.exit shuts down the entire Java virtual machine. This should only been done when it 
+  is appropriate. Such calls make it hard or impossible for your code to be invoked by other code. 
+  Consider throwing a RuntimeException instead.
 
-&lt;p&gt;
-The code uses x % 2 == 1 to check to see if a value is odd, but this won't work
-for negative numbers (e.g., (-5) % 2 == -1). If this code is intending to check
-for oddness, consider using (x &amp;amp; 1) == 1, or x % 2 != 0.
-&lt;/p&gt;&lt;--- end text
-[Fatal Error] :8:11: Elementtyp &quot;p&quot; måste avslutas med matchande sluttagg &quot;&lt;/p&gt;&quot;.
-Elementtyp &quot;p&quot; måste avslutas med matchande sluttagg &quot;&lt;/p&gt;&quot;.
-parsing of text failed possibly due to bad html/xml formatting for, start text ---&gt;Serializable inner class
-    
-
-&lt;p&gt; This Serializable class is an inner class.  Any attempt to serialize
-it will also serialize the associated outer instance. The outer instance is serializable,
-so this won't fail, but it might serialize a lot more data than intended.
-If possible, making the inner class a static inner class (also known as a nested class) should solve the
-problem.&lt;--- end text
-[Fatal Error] :5:17: Enhetsnamnet måste omedelbart följas av '&amp;' i enhetsreferensen.
-Enhetsnamnet måste omedelbart följas av '&amp;' i enhetsreferensen.
-parsing of text failed possibly due to bad html/xml formatting for, start text ---&gt;Vacuous bit mask operation on integer value
-    
-
-&lt;p&gt; This is an integer bit operation (and, or, or exclusive or) that doesn't do any useful work
-(e.g., &lt;code&gt;v &amp; 0xffffffff&lt;/code&gt;).
-
-&lt;/p&gt;&lt;--- end text
-[Fatal Error] :28:16: Elementtyp &quot;p&quot; måste avslutas med matchande sluttagg &quot;&lt;/p&gt;&quot;.
-Elementtyp &quot;p&quot; måste avslutas med matchande sluttagg &quot;&lt;/p&gt;&quot;.
-parsing of text failed possibly due to bad html/xml formatting for, start text ---&gt;NullPointerException caught
-    
-   
-&lt;p&gt;
-According to SEI Cert rule &lt;a href=&quot;https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors&quot;&gt;ERR08-J&lt;/a&gt; NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
-&lt;p&gt;
-This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
-&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;
-boolean hasSpace(String m) {
-  try {
-    String ms[] = m.split(&quot; &quot;);
-    return names.length != 1;
-  } catch (NullPointerException e) {
-    return false;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;
-A compliant solution would use a null-check as in the following example:
-&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;
-boolean hasSpace(String m) {
-    if (m == null) return false;
-    String ms[] = m.split(&quot; &quot;);
-    return names.length != 1;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;--- end text
-[Fatal Error] :4:67: Enhetsnamnet måste omedelbart följas av '&amp;' i enhetsreferensen.
-Enhetsnamnet måste omedelbart följas av '&amp;' i enhetsreferensen.
-parsing of text failed possibly due to bad html/xml formatting for, start text ---&gt;Potentially dangerous use of non-short-circuit logic
-    
-
-  &lt;p&gt; This code seems to be using non-short-circuit logic (e.g., &amp;amp;
-or |)
-rather than short-circuit logic (&amp;amp;&amp;amp; or ||). In addition,
-it seem possible that, depending on the value of the left hand side, you might not
-want to evaluate the right hand side (because it would have side effects, could cause an exception
-or could be expensive.&lt;/p&gt;
-&lt;p&gt;
-Non-short-circuit logic causes both sides of the expression
-to be evaluated even when the result can be inferred from
-knowing the left-hand side. This can be less efficient and
-can result in errors if the left-hand side guards cases
-when evaluating the right-hand side can generate an error.
-&lt;/p&gt;
-
-&lt;p&gt;See &lt;a href=&quot;https://docs.oracle.com/javase/specs/jls/se7/html/jls-15.html#jls-15.22.2&quot;&gt;the Java
-Language Specification&lt;/a&gt; for details.
-
-&lt;/p&gt;&lt;--- end text
+0 FindBugs Issues in model/persistence/IfPersistence.java
+0 FindBugs Issues in model/persistence/Persistence.java
+0 FindBugs Issues in model/IdGenerator.java
 </pre>
 </span>
 </div>
@@ -513,7 +467,7 @@ Language Specification&lt;/a&gt; for details.
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 6 okt. 2022 11:28:38</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 6 okt. 2022 14:34:50</p>
 </div>
 </div>
 </body>

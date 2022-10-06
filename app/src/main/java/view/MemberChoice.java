@@ -5,5 +5,6 @@ public enum MemberChoice {
     UPDATE,
     INFO,
     ADD,
+    SELECT,
     MAIN
 }

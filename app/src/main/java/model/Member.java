@@ -1,7 +1,6 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.regex.Pattern;
 
 public class Member {
   static final int creditsForItem = 100;
@@ -14,6 +13,7 @@ public class Member {
   private int credits;
   private ArrayList<Item> items;
   private Validator validator = new Validator();
+  private IdGenerator idGenerator = new IdGenerator(6);
 
   public Member(String name, String email, String phoneNumber, String id, Day creationDay) {
     setName(name);
@@ -25,11 +25,29 @@ public class Member {
     credits = 0;
   }
 
+  public Item getItem(String itemId) {
+    Item item = getActualItem(itemId);
+    return new Item(item.getName(), item.getDescription(), item.getCreationDay(), item.getCostPerDay(), item.getType(), item.getId());
+  }
+
+  private Item getActualItem(String itemId) {
+    Item item = null;
+    for (Item i : items) {
+      if (i.getId().equals(itemId)) {
+        item = i;
+      }
+    }
+    if (item == null) {
+      throw new IllegalArgumentException("Item does not exist.");
+    }
+    return item;
+  }
+
   public ArrayList<Item> getItems() {
     ArrayList<Item> copies = new ArrayList<>();
 
     for (Item i : items) {
-      Item copy = new Item(i.getName(), i.getDescription(), i.getCreationDay(), i.getCostPerDay(), i.getType());
+      Item copy = new Item(i.getName(), i.getDescription(), i.getCreationDay(), i.getCostPerDay(), i.getType(), i.getId());
       for (Contract c : i.getContracts()) {
         copy.addContract(c);
       }
@@ -84,10 +102,6 @@ public class Member {
     return new Day(creationDay.getDayNumber());
   }
 
-  public Item createItem(String name, String description, Day creationDay, int costPerDay, Type type) {
-    return new Item(name, description, creationDay, costPerDay, type);
-  }
-
   public void addItem(Item item) {
     validator.checkNull(item, "Item must be specified.");
 
@@ -123,5 +137,15 @@ public class Member {
   public void removeCredits(int credits) {
     validator.validateCredits(credits);
     this.credits -= credits;
+  }
+
+  private boolean isIdUnique(String id) {
+    Boolean result = true;
+    for (Item item : items) {
+      if (item.getId().equals(id)) {
+        result = false;
+      }
+    }
+    return result;
   }
 }

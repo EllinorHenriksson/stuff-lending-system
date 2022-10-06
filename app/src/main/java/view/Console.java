@@ -37,6 +37,7 @@ public class Console {
         + "update : Update member info\n"
         + "info : Show member info\n"
         + "add : Add item to member\n"
+        + "select : Select item\n"
         + "main : Back to main menu\n"; 
 
     System.out.println(menu);
@@ -95,6 +96,8 @@ public class Console {
       return MemberChoice.INFO;
     } else if (choice.equals("add")) {
       return MemberChoice.ADD;
+    } else if (choice.equals("select")) {
+      return MemberChoice.SELECT;
     } else if (choice.equals("main")) {
       return MemberChoice.MAIN;
     } else {
@@ -178,6 +181,13 @@ public class Console {
     return id;
   }
 
+  public String getItemId() {
+    System.out.print("\nEnter item id: ");
+    String id = scan.nextLine();
+    validator.validateId(id);
+    return id;
+  }
+
   public String getDescription() {
     System.out.print("\nEnter description: ");
     String description = scan.nextLine();
@@ -248,7 +258,8 @@ public class Console {
     System.out.println("Phone number: " + member.getPhoneNumber());
     System.out.println("Items: ");
     for (Item i : member.getItems()) {
-      System.out.println("  Name: " + i.getName());
+      System.out.println("\n  --- " + i.getName() + " ---");
+      System.out.println("  Id: " + i.getId());
       System.out.println("  Description: " + i.getDescription());
       System.out.println("  Category: " + i.getType().name().toLowerCase());
       System.out.println("  Cost per day: " + i.getCostPerDay() + " credits");

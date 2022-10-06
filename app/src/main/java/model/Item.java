@@ -8,14 +8,17 @@ public class Item {
   private Day creationDay;
   private int costPerDay;
   private Type type;
+  private String id;
   private Member owner;
   private ArrayList<Contract> contracts;
+  private Validator validator = new Validator();
 
-  public Item(String name, String description, Day creationDay, int costPerDay, Type type) {
+  public Item(String name, String description, Day creationDay, int costPerDay, Type type, String id) {
     setName(name);
     setDescription(description);
     setCreationDay(creationDay);
     setCostPerDay(costPerDay);
+    setId(id);
     this.type = type;
     contracts = new ArrayList<>();
   }
@@ -66,6 +69,15 @@ public class Item {
 
   public int getCostPerDay() {
     return costPerDay;
+  }
+
+  private void setId(String id) {
+    validator.validateId(id);
+    this.id = id;
+  }
+
+  public String getId() {
+    return id;
   }
 
   public void setOwner(Member owner) {
@@ -141,5 +153,4 @@ public class Item {
     }
     return true;
   }
-
 }

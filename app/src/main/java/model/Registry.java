@@ -24,7 +24,7 @@ public class Registry {
     Boolean isUnique = false; 
     while (!isUnique) {
       id = idGenerator.generateId();
-      isUnique = isIdUnique(id);
+      isUnique = isMemberIdUnique(id);
     }
 
     return new Member(name, email, phoneNumber, id, currentDay);
@@ -81,11 +81,23 @@ public class Registry {
     return result;
   }
 
-  private boolean isIdUnique(String id) {
+  private boolean isMemberIdUnique(String id) {
     Boolean result = true;
     for (Member m : members) {
       if (m.getId().equals(id)) {
         result = false;
+      }
+    }
+    return result;
+  }
+
+  private boolean isItemIdUnique(String id) {
+    Boolean result = true;
+    for (Member m : members) {
+      for (Item i : m.getItems()) {
+        if (i.getId().equals(id)) {
+          result = false;
+        }
       }
     }
     return result;
@@ -125,6 +137,21 @@ public class Registry {
       throw new IllegalArgumentException("Could not find a member with the provided ID.");
     }
     return member;
+  }
+
+  public Item getItem(String itemId, String ownerId) {
+    return getMember(ownerId).getItem(itemId);
+  }
+
+  public Item createItem(String name, String description, Type type, int costPerDay, Day currentDay) {
+    String id = "";
+    Boolean isUnique = false; 
+    while (!isUnique) {
+      id = idGenerator.generateId();
+      isUnique = isItemIdUnique(id);
+    }
+    Item item = new Item(name, description, currentDay, costPerDay, type, id);
+    return item;
   }
 
   public void addItemToMember(Item item, String id) throws Exception {

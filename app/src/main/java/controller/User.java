@@ -3,6 +3,7 @@ package controller;
 import java.security.spec.ECGenParameterSpec;
 import java.util.ArrayList;
 import model.DayCounter;
+import model.IdGenerator;
 import model.Item;
 import model.Member;
 import model.Registry;
@@ -92,7 +93,7 @@ public class User {
         deleteMember(id);
         break;
       case UPDATE:
-        doUpdateMemberMenu(id);;
+        doUpdateMemberMenu(id);
         break;
       case INFO:
         showMemberInfo(id);
@@ -100,6 +101,8 @@ public class User {
       case ADD:
         addItem(id);
         break;
+      case SELECT:
+        selectItem(id);
       case MAIN:
         doMainMenu();
         break;
@@ -131,6 +134,38 @@ public class User {
         break;
       case CANCEL:
         doMemberMenu(id);
+        break;
+      default:
+        break;
+    }
+  }
+
+  public void doItemMenu(String itemId, String ownerId) {
+    ItemChoice choice = null;
+    while (choice == null) {
+      console.presentItemMenu();
+      try {
+        choice = console.getItemChoice();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }  
+    }
+
+    switch (choice) {
+      case DELETE: 
+        // deleteItem(id);
+        break;
+      case UPDATE:
+        // doUpdateItemMenu(id);;
+        break;
+      case INFO:
+        // showItemInfo(id);
+        break;
+      case CONTRACT:
+        // establishContract(id);
+        break;
+      case MEMBER:
+        doMemberMenu(ownerId);
         break;
       default:
         break;
@@ -192,7 +227,7 @@ public class User {
     int costPerDay = getCostPerDay();
 
     try {
-      Item item = new Item(name, description, dayCounter.getCurrentDay(), costPerDay, type);
+      Item item = registry.createItem(name, description, type, costPerDay, dayCounter.getCurrentDay());
       registry.addItemToMember(item, id);
       console.presentMessage("Item was successfully added!");
       doMemberMenu(id);
@@ -333,6 +368,26 @@ public class User {
     } catch (Exception e) {
       console.presentErrorMessage(e.getMessage());
       doMainMenu();
+    }
+  }
+
+  private void selectItem(String ownerId) {
+    String itemId = null;
+
+    while (itemId == null) {
+      try {
+        itemId = console.getItemId();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    try {
+      Item item = registry.getItem(itemId, ownerId);
+      doItemMenu(item.getId(), ownerId);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doMemberMenu(ownerId);
     }
   }
 

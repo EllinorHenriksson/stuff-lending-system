@@ -29,7 +29,7 @@ This code stores a reference to an externally mutable object into the
 </testcase><testcase time="0" name="model/Validator.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="view/MainChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/User.java" classname="FindBugs Issues">
-<failure message="issues" ><![CDATA[lines: 20-272 
+<failure message="issues" ><![CDATA[lines: 23-347 
 quitProgram() invokes System.exit(...), which shuts down the entire virtual 
   machine 
 Method invokes System.exit(...) 
