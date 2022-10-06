@@ -2,8 +2,11 @@ package controller;
 
 import java.security.spec.ECGenParameterSpec;
 import java.util.ArrayList;
+
+import model.Day;
 import model.DayCounter;
 import model.IdGenerator;
+import model.Interval;
 import model.Item;
 import model.Member;
 import model.Registry;
@@ -192,10 +195,10 @@ public class User {
         doUpdateItemMenu(itemId, memberId);
         break;
       case INFO:
-        // showItemInfo(itemId, memberId);
+        showItemInfo(itemId, memberId);
         break;
       case CONTRACT:
-        // establishContract(itemId, memberId);
+        establishContract(itemId, memberId);
         break;
       case MEMBER:
         doMemberMenu(memberId);
@@ -231,6 +234,33 @@ public class User {
     }
   }
 
+  private void addItem(String id) {
+    String name = getName();
+    String description = getDescription();
+    ItemType type = getItemType();
+    int costPerDay = getCostPerDay();
+
+    try {
+      Item item = registry.createItem(name, description, type, costPerDay, dayCounter.getCurrentDay());
+      registry.addItemToMember(item, id);
+      console.presentMessage("Item was successfully added!");
+      doMemberMenu(id);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doMemberMenu(id);
+    }
+  }
+
+
+  private void establishContract(String itemId, String ownerId) {
+    String lenderId = getLenderId();
+    Interval interval = getInterval();
+
+    registry.addContractToItem(itemId, interval, lenderId);
+    console.presentMessage("Contract was successfully established!");
+    doItemMenu(itemId, ownerId);
+  }
+
   private void deleteMember(String id) {
     try {
       registry.removeMember(id);
@@ -264,20 +294,14 @@ public class User {
     }
   }
 
-  private void addItem(String id) {
-    String name = getName();
-    String description = getDescription();
-    ItemType type = getItemType();
-    int costPerDay = getCostPerDay();
-
+  private void showItemInfo(String itemId, String memberId) {
     try {
-      Item item = registry.createItem(name, description, type, costPerDay, dayCounter.getCurrentDay());
-      registry.addItemToMember(item, id);
-      console.presentMessage("Item was successfully added!");
-      doMemberMenu(id);
+      Item item = registry.getItem(itemId);
+      console.showItemInfo(item);
+      doItemMenu(itemId, memberId);
     } catch (Exception e) {
       console.presentErrorMessage(e.getMessage());
-      doMemberMenu(id);
+      doItemMenu(itemId, memberId);
     }
   }
 
@@ -296,7 +320,7 @@ public class User {
   private void updateItemName(String itemId, String memberId) {
     String name = getName();
     try {
-      registry.updateItemName(itemId, memberId, name);
+      registry.updateItemName(itemId, name);
       console.presentMessage("Name was successfully updated!");
       doUpdateItemMenu(itemId, memberId);
     } catch (Exception e) {
@@ -308,7 +332,7 @@ public class User {
   private void updateItemDescription(String itemId, String memberId) {
     String description = getDescription();
     try {
-      registry.updateItemDescription(itemId, memberId, description);
+      registry.updateItemDescription(itemId, description);
       console.presentMessage("Description was successfully updated!");
       doUpdateItemMenu(itemId, memberId);
     } catch (Exception e) {
@@ -320,7 +344,7 @@ public class User {
   private void updateItemType(String itemId, String memberId) {
     ItemType itemType = getItemType();
     try {
-      registry.updateItemType(itemId, memberId, itemType);
+      registry.updateItemType(itemId, itemType);
       console.presentMessage("Type was successfully updated!");
       doUpdateItemMenu(itemId, memberId);
     } catch (Exception e) {
@@ -332,7 +356,7 @@ public class User {
   private void updateCostPerDay(String itemId, String memberId) {
     int costPerDay = getCostPerDay();
     try {
-      registry.updateItemCostPerDay(itemId, memberId, costPerDay);
+      registry.updateItemCostPerDay(itemId, costPerDay);
       console.presentMessage("Cost per day was successfully updated!");
       doUpdateItemMenu(itemId, memberId);
     } catch (Exception e) {
@@ -391,6 +415,41 @@ public class User {
     }
 
     return cost;  
+  }
+
+  private String getLenderId() {
+    String lenderId = null;
+    while (lenderId == null) {
+      try {
+        lenderId = console.getLenderId();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    return lenderId;
+  }
+
+  private Interval getInterval() {
+    Day startDay = null;
+    while (startDay == null) {
+      try {
+        startDay = console.getStartDay();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    Day endDay = null;
+    while (endDay == null) {
+      try {
+        endDay = console.getEndDay();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }
+    }
+
+    return new Interval(startDay, endDay);
   }
 
   private void updateMemberEmail(String id) {
@@ -475,7 +534,7 @@ public class User {
     }
 
     try {
-      Item item = registry.getItem(itemId, ownerId);
+      Item item = registry.getItem(itemId);
       doItemMenu(item.getId(), ownerId);
     } catch (Exception e) {
       console.presentErrorMessage(e.getMessage());

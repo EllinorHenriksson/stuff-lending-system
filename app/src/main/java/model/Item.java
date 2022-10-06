@@ -100,8 +100,7 @@ public class Item {
     owner.addCredits(totalCost);
   }
 
-  public Contract createContract(Member lender, Interval interval) throws Exception {
-
+  public Contract createContract(Member lender, Interval interval) {
     if (lender == null) {
       throw new IllegalArgumentException("Lender must be specified.");
     }
@@ -114,15 +113,15 @@ public class Item {
       transferCredits(interval, lender);
       return new Contract(this, interval, lender);
     } else {
-      throw new Exception("Item not available during the specified interval.");
+      throw new IllegalArgumentException("Item not available during the specified interval.");
     }
 
   }
 
-  private void transferCredits(Interval interval, Member lender) throws Exception {
+  private void transferCredits(Interval interval, Member lender) {
     int totalCost = this.getCostPerDay() * interval.getNumberOfDays();
-    if (lender.getCredits() >= totalCost) {
-      throw new Exception("The lender doesn't have enough credits to lend the item.");
+    if (lender.getCredits() < totalCost) {
+      throw new IllegalArgumentException("The lender doesn't have enough credits to lend the item.");
     }
 
     lender.removeCredits(totalCost);
@@ -156,5 +155,10 @@ public class Item {
       }
     }
     return true;
+  }
+
+  public void establishContract(Member lender, Interval interval) {
+    Contract contract = createContract(lender, interval);
+    addContract(contract);
   }
 }

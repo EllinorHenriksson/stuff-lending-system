@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import model.Contract;
 import model.Day;
+import model.Interval;
 import model.Item;
 import model.Member;
 import model.ItemType;
@@ -259,6 +260,25 @@ public class Console {
     return costPerDay;  
   }
 
+  public String getLenderId() {
+    System.out.print("\nEnter lender ID: ");
+    String lenderId = scan.nextLine();
+    validator.validateId(lenderId);
+    return lenderId;
+  }
+
+  public Day getStartDay() {
+    System.out.print("\nEnter start day: ");
+    int startDay = Integer.parseInt(scan.nextLine());
+    return new Day(startDay); 
+  }
+
+  public Day getEndDay() {
+    System.out.print("\nEnter end day: ");
+    int endDay = Integer.parseInt(scan.nextLine());
+    return new Day(endDay); 
+  }
+
   public void presentMembersSimple(ArrayList<Member> members) {
     System.out.println("\n*** Members (simple) ***");
 
@@ -286,21 +306,26 @@ public class Console {
     System.out.println("Phone number: " + member.getPhoneNumber());
     System.out.println("Items: ");
     for (Item i : member.getItems()) {
-      System.out.println("\n  --- " + i.getName() + " ---");
-      System.out.println("  Id: " + i.getId());
-      System.out.println("  Description: " + i.getDescription());
-      System.out.println("  Category: " + i.getType().name().toLowerCase());
-      System.out.println("  Cost per day: " + i.getCostPerDay() + " credits");
-      System.out.println("  Contracts: ");
-      for (Contract c : i.getContracts()) {
-        System.out.println("    Start day: " + c.getInterval().getStartDay().getDayNumber());
-        System.out.println("    End day: " + c.getInterval().getEndDay().getDayNumber());
-        System.out.println("    Lender: ");
-        System.out.println("      ID: " + c.getLender().getId());
-        System.out.println("      Name: " + c.getLender().getName());
-        System.out.println("      Email: " + c.getLender().getEmail());
-        System.out.println("      Phone number: " + c.getLender().getPhoneNumber());
-      }
+      showItemInfo(i);
+    }
+  }
+
+  public void showItemInfo(Item item) {
+    System.out.println("\n  --- " + item.getName() + " ---");
+    System.out.println("  Id: " + item.getId());
+    System.out.println("  Description: " + item.getDescription());
+    System.out.println("  Category: " + item.getType().name().toLowerCase());
+    System.out.println("  Cost per day: " + item.getCostPerDay() + " credits");
+    System.out.println("  Contracts: ");
+    for (Contract c : item.getContracts()) {
+      System.out.println("    ---------");
+      System.out.println("    Start day: " + c.getInterval().getStartDay().getDayNumber());
+      System.out.println("    End day: " + c.getInterval().getEndDay().getDayNumber());
+      System.out.println("    Lender: ");
+      System.out.println("      ID: " + c.getLender().getId());
+      System.out.println("      Name: " + c.getLender().getName());
+      System.out.println("      Email: " + c.getLender().getEmail());
+      System.out.println("      Phone number: " + c.getLender().getPhoneNumber());
     }
   }
 }

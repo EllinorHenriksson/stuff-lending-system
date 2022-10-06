@@ -131,41 +131,52 @@ public class Registry {
     }
   }
 
-  public void updateItemName(String itemId, String memberId, String newName) {
-    Member member = getActualMember(memberId);
+  public void updateItemName(String itemId, String newName) {
+    Member member = findOwnerOfItem(itemId);
     member.updateItemName(itemId, newName);
   }
 
-  public void updateItemDescription(String itemId, String memberId, String newDescription) {
-    Member member = getActualMember(memberId);
+  public void updateItemDescription(String itemId, String newDescription) {
+    Member member = findOwnerOfItem(itemId);
     member.updateItemDescription(itemId, newDescription);
   }
 
-  public void updateItemType(String itemId, String memberId, ItemType newType) {
-    Member member = getActualMember(memberId);
+  public void updateItemType(String itemId, ItemType newType) {
+    Member member = findOwnerOfItem(itemId);
     member.updateItemType(itemId, newType);
   }
 
-  public void updateItemCostPerDay(String itemId, String memberId, int newCostPerDay) {
-    Member member = getActualMember(memberId);
+  public void updateItemCostPerDay(String itemId, int newCostPerDay) {
+    Member member = findOwnerOfItem(itemId);
     member.updateItemCostPerDay(itemId, newCostPerDay);
   }
 
   private Member getActualMember(String id) {
     Member member = null;
-    for (int i = 0; i < members.size(); i++) {
-      if (members.get(i).getId().equals(id)) {
-        member =  members.get(i);
+
+    for (Member m : members) {
+      if (m.getId().equals(id)) {
+        member = m;
       }
     }
+
     if (member == null) {
       throw new IllegalArgumentException("Could not find a member with the provided ID.");
     }
+
     return member;
   }
 
-  public Item getItem(String itemId, String ownerId) {
-    return getMember(ownerId).getItem(itemId);
+  public Item getItem(String itemId) {
+    Item item = null;
+    for (Member m : members) {
+      for (Item i : m.getItems()) {
+        if (i.getId().equals(itemId)) {
+          item = i;
+        }
+      }
+    }
+    return item;
   }
 
   public Item createItem(String name, String description, ItemType type, int costPerDay, Day currentDay) {
@@ -182,5 +193,23 @@ public class Registry {
   public void addItemToMember(Item item, String id) throws Exception {
     Member member = getActualMember(id);
     member.addItem(item);
+  }
+
+  public void addContractToItem(String itemId, Interval interval, String lenderId) {
+    Member owner = findOwnerOfItem(itemId);
+    Member lender = getActualMember(lenderId);
+    owner.establishContractForItem(itemId, interval, lender);
+  }
+
+  private Member findOwnerOfItem(String itemId) {
+    Member owner = null;
+    for (Member m : members) {
+      for (Item i : m.getItems()) {
+        if (i.getId().equals(itemId)) {
+          owner = m;
+        }
+      }
+    }
+    return owner;
   }
 }

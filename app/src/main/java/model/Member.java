@@ -168,4 +168,9 @@ public class Member {
     Item item = getActualItem(itemId);
     item.setCostPerDay(newCostPerDay);
   }
+
+  public void establishContractForItem(String itemId, Interval interval, Member lender) {
+    Item item = getActualItem(itemId);
+    item.establishContract(lender, interval);
+  }
 }
