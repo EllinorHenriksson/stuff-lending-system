@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.spotbugs" time="0" tests="18" errors="2" name="findbugs">
+<testsuite package="org.spotbugs" time="0" tests="19" errors="2" name="findbugs">
 <testcase time="0" name="view/Console.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Contract.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Registry.java" classname="FindBugs Issues">
@@ -25,10 +25,11 @@ This code stores a reference to an externally mutable object into the
   many situations.
 ----------------
 ]]></failure>
+</testcase><testcase time="0" name="view/UpdateMemberChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Validator.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="view/MainChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/User.java" classname="FindBugs Issues">
-<failure message="issues" ><![CDATA[lines: 19-167 
+<failure message="issues" ><![CDATA[lines: 20-272 
 quitProgram() invokes System.exit(...), which shuts down the entire virtual 
   machine 
 Method invokes System.exit(...) 

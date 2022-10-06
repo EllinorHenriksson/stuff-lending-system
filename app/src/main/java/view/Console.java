@@ -52,6 +52,16 @@ public class Console {
     System.out.println(menu);
   }
 
+  public void presentUpdateMemberMenu() {
+    String menu = "\n*** Update Member Menu ***\n"
+        + "name : Update name\n"
+        + "email : Update email\n"
+        + "phone : Update phone\n"
+        + "cancel : Back to member menu\n";
+
+    System.out.println(menu);
+  }
+
   public MainChoice getMainChoice() throws Exception {
     System.out.print("Enter menu choice: ");
     String choice = scan.nextLine();
@@ -109,6 +119,23 @@ public class Console {
     }
   }
 
+  public UpdateMemberChoice getUpdateMemberChoice() throws Exception {
+    String choice = scan.nextLine();
+
+    if (choice.equals("name")) {
+      return UpdateMemberChoice.NAME;
+    } else if (choice.equals("email")) {
+      return UpdateMemberChoice.EMAIL;
+    } else if (choice.equals("phone")) {
+      return UpdateMemberChoice.PHONE;
+    } else if (choice.equals("cancel")) {
+      return UpdateMemberChoice.CANCEL;
+    } else {
+      throw new Exception("Not a valid choice.");
+    }
+
+  }
+
   public void presentMessage(String message) {
     System.out.println("\n" + message + "\n");
   }
@@ -129,14 +156,14 @@ public class Console {
   }
 
   public String getEmail() {
-    System.out.print("Enter email: ");
+    System.out.print("\nEnter email: ");
     String email = scan.nextLine();
     validator.validateEmail(email);
     return email;
   }
 
   public String getPhoneNumber() {
-    System.out.print("Enter phone number: ");
+    System.out.print("\nEnter phone number: ");
     String phoneNumber = scan.nextLine();
     validator.validatePhoneNumber(phoneNumber);
     return phoneNumber;

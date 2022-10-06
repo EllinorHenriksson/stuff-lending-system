@@ -201,7 +201,7 @@ fi
 
 set -- \
         -classpath "$CLASSPATH" \
-        controller.App \
+        App \
         "$@"
 
 # Stop when "xargs" is not available.

@@ -1,5 +1,6 @@
 package controller;
 
+import java.security.spec.ECGenParameterSpec;
 import java.util.ArrayList;
 import model.DayCounter;
 import model.Member;
@@ -9,6 +10,7 @@ import view.Console;
 import view.ItemChoice;
 import view.MainChoice;
 import view.MemberChoice;
+import view.UpdateMemberChoice;
 
 public class User {
   private Registry registry;
@@ -72,6 +74,67 @@ public class User {
     }
   }
 
+  private void doMemberMenu(String id) {
+    MemberChoice choice = null;
+    while (choice == null) {
+      console.presentMemberMenu();
+      try {
+        choice = console.getMemberChoice();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }  
+    }
+
+    switch (choice) {
+      case DELETE: 
+        deleteMember(id);
+        break;
+      case UPDATE:
+        doUpdateMemberMenu(id);;
+        break;
+      case INFO:
+        // getMemberInfo(id);
+        break;
+      case ADD:
+        // addItem(id);
+        break;
+      case MAIN:
+        doMainMenu();
+        break;
+      default:
+        break;
+    }
+  }
+
+  private void doUpdateMemberMenu(String id) {
+    UpdateMemberChoice choice = null;
+    while (choice == null) {
+      console.presentUpdateMemberMenu();
+      try {
+        choice = console.getUpdateMemberChoice();
+      } catch (Exception e) {
+        console.presentErrorMessage(e.getMessage());
+      }  
+    }
+
+    switch (choice) {
+      case NAME: 
+        updateMemberName(id);
+        break;
+      case EMAIL:
+        updateMemberEmail(id);
+        break;
+      case PHONE:
+        updatePhoneNumber(id);
+        break;
+      case CANCEL:
+        doMemberMenu(id);
+        break;
+      default:
+        break;
+    }
+  }
+
   private void showSimpleList() {
     console.presentMembersSimple(registry.getMembers());
     doMainMenu();
@@ -98,6 +161,30 @@ public class User {
     }
   }
 
+  private void deleteMember(String id) {
+    try {
+      registry.removeMember(id);
+      console.presentMessage("Member was successfully deleted!");
+      doMainMenu();
+    } catch (Exception e) {
+      // console.presentErrorMessage(e.getMessage());
+      System.out.println(e);
+      doMemberMenu(id);
+    }
+  }
+
+  private void updateMemberName(String id) {
+    String name = getMemberName();
+    try {
+      registry.updateName(id, name);
+      console.presentMessage("Name was successfully updated!");
+      doUpdateMemberMenu(id);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doMemberMenu(id);
+    }
+  }
+
   private String getMemberName() {
     String name = null;
     while (name == null) {
@@ -111,6 +198,18 @@ public class User {
     return name;
   }
 
+  private void updateMemberEmail(String id) {
+    String email = getEmail();
+    try {
+      registry.updateEmail(id, email);
+      console.presentMessage("Email was successfully updated!");
+      doUpdateMemberMenu(id);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doMemberMenu(id);
+    }
+  }
+
   private String getEmail() {
     String email = null;
     while (email == null) {
@@ -122,6 +221,18 @@ public class User {
     }
 
     return email;
+  }
+
+  private void updatePhoneNumber(String id) {
+    String phoneNumber = getPhoneNumber();
+    try {
+      registry.updatePhoneNumber(id, phoneNumber);
+      console.presentMessage("Phone number was successfully updated!");
+      doUpdateMemberMenu(id);
+    } catch (Exception e) {
+      console.presentErrorMessage(e.getMessage());
+      doMemberMenu(id);
+    }
   }
 
   private String getPhoneNumber() {
@@ -150,7 +261,7 @@ public class User {
 
     try {
       Member member = registry.getMember(id);
-      doMemberMenu(member);
+      doMemberMenu(member.getId());
     } catch (Exception e) {
       console.presentErrorMessage(e.getMessage());
       doMainMenu();
@@ -161,10 +272,6 @@ public class User {
     dayCounter.advanceDay();
     console.presentCurrentDay(dayCounter.getCurrentDay());
     doMainMenu();
-  }
-
-  private void doMemberMenu(Member member) {
-    // To do
   }
 
   private void quitProgram() {

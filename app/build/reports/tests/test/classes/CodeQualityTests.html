@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.985s</div>
+<div class="counter">0.937s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,15 +76,13 @@
 <a name="codeQuality()"></a>
 <h3 class="failures">codeQuality()</h3>
 <span class="code">
-<pre>org.opentest4j.AssertionFailedError: Max amount (5) of quality issues exceeded:65 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+<pre>org.opentest4j.AssertionFailedError: Max amount (5) of quality issues exceeded:75 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
 	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:193)
 	at app//CodeQualityTests.codeQuality(CodeQualityTests.java:70)
-	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
 	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
 	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
 	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
@@ -112,7 +110,7 @@
 	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@18.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
 	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -122,7 +120,7 @@
 	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@18.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
 	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -148,10 +146,8 @@
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
@@ -182,7 +178,7 @@
 </thead>
 <tr>
 <td class="failures">codeQuality()</td>
-<td class="failures">0.985s</td>
+<td class="failures">0.937s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -190,24 +186,17 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/App.java
-text:line: 4 column: column:1 
+<pre>3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/User.java
+text:line: 14 column: column:1 
 Missing a Javadoc comment.
 
-text:line: 5 column: column:3 
+text:line: 20 column: column:3 
 Missing a Javadoc comment.
 
-3 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/User.java
-text:line: 13 column: column:1 
+text:line: 27 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 19 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 26 column: column:3 
-Missing a Javadoc comment.
-
-4 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Contract.java
+4 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Contract.java
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
@@ -220,19 +209,15 @@ Line is longer than 120 characters (found 125).
 text:line: 46 column: column:3 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Day.java
-text:line: 3 column: column:1 
-Missing a Javadoc comment.
-
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/DayCounter.java
-text:line: 3 column: column:1 
-Missing a Javadoc comment.
-
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/IdGenerator.java
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/IdGenerator.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
-4 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Interval.java
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Type.java
+text:line: 3 column: column:1 
+Missing a Javadoc comment.
+
+4 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Interval.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
@@ -245,7 +230,101 @@ Missing a Javadoc comment.
 text:line: 62 column: column:3 
 Missing a Javadoc comment.
 
-10 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Item.java
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/DayCounter.java
+text:line: 3 column: column:1 
+Missing a Javadoc comment.
+
+6 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Validator.java
+text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+text:line: 14 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 21 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 28 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 41 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 47 column: column:3 
+Missing a Javadoc comment.
+
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Day.java
+text:line: 3 column: column:1 
+Missing a Javadoc comment.
+
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/Persistence.java
+text:line: 7 column: column:1 
+Missing a Javadoc comment.
+
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/IfPersistence.java
+text:line: 6 column: column:1 
+Missing a Javadoc comment.
+
+6 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Member.java
+text:line: 6 column: column:1 
+Missing a Javadoc comment.
+
+text:line: 18 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 28 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 32 column: 
+Line is longer than 120 characters (found 127).
+
+text:line: 87 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 102 column: column:3 
+Missing a Javadoc comment.
+
+13 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Registry.java
+text:line: 5 column: column:1 
+Missing a Javadoc comment.
+
+text:line: 15 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 33 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 42 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 58 column: 
+Line is longer than 120 characters (found 125).
+
+text:line: 61 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 104 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 106 column: column:7 
+'if' has incorrect indentation level 6, expected level should be 4.
+
+text:line: 107 column: column:9 
+'if' child has incorrect indentation level 8, expected level should be 6.
+
+text:line: 108 column: column:7 
+'if rcurly' has incorrect indentation level 6, expected level should be 4.
+
+text:line: 109 column: column:9 
+'else' child has incorrect indentation level 8, expected level should be 6.
+
+text:line: 110 column: column:7 
+'else rcurly' has incorrect indentation level 6, expected level should be 4.
+
+text:line: 113 column: column:3 
+Missing a Javadoc comment.
+
+10 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Item.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
@@ -276,76 +355,19 @@ Missing a Javadoc comment.
 text:line: 136 column: column:3 
 Missing a Javadoc comment.
 
-6 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
-text:line: 6 column: column:1 
-Missing a Javadoc comment.
-
-text:line: 18 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 29 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 33 column: 
-Line is longer than 120 characters (found 127).
-
-text:line: 88 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 103 column: column:3 
-Missing a Javadoc comment.
-
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/persistence/IfPersistence.java
-text:line: 6 column: column:1 
-Missing a Javadoc comment.
-
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/persistence/Persistence.java
-text:line: 7 column: column:1 
-Missing a Javadoc comment.
-
-9 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Registry.java
-text:line: 5 column: column:1 
-Missing a Javadoc comment.
-
-text:line: 15 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 33 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 42 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 56 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 67 column: 
-Line is longer than 120 characters (found 127).
-
-text:line: 71 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 109 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 128 column: column:3 
-Missing a Javadoc comment.
-
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Type.java
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/ItemChoice.java
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-3 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Validator.java
-text:line: 5 column: column:1 
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/MemberChoice.java
+text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-text:line: 35 column: column:3 
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/MainChoice.java
+text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-text:line: 41 column: column:3 
-Missing a Javadoc comment.
-
-13 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Console.java
+15 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Console.java
 text:line: 11 column: column:1 
 Missing a Javadoc comment.
 
@@ -361,40 +383,45 @@ Missing a Javadoc comment.
 text:line: 55 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 75 column: column:3 
+text:line: 65 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 93 column: column:3 
+text:line: 86 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 119 column: column:3 
+text:line: 104 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 126 column: column:3 
+text:line: 122 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 133 column: column:3 
+text:line: 151 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 141 column: column:3 
+text:line: 158 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 149 column: column:3 
+text:line: 165 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 162 column: column:3 
+text:line: 173 column: column:3 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/ItemChoice.java
+text:line: 181 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 195 column: column:3 
+Missing a Javadoc comment.
+
+1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/UpdateMemberChoice.java
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/MainChoice.java
-text:line: 3 column: column:1 
+2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/App.java
+text:line: 4 column: column:1 
 Missing a Javadoc comment.
 
-1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/MemberChoice.java
-text:line: 3 column: column:1 
+text:line: 5 column: column:3 
 Missing a Javadoc comment.
 
 0 FindBugs Issues in view/Console.java
@@ -418,10 +445,11 @@ This code stores a reference to an externally mutable object into the internal r
   would compromise security or other important properties, you will need to do something different. 
   Storing a copy of the object is better approach in many situations.
 
+0 FindBugs Issues in view/UpdateMemberChoice.java
 0 FindBugs Issues in model/Validator.java
 0 FindBugs Issues in view/MainChoice.java
 1 FindBugs Issues in controller/User.java
-text:lines: 19-167 
+text:lines: 20-272 
 quitProgram() invokes System.exit(...), which shuts down the entire virtual machine 
 Method invokes System.exit(...) 
 Invoking System.exit shuts down the entire Java virtual machine. This should only been done when it 
@@ -442,7 +470,7 @@ Invoking System.exit shuts down the entire Java virtual machine. This should onl
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 5 okt. 2022 17:07:58</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 6 okt. 2022 10:13:09</p>
 </div>
 </div>
 </body>

@@ -39,33 +39,14 @@ public class Registry {
     members.add(member);
   }
 
-  public void removeMember(String id) {
-    boolean isRemoved = false;
-
-    for (Member m : members) {
-      if (m.getId().equals(id)) {
-        isRemoved = members.remove(m);
-      }
-    }
-
-    if (!isRemoved) {
-      throw new IllegalArgumentException("Member was not found.");
-    }
+  public void removeMember(String id) throws Exception {
+    Member memberToRemove = getActualMember(id);
+    members.remove(memberToRemove);
   }
 
   public Member getMember(String id) throws Exception {
-    Member member = null;
-    for (int i = 0; i < members.size(); i++) {
-      if (members.get(i).getId().equals(id)) {
-        member =  members.get(i);
-      }
-    }
-
-    if (member == null) {
-      throw new Exception("Could not find a member with the provided ID.");
-    } else {
-      return new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId(), member.getCreationDay());
-    }
+    Member member = getActualMember(id);
+    return new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId(), member.getCreationDay());
   }
 
   public ArrayList<Member> getMembers() {
@@ -106,41 +87,39 @@ public class Registry {
     return result;
   }
 
-  public void updateEmail(String memberId, String newEmail) throws Exception {
-    Member member = null;
-    for (int i = 0; i < members.size(); i++) {
-      if (members.get(i).getId().equals(memberId)) {
-        member =  members.get(i);
-      }
-    }
+  public void updateName(String memberId, String newName) throws Exception {
+    Member member = getActualMember(memberId);
+    member.setName(newName);
+  }
 
-    if (member == null) {
-      throw new Exception("Could not find a member with the provided ID.");
-    } else {
+  public void updateEmail(String memberId, String newEmail) throws Exception {
+    Member member = getActualMember(memberId);
       if (isEmailUnique(newEmail)) {
         member.setEmail(newEmail);
       } else {
         throw new Exception("Email must be unique.");
       }
-    }
   }
 
   public void updatePhoneNumber(String memberId, String newPhoneNumber) throws Exception {
+    Member member = getActualMember(memberId);
+    if (isPhoneNumberUnique(newPhoneNumber)) {
+      member.setPhoneNumber(newPhoneNumber);
+    } else {
+      throw new Exception("Phone number must be unique.");
+    }
+  }
+
+  private Member getActualMember(String id) throws Exception {
     Member member = null;
     for (int i = 0; i < members.size(); i++) {
-      if (members.get(i).getId().equals(memberId)) {
+      if (members.get(i).getId().equals(id)) {
         member =  members.get(i);
       }
     }
-
     if (member == null) {
       throw new Exception("Could not find a member with the provided ID.");
-    } else {
-      if (isPhoneNumberUnique(newPhoneNumber)) {
-        member.setPhoneNumber(newPhoneNumber);
-      } else {
-        throw new Exception("Phone number must be unique.");
-      }
     }
+    return member;
   }
 }
