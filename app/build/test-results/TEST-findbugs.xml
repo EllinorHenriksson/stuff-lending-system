@@ -1,32 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.spotbugs" time="0" tests="22" errors="5" name="findbugs">
+<testsuite package="org.spotbugs" time="0" tests="28" errors="12" name="findbugs">
 <testcase time="0" name="view/Console.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="TestApp.java" classname="FindBugs Issues">
-<failure message="issues" ><![CDATA[lines: 8-30 
-main(String[]) might ignore java.lang.Exception 
-Method might ignore exception 
-This method might ignore an exception. In general, exceptions should be 
-  handled or reported in some way, or they should be thrown out of the 
-  method.
-----------------
-]]></failure>
-</testcase><testcase time="0" name="model/Contract.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Registry.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="view/MemberChoice.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="view/UpdateItemChoice.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="model/Interval.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="model/Member.java" classname="FindBugs Issues">
-<failure message="issues" ><![CDATA[lines: 15-181 
-Unread field: idGenerator 
-Unread field 
-This field is never read. Consider removing it from the class.
+</testcase><testcase time="0" name="view/menuChoices/UpdateItemChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="controller/menus/MemberMenu.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 12-123 
+new controller.menus.MemberMenu(MainMenu, Registry, DayCounter) may expose 
+  internal representation by storing an externally mutable object into 
+  MemberMenu.mainMenu 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+lines: 12-123 
+new controller.menus.MemberMenu(MainMenu, Registry, DayCounter) may expose 
+  internal representation by storing an externally mutable object into 
+  MemberMenu.registry 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
 ----------------
 ]]></failure>
+</testcase><testcase time="0" name="view/menuChoices/MemberChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/Input.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Day.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/DayCounter.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="App.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="model/Type.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="view/ItemChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="controller/menus/UpdateItemMenu.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 10-99 
+new controller.menus.UpdateItemMenu(ItemMenu, Registry) may expose internal 
+  representation by storing an externally mutable object into 
+  UpdateItemMenu.itemMenu 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+lines: 10-99 
+new controller.menus.UpdateItemMenu(ItemMenu, Registry) may expose internal 
+  representation by storing an externally mutable object into 
+  UpdateItemMenu.registry 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="controller/App.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="controller/menus/DataFetcher.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="controller/menus/MainMenu.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 10-112 
+quitProgram() invokes System.exit(...), which shuts down the entire virtual 
+  machine 
+Method invokes System.exit(...) 
+Invoking System.exit shuts down the entire Java virtual machine. This 
+  should only been done when it is appropriate. Such calls make it hard or 
+  impossible for your code to be invoked by other code. Consider throwing a 
+  RuntimeException instead.
+----------------
+lines: 10-112 
+new controller.menus.MainMenu(Registry, DayCounter) may expose internal 
+  representation by storing an externally mutable object into 
+  MainMenu.registry 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="view/menuChoices/MainChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/IdGenerator.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/menuChoices/UpdateMemberChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/Contract.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/Interval.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/Output.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="controller/menus/ItemMenu.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 10-85 
+new controller.menus.ItemMenu(MemberMenu, Registry) may expose internal 
+  representation by storing an externally mutable object into 
+  ItemMenu.memberMenu 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+lines: 10-85 
+new controller.menus.ItemMenu(MemberMenu, Registry) may expose internal 
+  representation by storing an externally mutable object into 
+  ItemMenu.registry 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="model/Member.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/menuChoices/ItemChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/ItemType.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Item.java" classname="FindBugs Issues">
 <failure message="issues" ><![CDATA[lines: 14-162 
@@ -42,29 +140,41 @@ This code stores a reference to an externally mutable object into the
   many situations.
 ----------------
 ]]></failure>
-</testcase><testcase time="0" name="view/UpdateMemberChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Validator.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="view/MainChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/User.java" classname="FindBugs Issues">
-<failure message="issues" ><![CDATA[lines: 27-551 
-quitProgram() invokes System.exit(...), which shuts down the entire virtual 
-  machine 
-Method invokes System.exit(...) 
-Invoking System.exit shuts down the entire Java virtual machine. This 
-  should only been done when it is appropriate. Such calls make it hard or 
-  impossible for your code to be invoked by other code. Consider throwing a 
-  RuntimeException instead.
-----------------
-lines: 27-551 
-Switch statement found in doMemberMenu(String) where one case falls through 
-  to the next case 
-Switch statement found where one case falls through to the next case 
-This method contains a switch statement where one case branch will fall 
-  through to the next case. Usually you need to end this case with a break 
-  or return.
-----------------
-]]></failure>
 </testcase><testcase time="0" name="model/persistence/IfPersistence.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/persistence/Persistence.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="model/IdGenerator.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="controller/menus/UpdateMemberMenu.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 9-85 
+new controller.menus.UpdateMemberMenu(MemberMenu, Registry, DayCounter) may 
+  expose internal representation by storing an externally mutable object 
+  into UpdateMemberMenu.memberMenu 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+lines: 9-85 
+new controller.menus.UpdateMemberMenu(MemberMenu, Registry, DayCounter) may 
+  expose internal representation by storing an externally mutable object 
+  into UpdateMemberMenu.registry 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+lines: 9-85 
+Unread field: dayCounter 
+Unread field 
+This field is never read. Consider removing it from the class.
+----------------
+]]></failure>
 </testcase></testsuite>

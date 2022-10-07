@@ -56,7 +56,7 @@ public class Interval {
   }
 
   public int getNumberOfDays() {
-    return endDay.getDayNumber() - startDay.getDayNumber();
+    return endDay.getDayNumber() - startDay.getDayNumber() + 1;
   }
 
   public boolean isOverlappingWith(Interval interval) {

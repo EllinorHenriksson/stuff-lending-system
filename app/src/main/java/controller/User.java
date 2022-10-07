@@ -24,15 +24,8 @@ public class User {
   }
 
   public void startProgram() {
-    loadMembersToRegistry();
+    persistence.loadDataToRegistry(registry);
     console.printCurrentDay(dayCounter.getCurrentDay());
     mainMenu.doMainMenu();
-  }
-
-  private void loadMembersToRegistry() {
-    ArrayList<Member> members = persistence.loadData();
-    for (Member m : members) {
-      registry.addMember(m);
-    }
   }
 }

@@ -116,6 +116,7 @@ public class Output {
     System.out.println("ID: " + member.getId());
     System.out.println("Email: " + member.getEmail());
     System.out.println("Phone number: " + member.getPhoneNumber());
+    System.out.println("Credits: " + member.getCredits());
     System.out.println("Items: ");
     for (Item i : member.getItems()) {
       printItemInfo(i);

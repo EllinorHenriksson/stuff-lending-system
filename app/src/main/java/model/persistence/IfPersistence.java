@@ -1,10 +1,9 @@
 package model.persistence;
 
-import java.util.ArrayList;
-import model.Member;
+import model.Registry;
 
 public interface IfPersistence {
-  ArrayList<Member> loadData();
+  public void loadDataToRegistry(Registry registry);
 
-  void saveData(ArrayList<Member> members);
+  public void saveDataFromRegistry(Registry registry);
 }
