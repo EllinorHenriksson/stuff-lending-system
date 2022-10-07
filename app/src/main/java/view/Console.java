@@ -8,6 +8,11 @@ import model.Item;
 import model.ItemType;
 import model.Member;
 import model.Validator;
+import view.menuChoices.ItemChoice;
+import view.menuChoices.MainChoice;
+import view.menuChoices.MemberChoice;
+import view.menuChoices.UpdateItemChoice;
+import view.menuChoices.UpdateMemberChoice;
 
 public class Console {
   private Scanner scan;

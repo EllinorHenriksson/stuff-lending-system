@@ -1,4 +1,4 @@
-package view;
+package view.menuChoices;
 
 public enum MainChoice {
     SIMPLE,

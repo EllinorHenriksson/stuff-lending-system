@@ -1,4 +1,4 @@
-import controller.User;
+package controller;
 import model.persistence.Persistence;
 
 public class App {
