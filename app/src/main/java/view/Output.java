@@ -15,7 +15,7 @@ public class Output {
         + "add : Add new member\n"
         + "select : Select a member\n"
         + "time : Advance time\n"
-        + "quit : Quit the program\n";
+        + "quit : Quit the program";
 
     System.out.println(menu);
   }
@@ -27,7 +27,7 @@ public class Output {
         + "info : Show member info\n"
         + "add : Add item to member\n"
         + "select : Select item\n"
-        + "main : Back to main menu\n";
+        + "main : Back to main menu";
 
     System.out.println(menu);
   }
@@ -38,7 +38,7 @@ public class Output {
         + "update : Update item info\n"
         + "info : Show item info\n"
         + "contract : Establish contract\n"
-        + "member : Back to member menu\n";
+        + "member : Back to member menu";
 
     System.out.println(menu);
   }
@@ -48,7 +48,7 @@ public class Output {
         + "name : Update name\n"
         + "email : Update email\n"
         + "phone : Update phone\n"
-        + "cancel : Back to member menu\n";
+        + "cancel : Back to member menu";
 
     System.out.println(menu);
   }
@@ -56,20 +56,20 @@ public class Output {
   public void printUpdateItemMenu() {
     String menu = "\n*** Update Item Menu ***\n"
         + "name : Update name\n"
-        + "desc : Update description\n"
+        + "description : Update description\n"
         + "type : Update type\n"
         + "cost : Update cost per day\n"
-        + "cancel : Back to item menu\n";
+        + "cancel : Back to item menu";
 
     System.out.println(menu);
   }
 
   public void printMessage(String message) {
-    System.out.println("\n" + message + "\n");
+    System.out.println("\n" + message);
   }
 
   public void printErrorMessage(String message) {
-    System.out.println("\nError: " + message + "\n");
+    System.out.println("\nError: " + message);
   }
 
   public void printItemInfo(Item item) {

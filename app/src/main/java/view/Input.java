@@ -17,7 +17,7 @@ public class Input {
   private Validator validator = new Validator();
 
   public MainChoice getMainChoice() throws Exception {
-    System.out.print("Enter menu choice: ");
+    System.out.print("\nEnter menu choice: ");
     String choice = scan.nextLine();
 
     if (choice.equals("simple")) {
@@ -38,6 +38,7 @@ public class Input {
   }
 
   public MemberChoice getMemberChoice() throws Exception {
+    System.out.print("\nEnter menu choice: ");
     String choice = scan.nextLine();
 
     if (choice.equals("delete")) {
@@ -58,6 +59,7 @@ public class Input {
   }
 
   public ItemChoice getItemChoice() throws Exception {
+    System.out.print("\nEnter menu choice: ");
     String choice = scan.nextLine();
 
     if (choice.equals("delete")) {
@@ -76,6 +78,7 @@ public class Input {
   }
 
   public UpdateMemberChoice getUpdateMemberChoice() throws Exception {
+    System.out.print("\nEnter menu choice: ");
     String choice = scan.nextLine();
 
     if (choice.equals("name")) {
@@ -92,11 +95,12 @@ public class Input {
   }
 
   public UpdateItemChoice getUpdateItemChoice() throws Exception {
+    System.out.print("\nEnter menu choice: ");
     String choice = scan.nextLine();
 
     if (choice.equals("name")) {
       return UpdateItemChoice.NAME;
-    } else if (choice.equals("desc")) {
+    } else if (choice.equals("description")) {
       return UpdateItemChoice.DESCRIPTION;
     } else if (choice.equals("type")) {
       return UpdateItemChoice.TYPE;
@@ -135,6 +139,18 @@ public class Input {
     String id = scan.nextLine();
     validator.validateId(id);
     return id;
+  }
+
+  public int getNumberOfDays() throws Exception {
+    System.out.print("\nEnter number of days: ");
+    int numberOfDays = 0;
+    try {
+      numberOfDays = Integer.parseInt(scan.nextLine());
+    } catch (Exception e) {
+      throw new Exception("Number of days must be a number.");
+    }
+    validator.checkPositive(numberOfDays);
+    return numberOfDays;
   }
 
   public String getItemId() {
@@ -183,7 +199,7 @@ public class Input {
       throw new Exception("Cost per day must be a number.");
     }
 
-    validator.validateCredits(costPerDay);
+    validator.checkPositive(costPerDay);
     return costPerDay;
   }
 

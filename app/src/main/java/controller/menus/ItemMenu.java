@@ -22,15 +22,7 @@ public class ItemMenu {
   }
 
   public void doItemMenu(String itemId, String memberId) {
-    ItemChoice choice = null;
-    while (choice == null) {
-      console.printItemMenu();
-      try {
-        choice = console.getItemChoice();
-      } catch (Exception e) {
-        console.printErrorMessage(e.getMessage());
-      }  
-    }
+    ItemChoice choice = dataFetcher.getItemChoice();
 
     switch (choice) {
       case DELETE: 
@@ -78,9 +70,13 @@ public class ItemMenu {
   private void establishContract(String itemId, String ownerId) {
     String lenderId = dataFetcher.getLenderId();
     Interval interval = dataFetcher.getInterval();
-
-    registry.addContractToItem(itemId, interval, lenderId);
-    console.printMessage("Contract was successfully established!");
-    doItemMenu(itemId, ownerId);
+    try {
+      registry.establishContractForItem(itemId, interval, lenderId);
+      console.printMessage("Contract was successfully established!");
+      doItemMenu(itemId, ownerId);
+    } catch (Exception e) {
+      console.printErrorMessage(e.getMessage());
+      doItemMenu(itemId, ownerId);    
+    }
   }
 }

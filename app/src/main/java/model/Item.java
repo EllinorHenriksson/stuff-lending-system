@@ -13,22 +13,14 @@ public class Item {
   private ArrayList<Contract> contracts;
   private Validator validator = new Validator();
 
-  public Item(String name, String description, Day creationDay, int costPerDay, ItemType type, String id) {
+  public Item(String name, String description, ItemType type, int costPerDay, String id, Day creationDay) {
     setName(name);
     setDescription(description);
-    setCreationDay(creationDay);
+    setType(type);
     setCostPerDay(costPerDay);
     setId(id);
-    setType(type);
+    setCreationDay(creationDay);
     contracts = new ArrayList<>();
-  }
-
-  public void setType(ItemType type) {
-    this.type = type;
-  }
-
-  public ItemType getType() {
-    return type;
   }
 
   public void setName(String name) {
@@ -53,15 +45,12 @@ public class Item {
     return description;
   }
 
-  private void setCreationDay(Day creationDay) {
-    if (creationDay == null) {
-      throw new IllegalArgumentException("The creation day must be specified.");
-    }
-    this.creationDay = creationDay;
+  public void setType(ItemType type) {
+    this.type = type;
   }
 
-  public Day getCreationDay() {
-    return new Day(creationDay.getDayNumber());
+  public ItemType getType() {
+    return type;
   }
 
   public void setCostPerDay(int costPerDay) {
@@ -82,6 +71,17 @@ public class Item {
 
   public String getId() {
     return id;
+  }
+
+  private void setCreationDay(Day creationDay) {
+    if (creationDay == null) {
+      throw new IllegalArgumentException("The creation day must be specified.");
+    }
+    this.creationDay = creationDay;
+  }
+
+  public Day getCreationDay() {
+    return new Day(creationDay.getDayNumber());
   }
 
   public void setOwner(Member owner) {

@@ -84,6 +84,10 @@ public class Console {
     return input.getMemberId();
   }
 
+  public int getNumberOfDays() throws Exception {
+    return input.getNumberOfDays();
+  }
+
   public String getItemId() {
     return input.getItemId();
   }
@@ -127,10 +131,6 @@ public class Console {
   public void printItemInfo(Item item) {
     output.printItemInfo(item);
   }
-
-
-
- 
 }
 
 

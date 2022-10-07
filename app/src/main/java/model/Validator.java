@@ -45,9 +45,9 @@ public class Validator {
     }
   }
 
-  public void validateCredits(int credits) {
-    if (credits <= 0) {
-      throw new IllegalArgumentException("Credits must be a positive number.");
+  public void checkPositive(int input) {
+    if (input <= 0) {
+      throw new IllegalArgumentException("Input must be a positive number.");
     }
   }
 

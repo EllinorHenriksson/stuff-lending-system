@@ -30,8 +30,8 @@ public class Interval {
       throw new IllegalArgumentException("End day must be specified.");
     }
 
-    if (endDay.getDayNumber() <= startDay.getDayNumber()) {
-      throw new IllegalArgumentException("End day must be later than start day.");
+    if (endDay.getDayNumber() < startDay.getDayNumber()) {
+      throw new IllegalArgumentException("End day must not be earlier than start day.");
     }
 
     this.endDay = endDay;

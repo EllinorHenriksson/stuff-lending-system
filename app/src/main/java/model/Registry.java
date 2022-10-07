@@ -3,16 +3,19 @@ package model;
 import java.util.ArrayList;
 
 public class Registry {
-  ArrayList<Member> members;
-  IdGenerator idGenerator;
   int idLength = 6;
+
+  IdGenerator idGenerator;
+  ArrayList<Member> members;
+  DayCounter dayCounter;
   
-  public Registry() {
-    members = new ArrayList<>();
+  public Registry(DayCounter dayCounter) {
     idGenerator = new IdGenerator(idLength);
+    members = new ArrayList<>();
+    this.dayCounter = dayCounter;
   }
 
-  public Member createMember(String name, String email, String phoneNumber, Day currentDay) {
+  public Member createMember(String name, String email, String phoneNumber) {
     if (!isEmailUnique(email)) {
       throw new IllegalArgumentException("Email must be unique.");
     }
@@ -27,7 +30,7 @@ public class Registry {
       isUnique = isMemberIdUnique(id);
     }
 
-    return new Member(name, email, phoneNumber, id, currentDay);
+    return new Member(name, email, phoneNumber, id, dayCounter.getCurrentDay());
   }
 
   public void addMember(Member member) {
@@ -180,14 +183,14 @@ public class Registry {
     return item;
   }
 
-  public Item createItem(String name, String description, ItemType type, int costPerDay, Day currentDay) {
+  public Item createItem(String name, String description, ItemType type, int costPerDay) {
     String id = "";
     Boolean isUnique = false; 
     while (!isUnique) {
       id = idGenerator.generateId();
       isUnique = isItemIdUnique(id);
     }
-    Item item = new Item(name, description, currentDay, costPerDay, type, id);
+    Item item = new Item(name, description, type, costPerDay, id, dayCounter.getCurrentDay());
     return item;
   }
 
@@ -196,7 +199,7 @@ public class Registry {
     member.addItem(item);
   }
 
-  public void addContractToItem(String itemId, Interval interval, String lenderId) {
+  public void establishContractForItem(String itemId, Interval interval, String lenderId) {
     Member owner = findOwnerOfItem(itemId);
     Member lender = getActualMember(lenderId);
     owner.establishContractForItem(itemId, interval, lender);

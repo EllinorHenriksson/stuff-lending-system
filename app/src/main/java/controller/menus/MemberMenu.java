@@ -17,27 +17,17 @@ public class MemberMenu {
   private ItemMenu itemMenu;
 
   private Registry registry;
-  private DayCounter dayCounter;
 
-  public MemberMenu(MainMenu mainMenu, Registry registry, DayCounter dayCounter) {
+  public MemberMenu(MainMenu mainMenu, Registry registry) {
     this.mainMenu = mainMenu;
     this.registry = registry;
-    this.dayCounter = dayCounter;
 
-    this.updateMemberMenu = new UpdateMemberMenu(this, registry, dayCounter);
+    this.updateMemberMenu = new UpdateMemberMenu(this, registry);
     this.itemMenu = new ItemMenu(this, registry);
   }
 
   public void doMemberMenu(String id) {
-    MemberChoice choice = null;
-    while (choice == null) {
-      console.printMemberMenu();
-      try {
-        choice = console.getMemberChoice();
-      } catch (Exception e) {
-        console.printErrorMessage(e.getMessage());
-      }  
-    }
+    MemberChoice choice = dataFetcher.getMemberChoice();
 
     switch (choice) {
       case DELETE: 
@@ -92,7 +82,7 @@ public class MemberMenu {
     int costPerDay = dataFetcher.getCostPerDay();
 
     try {
-      Item item = registry.createItem(name, description, type, costPerDay, dayCounter.getCurrentDay());
+      Item item = registry.createItem(name, description, type, costPerDay);
       registry.addItemToMember(item, id);
       console.printMessage("Item was successfully added!");
       doMemberMenu(id);
@@ -103,16 +93,8 @@ public class MemberMenu {
   }
 
   private void selectItem(String ownerId) {
-    String itemId = null;
-
-    while (itemId == null) {
-      try {
-        itemId = console.getItemId();
-      } catch (Exception e) {
-        console.printErrorMessage(e.getMessage());
-      }
-    }
-
+    String itemId = dataFetcher.getItemId();
+    
     try {
       Item item = registry.getItem(itemId);
       itemMenu.doItemMenu(item.getId(), ownerId);

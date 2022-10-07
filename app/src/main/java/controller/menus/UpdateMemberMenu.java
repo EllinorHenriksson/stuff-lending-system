@@ -1,6 +1,5 @@
 package controller.menus;
 
-import model.DayCounter;
 import model.Registry;
 import view.Console;
 import view.menuChoices.UpdateMemberChoice;
@@ -11,24 +10,14 @@ public class UpdateMemberMenu {
 
   private MemberMenu memberMenu;
   private Registry registry;
-  private DayCounter dayCounter;
 
-  public UpdateMemberMenu(MemberMenu memberMenu, Registry registry, DayCounter dayCounter) {
+  public UpdateMemberMenu(MemberMenu memberMenu, Registry registry) {
     this.memberMenu = memberMenu;
     this.registry = registry;
-    this.dayCounter = dayCounter;
   }
 
   public void doUpdateMemberMenu(String id) {
-    UpdateMemberChoice choice = null;
-    while (choice == null) {
-      console.printUpdateMemberMenu();
-      try {
-        choice = console.getUpdateMemberChoice();
-      } catch (Exception e) {
-        console.printErrorMessage(e.getMessage());
-      }  
-    }
+    UpdateMemberChoice choice = dataFetcher.getUpdateMemberChoice();
 
     switch (choice) {
       case NAME: 

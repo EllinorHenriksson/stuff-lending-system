@@ -26,7 +26,7 @@ public class Member {
 
   public Item getItem(String itemId) {
     Item item = getActualItem(itemId);
-    Item copy = new Item(item.getName(), item.getDescription(), item.getCreationDay(), item.getCostPerDay(), item.getType(), item.getId());
+    Item copy = new Item(item.getName(), item.getDescription(), item.getType(), item.getCostPerDay(), item.getId(), item.getCreationDay());
     copy.setOwner(item.getOwner());
 
     for (Contract c : item.getContracts()) {
@@ -152,23 +152,13 @@ public class Member {
   }
 
   public void addCredits(int credits) {
-    validator.validateCredits(credits);
+    validator.checkPositive(credits);
     this.credits += credits;
   }
 
   public void removeCredits(int credits) {
-    validator.validateCredits(credits);
+    validator.checkPositive(credits);
     this.credits -= credits;
-  }
-
-  private boolean isIdUnique(String id) {
-    Boolean result = true;
-    for (Item item : items) {
-      if (item.getId().equals(id)) {
-        result = false;
-      }
-    }
-    return result;
   }
 
   public void updateItemName(String itemId, String newName) {

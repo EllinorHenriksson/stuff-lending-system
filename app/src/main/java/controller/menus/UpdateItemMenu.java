@@ -1,6 +1,5 @@
 package controller.menus;
 
-import model.DayCounter;
 import model.ItemType;
 import model.Registry;
 import view.Console;
@@ -19,15 +18,7 @@ public class UpdateItemMenu {
   }
 
   public void doUpdateItemMenu(String itemId, String memberId) {
-    UpdateItemChoice choice = null;
-    while (choice == null) {
-      console.printUpdateItemMenu();
-      try {
-        choice = console.getUpdateItemChoice();
-      } catch (Exception e) {
-        console.printErrorMessage(e.getMessage());
-      }  
-    }
+    UpdateItemChoice choice = dataFetcher.getUpdateItemChoice();
 
     switch (choice) {
       case NAME: 

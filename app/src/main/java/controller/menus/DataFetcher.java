@@ -4,9 +4,84 @@ import model.Day;
 import model.Interval;
 import model.ItemType;
 import view.Console;
+import view.menuChoices.ItemChoice;
+import view.menuChoices.MainChoice;
+import view.menuChoices.MemberChoice;
+import view.menuChoices.UpdateItemChoice;
+import view.menuChoices.UpdateMemberChoice;
 
 public class DataFetcher {
   private Console console = new Console();
+
+  public MainChoice getMainChoice() {
+    MainChoice choice = null;
+    while (choice == null) {
+      console.printMainMenu();
+      try {
+        choice = console.getMainChoice();
+      } catch (Exception e) {
+        console.printErrorMessage(e.getMessage());
+      }  
+    }
+
+    return choice;
+  }
+
+  public MemberChoice getMemberChoice() {
+    MemberChoice choice = null;
+    while (choice == null) {
+      console.printMemberMenu();
+      try {
+        choice = console.getMemberChoice();
+      } catch (Exception e) {
+        console.printErrorMessage(e.getMessage());
+      }  
+    }
+
+    return choice;
+  }
+
+  public UpdateMemberChoice getUpdateMemberChoice() {
+    UpdateMemberChoice choice = null;
+    while (choice == null) {
+      console.printUpdateMemberMenu();
+      try {
+        choice = console.getUpdateMemberChoice();
+      } catch (Exception e) {
+        console.printErrorMessage(e.getMessage());
+      }  
+    }
+
+    return choice;
+  }
+
+  public ItemChoice getItemChoice() {
+    ItemChoice choice = null;
+    while (choice == null) {
+      console.printItemMenu();
+      try {
+        choice = console.getItemChoice();
+      } catch (Exception e) {
+        console.printErrorMessage(e.getMessage());
+      }  
+    }
+
+    return choice;
+  }
+
+  public UpdateItemChoice getUpdateItemChoice() {
+    UpdateItemChoice choice = null;
+    while (choice == null) {
+      console.printUpdateItemMenu();
+      try {
+        choice = console.getUpdateItemChoice();
+      } catch (Exception e) {
+        console.printErrorMessage(e.getMessage());
+      }  
+    }
+
+    return choice;
+  }
 
   public String getName() {
     String name = null;
@@ -45,6 +120,19 @@ public class DataFetcher {
     }
 
     return phoneNumber;
+  }
+
+  public int getNumberOfDays() {
+    int cost = 0;
+    while (cost == 0) {
+      try {
+        cost = console.getNumberOfDays();
+      } catch (Exception e) {
+        console.printErrorMessage(e.getMessage());
+      }
+    }
+
+    return cost;  
   }
 
   public String getDescription() {
@@ -86,17 +174,43 @@ public class DataFetcher {
     return cost;  
   }
 
-  public String getLenderId() {
-    String lenderId = null;
-    while (lenderId == null) {
+  public String getMemberId() {
+    String id = null;
+    while (id == null) {
       try {
-        lenderId = console.getLenderId();
+        id = console.getMemberId();
       } catch (Exception e) {
         console.printErrorMessage(e.getMessage());
       }
     }
 
-    return lenderId;
+    return id;
+  }
+
+  public String getLenderId() {
+    String id = null;
+    while (id == null) {
+      try {
+        id = console.getLenderId();
+      } catch (Exception e) {
+        console.printErrorMessage(e.getMessage());
+      }
+    }
+
+    return id;
+  }
+
+  public String getItemId() {
+    String id = null;
+    while (id == null) {
+      try {
+        id = console.getItemId();
+      } catch (Exception e) {
+        console.printErrorMessage(e.getMessage());
+      }
+    }
+
+    return id;
   }
 
   public Interval getInterval() {

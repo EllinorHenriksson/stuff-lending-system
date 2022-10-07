@@ -7,8 +7,8 @@ public class DayCounter {
     currentDay = new Day(0);
   }
 
-  public void advanceDay() {
-    currentDay = new Day(currentDay.getDayNumber() + 1);
+  public void advanceDay(int numberOfDays) {
+    currentDay = new Day(currentDay.getDayNumber() + numberOfDays);
   }
 
   public Day getCurrentDay() {

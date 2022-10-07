@@ -17,19 +17,11 @@ public class MainMenu {
   public MainMenu(Registry registry, DayCounter dayCounter) {
     this.registry = registry;
     this.dayCounter = dayCounter;
-    this.memberMenu = new MemberMenu(this, registry, dayCounter);
+    this.memberMenu = new MemberMenu(this, registry);
   }
 
   public void doMainMenu() {
-    MainChoice choice = null;
-    while (choice == null) {
-      console.printMainMenu();
-      try {
-        choice = console.getMainChoice();
-      } catch (Exception e) {
-        console.printErrorMessage(e.getMessage());
-      }  
-    }
+    MainChoice choice = dataFetcher.getMainChoice();
 
     switch (choice) {
       case SIMPLE: 
@@ -71,7 +63,7 @@ public class MainMenu {
     String phoneNumber = dataFetcher.getPhoneNumber();
 
     try {
-      Member member = registry.createMember(name, email, phoneNumber, dayCounter.getCurrentDay());
+      Member member = registry.createMember(name, email, phoneNumber);
       registry.addMember(member);
       console.printMessage("Member was successfully added!");
       doMainMenu();
@@ -82,15 +74,7 @@ public class MainMenu {
   }
   
   private void selectMember() {
-    String id = null;
-
-    while (id == null) {
-      try {
-        id = console.getMemberId();
-      } catch (Exception e) {
-        console.printErrorMessage(e.getMessage());
-      }
-    }
+    String id = dataFetcher.getMemberId();
 
     try {
       Member member = registry.getMember(id);
@@ -102,7 +86,8 @@ public class MainMenu {
   }
 
   private void advanceTime() {
-    dayCounter.advanceDay();
+    int numberOfDays = dataFetcher.getNumberOfDays();
+    dayCounter.advanceDay(numberOfDays);
     console.printCurrentDay(dayCounter.getCurrentDay());
     doMainMenu();
   }
