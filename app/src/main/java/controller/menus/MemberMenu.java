@@ -31,11 +31,11 @@ public class MemberMenu {
   public void doMemberMenu(String id) {
     MemberChoice choice = null;
     while (choice == null) {
-      console.presentMemberMenu();
+      console.printMemberMenu();
       try {
         choice = console.getMemberChoice();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }  
     }
 
@@ -66,10 +66,10 @@ public class MemberMenu {
   private void deleteMember(String id) {
     try {
       registry.removeMember(id);
-      console.presentMessage("Member was successfully deleted!");
+      console.printMessage("Member was successfully deleted!");
       mainMenu.doMainMenu();
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       doMemberMenu(id);
     }
   }
@@ -77,10 +77,10 @@ public class MemberMenu {
   private void showMemberInfo(String id) {
     try {
       Member member = registry.getMember(id);
-      console.showMemberInfo(member);
+      console.printMemberInfo(member);
       doMemberMenu(id);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       doMemberMenu(id);
     }
   }
@@ -94,10 +94,10 @@ public class MemberMenu {
     try {
       Item item = registry.createItem(name, description, type, costPerDay, dayCounter.getCurrentDay());
       registry.addItemToMember(item, id);
-      console.presentMessage("Item was successfully added!");
+      console.printMessage("Item was successfully added!");
       doMemberMenu(id);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       doMemberMenu(id);
     }
   }
@@ -109,7 +109,7 @@ public class MemberMenu {
       try {
         itemId = console.getItemId();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 
@@ -117,7 +117,7 @@ public class MemberMenu {
       Item item = registry.getItem(itemId);
       itemMenu.doItemMenu(item.getId(), ownerId);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       doMemberMenu(ownerId);
     }
   }

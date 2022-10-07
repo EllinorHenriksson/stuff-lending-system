@@ -23,11 +23,11 @@ public class MainMenu {
   public void doMainMenu() {
     MainChoice choice = null;
     while (choice == null) {
-      console.presentMainMenu();
+      console.printMainMenu();
       try {
         choice = console.getMainChoice();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }  
     }
 
@@ -56,12 +56,12 @@ public class MainMenu {
   }
 
   private void showSimpleList() {
-    console.presentMembersSimple(registry.getMembers());
+    console.printMembersSimple(registry.getMembers());
     doMainMenu();
   }
 
   private void showFullList() {
-    console.presentMembersFull(registry.getMembers());
+    console.printMembersFull(registry.getMembers());
     doMainMenu();
   }
 
@@ -73,10 +73,10 @@ public class MainMenu {
     try {
       Member member = registry.createMember(name, email, phoneNumber, dayCounter.getCurrentDay());
       registry.addMember(member);
-      console.presentMessage("Member was successfully added!");
+      console.printMessage("Member was successfully added!");
       doMainMenu();
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       doMainMenu();
     }
   }
@@ -88,7 +88,7 @@ public class MainMenu {
       try {
         id = console.getMemberId();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 
@@ -96,14 +96,14 @@ public class MainMenu {
       Member member = registry.getMember(id);
       memberMenu.doMemberMenu(member.getId());
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       doMainMenu();
     }
   }
 
   private void advanceTime() {
     dayCounter.advanceDay();
-    console.presentCurrentDay(dayCounter.getCurrentDay());
+    console.printCurrentDay(dayCounter.getCurrentDay());
     doMainMenu();
   }
 

@@ -14,7 +14,7 @@ public class DataFetcher {
       try {
         name = console.getName();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 
@@ -27,7 +27,7 @@ public class DataFetcher {
       try {
         email = console.getEmail();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 
@@ -40,7 +40,7 @@ public class DataFetcher {
       try {
         phoneNumber = console.getPhoneNumber();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 
@@ -53,7 +53,7 @@ public class DataFetcher {
       try {
         description = console.getDescription();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 
@@ -66,7 +66,7 @@ public class DataFetcher {
       try {
         type = console.getType();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 
@@ -79,7 +79,7 @@ public class DataFetcher {
       try {
         cost = console.getCostPerDay();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 
@@ -92,7 +92,7 @@ public class DataFetcher {
       try {
         lenderId = console.getLenderId();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 
@@ -105,7 +105,7 @@ public class DataFetcher {
       try {
         startDay = console.getStartDay();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 
@@ -114,7 +114,7 @@ public class DataFetcher {
       try {
         endDay = console.getEndDay();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }
     }
 

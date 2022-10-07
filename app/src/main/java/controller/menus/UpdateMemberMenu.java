@@ -22,11 +22,11 @@ public class UpdateMemberMenu {
   public void doUpdateMemberMenu(String id) {
     UpdateMemberChoice choice = null;
     while (choice == null) {
-      console.presentUpdateMemberMenu();
+      console.printUpdateMemberMenu();
       try {
         choice = console.getUpdateMemberChoice();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }  
     }
 
@@ -52,10 +52,10 @@ public class UpdateMemberMenu {
     String name = dataFetcher.getName();
     try {
       registry.updateMemberName(id, name);
-      console.presentMessage("Name was successfully updated!");
+      console.printMessage("Name was successfully updated!");
       doUpdateMemberMenu(id);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       memberMenu.doMemberMenu(id);
     }
   }
@@ -64,10 +64,10 @@ public class UpdateMemberMenu {
     String email = dataFetcher.getEmail();
     try {
       registry.updateMemberEmail(id, email);
-      console.presentMessage("Email was successfully updated!");
+      console.printMessage("Email was successfully updated!");
       doUpdateMemberMenu(id);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       memberMenu.doMemberMenu(id);
     }
   }
@@ -76,10 +76,10 @@ public class UpdateMemberMenu {
     String phoneNumber = dataFetcher.getPhoneNumber();
     try {
       registry.updateMemberPhoneNumber(id, phoneNumber);
-      console.presentMessage("Phone number was successfully updated!");
+      console.printMessage("Phone number was successfully updated!");
       doUpdateMemberMenu(id);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       memberMenu.doMemberMenu(id);
     }
   }

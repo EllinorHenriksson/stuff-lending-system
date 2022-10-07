@@ -1,4 +1,6 @@
 package controller;
+import java.util.Scanner;
+
 import model.persistence.Persistence;
 
 public class App {

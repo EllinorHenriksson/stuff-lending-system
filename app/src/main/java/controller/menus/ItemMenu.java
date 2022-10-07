@@ -24,11 +24,11 @@ public class ItemMenu {
   public void doItemMenu(String itemId, String memberId) {
     ItemChoice choice = null;
     while (choice == null) {
-      console.presentItemMenu();
+      console.printItemMenu();
       try {
         choice = console.getItemChoice();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }  
     }
 
@@ -56,10 +56,10 @@ public class ItemMenu {
   private void deleteItem(String itemId, String memberId) {
     try {
       registry.removeItemFromMember(itemId, memberId);
-      console.presentMessage("Item was successfully deleted!");
+      console.printMessage("Item was successfully deleted!");
       memberMenu.doMemberMenu(memberId);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       doItemMenu(itemId, memberId);
     }
   }
@@ -67,10 +67,10 @@ public class ItemMenu {
   private void showItemInfo(String itemId, String memberId) {
     try {
       Item item = registry.getItem(itemId);
-      console.showItemInfo(item);
+      console.printItemInfo(item);
       doItemMenu(itemId, memberId);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       doItemMenu(itemId, memberId);
     }
   }
@@ -80,7 +80,7 @@ public class ItemMenu {
     Interval interval = dataFetcher.getInterval();
 
     registry.addContractToItem(itemId, interval, lenderId);
-    console.presentMessage("Contract was successfully established!");
+    console.printMessage("Contract was successfully established!");
     doItemMenu(itemId, ownerId);
   }
 }

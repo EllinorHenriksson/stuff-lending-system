@@ -1,6 +1,7 @@
 package controller;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import controller.menus.MainMenu;
 import model.DayCounter;
@@ -24,7 +25,7 @@ public class User {
 
   public void startProgram() {
     loadMembersToRegistry();
-    console.presentCurrentDay(dayCounter.getCurrentDay());
+    console.printCurrentDay(dayCounter.getCurrentDay());
     mainMenu.doMainMenu();
   }
 

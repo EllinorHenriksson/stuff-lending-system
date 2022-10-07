@@ -21,11 +21,11 @@ public class UpdateItemMenu {
   public void doUpdateItemMenu(String itemId, String memberId) {
     UpdateItemChoice choice = null;
     while (choice == null) {
-      console.presentUpdateItemMenu();
+      console.printUpdateItemMenu();
       try {
         choice = console.getUpdateItemChoice();
       } catch (Exception e) {
-        console.presentErrorMessage(e.getMessage());
+        console.printErrorMessage(e.getMessage());
       }  
     }
 
@@ -54,10 +54,10 @@ public class UpdateItemMenu {
     String name = dataFetcher.getName();
     try {
       registry.updateItemName(itemId, name);
-      console.presentMessage("Name was successfully updated!");
+      console.printMessage("Name was successfully updated!");
       doUpdateItemMenu(itemId, memberId);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       itemMenu.doItemMenu(itemId, memberId);
     }    
   }
@@ -66,10 +66,10 @@ public class UpdateItemMenu {
     String description = dataFetcher.getDescription();
     try {
       registry.updateItemDescription(itemId, description);
-      console.presentMessage("Description was successfully updated!");
+      console.printMessage("Description was successfully updated!");
       doUpdateItemMenu(itemId, memberId);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       itemMenu.doItemMenu(itemId, memberId);
     }    
   }
@@ -78,10 +78,10 @@ public class UpdateItemMenu {
     ItemType itemType = dataFetcher.getItemType();
     try {
       registry.updateItemType(itemId, itemType);
-      console.presentMessage("Type was successfully updated!");
+      console.printMessage("Type was successfully updated!");
       doUpdateItemMenu(itemId, memberId);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       itemMenu.doItemMenu(itemId, memberId);
     }    
   }
@@ -90,10 +90,10 @@ public class UpdateItemMenu {
     int costPerDay = dataFetcher.getCostPerDay();
     try {
       registry.updateItemCostPerDay(itemId, costPerDay);
-      console.presentMessage("Cost per day was successfully updated!");
+      console.printMessage("Cost per day was successfully updated!");
       doUpdateItemMenu(itemId, memberId);
     } catch (Exception e) {
-      console.presentErrorMessage(e.getMessage());
+      console.printErrorMessage(e.getMessage());
       itemMenu.doItemMenu(itemId, memberId);
     }    
   }

@@ -1,13 +1,11 @@
 package view;
 
 import java.util.ArrayList;
-import java.util.Scanner;
-import model.Contract;
+
 import model.Day;
 import model.Item;
 import model.ItemType;
 import model.Member;
-import model.Validator;
 import view.menuChoices.ItemChoice;
 import view.menuChoices.MainChoice;
 import view.menuChoices.MemberChoice;
@@ -15,322 +13,124 @@ import view.menuChoices.UpdateItemChoice;
 import view.menuChoices.UpdateMemberChoice;
 
 public class Console {
-  private Scanner scan;
-  private Validator validator;
+  private Input input = new Input();
+  private Output output = new Output();
 
-  public Console() {
-    scan = new Scanner(System.in, "utf-8");
-    validator = new Validator();
+  public void printMainMenu() {
+    output.printMainMenu();
   }
 
-
-  public void presentMainMenu() {
-    String menu = "\n*** Main Menu ***\n"
-        + "simple : List all members\n"
-        + "full : List all members (full info)\n"
-        + "add : Add new member\n"
-        + "select : Select a member\n"
-        + "time : Advance time\n"
-        + "quit : Quit the program\n";
-
-    System.out.println(menu);
+  public void printMemberMenu() {
+    output.printMemberMenu();
   }
 
-  public void presentMemberMenu() {
-    String menu = "\n*** Member Menu ***\n"
-        + "delete : Delete member\n"
-        + "update : Update member info\n"
-        + "info : Show member info\n"
-        + "add : Add item to member\n"
-        + "select : Select item\n"
-        + "main : Back to main menu\n"; 
-
-    System.out.println(menu);
+  public void printItemMenu() {
+    output.printItemMenu();
   }
 
-  public void presentItemMenu() {
-    String menu = "\n*** Item Menu ***\n"
-        + "delete : Delete item\n"
-        + "update : Update item info\n"
-        + "info : Show item info\n"
-        + "contract : Establish contract\n"
-        + "member : Back to member menu\n";
-
-    System.out.println(menu);
+  public void printUpdateMemberMenu() {
+    output.printUpdateMemberMenu();
   }
 
-  public void presentUpdateMemberMenu() {
-    String menu = "\n*** Update Member Menu ***\n"
-        + "name : Update name\n"
-        + "email : Update email\n"
-        + "phone : Update phone\n"
-        + "cancel : Back to member menu\n";
-
-    System.out.println(menu);
-  }
-
-  public void presentUpdateItemMenu() {
-    String menu = "\n*** Update Item Menu ***\n"
-    + "name : Update name\n"
-    + "desc : Update description\n"
-    + "type : Update type\n"
-    + "cost : Update cost per day\n"
-    + "cancel : Back to item menu\n";
-
-    System.out.println(menu);
+  public void printUpdateItemMenu() {
+    output.printUpdateItemMenu();
   }
 
   public MainChoice getMainChoice() throws Exception {
-    System.out.print("Enter menu choice: ");
-    String choice = scan.nextLine();
-
-    if (choice.equals("simple")) {
-      return MainChoice.SIMPLE;
-    } else if (choice.equals("full")) {
-      return MainChoice.FULL;
-    } else if (choice.equals("add")) {
-      return MainChoice.ADD;
-    } else if (choice.equals("select")) {
-      return MainChoice.SELECT;
-    } else if (choice.equals("time")) {
-      return MainChoice.TIME;
-    } else if (choice.equals("quit")) {
-      return MainChoice.QUIT;
-    } else {
-      throw new Exception("Not a valid choice.");
-    }
+    return input.getMainChoice();
   }
 
   public MemberChoice getMemberChoice() throws Exception {
-    String choice = scan.nextLine();
-
-    if (choice.equals("delete")) {
-      return MemberChoice.DELETE;
-    } else if (choice.equals("update")) {
-      return MemberChoice.UPDATE;
-    } else if (choice.equals("info")) {
-      return MemberChoice.INFO;
-    } else if (choice.equals("add")) {
-      return MemberChoice.ADD;
-    } else if (choice.equals("select")) {
-      return MemberChoice.SELECT;
-    } else if (choice.equals("main")) {
-      return MemberChoice.MAIN;
-    } else {
-      throw new Exception("Not a valid choice.");
-    }
+    return input.getMemberChoice();
   }
 
   public ItemChoice getItemChoice() throws Exception {
-    String choice = scan.nextLine();
-
-    if (choice.equals("delete")) {
-      return ItemChoice.DELETE;
-    } else if (choice.equals("update")) {
-      return ItemChoice.UPDATE;
-    } else if (choice.equals("info")) {
-      return ItemChoice.INFO;
-    } else if (choice.equals("contract")) {
-      return ItemChoice.CONTRACT;
-    } else if (choice.equals("member")) {
-      return ItemChoice.MEMBER;
-    } else {
-      throw new Exception("Not a valid choice.");
-    }
+    return input.getItemChoice();
   }
 
   public UpdateMemberChoice getUpdateMemberChoice() throws Exception {
-    String choice = scan.nextLine();
-
-    if (choice.equals("name")) {
-      return UpdateMemberChoice.NAME;
-    } else if (choice.equals("email")) {
-      return UpdateMemberChoice.EMAIL;
-    } else if (choice.equals("phone")) {
-      return UpdateMemberChoice.PHONE;
-    } else if (choice.equals("cancel")) {
-      return UpdateMemberChoice.CANCEL;
-    } else {
-      throw new Exception("Not a valid choice.");
-    }
+    return input.getUpdateMemberChoice();
   }
 
   public UpdateItemChoice getUpdateItemChoice() throws Exception {
-    String choice = scan.nextLine();
-
-    if (choice.equals("name")) {
-      return UpdateItemChoice.NAME;
-    } else if (choice.equals("desc")) {
-      return UpdateItemChoice.DESCRIPTION;
-    } else if (choice.equals("type")) {
-      return UpdateItemChoice.TYPE;
-    } else if (choice.equals("cost")) {
-      return UpdateItemChoice.COST;
-    } else if (choice.equals("cancel")) {
-      return UpdateItemChoice.CANCEL;
-    } else {
-      throw new Exception("Not a valid choice.");
-    }  
+    return input.getUpdateItemChoice();
   }
 
-  public void presentMessage(String message) {
-    System.out.println("\n" + message + "\n");
+  public void printMessage(String message) {
+    output.printMessage(message);
   }
 
-  public void presentErrorMessage(String message) {
-    System.out.println("\nError: " + message + "\n");
+  public void printErrorMessage(String message) {
+    output.printErrorMessage(message);
   }
 
-  public void presentCurrentDay(Day day) {
-    System.out.println("\nCurrent day: " + day.getDayNumber());
+  public void printCurrentDay(Day day) {
+    output.printCurrentDay(day);
   }
 
   public String getName() {
-    System.out.print("\nEnter name: ");
-    String name = scan.nextLine();
-    validator.validateName(name);
-    return name;
+    return input.getName();
   }
 
   public String getEmail() {
-    System.out.print("\nEnter email: ");
-    String email = scan.nextLine();
-    validator.validateEmail(email);
-    return email;
+    return input.getEmail();
   }
 
   public String getPhoneNumber() {
-    System.out.print("\nEnter phone number: ");
-    String phoneNumber = scan.nextLine();
-    validator.validatePhoneNumber(phoneNumber);
-    return phoneNumber;
+    return input.getPhoneNumber();
   }
 
-
   public String getMemberId() {
-    System.out.print("\nEnter member id: ");
-    String id = scan.nextLine();
-    validator.validateId(id);
-    return id;
+    return input.getMemberId();
   }
 
   public String getItemId() {
-    System.out.print("\nEnter item id: ");
-    String id = scan.nextLine();
-    validator.validateId(id);
-    return id;
+    return input.getItemId();
   }
 
   public String getDescription() {
-    System.out.print("\nEnter description: ");
-    String description = scan.nextLine();
-    validator.validateDescription(description);
-    return description;
+    return input.getDescription();
   }
-  
-  public ItemType getType() throws Exception {
-    System.out.print("\nEnter type (game, sport, tool, toy, vehicle, other): ");
-    String type = scan.nextLine();
 
-    switch (type) {
-      case "game":
-        return ItemType.GAME;
-      case "sport":
-        return ItemType.SPORT;
-      case "tool":
-        return ItemType.TOOL;
-      case "toy":
-        return ItemType.TOY;
-      case "vehicle":
-        return ItemType.VEHICLE;
-      case "other":
-        return ItemType.OTHER;
-      default:
-        throw new Exception("Invalid type.");
-    }
+  public ItemType getType() throws Exception {
+    return input.getType();
   }
 
   public int getCostPerDay() throws Exception {
-    System.out.print("\nEnter cost per day (credits): ");
-
-    int costPerDay = 0;
-    try {
-      costPerDay = Integer.parseInt(scan.nextLine());
-    } catch (Exception e) {
-      throw new Exception("Cost per day must be a number.");
-    }
-
-    validator.validateCredits(costPerDay);
-    return costPerDay;  
+    return input.getCostPerDay();
   }
 
   public String getLenderId() {
-    System.out.print("\nEnter lender ID: ");
-    String lenderId = scan.nextLine();
-    validator.validateId(lenderId);
-    return lenderId;
+    return input.getLenderId();
   }
 
   public Day getStartDay() {
-    System.out.print("\nEnter start day: ");
-    int startDay = Integer.parseInt(scan.nextLine());
-    return new Day(startDay); 
+    return input.getStartDay();
   }
 
   public Day getEndDay() {
-    System.out.print("\nEnter end day: ");
-    int endDay = Integer.parseInt(scan.nextLine());
-    return new Day(endDay); 
+    return input.getEndDay();
   }
 
-  public void presentMembersSimple(ArrayList<Member> members) {
-    System.out.println("\n*** Members (simple) ***");
-
-    for (Member m : members) {
-      System.out.println("\n--- " + m.getName() + " ---");
-      System.out.println("ID: " + m.getId());
-      System.out.println("Email: " + m.getEmail());
-      System.out.println("Phone number: " + m.getPhoneNumber());
-      System.out.println("Credits: " + m.getCredits());
-      System.out.println("Number of items: " + m.getItems().size());
-    }
+  public void printMembersSimple(ArrayList<Member> members) {
+    output.printMembersSimple(members);
   }
 
-  public void presentMembersFull(ArrayList<Member> members) {
-    System.out.println("\n*** Members (full) ***");
-    for (Member m : members) {
-      showMemberInfo(m);
-    }
+  public void printMembersFull(ArrayList<Member> members) {
+    output.printMembersFull(members);
   }
 
-  public void showMemberInfo(Member member) {
-    System.out.println("\n--- " + member.getName() + " ---");
-    System.out.println("ID: " + member.getId());
-    System.out.println("Email: " + member.getEmail());
-    System.out.println("Phone number: " + member.getPhoneNumber());
-    System.out.println("Items: ");
-    for (Item i : member.getItems()) {
-      showItemInfo(i);
-    }
+  public void printMemberInfo(Member member) {
+    output.printMemberInfo(member);
   }
 
-  public void showItemInfo(Item item) {
-    System.out.println("\n  --- " + item.getName() + " ---");
-    System.out.println("  Id: " + item.getId());
-    System.out.println("  Description: " + item.getDescription());
-    System.out.println("  Category: " + item.getType().name().toLowerCase());
-    System.out.println("  Cost per day: " + item.getCostPerDay() + " credits");
-    System.out.println("  Contracts: ");
-    for (Contract c : item.getContracts()) {
-      System.out.println("    ---------");
-      System.out.println("    Start day: " + c.getInterval().getStartDay().getDayNumber());
-      System.out.println("    End day: " + c.getInterval().getEndDay().getDayNumber());
-      System.out.println("    Lender: ");
-      System.out.println("      ID: " + c.getLender().getId());
-      System.out.println("      Name: " + c.getLender().getName());
-      System.out.println("      Email: " + c.getLender().getEmail());
-      System.out.println("      Phone number: " + c.getLender().getPhoneNumber());
-    }
+  public void printItemInfo(Item item) {
+    output.printItemInfo(item);
   }
+
+
+
+ 
 }
+
 

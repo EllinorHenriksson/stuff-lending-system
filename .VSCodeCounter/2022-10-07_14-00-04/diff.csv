@@ -1,0 +1,103 @@
+"filename", "language", "Java", "HTML", "CSS", "JavaScript", "XML", "Batch", "comment", "blank", "total"
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/App 2.class", "Java", 15, 0, 0, 0, 0, 0, 0, 0, 15
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/App 3.class", "Java", 15, 0, 0, 0, 0, 0, 0, 0, 15
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/App.class", "Java", -6, 0, 0, 0, 0, 0, 0, 0, -6
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User 2.class", "Java", 138, 0, 0, 0, 0, 0, 0, 0, 138
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User$1 2.class", "Java", 15, 0, 0, 0, 0, 0, 0, 0, 15
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User.class", "Java", 25, 0, 0, 0, 0, 0, 0, 0, 25
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/DataFetcher.class", "Java", 48, 0, 0, 0, 0, 0, 0, 0, 48
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/ItemMenu$1.class", "Java", 11, 0, 0, 0, 0, 0, 0, 0, 11
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/ItemMenu.class", "Java", 48, 0, 0, 0, 0, 0, 0, 0, 48
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MainMenu$1.class", "Java", 10, 0, 0, 0, 0, 0, 0, 0, 10
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MainMenu.class", "Java", 67, 0, 0, 0, 0, 0, 0, 0, 67
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MemberMenu$1.class", "Java", 9, 0, 0, 0, 0, 0, 0, 0, 9
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MemberMenu.class", "Java", 69, 0, 0, 0, 0, 0, 0, 0, 69
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateItemMenu$1.class", "Java", 10, 0, 0, 0, 0, 0, 0, 0, 10
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateItemMenu.class", "Java", 47, 0, 0, 0, 0, 0, 0, 0, 47
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateMemberMenu$1.class", "Java", 9, 0, 0, 0, 0, 0, 0, 0, 9
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateMemberMenu.class", "Java", 43, 0, 0, 0, 0, 0, 0, 0, 43
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Contract 2.class", "Java", 31, 0, 0, 0, 0, 0, 0, 0, 31
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Contract.class", "Java", 31, 0, 0, 0, 0, 0, 0, 0, 31
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Day 2.class", "Java", 13, 0, 0, 0, 0, 0, 0, 0, 13
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Day.class", "Java", 13, 0, 0, 0, 0, 0, 0, 0, 13
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/DayCounter 2.class", "Java", 13, 0, 0, 0, 0, 0, 0, 0, 13
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/DayCounter.class", "Java", 13, 0, 0, 0, 0, 0, 0, 0, 13
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/IdGenerator 2.class", "Java", 22, 0, 0, 0, 0, 0, 0, 0, 22
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Interval 2.class", "Java", 34, 0, 0, 0, 0, 0, 0, 0, 34
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Interval.class", "Java", 34, 0, 0, 0, 0, 0, 0, 0, 34
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Item 2.class", "Java", 58, 0, 0, 0, 0, 0, 0, 0, 58
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Item.class", "Java", 71, 0, 0, 0, 0, 0, 0, 0, 71
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/ItemType.class", "Java", 17, 0, 0, 0, 0, 0, 0, 0, 17
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Member 2.class", "Java", 63, 0, 0, 0, 0, 0, 0, 0, 63
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Member.class", "Java", 64, 0, 0, 0, 0, 0, 0, 0, 64
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Registry 2.class", "Java", 69, 0, 0, 0, 0, 0, 0, 0, 69
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Registry.class", "Java", 54, 0, 0, 0, 0, 0, 0, 0, 54
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Type 2.class", "Java", 18, 0, 0, 0, 0, 0, 0, 0, 18
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Validator 2.class", "Java", 38, 0, 0, 0, 0, 0, 0, 0, 38
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Validator.class", "Java", 38, 0, 0, 0, 0, 0, 0, 0, 38
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/IfPersistence 2.class", "Java", 3, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/IfPersistence.class", "Java", 3, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/Persistence 2.class", "Java", 15, 0, 0, 0, 0, 0, 0, 0, 15
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/Persistence.class", "Java", 15, 0, 0, 0, 0, 0, 0, 0, 15
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console 2.class", "Java", 135, 0, 0, 0, 0, 0, 0, 6, 141
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console.class", "Java", 68, 0, 0, 0, 0, 0, 0, 0, 68
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Input.class", "Java", 62, 0, 0, 0, 0, 0, 0, 4, 66
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/ItemChoice 2.class", "Java", 16, 0, 0, 0, 0, 0, 0, 0, 16
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/MainChoice 2.class", "Java", 16, 0, 0, 0, 0, 0, 0, 0, 16
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/MemberChoice 2.class", "Java", 16, 0, 0, 0, 0, 0, 0, 0, 16
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Output.class", "Java", 111, 0, 0, 0, 0, 0, 0, 2, 113
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/UpdateMemberChoice 2.class", "Java", 16, 0, 0, 0, 0, 0, 0, 0, 16
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/ItemChoice.class", "Java", 16, 0, 0, 0, 0, 0, 0, 0, 16
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/MainChoice.class", "Java", 16, 0, 0, 0, 0, 0, 0, 0, 16
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/MemberChoice.class", "Java", 16, 0, 0, 0, 0, 0, 0, 0, 16
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/UpdateItemChoice.class", "Java", 16, 0, 0, 0, 0, 0, 0, 0, 16
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/UpdateMemberChoice.class", "Java", 16, 0, 0, 0, 0, 0, 0, 0, 16
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/test/CodeQualityTests 2.class", "Java", 154, 0, 0, 0, 0, 0, 0, 1, 155
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/test/CodeQualityTests$Failure 2.class", "Java", 12, 0, 0, 0, 0, 0, 0, 0, 12
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/test/CodeQualityTests$TestCase 2.class", "Java", 7, 0, 0, 0, 0, 0, 0, 0, 7
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/checkstyle/main 2.html", "HTML", 0, 457, 0, 0, 0, 0, 0, 2, 459
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/checkstyle/main 2.xml", "XML", 0, 0, 0, 0, 102, 0, 0, 1, 103
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/checkstyle/main.html", "HTML", 0, 418, 0, 0, 0, 0, 0, 0, 418
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/checkstyle/main.xml", "XML", 0, 0, 0, 0, 118, 0, 0, 0, 118
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/spotbugs/spotbugs_bak 2.xml", "XML", 0, 0, 0, 0, 186, 0, 0, 6, 192
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/spotbugs/spotbugs_bak.xml", "XML", 0, 0, 0, 0, 270, 0, 0, 10, 280
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/tests/test/classes/CodeQualityTests.html", "HTML", 0, 233, 0, 0, 0, 0, 0, 91, 324
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/tests/test/classes/Gradle#20Test#20Executor#202.html", "HTML", 0, 229, 0, 0, 0, 0, 0, 1, 230
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/tests/test/css/base-style 2.css", "CSS", 0, 0, 148, 0, 0, 0, 0, 31, 179
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/tests/test/css/style 2.css", "CSS", 0, 0, 66, 0, 0, 0, 0, 19, 85
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/tests/test/index 2.html", "HTML", 0, 145, 0, 0, 0, 0, 0, 1, 146
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/tests/test/index.html", "HTML", 0, 14, 0, 0, 0, 0, 0, 0, 14
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/tests/test/js/report 2.js", "JavaScript", 0, 0, 0, 148, 0, 0, 1, 45, 194
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/reports/tests/test/packages/default-package.html", "HTML", 0, 14, 0, 0, 0, 0, 0, 0, 14
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/scripts/app 2.bat", "Batch", 0, 0, 0, 0, 0, 70, 0, 22, 92
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/test-results/TEST-checkstyle.xml", "XML", 0, 0, 0, 0, 293, 0, 0, 0, 293
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/test-results/TEST-findbugs.xml", "XML", 0, 0, 0, 0, 62, 0, 0, 0, 62
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/test-results/test/TEST-CodeQualityTests.xml", "XML", 0, 0, 0, 0, 233, 0, 0, 91, 324
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/test-results/test/TEST-Gradle#20Test#20Executor#202.xml", "XML", 0, 0, 0, 0, 125, 0, 0, 1, 126
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/App.java", "Java", -19, 0, 0, 0, 0, 0, 0, -12, -31
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/User.java", "Java", 31, 0, 0, 0, 0, 0, 0, 8, 39
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/DataFetcher.java", "Java", 104, 0, 0, 0, 0, 0, 0, 20, 124
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/ItemMenu.java", "Java", 75, 0, 0, 0, 0, 0, 0, 12, 87
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MainMenu.java", "Java", 98, 0, 0, 0, 0, 0, 0, 16, 114
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MemberMenu.java", "Java", 109, 0, 0, 0, 0, 0, 0, 16, 125
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateItemMenu.java", "Java", 90, 0, 0, 0, 0, 0, 0, 11, 101
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateMemberMenu.java", "Java", 77, 0, 0, 0, 0, 0, 0, 10, 87
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Contract.java", "Java", 42, 0, 0, 0, 0, 0, 0, 12, 54
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Interval.java", "Java", 60, 0, 0, 0, 0, 0, 0, 16, 76
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Item.java", "Java", 80, 0, 0, 0, 0, 0, -4, 17, 93
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/ItemType.java", "Java", 9, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Member.java", "Java", 55, 0, 0, 0, 0, 0, 0, 13, 68
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Registry.java", "Java", 60, 0, 0, 0, 0, 0, 0, 12, 72
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Type.java", "Java", -9, 0, 0, 0, 0, 0, 0, -2, -11
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Validator.java", "Java", 82, 0, 0, 0, 0, 0, 0, 17, 99
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/IfPersistence.java", "Java", 7, 0, 0, 0, 0, 0, 0, 4, 11
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/Persistence.java", "Java", 17, 0, 0, 0, 0, 0, 0, 5, 22
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Console.java", "Java", 96, 0, 0, 0, 0, 0, 0, 35, 131
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Input.java", "Java", 180, 0, 0, 0, 0, 0, 0, 29, 209
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Output.java", "Java", 108, 0, 0, 0, 0, 0, 0, 21, 129
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuChoices/ItemChoice.java", "Java", 8, 0, 0, 0, 0, 0, 0, 2, 10
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuChoices/MainChoice.java", "Java", 9, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuChoices/MemberChoice.java", "Java", 9, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuChoices/UpdateItemChoice.java", "Java", 8, 0, 0, 0, 0, 0, 0, 1, 9
+"/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuChoices/UpdateMemberChoice.java", "Java", 7, 0, 0, 0, 0, 0, 0, 1, 8
+"Total", "-", 3389, 1510, 214, 148, 1389, 70, -3, 606, 7323
