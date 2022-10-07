@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import model.Contract;
 import model.Day;
-import model.Interval;
 import model.Item;
-import model.Member;
 import model.ItemType;
+import model.Member;
 import model.Validator;
 
 public class Console {

@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.spotbugs" time="0" tests="19" errors="2" name="findbugs">
+<testsuite package="org.spotbugs" time="0" tests="22" errors="5" name="findbugs">
 <testcase time="0" name="view/Console.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="TestApp.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 8-30 
+main(String[]) might ignore java.lang.Exception 
+Method might ignore exception 
+This method might ignore an exception. In general, exceptions should be 
+  handled or reported in some way, or they should be thrown out of the 
+  method.
+----------------
+]]></failure>
 </testcase><testcase time="0" name="model/Contract.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Registry.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="view/MemberChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/UpdateItemChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Interval.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Member.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 15-181 
+Unread field: idGenerator 
+Unread field 
+This field is never read. Consider removing it from the class.
+----------------
+]]></failure>
 </testcase><testcase time="0" name="model/Day.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/DayCounter.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="App.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Type.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="view/ItemChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="model/ItemType.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Item.java" classname="FindBugs Issues">
-<failure message="issues" ><![CDATA[lines: 14-142 
+<failure message="issues" ><![CDATA[lines: 14-162 
 setOwner(Member) may expose internal representation by storing an 
   externally mutable object into Item.owner 
 May expose internal representation by incorporating reference to mutable 
@@ -29,7 +46,7 @@ This code stores a reference to an externally mutable object into the
 </testcase><testcase time="0" name="model/Validator.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="view/MainChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/User.java" classname="FindBugs Issues">
-<failure message="issues" ><![CDATA[lines: 23-347 
+<failure message="issues" ><![CDATA[lines: 27-551 
 quitProgram() invokes System.exit(...), which shuts down the entire virtual 
   machine 
 Method invokes System.exit(...) 
@@ -37,6 +54,14 @@ Invoking System.exit shuts down the entire Java virtual machine. This
   should only been done when it is appropriate. Such calls make it hard or 
   impossible for your code to be invoked by other code. Consider throwing a 
   RuntimeException instead.
+----------------
+lines: 27-551 
+Switch statement found in doMemberMenu(String) where one case falls through 
+  to the next case 
+Switch statement found where one case falls through to the next case 
+This method contains a switch statement where one case branch will fall 
+  through to the next case. Usually you need to end this case with a break 
+  or return.
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="model/persistence/IfPersistence.java" classname="FindBugs Issues">

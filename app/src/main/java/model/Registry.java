@@ -52,8 +52,9 @@ public class Registry {
   public Member getMember(String id) {
     Member member = getActualMember(id);
     Member copy = new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId(), member.getCreationDay());
+    copy.setCredits(member.getCredits());
     for (Item i : member.getItems()) {
-      copy.addItem(i);
+      copy.addItemForCopy(i);
     }
     return copy;
   }

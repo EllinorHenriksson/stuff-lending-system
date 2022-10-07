@@ -134,7 +134,6 @@ public class Item {
         throw new IllegalArgumentException("The contract is already added to the item.");
       }
     }
-
     contracts.add(contract);
   }
 

@@ -1,21 +1,43 @@
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/TestApp.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User$1.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User$1 2.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/App 2.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/IdGenerator.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/DayCounter.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Registry 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Validator 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Contract 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Type 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/ItemType.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Validator.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Interval 2.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Item.class
-/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Type.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Day.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Registry.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Member.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Interval.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Contract.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Day 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/DayCounter 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/IdGenerator 2.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/IfPersistence.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/Persistence.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/IfPersistence 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/Persistence 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Member 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Item 2.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/MemberChoice.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/UpdateMemberChoice.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/MainChoice 2.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/ItemChoice 2.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/ItemChoice.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/MainChoice.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/MemberChoice 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/UpdateItemChoice.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/UpdateMemberChoice 2.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/App.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/App 3.class

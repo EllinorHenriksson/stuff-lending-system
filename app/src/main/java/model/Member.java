@@ -13,7 +13,6 @@ public class Member {
   private int credits;
   private ArrayList<Item> items;
   private Validator validator = new Validator();
-  private IdGenerator idGenerator = new IdGenerator(6);
 
   public Member(String name, String email, String phoneNumber, String id, Day creationDay) {
     setName(name);
@@ -22,12 +21,18 @@ public class Member {
     setId(id);
     setCreationDay(creationDay);
     items = new ArrayList<>();
-    credits = 0;
+    setCredits(0);
   }
 
   public Item getItem(String itemId) {
     Item item = getActualItem(itemId);
-    return new Item(item.getName(), item.getDescription(), item.getCreationDay(), item.getCostPerDay(), item.getType(), item.getId());
+    Item copy = new Item(item.getName(), item.getDescription(), item.getCreationDay(), item.getCostPerDay(), item.getType(), item.getId());
+    copy.setOwner(item.getOwner());
+
+    for (Contract c : item.getContracts()) {
+      copy.addContract(c);
+    }
+    return item;
   }
 
   private Item getActualItem(String itemId) {
@@ -47,10 +52,7 @@ public class Member {
     ArrayList<Item> copies = new ArrayList<>();
 
     for (Item i : items) {
-      Item copy = new Item(i.getName(), i.getDescription(), i.getCreationDay(), i.getCostPerDay(), i.getType(), i.getId());
-      for (Contract c : i.getContracts()) {
-        copy.addContract(c);
-      }
+      Item copy = getItem(i.getId());
       copies.add(copy);
     }
 
@@ -113,8 +115,19 @@ public class Member {
 
     items.add(item);
     addCredits(creditsForItem);
-
     item.setOwner(this);
+  }
+
+  public void addItemForCopy(Item item) {
+    validator.checkNull(item, "Item must be specified.");
+
+    for (Item i : items) {
+      if (i == item) {
+        throw new IllegalArgumentException("Item already added to member.");
+      }
+    }
+
+    items.add(item);
   }
 
   public void removeItem(String id) {
@@ -123,6 +136,15 @@ public class Member {
     if (!items.remove(item)) {
       throw new IllegalArgumentException("Item was not found.");
     }
+
+    credits -= 100;
+    if (credits < 0) {
+      credits = 0;
+    }
+  }
+
+  public void setCredits(int credits) {
+    this.credits = credits;
   }
 
   public int getCredits() {

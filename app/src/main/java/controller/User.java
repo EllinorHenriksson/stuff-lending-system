@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 import model.Day;
 import model.DayCounter;
-import model.IdGenerator;
 import model.Interval;
 import model.Item;
 import model.Member;
@@ -36,7 +35,6 @@ public class User {
     loadMembersToRegistry();
     console.presentCurrentDay(dayCounter.getCurrentDay());
     doMainMenu();
-    
   }
 
   private void loadMembersToRegistry() {
@@ -107,6 +105,7 @@ public class User {
         break;
       case SELECT:
         selectItem(id);
+        break;
       case MAIN:
         doMainMenu();
         break;
