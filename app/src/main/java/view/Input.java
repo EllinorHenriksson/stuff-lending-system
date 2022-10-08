@@ -12,10 +12,19 @@ import view.menuChoices.MemberChoice;
 import view.menuChoices.UpdateItemChoice;
 import view.menuChoices.UpdateMemberChoice;
 
+/**
+ * Class for object to receive input from user.
+ */
 public class Input {
   private Scanner scan = new Scanner(System.in, "utf-8");
   private Validator validator = new Validator();
 
+  /**
+   * Promts the user for main menu choice.
+   *
+   * @return MainChoice.
+   * @throws Exception
+   */
   public MainChoice getMainChoice() throws Exception {
     System.out.print("\nEnter menu choice: ");
     String choice = scan.nextLine();
@@ -37,6 +46,12 @@ public class Input {
     }
   }
 
+  /**
+   * Promts the user for member menu choice.
+   *
+   * @return MemberChoice.
+   * @throws Exception
+   */
   public MemberChoice getMemberChoice() throws Exception {
     System.out.print("\nEnter menu choice: ");
     String choice = scan.nextLine();
@@ -58,6 +73,12 @@ public class Input {
     }
   }
 
+  /**
+   * Promts the user for a item menu choice.
+   *
+   * @return ItemChoice.
+   * @throws Exception
+   */
   public ItemChoice getItemChoice() throws Exception {
     System.out.print("\nEnter menu choice: ");
     String choice = scan.nextLine();
@@ -77,6 +98,12 @@ public class Input {
     }
   }
 
+  /**
+   * Promts the user for a update member menu choice.
+   *
+   * @return UpdateMemberMenu.
+   * @throws Exception
+   */
   public UpdateMemberChoice getUpdateMemberChoice() throws Exception {
     System.out.print("\nEnter menu choice: ");
     String choice = scan.nextLine();
@@ -94,6 +121,12 @@ public class Input {
     }
   }
 
+  /**
+   * Promts the user for a update item menu choice.
+   *
+   * @return UpdateItemChoice.
+   * @throws Exception
+   */
   public UpdateItemChoice getUpdateItemChoice() throws Exception {
     System.out.print("\nEnter menu choice: ");
     String choice = scan.nextLine();
@@ -113,6 +146,11 @@ public class Input {
     }
   }
 
+  /**
+   * Promts the user for a name.
+   *
+   * @return String.
+   */
   public String getName() {
     System.out.print("\nEnter name: ");
     String name = scan.nextLine();
@@ -120,6 +158,11 @@ public class Input {
     return name;
   }
 
+  /**
+   * Promts the user for an email.
+   *
+   * @return String.
+   */
   public String getEmail() {
     System.out.print("\nEnter email: ");
     String email = scan.nextLine();
@@ -127,6 +170,11 @@ public class Input {
     return email;
   }
 
+  /**
+   * Promts the user for a phone number.
+   *
+   * @return String.
+   */
   public String getPhoneNumber() {
     System.out.print("\nEnter phone number: ");
     String phoneNumber = scan.nextLine();
@@ -134,6 +182,11 @@ public class Input {
     return phoneNumber;
   }
 
+  /**
+   * Promts the user for a member id.
+   *
+   * @return String.
+   */
   public String getMemberId() {
     System.out.print("\nEnter member id: ");
     String id = scan.nextLine();
@@ -141,6 +194,11 @@ public class Input {
     return id;
   }
 
+  /**
+   * Promts the user for a number of days.
+   *
+   * @return int.
+   */
   public int getNumberOfDays() throws Exception {
     System.out.print("\nEnter number of days: ");
     int numberOfDays = 0;
@@ -153,6 +211,11 @@ public class Input {
     return numberOfDays;
   }
 
+  /**
+   * Promts the user for a item id.
+   *
+   * @return String.
+   */
   public String getItemId() {
     System.out.print("\nEnter item id: ");
     String id = scan.nextLine();
@@ -160,6 +223,11 @@ public class Input {
     return id;
   }
 
+  /**
+   * Promts the user for a description.
+   *
+   * @return String.
+   */
   public String getDescription() {
     System.out.print("\nEnter description: ");
     String description = scan.nextLine();
@@ -167,6 +235,11 @@ public class Input {
     return description;
   }
 
+  /**
+   * Promts the user for an item type.
+   *
+   * @return Type.
+   */
   public ItemType getType() throws Exception {
     System.out.print("\nEnter type (game, sport, tool, toy, vehicle, other): ");
     String type = scan.nextLine();
@@ -189,6 +262,11 @@ public class Input {
     }
   }
 
+  /**
+   * Promts the user for a cost per day for an item.
+   *
+   * @return int.
+   */
   public int getCostPerDay() throws Exception {
     System.out.print("\nEnter cost per day (credits): ");
 
@@ -203,6 +281,11 @@ public class Input {
     return costPerDay;
   }
 
+  /**
+   * Promts the user for a lender id.
+   *
+   * @return String.
+   */
   public String getLenderId() {
     System.out.print("\nEnter lender ID: ");
     String lenderId = scan.nextLine();
@@ -210,12 +293,22 @@ public class Input {
     return lenderId;
   }
 
+  /**
+   * Promts the user for a start day.
+   *
+   * @return Day.
+   */
   public Day getStartDay() {
     System.out.print("\nEnter start day: ");
     int startDay = Integer.parseInt(scan.nextLine());
     return new Day(startDay);
   }
 
+  /**
+   * Promts the user for a end day.
+   *
+   * @return Day.
+   */
   public Day getEndDay() {
     System.out.print("\nEnter end day: ");
     int endDay = Integer.parseInt(scan.nextLine());

@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.checkstyle" time="0" tests="28" errors="124" name="checkstyle">
+<testsuite package="org.checkstyle" time="0" tests="28" errors="129" name="checkstyle">
 <testcase time="0" name="controller/User.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 6 column: column:1 
-Extra separation in import group before 'controller.menus.MainMenu'
-----------------
-line: 6 column: column:1 
-Wrong lexicographical order for 'controller.menus.MainMenu' import. Should 
-  be before 'java.util.Scanner'.
-----------------
-line: 13 column: column:1 
+<failure message="issues" ><![CDATA[line: 9 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 14 column: column:46 
-';' should be separated from previous statement.
+line: 17 column: column:3 
+Missing a Javadoc comment.
 ----------------
-line: 14 column: column:46 
-Only one statement per line allowed.
-----------------
-line: 26 column: column:3 
+line: 23 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
@@ -33,13 +23,10 @@ Missing a Javadoc comment.
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="controller/menus/UpdateMemberMenu.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 8 column: column:1 
+<failure message="issues" ><![CDATA[line: 7 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 16 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 22 column: column:3 
+line: 19 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
@@ -55,50 +42,74 @@ Missing a Javadoc comment.
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="controller/menus/DataFetcher.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 8 column: column:1 
+<failure message="issues" ><![CDATA[line: 13 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 11 column: column:3 
+line: 16 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 24 column: column:3 
+line: 30 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 37 column: column:3 
+line: 44 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 50 column: column:3 
+line: 58 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 63 column: column:3 
+line: 72 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 76 column: column:3 
+line: 86 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 89 column: column:3 
+line: 99 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 102 column: column:3 
+line: 112 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 125 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 138 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 151 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 164 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 177 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 190 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 203 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 216 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="controller/menus/MemberMenu.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 11 column: column:1 
+<failure message="issues" ><![CDATA[line: 10 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 22 column: column:3 
+line: 20 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 31 column: column:3 
+line: 28 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="controller/menus/UpdateItemMenu.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 9 column: column:1 
+<failure message="issues" ><![CDATA[line: 8 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 21 column: column:3 
+line: 20 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
@@ -106,13 +117,10 @@ Missing a Javadoc comment.
 <failure message="issues" ><![CDATA[line: 2 column: column:1 
 'import' should be separated from previous statement.
 ----------------
-line: 4 column: column:1 
-Extra separation in import group before 'model.persistence.Persistence'
-----------------
-line: 6 column: column:1 
+line: 5 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 7 column: column:3 
+line: 6 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
@@ -180,12 +188,12 @@ Missing a Javadoc comment.
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="model/persistence/Persistence.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 7 column: column:1 
+<failure message="issues" ><![CDATA[line: 11 column: column:1 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="model/persistence/IfPersistence.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 6 column: column:1 
+<failure message="issues" ><![CDATA[line: 5 column: column:1 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
@@ -224,34 +232,37 @@ Missing a Javadoc comment.
 <failure message="issues" ><![CDATA[line: 5 column: column:1 
 Missing a Javadoc comment.
 ----------------
-line: 15 column: column:3 
+line: 12 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 33 column: column:3 
+line: 18 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 52 column: column:3 
+line: 36 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 54 column: 
+line: 55 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 57 column: 
 Line is longer than 120 characters (found 132).
 ----------------
-line: 62 column: column:3 
+line: 65 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 117 column: column:3 
+line: 120 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 126 column: column:3 
+line: 129 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 171 column: column:3 
+line: 174 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 183 column: column:3 
+line: 186 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 199 column: column:3 
+line: 202 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>
@@ -262,13 +273,13 @@ Missing a Javadoc comment.
 line: 16 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 34 column: column:3 
+line: 26 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 45 column: column:3 
+line: 37 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 67 column: column:3 
+line: 56 column: column:3 
 Missing a Javadoc comment.
 ----------------
 line: 87 column: column:3 
@@ -383,46 +394,49 @@ Missing a Javadoc comment.
 line: 40 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 60 column: column:3 
+line: 61 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 78 column: column:3 
+line: 80 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 94 column: column:3 
+line: 97 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 112 column: column:3 
+line: 116 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 119 column: column:3 
+line: 123 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 126 column: column:3 
+line: 130 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 133 column: column:3 
+line: 137 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 140 column: column:3 
+line: 144 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 147 column: column:3 
+line: 156 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 154 column: column:3 
+line: 163 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 176 column: column:3 
+line: 170 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 190 column: column:3 
+line: 192 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 197 column: column:3 
+line: 206 column: column:3 
 Missing a Javadoc comment.
 ----------------
-line: 203 column: column:3 
+line: 213 column: column:3 
+Missing a Javadoc comment.
+----------------
+line: 219 column: column:3 
 Missing a Javadoc comment.
 ----------------
 ]]></failure>

@@ -1,40 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.1" sequence="0" timestamp="1665144421837" analysisTimestamp="1665144422069" release="unspecified">
+<BugCollection version="4.7.1" sequence="0" timestamp="1665245014865" analysisTimestamp="1665245014938" release="unspecified">
   <Project projectName="app (spotbugsMain)">
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/User.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/MainMenu.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/UpdateItemMenu$1.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/MemberMenu.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/MainMenu$1.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/ItemMenu$1.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/UpdateMemberMenu.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/DataFetcher.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/ItemMenu.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/UpdateMemberMenu$1.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/MemberMenu$1.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/menus/UpdateItemMenu.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/controller/App.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/IdGenerator.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/DayCounter.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/ItemType.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/Validator.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/Item.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/Day.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/Registry.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/Member.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/Interval.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/Contract.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/persistence/IfPersistence.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/model/persistence/Persistence.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/view/menuChoices/MemberChoice.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/view/menuChoices/UpdateMemberChoice.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/view/menuChoices/ItemChoice.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/view/menuChoices/MainChoice.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/view/menuChoices/UpdateItemChoice.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/view/Output.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/view/Console.class</Jar>
-    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/build/classes/java/main/view/Input.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MainMenu.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateItemMenu$1.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MemberMenu.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MainMenu$1.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/ItemMenu$1.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateMemberMenu.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/DataFetcher.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/ItemMenu.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateMemberMenu$1.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MemberMenu$1.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateItemMenu.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/App.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Interval 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/IdGenerator.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/DayCounter.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/ItemType.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Validator.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Item.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Day.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Registry.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Contract 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Member.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Interval.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/ItemType 2.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Validator 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Registry 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Contract.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Item 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/IfPersistence.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/Persistence.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/Persistence 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/IfPersistence 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/IdGenerator 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/DayCounter 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Day 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Member 3.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/MemberChoice.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/UpdateMemberChoice.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/ItemChoice.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/MainChoice.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/UpdateItemChoice.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Output.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Input.class</Jar>
+    <Jar>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console 3.class</Jar>
     <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/30.1.1-jre/87e0fd1df874ea3cbe577702fe6f17068b790fd8/guava-30.1.1-jre.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</AuxClasspathEntry>
@@ -42,15 +56,15 @@
     <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.8.0/6b83e4a33220272c3a08991498ba9dc09519f190/checker-qual-3.8.0.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.5.1/562d366678b89ce5d6b6b82c1a073880341e3fba/error_prone_annotations-2.5.1.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/Users/emmafransson/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/ba035118bc8bac37d7eff77700720999acd9986d/j2objc-annotations-1.3.jar</AuxClasspathEntry>
-    <SrcDir>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/resources</SrcDir>
-    <SrcDir>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java</SrcDir>
+    <SrcDir>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/resources</SrcDir>
+    <SrcDir>/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java</SrcDir>
   </Project>
   <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="f9eacebbab0ecff2bcff532448b509a1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
     <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
     <LongMessage>new controller.menus.ItemMenu(MemberMenu, Registry) may expose internal representation by storing an externally mutable object into ItemMenu.memberMenu</LongMessage>
     <Class classname="controller.menus.ItemMenu" primary="true">
-      <SourceLine classname="controller.menus.ItemMenu" start="10" end="85" sourcefile="ItemMenu.java" sourcepath="controller/menus/ItemMenu.java" relSourcepath="java/controller/menus/ItemMenu.java">
-        <Message>At ItemMenu.java:[lines 10-85]</Message>
+      <SourceLine classname="controller.menus.ItemMenu" start="10" end="81" sourcefile="ItemMenu.java" sourcepath="controller/menus/ItemMenu.java" relSourcepath="java/controller/menus/ItemMenu.java">
+        <Message>At ItemMenu.java:[lines 10-81]</Message>
       </SourceLine>
       <Message>In class controller.menus.ItemMenu</Message>
     </Class>
@@ -75,8 +89,8 @@
     <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
     <LongMessage>new controller.menus.ItemMenu(MemberMenu, Registry) may expose internal representation by storing an externally mutable object into ItemMenu.registry</LongMessage>
     <Class classname="controller.menus.ItemMenu" primary="true">
-      <SourceLine classname="controller.menus.ItemMenu" start="10" end="85" sourcefile="ItemMenu.java" sourcepath="controller/menus/ItemMenu.java" relSourcepath="java/controller/menus/ItemMenu.java">
-        <Message>At ItemMenu.java:[lines 10-85]</Message>
+      <SourceLine classname="controller.menus.ItemMenu" start="10" end="81" sourcefile="ItemMenu.java" sourcepath="controller/menus/ItemMenu.java" relSourcepath="java/controller/menus/ItemMenu.java">
+        <Message>At ItemMenu.java:[lines 10-81]</Message>
       </SourceLine>
       <Message>In class controller.menus.ItemMenu</Message>
     </Class>
@@ -101,30 +115,30 @@
     <ShortMessage>Method invokes System.exit(...)</ShortMessage>
     <LongMessage>controller.menus.MainMenu.quitProgram() invokes System.exit(...), which shuts down the entire virtual machine</LongMessage>
     <Class classname="controller.menus.MainMenu" primary="true">
-      <SourceLine classname="controller.menus.MainMenu" start="10" end="112" sourcefile="MainMenu.java" sourcepath="controller/menus/MainMenu.java" relSourcepath="java/controller/menus/MainMenu.java">
-        <Message>At MainMenu.java:[lines 10-112]</Message>
+      <SourceLine classname="controller.menus.MainMenu" start="10" end="97" sourcefile="MainMenu.java" sourcepath="controller/menus/MainMenu.java" relSourcepath="java/controller/menus/MainMenu.java">
+        <Message>At MainMenu.java:[lines 10-97]</Message>
       </SourceLine>
       <Message>In class controller.menus.MainMenu</Message>
     </Class>
     <Method classname="controller.menus.MainMenu" name="quitProgram" signature="()V" isStatic="false" primary="true">
-      <SourceLine classname="controller.menus.MainMenu" start="111" end="112" startBytecode="0" endBytecode="50" sourcefile="MainMenu.java" sourcepath="controller/menus/MainMenu.java" relSourcepath="java/controller/menus/MainMenu.java"/>
+      <SourceLine classname="controller.menus.MainMenu" start="96" end="97" startBytecode="0" endBytecode="50" sourcefile="MainMenu.java" sourcepath="controller/menus/MainMenu.java" relSourcepath="java/controller/menus/MainMenu.java"/>
       <Message>In method controller.menus.MainMenu.quitProgram()</Message>
     </Method>
-    <SourceLine classname="controller.menus.MainMenu" primary="true" start="111" end="111" startBytecode="1" endBytecode="1" sourcefile="MainMenu.java" sourcepath="controller/menus/MainMenu.java" relSourcepath="java/controller/menus/MainMenu.java">
-      <Message>At MainMenu.java:[line 111]</Message>
+    <SourceLine classname="controller.menus.MainMenu" primary="true" start="96" end="96" startBytecode="1" endBytecode="1" sourcefile="MainMenu.java" sourcepath="controller/menus/MainMenu.java" relSourcepath="java/controller/menus/MainMenu.java">
+      <Message>At MainMenu.java:[line 96]</Message>
     </SourceLine>
   </BugInstance>
   <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="210578a34b71d4e03958e28755677f56" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
     <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
     <LongMessage>new controller.menus.MainMenu(Registry, DayCounter) may expose internal representation by storing an externally mutable object into MainMenu.registry</LongMessage>
     <Class classname="controller.menus.MainMenu" primary="true">
-      <SourceLine classname="controller.menus.MainMenu" start="10" end="112" sourcefile="MainMenu.java" sourcepath="controller/menus/MainMenu.java" relSourcepath="java/controller/menus/MainMenu.java">
-        <Message>At MainMenu.java:[lines 10-112]</Message>
+      <SourceLine classname="controller.menus.MainMenu" start="10" end="97" sourcefile="MainMenu.java" sourcepath="controller/menus/MainMenu.java" relSourcepath="java/controller/menus/MainMenu.java">
+        <Message>At MainMenu.java:[lines 10-97]</Message>
       </SourceLine>
       <Message>In class controller.menus.MainMenu</Message>
     </Class>
     <Method classname="controller.menus.MainMenu" name="&lt;init&gt;" signature="(Lmodel/Registry;Lmodel/DayCounter;)V" isStatic="false" primary="true">
-      <SourceLine classname="controller.menus.MainMenu" start="17" end="21" startBytecode="0" endBytecode="136" sourcefile="MainMenu.java" sourcepath="controller/menus/MainMenu.java" relSourcepath="java/controller/menus/MainMenu.java"/>
+      <SourceLine classname="controller.menus.MainMenu" start="17" end="21" startBytecode="0" endBytecode="135" sourcefile="MainMenu.java" sourcepath="controller/menus/MainMenu.java" relSourcepath="java/controller/menus/MainMenu.java"/>
       <Message>In method new controller.menus.MainMenu(Registry, DayCounter)</Message>
     </Method>
     <Field classname="controller.menus.MainMenu" name="registry" signature="Lmodel/Registry;" isStatic="false" primary="true">
@@ -140,18 +154,18 @@
       <Message>At MainMenu.java:[line 18]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="5f5177c7f5e38930833fa9e5291ee856" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="18b743c1a08d3bd9d79af29d7d5558f5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
     <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
-    <LongMessage>new controller.menus.MemberMenu(MainMenu, Registry, DayCounter) may expose internal representation by storing an externally mutable object into MemberMenu.mainMenu</LongMessage>
+    <LongMessage>new controller.menus.MemberMenu(MainMenu, Registry) may expose internal representation by storing an externally mutable object into MemberMenu.mainMenu</LongMessage>
     <Class classname="controller.menus.MemberMenu" primary="true">
-      <SourceLine classname="controller.menus.MemberMenu" start="12" end="123" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java">
-        <Message>At MemberMenu.java:[lines 12-123]</Message>
+      <SourceLine classname="controller.menus.MemberMenu" start="11" end="104" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java">
+        <Message>At MemberMenu.java:[lines 11-104]</Message>
       </SourceLine>
       <Message>In class controller.menus.MemberMenu</Message>
     </Class>
-    <Method classname="controller.menus.MemberMenu" name="&lt;init&gt;" signature="(Lcontroller/menus/MainMenu;Lmodel/Registry;Lmodel/DayCounter;)V" isStatic="false" primary="true">
-      <SourceLine classname="controller.menus.MemberMenu" start="22" end="29" startBytecode="0" endBytecode="172" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java"/>
-      <Message>In method new controller.menus.MemberMenu(MainMenu, Registry, DayCounter)</Message>
+    <Method classname="controller.menus.MemberMenu" name="&lt;init&gt;" signature="(Lcontroller/menus/MainMenu;Lmodel/Registry;)V" isStatic="false" primary="true">
+      <SourceLine classname="controller.menus.MemberMenu" start="20" end="26" startBytecode="0" endBytecode="152" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java"/>
+      <Message>In method new controller.menus.MemberMenu(MainMenu, Registry)</Message>
     </Method>
     <Field classname="controller.menus.MemberMenu" name="mainMenu" signature="Lcontroller/menus/MainMenu;" isStatic="false" primary="true">
       <SourceLine classname="controller.menus.MemberMenu" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java">
@@ -162,22 +176,22 @@
     <LocalVariable name="mainMenu" register="1" pc="28" role="LOCAL_VARIABLE_NAMED">
       <Message>Local variable named mainMenu</Message>
     </LocalVariable>
-    <SourceLine classname="controller.menus.MemberMenu" primary="true" start="23" end="23" startBytecode="28" endBytecode="28" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java">
-      <Message>At MemberMenu.java:[line 23]</Message>
+    <SourceLine classname="controller.menus.MemberMenu" primary="true" start="21" end="21" startBytecode="28" endBytecode="28" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java">
+      <Message>At MemberMenu.java:[line 21]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="ce49efc0fef20cd6db83eaaf2c466554" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="115206cd039bcaa940588f8ff4efc028" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
     <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
-    <LongMessage>new controller.menus.MemberMenu(MainMenu, Registry, DayCounter) may expose internal representation by storing an externally mutable object into MemberMenu.registry</LongMessage>
+    <LongMessage>new controller.menus.MemberMenu(MainMenu, Registry) may expose internal representation by storing an externally mutable object into MemberMenu.registry</LongMessage>
     <Class classname="controller.menus.MemberMenu" primary="true">
-      <SourceLine classname="controller.menus.MemberMenu" start="12" end="123" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java">
-        <Message>At MemberMenu.java:[lines 12-123]</Message>
+      <SourceLine classname="controller.menus.MemberMenu" start="11" end="104" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java">
+        <Message>At MemberMenu.java:[lines 11-104]</Message>
       </SourceLine>
       <Message>In class controller.menus.MemberMenu</Message>
     </Class>
-    <Method classname="controller.menus.MemberMenu" name="&lt;init&gt;" signature="(Lcontroller/menus/MainMenu;Lmodel/Registry;Lmodel/DayCounter;)V" isStatic="false" primary="true">
-      <SourceLine classname="controller.menus.MemberMenu" start="22" end="29" startBytecode="0" endBytecode="172" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java"/>
-      <Message>In method new controller.menus.MemberMenu(MainMenu, Registry, DayCounter)</Message>
+    <Method classname="controller.menus.MemberMenu" name="&lt;init&gt;" signature="(Lcontroller/menus/MainMenu;Lmodel/Registry;)V" isStatic="false" primary="true">
+      <SourceLine classname="controller.menus.MemberMenu" start="20" end="26" startBytecode="0" endBytecode="152" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java"/>
+      <Message>In method new controller.menus.MemberMenu(MainMenu, Registry)</Message>
     </Method>
     <Field classname="controller.menus.MemberMenu" name="registry" signature="Lmodel/Registry;" isStatic="false" primary="true">
       <SourceLine classname="controller.menus.MemberMenu" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java">
@@ -188,21 +202,21 @@
     <LocalVariable name="registry" register="2" pc="33" role="LOCAL_VARIABLE_NAMED">
       <Message>Local variable named registry</Message>
     </LocalVariable>
-    <SourceLine classname="controller.menus.MemberMenu" primary="true" start="24" end="24" startBytecode="33" endBytecode="33" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java">
-      <Message>At MemberMenu.java:[line 24]</Message>
+    <SourceLine classname="controller.menus.MemberMenu" primary="true" start="22" end="22" startBytecode="33" endBytecode="33" sourcefile="MemberMenu.java" sourcepath="controller/menus/MemberMenu.java" relSourcepath="java/controller/menus/MemberMenu.java">
+      <Message>At MemberMenu.java:[line 22]</Message>
     </SourceLine>
   </BugInstance>
   <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="d1abd316667b82bf96c6e7ab85811642" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
     <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
     <LongMessage>new controller.menus.UpdateItemMenu(ItemMenu, Registry) may expose internal representation by storing an externally mutable object into UpdateItemMenu.itemMenu</LongMessage>
     <Class classname="controller.menus.UpdateItemMenu" primary="true">
-      <SourceLine classname="controller.menus.UpdateItemMenu" start="10" end="99" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java">
-        <Message>At UpdateItemMenu.java:[lines 10-99]</Message>
+      <SourceLine classname="controller.menus.UpdateItemMenu" start="9" end="90" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java">
+        <Message>At UpdateItemMenu.java:[lines 9-90]</Message>
       </SourceLine>
       <Message>In class controller.menus.UpdateItemMenu</Message>
     </Class>
     <Method classname="controller.menus.UpdateItemMenu" name="&lt;init&gt;" signature="(Lcontroller/menus/ItemMenu;Lmodel/Registry;)V" isStatic="false" primary="true">
-      <SourceLine classname="controller.menus.UpdateItemMenu" start="16" end="19" startBytecode="0" endBytecode="118" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java"/>
+      <SourceLine classname="controller.menus.UpdateItemMenu" start="15" end="18" startBytecode="0" endBytecode="118" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java"/>
       <Message>In method new controller.menus.UpdateItemMenu(ItemMenu, Registry)</Message>
     </Method>
     <Field classname="controller.menus.UpdateItemMenu" name="itemMenu" signature="Lcontroller/menus/ItemMenu;" isStatic="false" primary="true">
@@ -214,21 +228,21 @@
     <LocalVariable name="itemMenu" register="1" pc="28" role="LOCAL_VARIABLE_NAMED">
       <Message>Local variable named itemMenu</Message>
     </LocalVariable>
-    <SourceLine classname="controller.menus.UpdateItemMenu" primary="true" start="17" end="17" startBytecode="28" endBytecode="28" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java">
-      <Message>At UpdateItemMenu.java:[line 17]</Message>
+    <SourceLine classname="controller.menus.UpdateItemMenu" primary="true" start="16" end="16" startBytecode="28" endBytecode="28" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java">
+      <Message>At UpdateItemMenu.java:[line 16]</Message>
     </SourceLine>
   </BugInstance>
   <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="d07c4febd38a561d328e3f55cd18e1bf" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
     <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
     <LongMessage>new controller.menus.UpdateItemMenu(ItemMenu, Registry) may expose internal representation by storing an externally mutable object into UpdateItemMenu.registry</LongMessage>
     <Class classname="controller.menus.UpdateItemMenu" primary="true">
-      <SourceLine classname="controller.menus.UpdateItemMenu" start="10" end="99" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java">
-        <Message>At UpdateItemMenu.java:[lines 10-99]</Message>
+      <SourceLine classname="controller.menus.UpdateItemMenu" start="9" end="90" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java">
+        <Message>At UpdateItemMenu.java:[lines 9-90]</Message>
       </SourceLine>
       <Message>In class controller.menus.UpdateItemMenu</Message>
     </Class>
     <Method classname="controller.menus.UpdateItemMenu" name="&lt;init&gt;" signature="(Lcontroller/menus/ItemMenu;Lmodel/Registry;)V" isStatic="false" primary="true">
-      <SourceLine classname="controller.menus.UpdateItemMenu" start="16" end="19" startBytecode="0" endBytecode="118" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java"/>
+      <SourceLine classname="controller.menus.UpdateItemMenu" start="15" end="18" startBytecode="0" endBytecode="118" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java"/>
       <Message>In method new controller.menus.UpdateItemMenu(ItemMenu, Registry)</Message>
     </Method>
     <Field classname="controller.menus.UpdateItemMenu" name="registry" signature="Lmodel/Registry;" isStatic="false" primary="true">
@@ -240,22 +254,22 @@
     <LocalVariable name="registry" register="2" pc="33" role="LOCAL_VARIABLE_NAMED">
       <Message>Local variable named registry</Message>
     </LocalVariable>
-    <SourceLine classname="controller.menus.UpdateItemMenu" primary="true" start="18" end="18" startBytecode="33" endBytecode="33" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java">
-      <Message>At UpdateItemMenu.java:[line 18]</Message>
+    <SourceLine classname="controller.menus.UpdateItemMenu" primary="true" start="17" end="17" startBytecode="33" endBytecode="33" sourcefile="UpdateItemMenu.java" sourcepath="controller/menus/UpdateItemMenu.java" relSourcepath="java/controller/menus/UpdateItemMenu.java">
+      <Message>At UpdateItemMenu.java:[line 17]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="f94c3c1a2bd78d9dd13bb9748ea5c8d0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="6bda054f50c0c1b7ef943eaaad977bdb" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
     <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
-    <LongMessage>new controller.menus.UpdateMemberMenu(MemberMenu, Registry, DayCounter) may expose internal representation by storing an externally mutable object into UpdateMemberMenu.memberMenu</LongMessage>
+    <LongMessage>new controller.menus.UpdateMemberMenu(MemberMenu, Registry) may expose internal representation by storing an externally mutable object into UpdateMemberMenu.memberMenu</LongMessage>
     <Class classname="controller.menus.UpdateMemberMenu" primary="true">
-      <SourceLine classname="controller.menus.UpdateMemberMenu" start="9" end="85" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
-        <Message>At UpdateMemberMenu.java:[lines 9-85]</Message>
+      <SourceLine classname="controller.menus.UpdateMemberMenu" start="8" end="74" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
+        <Message>At UpdateMemberMenu.java:[lines 8-74]</Message>
       </SourceLine>
       <Message>In class controller.menus.UpdateMemberMenu</Message>
     </Class>
-    <Method classname="controller.menus.UpdateMemberMenu" name="&lt;init&gt;" signature="(Lcontroller/menus/MemberMenu;Lmodel/Registry;Lmodel/DayCounter;)V" isStatic="false" primary="true">
-      <SourceLine classname="controller.menus.UpdateMemberMenu" start="16" end="20" startBytecode="0" endBytecode="137" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java"/>
-      <Message>In method new controller.menus.UpdateMemberMenu(MemberMenu, Registry, DayCounter)</Message>
+    <Method classname="controller.menus.UpdateMemberMenu" name="&lt;init&gt;" signature="(Lcontroller/menus/MemberMenu;Lmodel/Registry;)V" isStatic="false" primary="true">
+      <SourceLine classname="controller.menus.UpdateMemberMenu" start="14" end="17" startBytecode="0" endBytecode="118" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java"/>
+      <Message>In method new controller.menus.UpdateMemberMenu(MemberMenu, Registry)</Message>
     </Method>
     <Field classname="controller.menus.UpdateMemberMenu" name="memberMenu" signature="Lcontroller/menus/MemberMenu;" isStatic="false" primary="true">
       <SourceLine classname="controller.menus.UpdateMemberMenu" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
@@ -266,22 +280,22 @@
     <LocalVariable name="memberMenu" register="1" pc="28" role="LOCAL_VARIABLE_NAMED">
       <Message>Local variable named memberMenu</Message>
     </LocalVariable>
-    <SourceLine classname="controller.menus.UpdateMemberMenu" primary="true" start="17" end="17" startBytecode="28" endBytecode="28" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
-      <Message>At UpdateMemberMenu.java:[line 17]</Message>
+    <SourceLine classname="controller.menus.UpdateMemberMenu" primary="true" start="15" end="15" startBytecode="28" endBytecode="28" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
+      <Message>At UpdateMemberMenu.java:[line 15]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="895e1590a4ef25dd104297a3ae340a1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="372ef227a34eed3284209a3344f3b80c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
     <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
-    <LongMessage>new controller.menus.UpdateMemberMenu(MemberMenu, Registry, DayCounter) may expose internal representation by storing an externally mutable object into UpdateMemberMenu.registry</LongMessage>
+    <LongMessage>new controller.menus.UpdateMemberMenu(MemberMenu, Registry) may expose internal representation by storing an externally mutable object into UpdateMemberMenu.registry</LongMessage>
     <Class classname="controller.menus.UpdateMemberMenu" primary="true">
-      <SourceLine classname="controller.menus.UpdateMemberMenu" start="9" end="85" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
-        <Message>At UpdateMemberMenu.java:[lines 9-85]</Message>
+      <SourceLine classname="controller.menus.UpdateMemberMenu" start="8" end="74" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
+        <Message>At UpdateMemberMenu.java:[lines 8-74]</Message>
       </SourceLine>
       <Message>In class controller.menus.UpdateMemberMenu</Message>
     </Class>
-    <Method classname="controller.menus.UpdateMemberMenu" name="&lt;init&gt;" signature="(Lcontroller/menus/MemberMenu;Lmodel/Registry;Lmodel/DayCounter;)V" isStatic="false" primary="true">
-      <SourceLine classname="controller.menus.UpdateMemberMenu" start="16" end="20" startBytecode="0" endBytecode="137" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java"/>
-      <Message>In method new controller.menus.UpdateMemberMenu(MemberMenu, Registry, DayCounter)</Message>
+    <Method classname="controller.menus.UpdateMemberMenu" name="&lt;init&gt;" signature="(Lcontroller/menus/MemberMenu;Lmodel/Registry;)V" isStatic="false" primary="true">
+      <SourceLine classname="controller.menus.UpdateMemberMenu" start="14" end="17" startBytecode="0" endBytecode="118" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java"/>
+      <Message>In method new controller.menus.UpdateMemberMenu(MemberMenu, Registry)</Message>
     </Method>
     <Field classname="controller.menus.UpdateMemberMenu" name="registry" signature="Lmodel/Registry;" isStatic="false" primary="true">
       <SourceLine classname="controller.menus.UpdateMemberMenu" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
@@ -292,27 +306,8 @@
     <LocalVariable name="registry" register="2" pc="33" role="LOCAL_VARIABLE_NAMED">
       <Message>Local variable named registry</Message>
     </LocalVariable>
-    <SourceLine classname="controller.menus.UpdateMemberMenu" primary="true" start="18" end="18" startBytecode="33" endBytecode="33" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
-      <Message>At UpdateMemberMenu.java:[line 18]</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="cad1c9f143f4a0f83980f0ea18aed03" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>Unread field</ShortMessage>
-    <LongMessage>Unread field: controller.menus.UpdateMemberMenu.dayCounter</LongMessage>
-    <Class classname="controller.menus.UpdateMemberMenu" primary="true">
-      <SourceLine classname="controller.menus.UpdateMemberMenu" start="9" end="85" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
-        <Message>At UpdateMemberMenu.java:[lines 9-85]</Message>
-      </SourceLine>
-      <Message>In class controller.menus.UpdateMemberMenu</Message>
-    </Class>
-    <Field classname="controller.menus.UpdateMemberMenu" name="dayCounter" signature="Lmodel/DayCounter;" isStatic="false" primary="true">
-      <SourceLine classname="controller.menus.UpdateMemberMenu" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
-        <Message>In UpdateMemberMenu.java</Message>
-      </SourceLine>
-      <Message>Field controller.menus.UpdateMemberMenu.dayCounter</Message>
-    </Field>
-    <SourceLine classname="controller.menus.UpdateMemberMenu" primary="true" start="19" end="19" startBytecode="38" endBytecode="38" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
-      <Message>At UpdateMemberMenu.java:[line 19]</Message>
+    <SourceLine classname="controller.menus.UpdateMemberMenu" primary="true" start="16" end="16" startBytecode="33" endBytecode="33" sourcefile="UpdateMemberMenu.java" sourcepath="controller/menus/UpdateMemberMenu.java" relSourcepath="java/controller/menus/UpdateMemberMenu.java">
+      <Message>At UpdateMemberMenu.java:[line 16]</Message>
     </SourceLine>
   </BugInstance>
   <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="1859b8852a315822e30b99354f58f5f8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
@@ -347,9 +342,6 @@
   <BugCategory category="MALICIOUS_CODE">
     <Description>Malicious code vulnerability</Description>
   </BugCategory>
-  <BugCategory category="PERFORMANCE">
-    <Description>Performance</Description>
-  </BugCategory>
   <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
     <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
     <Details><![CDATA[
@@ -364,14 +356,6 @@
 
     ]]></Details>
   </BugPattern>
-  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
-    <ShortDescription>Unread field</ShortDescription>
-    <Details><![CDATA[
-
-  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
-
-    ]]></Details>
-  </BugPattern>
   <BugPattern type="DM_EXIT" abbrev="Dm" category="BAD_PRACTICE" cweid="382">
     <ShortDescription>Method invokes System.exit(...)</ShortDescription>
     <Details><![CDATA[
@@ -383,9 +367,6 @@
 
     ]]></Details>
   </BugPattern>
-  <BugCode abbrev="UrF">
-    <Description>Unread field</Description>
-  </BugCode>
   <BugCode abbrev="Dm">
     <Description>Dubious method used</Description>
   </BugCode>
@@ -393,15 +374,15 @@
     <Description>Storing reference to mutable object</Description>
   </BugCode>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Fri, 7 Oct 2022 14:07:01 +0200" total_classes="33" referenced_classes="76" total_bugs="12" total_size="1507" num_packages="6" java_version="18.0.2.1" vm_version="18.0.2.1+1-1" cpu_seconds="9.10" clock_seconds="26.11" peak_mbytes="151.39" alloc_mbytes="2048.00" gc_seconds="0.11" priority_2="12">
+  <FindBugsSummary timestamp="Sat, 8 Oct 2022 18:03:34 +0200" total_classes="33" referenced_classes="76" total_bugs="11" total_size="1556" num_packages="6" java_version="18.0.2.1" vm_version="18.0.2.1+1-1" cpu_seconds="8.37" clock_seconds="6.51" peak_mbytes="146.50" alloc_mbytes="2048.00" gc_seconds="0.08" priority_2="11">
     <FileStats path="controller/App.java" bugCount="0" size="11"/>
-    <FileStats path="controller/User.java" bugCount="0" size="25"/>
-    <FileStats path="controller/menus/DataFetcher.java" bugCount="0" size="75"/>
-    <FileStats path="controller/menus/ItemMenu.java" bugCount="2" size="63" bugHash="4019ca948635986771679a609b5883be"/>
-    <FileStats path="controller/menus/MainMenu.java" bugCount="2" size="83" bugHash="1e50001e2e68ffd260cd5dbf8c95b4c6"/>
-    <FileStats path="controller/menus/MemberMenu.java" bugCount="2" size="90" bugHash="6e513a337f9b0499ffb8f7d650df6e8c"/>
-    <FileStats path="controller/menus/UpdateItemMenu.java" bugCount="2" size="76" bugHash="b2868de894c811ed6403369d9ce0fa5f"/>
-    <FileStats path="controller/menus/UpdateMemberMenu.java" bugCount="3" size="66" bugHash="2684a7ae3f3adb43cce84e1703e7f4d7"/>
+    <FileStats path="controller/User.java" bugCount="0" size="19"/>
+    <FileStats path="controller/menus/DataFetcher.java" bugCount="0" size="144"/>
+    <FileStats path="controller/menus/ItemMenu.java" bugCount="2" size="61" bugHash="4019ca948635986771679a609b5883be"/>
+    <FileStats path="controller/menus/MainMenu.java" bugCount="2" size="73" bugHash="4be3f14d355b4be896cd19d3d75f9b6f"/>
+    <FileStats path="controller/menus/MemberMenu.java" bugCount="2" size="77" bugHash="c80128777bdbb87c4ed6ab9cc60785d6"/>
+    <FileStats path="controller/menus/UpdateItemMenu.java" bugCount="2" size="70" bugHash="d50fb67b757bce050b4a76fa84cf6a79"/>
+    <FileStats path="controller/menus/UpdateMemberMenu.java" bugCount="2" size="58" bugHash="4a2c127510add528ce621986659d1bf6"/>
     <FileStats path="model/Contract.java" bugCount="0" size="33"/>
     <FileStats path="model/Day.java" bugCount="0" size="13"/>
     <FileStats path="model/DayCounter.java" bugCount="0" size="11"/>
@@ -409,37 +390,37 @@
     <FileStats path="model/Interval.java" bugCount="0" size="47"/>
     <FileStats path="model/Item.java" bugCount="1" size="109" bugHash="42d7d414fcb1938c86c2e85cf971f195"/>
     <FileStats path="model/ItemType.java" bugCount="0" size="20"/>
-    <FileStats path="model/Member.java" bugCount="0" size="140"/>
-    <FileStats path="model/Registry.java" bugCount="0" size="156"/>
+    <FileStats path="model/Member.java" bugCount="0" size="133"/>
+    <FileStats path="model/Registry.java" bugCount="0" size="158"/>
     <FileStats path="model/Validator.java" bugCount="0" size="77"/>
     <FileStats path="model/persistence/IfPersistence.java" bugCount="0" size="3"/>
-    <FileStats path="model/persistence/Persistence.java" bugCount="0" size="11"/>
-    <FileStats path="view/Console.java" bugCount="0" size="75"/>
-    <FileStats path="view/Input.java" bugCount="0" size="138"/>
-    <FileStats path="view/Output.java" bugCount="0" size="77"/>
+    <FileStats path="model/persistence/Persistence.java" bugCount="0" size="25"/>
+    <FileStats path="view/Console.java" bugCount="0" size="77"/>
+    <FileStats path="view/Input.java" bugCount="0" size="151"/>
+    <FileStats path="view/Output.java" bugCount="0" size="78"/>
     <FileStats path="view/menuChoices/ItemChoice.java" bugCount="0" size="18"/>
     <FileStats path="view/menuChoices/MainChoice.java" bugCount="0" size="20"/>
     <FileStats path="view/menuChoices/MemberChoice.java" bugCount="0" size="20"/>
     <FileStats path="view/menuChoices/UpdateItemChoice.java" bugCount="0" size="18"/>
     <FileStats path="view/menuChoices/UpdateMemberChoice.java" bugCount="0" size="16"/>
-    <PackageStats package="controller" total_bugs="0" total_types="2" total_size="36">
+    <PackageStats package="controller" total_bugs="0" total_types="2" total_size="30">
       <ClassStats class="controller.App" sourceFile="App.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="controller.User" sourceFile="User.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="controller.User" sourceFile="User.java" interface="false" size="19" bugs="0"/>
     </PackageStats>
-    <PackageStats package="controller.menus" total_bugs="11" total_types="11" total_size="453" priority_2="11">
-      <ClassStats class="controller.menus.DataFetcher" sourceFile="DataFetcher.java" interface="false" size="75" bugs="0"/>
-      <ClassStats class="controller.menus.ItemMenu" sourceFile="ItemMenu.java" interface="false" size="59" bugs="2" priority_2="2"/>
+    <PackageStats package="controller.menus" total_bugs="10" total_types="11" total_size="483" priority_2="10">
+      <ClassStats class="controller.menus.DataFetcher" sourceFile="DataFetcher.java" interface="false" size="144" bugs="0"/>
+      <ClassStats class="controller.menus.ItemMenu" sourceFile="ItemMenu.java" interface="false" size="57" bugs="2" priority_2="2"/>
       <ClassStats class="controller.menus.ItemMenu$1" sourceFile="ItemMenu.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="controller.menus.MainMenu" sourceFile="MainMenu.java" interface="false" size="79" bugs="2" priority_2="2"/>
+      <ClassStats class="controller.menus.MainMenu" sourceFile="MainMenu.java" interface="false" size="69" bugs="2" priority_2="2"/>
       <ClassStats class="controller.menus.MainMenu$1" sourceFile="MainMenu.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="controller.menus.MemberMenu" sourceFile="MemberMenu.java" interface="false" size="86" bugs="2" priority_2="2"/>
+      <ClassStats class="controller.menus.MemberMenu" sourceFile="MemberMenu.java" interface="false" size="73" bugs="2" priority_2="2"/>
       <ClassStats class="controller.menus.MemberMenu$1" sourceFile="MemberMenu.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="controller.menus.UpdateItemMenu" sourceFile="UpdateItemMenu.java" interface="false" size="72" bugs="2" priority_2="2"/>
+      <ClassStats class="controller.menus.UpdateItemMenu" sourceFile="UpdateItemMenu.java" interface="false" size="66" bugs="2" priority_2="2"/>
       <ClassStats class="controller.menus.UpdateItemMenu$1" sourceFile="UpdateItemMenu.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="controller.menus.UpdateMemberMenu" sourceFile="UpdateMemberMenu.java" interface="false" size="62" bugs="3" priority_2="3"/>
+      <ClassStats class="controller.menus.UpdateMemberMenu" sourceFile="UpdateMemberMenu.java" interface="false" size="54" bugs="2" priority_2="2"/>
       <ClassStats class="controller.menus.UpdateMemberMenu$1" sourceFile="UpdateMemberMenu.java" interface="false" size="4" bugs="0"/>
     </PackageStats>
-    <PackageStats package="model" total_bugs="1" total_types="10" total_size="622" priority_2="1">
+    <PackageStats package="model" total_bugs="1" total_types="10" total_size="617" priority_2="1">
       <ClassStats class="model.Contract" sourceFile="Contract.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="model.Day" sourceFile="Day.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="model.DayCounter" sourceFile="DayCounter.java" interface="false" size="11" bugs="0"/>
@@ -447,18 +428,18 @@
       <ClassStats class="model.Interval" sourceFile="Interval.java" interface="false" size="47" bugs="0"/>
       <ClassStats class="model.Item" sourceFile="Item.java" interface="false" size="109" bugs="1" priority_2="1"/>
       <ClassStats class="model.ItemType" sourceFile="ItemType.java" interface="false" size="20" bugs="0"/>
-      <ClassStats class="model.Member" sourceFile="Member.java" interface="false" size="140" bugs="0"/>
-      <ClassStats class="model.Registry" sourceFile="Registry.java" interface="false" size="156" bugs="0"/>
+      <ClassStats class="model.Member" sourceFile="Member.java" interface="false" size="133" bugs="0"/>
+      <ClassStats class="model.Registry" sourceFile="Registry.java" interface="false" size="158" bugs="0"/>
       <ClassStats class="model.Validator" sourceFile="Validator.java" interface="false" size="77" bugs="0"/>
     </PackageStats>
-    <PackageStats package="model.persistence" total_bugs="0" total_types="2" total_size="14">
+    <PackageStats package="model.persistence" total_bugs="0" total_types="2" total_size="28">
       <ClassStats class="model.persistence.IfPersistence" sourceFile="IfPersistence.java" interface="true" size="3" bugs="0"/>
-      <ClassStats class="model.persistence.Persistence" sourceFile="Persistence.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="model.persistence.Persistence" sourceFile="Persistence.java" interface="false" size="25" bugs="0"/>
     </PackageStats>
-    <PackageStats package="view" total_bugs="0" total_types="3" total_size="290">
-      <ClassStats class="view.Console" sourceFile="Console.java" interface="false" size="75" bugs="0"/>
-      <ClassStats class="view.Input" sourceFile="Input.java" interface="false" size="138" bugs="0"/>
-      <ClassStats class="view.Output" sourceFile="Output.java" interface="false" size="77" bugs="0"/>
+    <PackageStats package="view" total_bugs="0" total_types="3" total_size="306">
+      <ClassStats class="view.Console" sourceFile="Console.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="view.Input" sourceFile="Input.java" interface="false" size="151" bugs="0"/>
+      <ClassStats class="view.Output" sourceFile="Output.java" interface="false" size="78" bugs="0"/>
     </PackageStats>
     <PackageStats package="view.menuChoices" total_bugs="0" total_types="5" total_size="92">
       <ClassStats class="view.menuChoices.ItemChoice" sourceFile="ItemChoice.java" interface="false" size="18" bugs="0"/>
@@ -468,36 +449,34 @@
       <ClassStats class="view.menuChoices.UpdateMemberChoice" sourceFile="UpdateMemberChoice.java" interface="false" size="16" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="4467" invocations="634" avgMicrosecondsPerInvocation="7046" maxMicrosecondsPerInvocation="464451" standardDeviationMicrosecondsPerInvocation="34452"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="1036" invocations="254" avgMicrosecondsPerInvocation="4082" maxMicrosecondsPerInvocation="212958" standardDeviationMicrosecondsPerInvocation="19196"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="961" invocations="76" avgMicrosecondsPerInvocation="12651" maxMicrosecondsPerInvocation="188622" standardDeviationMicrosecondsPerInvocation="34188"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="890" invocations="255" avgMicrosecondsPerInvocation="3491" maxMicrosecondsPerInvocation="135283" standardDeviationMicrosecondsPerInvocation="15386"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="725" invocations="76" avgMicrosecondsPerInvocation="9544" maxMicrosecondsPerInvocation="218484" standardDeviationMicrosecondsPerInvocation="30243"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="623" invocations="465" avgMicrosecondsPerInvocation="1341" maxMicrosecondsPerInvocation="139685" standardDeviationMicrosecondsPerInvocation="9178"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="574" invocations="254" avgMicrosecondsPerInvocation="2261" maxMicrosecondsPerInvocation="176146" standardDeviationMicrosecondsPerInvocation="13243"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="518" invocations="256" avgMicrosecondsPerInvocation="2024" maxMicrosecondsPerInvocation="74051" standardDeviationMicrosecondsPerInvocation="7241"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="435" invocations="254" avgMicrosecondsPerInvocation="1714" maxMicrosecondsPerInvocation="81195" standardDeviationMicrosecondsPerInvocation="7579"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="382" invocations="638" avgMicrosecondsPerInvocation="599" maxMicrosecondsPerInvocation="65613" standardDeviationMicrosecondsPerInvocation="4172"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="382" invocations="256" avgMicrosecondsPerInvocation="1494" maxMicrosecondsPerInvocation="288608" standardDeviationMicrosecondsPerInvocation="18045"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="366" invocations="254" avgMicrosecondsPerInvocation="1441" maxMicrosecondsPerInvocation="109325" standardDeviationMicrosecondsPerInvocation="7237"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="358" invocations="233" avgMicrosecondsPerInvocation="1538" maxMicrosecondsPerInvocation="128178" standardDeviationMicrosecondsPerInvocation="11139"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="333" invocations="116" avgMicrosecondsPerInvocation="2871" maxMicrosecondsPerInvocation="105908" standardDeviationMicrosecondsPerInvocation="13779"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="332" invocations="33" avgMicrosecondsPerInvocation="10078" maxMicrosecondsPerInvocation="179999" standardDeviationMicrosecondsPerInvocation="33895"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="305" invocations="49" avgMicrosecondsPerInvocation="6241" maxMicrosecondsPerInvocation="176457" standardDeviationMicrosecondsPerInvocation="25704"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="296" invocations="76" avgMicrosecondsPerInvocation="3907" maxMicrosecondsPerInvocation="141667" standardDeviationMicrosecondsPerInvocation="17568"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="287" invocations="33" avgMicrosecondsPerInvocation="8721" maxMicrosecondsPerInvocation="259767" standardDeviationMicrosecondsPerInvocation="44500"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="282" invocations="4386" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="246798" standardDeviationMicrosecondsPerInvocation="3729"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="281" invocations="33" avgMicrosecondsPerInvocation="8533" maxMicrosecondsPerInvocation="117150" standardDeviationMicrosecondsPerInvocation="24477"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="277" invocations="76" avgMicrosecondsPerInvocation="3652" maxMicrosecondsPerInvocation="217621" standardDeviationMicrosecondsPerInvocation="24967"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="270" invocations="33" avgMicrosecondsPerInvocation="8194" maxMicrosecondsPerInvocation="145498" standardDeviationMicrosecondsPerInvocation="26993"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="254" invocations="33" avgMicrosecondsPerInvocation="7723" maxMicrosecondsPerInvocation="240532" standardDeviationMicrosecondsPerInvocation="41160"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="250" invocations="76" avgMicrosecondsPerInvocation="3290" maxMicrosecondsPerInvocation="92539" standardDeviationMicrosecondsPerInvocation="12824"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="240" invocations="254" avgMicrosecondsPerInvocation="947" maxMicrosecondsPerInvocation="131263" standardDeviationMicrosecondsPerInvocation="8660"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantPoolGenFactory" totalMilliseconds="228" invocations="33" avgMicrosecondsPerInvocation="6933" maxMicrosecondsPerInvocation="209361" standardDeviationMicrosecondsPerInvocation="35816"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="221" invocations="33" avgMicrosecondsPerInvocation="6722" maxMicrosecondsPerInvocation="204962" standardDeviationMicrosecondsPerInvocation="35051"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="220" invocations="76" avgMicrosecondsPerInvocation="2905" maxMicrosecondsPerInvocation="101845" standardDeviationMicrosecondsPerInvocation="12718"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MutableLock" totalMilliseconds="201" invocations="33" avgMicrosecondsPerInvocation="6100" maxMicrosecondsPerInvocation="196924" standardDeviationMicrosecondsPerInvocation="33734"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="197" invocations="76" avgMicrosecondsPerInvocation="2599" maxMicrosecondsPerInvocation="86939" standardDeviationMicrosecondsPerInvocation="11314"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="705" invocations="640" avgMicrosecondsPerInvocation="1102" maxMicrosecondsPerInvocation="34409" standardDeviationMicrosecondsPerInvocation="3195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="355" invocations="262" avgMicrosecondsPerInvocation="1355" maxMicrosecondsPerInvocation="52610" standardDeviationMicrosecondsPerInvocation="4813"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="259" invocations="262" avgMicrosecondsPerInvocation="990" maxMicrosecondsPerInvocation="58017" standardDeviationMicrosecondsPerInvocation="4058"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="213" invocations="263" avgMicrosecondsPerInvocation="812" maxMicrosecondsPerInvocation="44009" standardDeviationMicrosecondsPerInvocation="3199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="197" invocations="644" avgMicrosecondsPerInvocation="306" maxMicrosecondsPerInvocation="11141" standardDeviationMicrosecondsPerInvocation="780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="179" invocations="76" avgMicrosecondsPerInvocation="2363" maxMicrosecondsPerInvocation="58358" standardDeviationMicrosecondsPerInvocation="7392"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="179" invocations="262" avgMicrosecondsPerInvocation="684" maxMicrosecondsPerInvocation="28340" standardDeviationMicrosecondsPerInvocation="2594"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="178" invocations="263" avgMicrosecondsPerInvocation="679" maxMicrosecondsPerInvocation="22348" standardDeviationMicrosecondsPerInvocation="2207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="168" invocations="76" avgMicrosecondsPerInvocation="2218" maxMicrosecondsPerInvocation="59270" standardDeviationMicrosecondsPerInvocation="8420"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="147" invocations="472" avgMicrosecondsPerInvocation="311" maxMicrosecondsPerInvocation="14180" standardDeviationMicrosecondsPerInvocation="1135"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="143" invocations="262" avgMicrosecondsPerInvocation="545" maxMicrosecondsPerInvocation="16944" standardDeviationMicrosecondsPerInvocation="1577"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="132" invocations="591" avgMicrosecondsPerInvocation="224" maxMicrosecondsPerInvocation="71208" standardDeviationMicrosecondsPerInvocation="2982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="114" invocations="264" avgMicrosecondsPerInvocation="433" maxMicrosecondsPerInvocation="39854" standardDeviationMicrosecondsPerInvocation="2860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="92" invocations="33" avgMicrosecondsPerInvocation="2810" maxMicrosecondsPerInvocation="33425" standardDeviationMicrosecondsPerInvocation="7229"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="89" invocations="241" avgMicrosecondsPerInvocation="370" maxMicrosecondsPerInvocation="7435" standardDeviationMicrosecondsPerInvocation="823"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="87" invocations="76" avgMicrosecondsPerInvocation="1154" maxMicrosecondsPerInvocation="42098" standardDeviationMicrosecondsPerInvocation="5072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="74" invocations="76" avgMicrosecondsPerInvocation="974" maxMicrosecondsPerInvocation="23596" standardDeviationMicrosecondsPerInvocation="2911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="67" invocations="262" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="12254" standardDeviationMicrosecondsPerInvocation="1199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="67" invocations="116" avgMicrosecondsPerInvocation="578" maxMicrosecondsPerInvocation="23128" standardDeviationMicrosecondsPerInvocation="2272"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison2" totalMilliseconds="63" invocations="33" avgMicrosecondsPerInvocation="1937" maxMicrosecondsPerInvocation="61325" standardDeviationMicrosecondsPerInvocation="10498"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="63" invocations="33" avgMicrosecondsPerInvocation="1912" maxMicrosecondsPerInvocation="49991" standardDeviationMicrosecondsPerInvocation="8695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="61" invocations="256" avgMicrosecondsPerInvocation="241" maxMicrosecondsPerInvocation="23883" standardDeviationMicrosecondsPerInvocation="1752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="57" invocations="33" avgMicrosecondsPerInvocation="1744" maxMicrosecondsPerInvocation="39468" standardDeviationMicrosecondsPerInvocation="6745"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="55" invocations="33" avgMicrosecondsPerInvocation="1677" maxMicrosecondsPerInvocation="18013" standardDeviationMicrosecondsPerInvocation="4114"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="45" invocations="33" avgMicrosecondsPerInvocation="1382" maxMicrosecondsPerInvocation="21455" standardDeviationMicrosecondsPerInvocation="3903"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="45" invocations="76" avgMicrosecondsPerInvocation="596" maxMicrosecondsPerInvocation="25510" standardDeviationMicrosecondsPerInvocation="3072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="43" invocations="76" avgMicrosecondsPerInvocation="571" maxMicrosecondsPerInvocation="11249" standardDeviationMicrosecondsPerInvocation="1664"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="42" invocations="33" avgMicrosecondsPerInvocation="1278" maxMicrosecondsPerInvocation="36081" standardDeviationMicrosecondsPerInvocation="6162"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

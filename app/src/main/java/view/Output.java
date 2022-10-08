@@ -7,7 +7,14 @@ import model.Day;
 import model.Item;
 import model.Member;
 
+/**
+ * Class for output object that prints to user.
+ */
 public class Output {
+
+  /**
+   * Prints main menu.
+   */
   public void printMainMenu() {
     String menu = "\n*** Main Menu ***\n"
         + "simple : List all members\n"
@@ -20,6 +27,9 @@ public class Output {
     System.out.println(menu);
   }
 
+  /**
+   * Prints member menu.
+   */
   public void printMemberMenu() {
     String menu = "\n*** Member Menu ***\n"
         + "delete : Delete member\n"
@@ -32,6 +42,9 @@ public class Output {
     System.out.println(menu);
   }
 
+  /**
+   * Prints the item menu.
+   */
   public void printItemMenu() {
     String menu = "\n*** Item Menu ***\n"
         + "delete : Delete item\n"
@@ -43,6 +56,9 @@ public class Output {
     System.out.println(menu);
   }
 
+  /**
+   * Prints the update member menu.
+   */
   public void printUpdateMemberMenu() {
     String menu = "\n*** Update Member Menu ***\n"
         + "name : Update name\n"
@@ -53,6 +69,9 @@ public class Output {
     System.out.println(menu);
   }
 
+  /**
+   * Prints the update item menu.
+   */
   public void printUpdateItemMenu() {
     String menu = "\n*** Update Item Menu ***\n"
         + "name : Update name\n"
@@ -64,14 +83,29 @@ public class Output {
     System.out.println(menu);
   }
 
+  /**
+   * Prints input message.
+   *
+   * @param message the message to print.
+   */
   public void printMessage(String message) {
     System.out.println("\n" + message);
   }
 
+  /**
+   * Prints error message.
+   *
+   * @param message the error message to print.
+   */
   public void printErrorMessage(String message) {
     System.out.println("\nError: " + message);
   }
 
+  /**
+   * Prints item info.
+   *
+   * @param item the item to print.
+   */
   public void printItemInfo(Item item) {
     System.out.println("\n  --- " + item.getName() + " ---");
     System.out.println("  Id: " + item.getId());
@@ -91,6 +125,11 @@ public class Output {
     }
   }
 
+  /**
+   * Prints a simple list of all members.
+   *
+   * @param members the members to print.
+   */
   public void printMembersSimple(ArrayList<Member> members) {
     System.out.println("\n*** Members (simple) ***");
 
@@ -104,6 +143,11 @@ public class Output {
     }
   }
 
+  /**
+   * Prints a full list of all members.
+   *
+   * @param members the members to print.
+   */
   public void printMembersFull(ArrayList<Member> members) {
     System.out.println("\n*** Members (full) ***");
     for (Member m : members) {
@@ -111,6 +155,11 @@ public class Output {
     }
   }
 
+  /**
+   * Prints info for a single member.
+   *
+   * @param member the member to print.
+   */
   public void printMemberInfo(Member member) {
     System.out.println("\n--- " + member.getName() + " ---");
     System.out.println("ID: " + member.getId());
@@ -123,7 +172,12 @@ public class Output {
     }
   }
 
-  public void printCurrentDay(Day day) {
-    System.out.println("\nCurrent day: " + day.getDayNumber());
+  /**
+   * Prints the current day.
+   *
+   * @param currentDay the day to print.
+   */
+  public void printCurrentDay(Day currentDay) {
+    System.out.println("\nCurrent day: " + currentDay.getDayNumber());
   }
 }

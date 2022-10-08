@@ -1,24 +1,4 @@
-å6 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/controller/User.java
-text:line: 6 column: column:1 
-DExtra separation in import group before 'controller.menus.MainMenu'
-
-text:line: 6 column: column:1 
-VWrong lexicographical order for 'controller.menus.MainMenu' import. Should be before 
-  'java.util.Scanner'.
-
- text:line: 13 column: column:1 
-Missing a Javadoc comment.
-
-!text:line: 14 column: column:46 
-1';' should be separated from previous statement.
-
-!text:line: 14 column: column:46 
-%Only one statement per line allowed.
-
- text:line: 26 column: column:3 
-Missing a Javadoc comment.
-
-ñ3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/controller/menus/MainMenu.java
+ê3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/User.java
 text:line: 9 column: column:1 
 Missing a Javadoc comment.
 
@@ -28,17 +8,24 @@
  text:line: 23 column: column:3 
 Missing a Javadoc comment.
 
-û3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/controller/menus/UpdateMemberMenu.java
-text:line: 8 column: column:1 
+ö3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MainMenu.java
+text:line: 9 column: column:1 
 Missing a Javadoc comment.
 
- text:line: 16 column: column:3 
+ text:line: 17 column: column:3 
 Missing a Javadoc comment.
 
- text:line: 22 column: column:3 
+ text:line: 23 column: column:3 
 Missing a Javadoc comment.
 
-ñ3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/controller/menus/ItemMenu.java
+¢2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateMemberMenu.java
+text:line: 7 column: column:1 
+Missing a Javadoc comment.
+
+ text:line: 19 column: column:3 
+Missing a Javadoc comment.
+
+ö3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/ItemMenu.java
 text:line: 9 column: column:1 
 Missing a Javadoc comment.
 
@@ -48,65 +35,86 @@
  text:line: 24 column: column:3 
 Missing a Javadoc comment.
 
-ô9 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/controller/menus/DataFetcher.java
+û17 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/DataFetcher.java
+ text:line: 13 column: column:1 
+Missing a Javadoc comment.
+
+ text:line: 16 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 30 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 44 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 58 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 72 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 86 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 99 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 112 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 125 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 138 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 151 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 164 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 177 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 190 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 203 column: column:3 
+Missing a Javadoc comment.
+
+!text:line: 216 column: column:3 
+Missing a Javadoc comment.
+
+ú3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MemberMenu.java
+ text:line: 10 column: column:1 
+Missing a Javadoc comment.
+
+ text:line: 20 column: column:3 
+Missing a Javadoc comment.
+
+ text:line: 28 column: column:3 
+Missing a Javadoc comment.
+
+†2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateItemMenu.java
 text:line: 8 column: column:1 
 Missing a Javadoc comment.
 
- text:line: 11 column: column:3 
+ text:line: 20 column: column:3 
 Missing a Javadoc comment.
 
- text:line: 24 column: column:3 
-Missing a Javadoc comment.
-
- text:line: 37 column: column:3 
-Missing a Javadoc comment.
-
- text:line: 50 column: column:3 
-Missing a Javadoc comment.
-
- text:line: 63 column: column:3 
-Missing a Javadoc comment.
-
- text:line: 76 column: column:3 
-Missing a Javadoc comment.
-
- text:line: 89 column: column:3 
-Missing a Javadoc comment.
-
-!text:line: 102 column: column:3 
-Missing a Javadoc comment.
-
-ò3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/controller/menus/MemberMenu.java
- text:line: 11 column: column:1 
-Missing a Javadoc comment.
-
- text:line: 22 column: column:3 
-Missing a Javadoc comment.
-
- text:line: 31 column: column:3 
-Missing a Javadoc comment.
-
-ú2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/controller/menus/UpdateItemMenu.java
-text:line: 9 column: column:1 
-Missing a Javadoc comment.
-
- text:line: 21 column: column:3 
-Missing a Javadoc comment.
-
-ã4 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/controller/App.java
+è3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/App.java
 text:line: 2 column: column:1 
 6'import' should be separated from previous statement.
 
-text:line: 4 column: column:1 
-HExtra separation in import group before 'model.persistence.Persistence'
-
-text:line: 6 column: column:1 
+text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
-text:line: 7 column: column:3 
+text:line: 6 column: column:3 
 Missing a Javadoc comment.
 
-ã4 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/Contract.java
+è4 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Contract.java
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
@@ -119,11 +127,11 @@
  text:line: 46 column: column:3 
 Missing a Javadoc comment.
 
-é1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/IdGenerator.java
+í1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/IdGenerator.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
-ã4 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/Interval.java
+è4 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Interval.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
@@ -136,11 +144,11 @@
  text:line: 62 column: column:3 
 Missing a Javadoc comment.
 
-ç1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/DayCounter.java
+ë1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/DayCounter.java
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-å6 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/Validator.java
+ê6 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Validator.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
@@ -159,19 +167,19 @@
  text:line: 54 column: column:3 
 Missing a Javadoc comment.
 
-Ü1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/Day.java
+ä1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Day.java
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-ö1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/persistence/Persistence.java
-text:line: 7 column: column:1 
+û1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/Persistence.java
+ text:line: 11 column: column:1 
 Missing a Javadoc comment.
 
-ú1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/persistence/IfPersistence.java
-text:line: 6 column: column:1 
+†1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/IfPersistence.java
+text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
-â8 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/Member.java
+ç8 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Member.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
@@ -196,58 +204,61 @@
 !text:line: 133 column: column:3 
 Missing a Javadoc comment.
 
-ã1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/ItemType.java
+è1 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/ItemType.java
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-å11 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/Registry.java
+ê12 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Registry.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
- text:line: 15 column: column:3 
+ text:line: 12 column: column:3 
 Missing a Javadoc comment.
 
- text:line: 33 column: column:3 
+ text:line: 18 column: column:3 
 Missing a Javadoc comment.
 
- text:line: 52 column: column:3 
+ text:line: 36 column: column:3 
 Missing a Javadoc comment.
 
-text:line: 54 column: 
+ text:line: 55 column: column:3 
+Missing a Javadoc comment.
+
+text:line: 57 column: 
 0Line is longer than 120 characters (found 132).
 
- text:line: 62 column: column:3 
+ text:line: 65 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 117 column: column:3 
+!text:line: 120 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 126 column: column:3 
+!text:line: 129 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 171 column: column:3 
+!text:line: 174 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 183 column: column:3 
+!text:line: 186 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 199 column: column:3 
+!text:line: 202 column: column:3 
 Missing a Javadoc comment.
 
-à10 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/model/Item.java
+å10 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Item.java
 text:line: 5 column: column:1 
 Missing a Javadoc comment.
 
  text:line: 16 column: column:3 
 Missing a Javadoc comment.
 
- text:line: 34 column: column:3 
+ text:line: 26 column: column:3 
 Missing a Javadoc comment.
 
- text:line: 45 column: column:3 
+ text:line: 37 column: column:3 
 Missing a Javadoc comment.
 
- text:line: 67 column: column:3 
+ text:line: 56 column: column:3 
 Missing a Javadoc comment.
 
  text:line: 87 column: column:3 
@@ -265,42 +276,42 @@
 !text:line: 150 column: column:3 
 Missing a Javadoc comment.
 
-ò2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/view/menuChoices/ItemChoice.java
+ú2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuChoices/ItemChoice.java
 text:line: 1 column: column:9 
 RPackage name 'view.menuChoices' must match pattern '^[a-z]+(\.[a-z][a-z0-9]*)*$'.
 
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-ö2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/view/menuChoices/MemberChoice.java
+û2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuChoices/MemberChoice.java
 text:line: 1 column: column:9 
 RPackage name 'view.menuChoices' must match pattern '^[a-z]+(\.[a-z][a-z0-9]*)*$'.
 
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-û2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/view/menuChoices/UpdateItemChoice.java
+¢2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuChoices/UpdateItemChoice.java
 text:line: 1 column: column:9 
 RPackage name 'view.menuChoices' must match pattern '^[a-z]+(\.[a-z][a-z0-9]*)*$'.
 
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-ò2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/view/menuChoices/MainChoice.java
+ú2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuChoices/MainChoice.java
 text:line: 1 column: column:9 
 RPackage name 'view.menuChoices' must match pattern '^[a-z]+(\.[a-z][a-z0-9]*)*$'.
 
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-†2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/view/menuChoices/UpdateMemberChoice.java
+§2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuChoices/UpdateMemberChoice.java
 text:line: 1 column: column:9 
 RPackage name 'view.menuChoices' must match pattern '^[a-z]+(\.[a-z][a-z0-9]*)*$'.
 
 text:line: 3 column: column:1 
 Missing a Javadoc comment.
 
-â11 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/view/Output.java
+ç11 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Output.java
 text:line: 5 column: column:1 
 9Extra separation in import group before 'model.Contract'
 
@@ -334,7 +345,7 @@
 !text:line: 114 column: column:3 
 Missing a Javadoc comment.
 
-à19 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/view/Input.java
+å20 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Input.java
 text:line: 5 column: column:1 
 4Extra separation in import group before 'model.Day'
 
@@ -350,49 +361,52 @@
  text:line: 40 column: column:3 
 Missing a Javadoc comment.
 
- text:line: 60 column: column:3 
+ text:line: 61 column: column:3 
 Missing a Javadoc comment.
 
- text:line: 78 column: column:3 
+ text:line: 80 column: column:3 
 Missing a Javadoc comment.
 
- text:line: 94 column: column:3 
+ text:line: 97 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 112 column: column:3 
+!text:line: 116 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 119 column: column:3 
+!text:line: 123 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 126 column: column:3 
+!text:line: 130 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 133 column: column:3 
+!text:line: 137 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 140 column: column:3 
+!text:line: 144 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 147 column: column:3 
+!text:line: 156 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 154 column: column:3 
+!text:line: 163 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 176 column: column:3 
+!text:line: 170 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 190 column: column:3 
+!text:line: 192 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 197 column: column:3 
+!text:line: 206 column: column:3 
 Missing a Javadoc comment.
 
-!text:line: 203 column: column:3 
+!text:line: 213 column: column:3 
 Missing a Javadoc comment.
 
-â2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/A2_test/a2/app/src/main/java/view/Console.java
+!text:line: 219 column: column:3 
+Missing a Javadoc comment.
+
+ç2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Console.java
 text:line: 5 column: column:1 
 4Extra separation in import group before 'model.Day'
 
@@ -403,18 +417,18 @@
 )0 FindBugs Issues in model/Registry.java
 <0 FindBugs Issues in view/menuChoices/UpdateItemChoice.java
 62 FindBugs Issues in controller/menus/MemberMenu.java
-text:lines: 12-123 
-dnew controller.menus.MemberMenu(MainMenu, Registry, DayCounter) may expose internal representation 
-D  by storing an externally mutable object into MemberMenu.mainMenu 
+text:lines: 11-104 
+fnew controller.menus.MemberMenu(MainMenu, Registry) may expose internal representation by storing an 
+6  externally mutable object into MemberMenu.mainMenu 
 QMay expose internal representation by incorporating reference to mutable object 
 fThis code stores a reference to an externally mutable object into the internal representation of the 
 d  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
 e  would compromise security or other important properties, you will need to do something different. 
 F  Storing a copy of the object is better approach in many situations.
 
-text:lines: 12-123 
-dnew controller.menus.MemberMenu(MainMenu, Registry, DayCounter) may expose internal representation 
-D  by storing an externally mutable object into MemberMenu.registry 
+text:lines: 11-104 
+fnew controller.menus.MemberMenu(MainMenu, Registry) may expose internal representation by storing an 
+6  externally mutable object into MemberMenu.registry 
 QMay expose internal representation by incorporating reference to mutable object 
 fThis code stores a reference to an externally mutable object into the internal representation of the 
 d  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
@@ -426,7 +440,7 @@
 $0 FindBugs Issues in model/Day.java
 +0 FindBugs Issues in model/DayCounter.java
 :2 FindBugs Issues in controller/menus/UpdateItemMenu.java
-text:lines: 10-99 
+text:lines: 9-90 
 _new controller.menus.UpdateItemMenu(ItemMenu, Registry) may expose internal representation by 
 E  storing an externally mutable object into UpdateItemMenu.itemMenu 
 QMay expose internal representation by incorporating reference to mutable object 
@@ -435,7 +449,7 @@
 e  would compromise security or other important properties, you will need to do something different. 
 F  Storing a copy of the object is better approach in many situations.
 
-text:lines: 10-99 
+text:lines: 9-90 
 _new controller.menus.UpdateItemMenu(ItemMenu, Registry) may expose internal representation by 
 E  storing an externally mutable object into UpdateItemMenu.registry 
 QMay expose internal representation by incorporating reference to mutable object 
@@ -447,14 +461,14 @@
 )0 FindBugs Issues in controller/App.java
 70 FindBugs Issues in controller/menus/DataFetcher.java
 42 FindBugs Issues in controller/menus/MainMenu.java
-text:lines: 10-112 
+text:lines: 10-97 
 UquitProgram() invokes System.exit(...), which shuts down the entire virtual machine 
 !Method invokes System.exit(...) 
 eInvoking System.exit shuts down the entire Java virtual machine. This should only been done when it 
 d  is appropriate. Such calls make it hard or impossible for your code to be invoked by other code. 
 0  Consider throwing a RuntimeException instead.
 
-text:lines: 10-112 
+text:lines: 10-97 
 fnew controller.menus.MainMenu(Registry, DayCounter) may expose internal representation by storing an 
 4  externally mutable object into MainMenu.registry 
 QMay expose internal representation by incorporating reference to mutable object 
@@ -470,7 +484,7 @@
 )0 FindBugs Issues in model/Interval.java
 &0 FindBugs Issues in view/Output.java
 42 FindBugs Issues in controller/menus/ItemMenu.java
-text:lines: 10-85 
+text:lines: 10-81 
 fnew controller.menus.ItemMenu(MemberMenu, Registry) may expose internal representation by storing an 
 6  externally mutable object into ItemMenu.memberMenu 
 QMay expose internal representation by incorporating reference to mutable object 
@@ -479,7 +493,7 @@
 e  would compromise security or other important properties, you will need to do something different. 
 F  Storing a copy of the object is better approach in many situations.
 
-text:lines: 10-85 
+text:lines: 10-81 
 fnew controller.menus.ItemMenu(MemberMenu, Registry) may expose internal representation by storing an 
 4  externally mutable object into ItemMenu.registry 
 QMay expose internal representation by incorporating reference to mutable object 
@@ -505,27 +519,22 @@
 *0 FindBugs Issues in controller/User.java
 :0 FindBugs Issues in model/persistence/IfPersistence.java
 80 FindBugs Issues in model/persistence/Persistence.java
-<3 FindBugs Issues in controller/menus/UpdateMemberMenu.java
-text:lines: 9-85 
-]new controller.menus.UpdateMemberMenu(MemberMenu, Registry, DayCounter) may expose internal 
-[  representation by storing an externally mutable object into UpdateMemberMenu.memberMenu 
+<2 FindBugs Issues in controller/menus/UpdateMemberMenu.java
+text:lines: 8-74 
+cnew controller.menus.UpdateMemberMenu(MemberMenu, Registry) may expose internal representation by 
+I  storing an externally mutable object into UpdateMemberMenu.memberMenu 
 QMay expose internal representation by incorporating reference to mutable object 
 fThis code stores a reference to an externally mutable object into the internal representation of the 
 d  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
 e  would compromise security or other important properties, you will need to do something different. 
 F  Storing a copy of the object is better approach in many situations.
 
-text:lines: 9-85 
-]new controller.menus.UpdateMemberMenu(MemberMenu, Registry, DayCounter) may expose internal 
-Y  representation by storing an externally mutable object into UpdateMemberMenu.registry 
+text:lines: 8-74 
+cnew controller.menus.UpdateMemberMenu(MemberMenu, Registry) may expose internal representation by 
+G  storing an externally mutable object into UpdateMemberMenu.registry 
 QMay expose internal representation by incorporating reference to mutable object 
 fThis code stores a reference to an externally mutable object into the internal representation of the 
 d  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
 e  would compromise security or other important properties, you will need to do something different. 
 F  Storing a copy of the object is better approach in many situations.
-
-text:lines: 9-85 
-Unread field: dayCounter 
-Unread field 
-?This field is never read. Consider removing it from the class.
 
