@@ -2,6 +2,9 @@ package model;
 
 import java.util.Random;
 
+/**
+ * Class for IdGenerator object.
+ */
 public class IdGenerator {
   private String characters = "abcdefghijklmnopqrstuvwxyz1234567890";
   private int length;

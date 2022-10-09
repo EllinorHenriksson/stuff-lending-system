@@ -7,7 +7,9 @@ import model.ItemType;
 import model.Member;
 import model.Registry;
 
-
+/**
+ * Class of persistence object.
+ */
 public class Persistence implements IfPersistence {
 
   @Override

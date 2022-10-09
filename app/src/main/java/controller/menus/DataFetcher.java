@@ -10,6 +10,9 @@ import view.menuChoices.MemberChoice;
 import view.menuChoices.UpdateItemChoice;
 import view.menuChoices.UpdateMemberChoice;
 
+/**
+ * Class for fetching data from the user.
+ */
 public class DataFetcher {
   private Console console = new Console();
 
