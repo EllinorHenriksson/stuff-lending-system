@@ -1,4 +1,4 @@
-package view.menuChoices;
+package view.menuchoices;
 
 /**
  * Class for type of main menu choice.

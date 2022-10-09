@@ -44,7 +44,8 @@ public class Member {
    */
   public Item getItem(String itemId) {
     Item item = getActualItem(itemId);
-    Item copy = new Item(item.getName(), item.getDescription(), item.getType(), item.getCostPerDay(), item.getId(), item.getCreationDay());
+    Item copy = new Item(item.getName(), item.getDescription(), item.getType(), item.getCostPerDay(), 
+        item.getId(), item.getCreationDay());
     copy.setOwner(item.getOwner());
 
     for (Contract c : item.getContracts()) {
@@ -75,7 +76,7 @@ public class Member {
   /**
    * Returns a copy of the list of items on a member object.
    *
-   * @return ArrayList<Item>.
+   * @return ArrayList.
    */
   public ArrayList<Item> getItems() {
     ArrayList<Item> copies = new ArrayList<>();

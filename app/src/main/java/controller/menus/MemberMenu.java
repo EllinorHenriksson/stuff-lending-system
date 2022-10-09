@@ -5,7 +5,7 @@ import model.ItemType;
 import model.Member;
 import model.Registry;
 import view.Console;
-import view.menuChoices.MemberChoice;
+import view.menuchoices.MemberChoice;
 
 public class MemberMenu {
   private Console console = new Console();

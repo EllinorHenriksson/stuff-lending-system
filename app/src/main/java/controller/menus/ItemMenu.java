@@ -4,7 +4,7 @@ import model.Interval;
 import model.Item;
 import model.Registry;
 import view.Console;
-import view.menuChoices.ItemChoice;
+import view.menuchoices.ItemChoice;
 
 public class ItemMenu {
   private Console console = new Console();

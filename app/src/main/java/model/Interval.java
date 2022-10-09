@@ -82,7 +82,7 @@ public class Interval {
   /**
    * Returns the days of the interval object.
    *
-   * @return ArrayList<Day>.
+   * @return ArrayList.
    */
   public ArrayList<Day> getDays() {
     ArrayList<Day> copies = new ArrayList<>();

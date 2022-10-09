@@ -1,16 +1,14 @@
 package view;
 
 import java.util.Scanner;
-
 import model.Day;
 import model.ItemType;
 import model.Validator;
-
-import view.menuChoices.ItemChoice;
-import view.menuChoices.MainChoice;
-import view.menuChoices.MemberChoice;
-import view.menuChoices.UpdateItemChoice;
-import view.menuChoices.UpdateMemberChoice;
+import view.menuchoices.ItemChoice;
+import view.menuchoices.MainChoice;
+import view.menuchoices.MemberChoice;
+import view.menuchoices.UpdateItemChoice;
+import view.menuchoices.UpdateMemberChoice;
 
 /**
  * Class for object to receive input from user.
@@ -23,7 +21,7 @@ public class Input {
    * Promts the user for main menu choice.
    *
    * @return MainChoice.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public MainChoice getMainChoice() throws Exception {
     System.out.print("\nEnter menu choice: ");
@@ -50,7 +48,7 @@ public class Input {
    * Promts the user for member menu choice.
    *
    * @return MemberChoice.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public MemberChoice getMemberChoice() throws Exception {
     System.out.print("\nEnter menu choice: ");
@@ -77,7 +75,7 @@ public class Input {
    * Promts the user for a item menu choice.
    *
    * @return ItemChoice.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public ItemChoice getItemChoice() throws Exception {
     System.out.print("\nEnter menu choice: ");
@@ -102,7 +100,7 @@ public class Input {
    * Promts the user for a update member menu choice.
    *
    * @return UpdateMemberMenu.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public UpdateMemberChoice getUpdateMemberChoice() throws Exception {
     System.out.print("\nEnter menu choice: ");
@@ -125,7 +123,7 @@ public class Input {
    * Promts the user for a update item menu choice.
    *
    * @return UpdateItemChoice.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public UpdateItemChoice getUpdateItemChoice() throws Exception {
     System.out.print("\nEnter menu choice: ");

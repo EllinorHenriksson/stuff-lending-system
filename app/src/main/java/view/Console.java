@@ -1,16 +1,15 @@
 package view;
 
 import java.util.ArrayList;
-
 import model.Day;
 import model.Item;
 import model.ItemType;
 import model.Member;
-import view.menuChoices.ItemChoice;
-import view.menuChoices.MainChoice;
-import view.menuChoices.MemberChoice;
-import view.menuChoices.UpdateItemChoice;
-import view.menuChoices.UpdateMemberChoice;
+import view.menuchoices.ItemChoice;
+import view.menuchoices.MainChoice;
+import view.menuchoices.MemberChoice;
+import view.menuchoices.UpdateItemChoice;
+import view.menuchoices.UpdateMemberChoice;
 
 /**
  * Class for console object.
@@ -91,7 +90,7 @@ public class Console {
 
   /**
    * Prints the string message to the terminal.
-   * 
+   *
    * @param message the string to print.
    */
   public void printMessage(String message) {
@@ -156,7 +155,7 @@ public class Console {
    * Promts the user for a number of days.
    *
    * @return int.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public int getNumberOfDays() throws Exception {
     return input.getNumberOfDays();
@@ -184,7 +183,7 @@ public class Console {
    * Promts the user for a type.
    *
    * @return Type.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public ItemType getType() throws Exception {
     return input.getType();
@@ -194,7 +193,7 @@ public class Console {
    * Promts the user for the cost per day for the item.
    *
    * @return int.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public int getCostPerDay() throws Exception {
     return input.getCostPerDay();
@@ -230,7 +229,7 @@ public class Console {
   /**
    * Prints a simple list of all members.
    *
-   * @param members
+   * @param members ArrayList.
    */
   public void printMembersSimple(ArrayList<Member> members) {
     output.printMembersSimple(members);
@@ -239,7 +238,7 @@ public class Console {
   /**
    * Prints a full list of all members.
    *
-   * @param members
+   * @param members ArrayList.
    */
   public void printMembersFull(ArrayList<Member> members) {
     output.printMembersFull(members);
@@ -248,7 +247,7 @@ public class Console {
   /**
    * Prints the information for one member.
    *
-   * @param member
+   * @param member Member.
    */
   public void printMemberInfo(Member member) {
     output.printMemberInfo(member);
@@ -257,7 +256,7 @@ public class Console {
   /**
    * Prints the information for one item.
    *
-   * @param item
+   * @param item Item.
    */
   public void printItemInfo(Item item) {
     output.printItemInfo(item);

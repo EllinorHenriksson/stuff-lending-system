@@ -36,11 +36,11 @@
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/DayCounter 3.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Day 3.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Member 3.class
-/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/MemberChoice.class
-/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/UpdateMemberChoice.class
-/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/ItemChoice.class
-/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/MainChoice.class
-/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuChoices/UpdateItemChoice.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/MemberChoice.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/UpdateMemberChoice.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/ItemChoice.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/MainChoice.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/UpdateItemChoice.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Output.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Input.class

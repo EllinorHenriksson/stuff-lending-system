@@ -3,7 +3,7 @@ package controller.menus;
 import model.ItemType;
 import model.Registry;
 import view.Console;
-import view.menuChoices.UpdateItemChoice;
+import view.menuchoices.UpdateItemChoice;
 
 public class UpdateItemMenu {
   private Console console = new Console();

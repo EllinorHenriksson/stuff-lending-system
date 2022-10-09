@@ -1,7 +1,6 @@
 package view;
 
 import java.util.ArrayList;
-
 import model.Contract;
 import model.Day;
 import model.Item;

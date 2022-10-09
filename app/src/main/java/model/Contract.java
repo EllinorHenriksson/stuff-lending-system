@@ -40,7 +40,8 @@ public class Contract {
    * @return Member.
    */
   public Member getLender() {
-    return new Member(lender.getName(), lender.getEmail(), lender.getPhoneNumber(), lender.getId(), lender.getCreationDay());
+    return new Member(lender.getName(), lender.getEmail(), lender.getPhoneNumber(), 
+        lender.getId(), lender.getCreationDay());
   }
 
   /**

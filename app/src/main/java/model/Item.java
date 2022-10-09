@@ -72,7 +72,7 @@ public class Item {
   /**
    * Returns the description of an item object.
    *
-   * @return
+   * @return String.
    */
   public String getDescription() {
     return description;
@@ -182,7 +182,7 @@ public class Item {
   /**
    * Pays the owner of an item (when a loan of this item takes place).
    *
-   * @param totalCost
+   * @param totalCost int.
    */
   public void payTotalCost(int totalCost) {
     owner.addCredits(totalCost);
@@ -243,7 +243,7 @@ public class Item {
   /**
    * Returns a copy of the list of contracts on an item.
    *
-   * @return ArrayList<Contract>.
+   * @return ArrayList.
    */
   public ArrayList<Contract> getContracts() {
     ArrayList<Contract> copies = new ArrayList<>();
@@ -273,8 +273,8 @@ public class Item {
   /**
    * Creates and adds the contract on an item object.
    *
-   * @param lender
-   * @param interval
+   * @param lender Member.
+   * @param interval Interval.
    */
   public void establishContract(Member lender, Interval interval) {
     Contract contract = createContract(lender, interval);

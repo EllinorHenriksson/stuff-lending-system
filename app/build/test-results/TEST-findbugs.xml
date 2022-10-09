@@ -2,7 +2,6 @@
 <testsuite package="org.spotbugs" time="0" tests="28" errors="11" name="findbugs">
 <testcase time="0" name="view/Console.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Registry.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="view/menuChoices/UpdateItemChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/menus/MemberMenu.java" classname="FindBugs Issues">
 <failure message="issues" ><![CDATA[lines: 11-104 
 new controller.menus.MemberMenu(MainMenu, Registry) may expose internal 
@@ -31,7 +30,6 @@ This code stores a reference to an externally mutable object into the
   many situations.
 ----------------
 ]]></failure>
-</testcase><testcase time="0" name="view/menuChoices/MemberChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="view/Input.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Day.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/DayCounter.java" classname="FindBugs Issues">
@@ -64,6 +62,7 @@ This code stores a reference to an externally mutable object into the
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="controller/App.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/menuchoices/ItemChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/menus/DataFetcher.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/menus/MainMenu.java" classname="FindBugs Issues">
 <failure message="issues" ><![CDATA[lines: 10-97 
@@ -89,10 +88,11 @@ This code stores a reference to an externally mutable object into the
   many situations.
 ----------------
 ]]></failure>
-</testcase><testcase time="0" name="view/menuChoices/MainChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/IdGenerator.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="view/menuChoices/UpdateMemberChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Contract.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/menuchoices/MemberChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/menuchoices/UpdateItemChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/menuchoices/UpdateMemberChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Interval.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="view/Output.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/menus/ItemMenu.java" classname="FindBugs Issues">
@@ -124,10 +124,10 @@ This code stores a reference to an externally mutable object into the
 ----------------
 ]]></failure>
 </testcase><testcase time="0" name="model/Member.java" classname="FindBugs Issues">
-</testcase><testcase time="0" name="view/menuChoices/ItemChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="view/menuchoices/MainChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/ItemType.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Item.java" classname="FindBugs Issues">
-<failure message="issues" ><![CDATA[lines: 14-162 
+<failure message="issues" ><![CDATA[lines: 17-282 
 setOwner(Member) may expose internal representation by storing an 
   externally mutable object into Item.owner 
 May expose internal representation by incorporating reference to mutable 

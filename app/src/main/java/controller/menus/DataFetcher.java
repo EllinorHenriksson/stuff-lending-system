@@ -4,11 +4,11 @@ import model.Day;
 import model.Interval;
 import model.ItemType;
 import view.Console;
-import view.menuChoices.ItemChoice;
-import view.menuChoices.MainChoice;
-import view.menuChoices.MemberChoice;
-import view.menuChoices.UpdateItemChoice;
-import view.menuChoices.UpdateMemberChoice;
+import view.menuchoices.ItemChoice;
+import view.menuchoices.MainChoice;
+import view.menuchoices.MemberChoice;
+import view.menuchoices.UpdateItemChoice;
+import view.menuchoices.UpdateMemberChoice;
 
 /**
  * Class for fetching data from the user.

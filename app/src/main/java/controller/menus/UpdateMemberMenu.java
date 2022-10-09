@@ -2,7 +2,7 @@ package controller.menus;
 
 import model.Registry;
 import view.Console;
-import view.menuChoices.UpdateMemberChoice;
+import view.menuchoices.UpdateMemberChoice;
 
 public class UpdateMemberMenu {
   private Console console = new Console();

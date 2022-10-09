@@ -4,7 +4,7 @@ import model.DayCounter;
 import model.Member;
 import model.Registry;
 import view.Console;
-import view.menuChoices.MainChoice;
+import view.menuchoices.MainChoice;
 
 public class MainMenu {
   private Console console = new Console();

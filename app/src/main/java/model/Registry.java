@@ -67,7 +67,7 @@ public class Registry {
    * Removes a member from a registry object.
    *
    * @param id String.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public void removeMember(String id) throws Exception {
     Member memberToRemove = getActualMember(id);
@@ -93,7 +93,8 @@ public class Registry {
    */
   public Member getMember(String id) {
     Member member = getActualMember(id);
-    Member copy = new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), member.getId(), member.getCreationDay());
+    Member copy = new Member(member.getName(), member.getEmail(), member.getPhoneNumber(), 
+        member.getId(), member.getCreationDay());
     copy.setCredits(member.getCredits());
     for (Item i : member.getItems()) {
       copy.addItemForCopy(i);
@@ -103,7 +104,8 @@ public class Registry {
 
   /**
    * Returns a copy of the list of members included in a registry object.
-   * @return ArrayList<Member>.
+   *
+   * @return ArrayList.
    */
   public ArrayList<Member> getMembers() {
     ArrayList<Member> copies = new ArrayList<>();
@@ -184,7 +186,7 @@ public class Registry {
    *
    * @param memberId String.
    * @param newName String.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public void updateMemberName(String memberId, String newName) throws Exception {
     Member member = getActualMember(memberId);
@@ -196,7 +198,7 @@ public class Registry {
    *
    * @param memberId String.
    * @param newEmail String.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public void updateMemberEmail(String memberId, String newEmail) throws Exception {
     Member member = getActualMember(memberId);
@@ -212,7 +214,7 @@ public class Registry {
    *
    * @param memberId String.
    * @param newPhoneNumber String.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public void updateMemberPhoneNumber(String memberId, String newPhoneNumber) throws Exception {
     Member member = getActualMember(memberId);
@@ -320,7 +322,7 @@ public class Registry {
    *
    * @param item Item.
    * @param id String.
-   * @throws Exception
+   * @throws Exception Exception.
    */
   public void addItemToMember(Item item, String id) throws Exception {
     Member member = getActualMember(id);
