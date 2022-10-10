@@ -5,6 +5,12 @@ A project template based on gradle and a gitlab pipeline. You should always buil
 
 [design.md](design.md) contains the prescribed architectural design of the application.
 
+## Contributors
+Both students contributed equally.   
+
+Emma Fransson ef222hr   
+Ellinor Henriksson eh224kr
+
 ## Usage of application
 The application lets the user view and edit the members of a stuff lending system, including their items and lending contracts.
 
