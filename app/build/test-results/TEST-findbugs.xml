@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.spotbugs" time="0" tests="28" errors="3" name="findbugs">
+<testsuite package="org.spotbugs" time="0" tests="30" errors="6" name="findbugs">
 <testcase time="0" name="view/Console.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Registry.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/menus/MemberMenu.java" classname="FindBugs Issues">
@@ -38,21 +38,26 @@ This code stores a reference to an externally mutable object into the
 </testcase><testcase time="0" name="view/menuchoices/ItemChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/menus/DataFetcher.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/menus/MainMenu.java" classname="FindBugs Issues">
-<failure message="issues" ><![CDATA[lines: 14-129 
-quitProgram() invokes System.exit(...), which shuts down the entire virtual 
-  machine 
-Method invokes System.exit(...) 
-Invoking System.exit shuts down the entire Java virtual machine. This 
-  should only been done when it is appropriate. Such calls make it hard or 
-  impossible for your code to be invoked by other code. Consider throwing a 
-  RuntimeException instead.
-----------------
-]]></failure>
 </testcase><testcase time="0" name="model/IdGenerator.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Contract.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="view/menuchoices/MemberChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="controller/menus/Menu.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 11-23 
+new controller.menus.Menu(Registry) may expose internal representation by 
+  storing an externally mutable object into Menu.registry 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+]]></failure>
 </testcase><testcase time="0" name="view/menuchoices/UpdateItemChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="view/menuchoices/UpdateMemberChoice.java" classname="FindBugs Issues">
+</testcase><testcase time="0" name="controller/DataFetcher.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Interval.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="view/Output.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/menus/ItemMenu.java" classname="FindBugs Issues">
@@ -60,9 +65,49 @@ Invoking System.exit shuts down the entire Java virtual machine. This
 </testcase><testcase time="0" name="view/menuchoices/MainChoice.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/ItemType.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/Item.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 17-282 
+setOwner(Member) may expose internal representation by storing an 
+  externally mutable object into Item.owner 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+]]></failure>
 </testcase><testcase time="0" name="model/Validator.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/User.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/persistence/IfPersistence.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="model/persistence/Persistence.java" classname="FindBugs Issues">
 </testcase><testcase time="0" name="controller/menus/UpdateMemberMenu.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 8-74 
+new controller.menus.UpdateMemberMenu(MemberMenu, Registry) may expose 
+  internal representation by storing an externally mutable object into 
+  UpdateMemberMenu.memberMenu 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+lines: 8-74 
+new controller.menus.UpdateMemberMenu(MemberMenu, Registry) may expose 
+  internal representation by storing an externally mutable object into 
+  UpdateMemberMenu.registry 
+May expose internal representation by incorporating reference to mutable 
+  object 
+This code stores a reference to an externally mutable object into the 
+  internal representation of the object. If instances are accessed by 
+  untrusted code, and unchecked changes to the mutable object would 
+  compromise security or other important properties, you will need to do 
+  something different. Storing a copy of the object is better approach in 
+  many situations.
+----------------
+]]></failure>
 </testcase></testsuite>

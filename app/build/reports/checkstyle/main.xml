@@ -1,59 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.38">
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/User.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\App.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MainMenu.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\DataFetcher.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateMemberMenu.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\ItemMenu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/ItemMenu.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\MainMenu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/DataFetcher.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\MemberMenu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MemberMenu.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\Menu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateItemMenu.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\UpdateItemMenu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/App.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\UpdateMemberMenu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Contract.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\User.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/IdGenerator.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Contract.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Interval.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Day.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/DayCounter.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\DayCounter.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Validator.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\IdGenerator.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Day.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Interval.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/Persistence.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Item.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/IfPersistence.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\ItemType.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Member.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Member.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/ItemType.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\persistence\IfPersistence.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Registry.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\persistence\Persistence.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Item.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Registry.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/ItemChoice.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Validator.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/MemberChoice.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\Console.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/UpdateItemChoice.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\Input.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/MainChoice.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\menuchoices\ItemChoice.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/UpdateMemberChoice.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\menuchoices\MainChoice.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Output.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\menuchoices\MemberChoice.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Input.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\menuchoices\UpdateItemChoice.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Console.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\menuchoices\UpdateMemberChoice.java">
+</file>
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\Output.java">
 </file>
 </checkstyle>

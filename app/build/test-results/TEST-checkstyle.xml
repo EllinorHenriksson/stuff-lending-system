@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.checkstyle" time="0" tests="28" errors="0" name="checkstyle">
-<testcase time="0" name="controller/User.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="controller/menus/MainMenu.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="controller/menus/UpdateMemberMenu.java" classname="CheckStyle Issues">
+<testsuite package="org.checkstyle" time="0" tests="29" errors="0" name="checkstyle">
+<testcase time="0" name="controller/App.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="controller/DataFetcher.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="controller/menus/ItemMenu.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="controller/menus/DataFetcher.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="controller/menus/MainMenu.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="controller/menus/MemberMenu.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="controller/menus/Menu.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="controller/menus/UpdateItemMenu.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="controller/App.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="controller/menus/UpdateMemberMenu.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="controller/User.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="model/Contract.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/Day.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/DayCounter.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="model/IdGenerator.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="model/Interval.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/DayCounter.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/Validator.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/Day.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/persistence/Persistence.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/persistence/IfPersistence.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/Member.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/ItemType.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/Registry.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="model/Item.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/ItemType.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/Member.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/persistence/IfPersistence.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/persistence/Persistence.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/Registry.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/Validator.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="view/Console.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="view/Input.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="view/menuchoices/ItemChoice.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="view/menuchoices/MainChoice.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="view/menuchoices/MemberChoice.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="view/menuchoices/UpdateItemChoice.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="view/menuchoices/MainChoice.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="view/menuchoices/UpdateMemberChoice.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="view/Output.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="view/Input.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="view/Console.java" classname="CheckStyle Issues">
 </testcase></testsuite>
