@@ -23,7 +23,7 @@ public class MainMenu {
    * @param registry The registry to work with.
    * @param dayCounter The day counter keeping track of the current day.
    */
-  @SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "false positive.")
+  @SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "false positive.")
   public MainMenu(Registry registry, DayCounter dayCounter) {
     this.registry = registry;
     this.dayCounter = dayCounter;
@@ -123,7 +123,7 @@ public class MainMenu {
   /**
    * Lets the user quit the program.
    */
-  @SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "false positive.")
+  @SuppressFBWarnings(value = "DM_EXIT", justification = "false positive.")
   private void quitProgram() {
     System.exit(0);
   }

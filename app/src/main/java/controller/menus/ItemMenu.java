@@ -26,7 +26,7 @@ public class ItemMenu {
    * @param memberMenu The member menu to work with.
    * @param registry The registry to work with.
    */
-  @SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "false positive.")
+  @SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "false positive.")
   public ItemMenu(String itemId, String memberId, MemberMenu memberMenu, Registry registry) {
     this.itemId = itemId;
     this.memberId = memberId;

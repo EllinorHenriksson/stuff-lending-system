@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CodeQualityTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-10T09:59:37" hostname="Emmas-MBP-3.lan" time="1.707">
+<testsuite name="CodeQualityTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-10T10:21:26" hostname="Emmas-MBP-3.lan" time="0.529">
   <properties/>
-  <testcase name="codeQuality()" classname="CodeQualityTests" time="1.707"/>
+  <testcase name="codeQuality()" classname="CodeQualityTests" time="0.529"/>
   <system-out><![CDATA[0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/User.java
 0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MainMenu.java
 0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateMemberMenu.java

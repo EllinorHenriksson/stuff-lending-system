@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Gradle Test Executor 12" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-10T09:59:34" hostname="Emmas-MBP-3.lan" time="4.518">
+<testsuite name="Gradle Test Executor 21" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-10T10:21:25" hostname="Emmas-MBP-3.lan" time="1.355">
   <properties/>
-  <testcase name="failed to execute tests" classname="Gradle Test Executor 12" time="4.518">
+  <testcase name="failed to execute tests" classname="Gradle Test Executor 21" time="1.355">
     <failure message="org.gradle.api.internal.tasks.testing.TestSuiteExecutionException: Could not execute test class 'CodeQualityTests$Failure 2'." type="org.gradle.api.internal.tasks.testing.TestSuiteExecutionException">org.gradle.api.internal.tasks.testing.TestSuiteExecutionException: Could not execute test class 'CodeQualityTests$Failure 2'.
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
 	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)

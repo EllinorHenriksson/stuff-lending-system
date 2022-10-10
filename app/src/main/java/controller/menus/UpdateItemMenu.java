@@ -24,7 +24,7 @@ public class UpdateItemMenu {
    * @param itemMenu The item menu to work with.
    * @param registry The registry to work with.
    */
-  @SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "false positive.")
+  @SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "false positive.")
   public UpdateItemMenu(String itemId, ItemMenu itemMenu, Registry registry) {
     this.itemId = itemId;
     this.itemMenu = itemMenu;

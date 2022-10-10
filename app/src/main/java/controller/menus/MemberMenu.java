@@ -28,7 +28,7 @@ public class MemberMenu {
    * @param mainMenu The main menu to work with.
    * @param registry The registry to work with.
    */
-  @SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "false positive.")
+  @SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "false positive.")
   public MemberMenu(String memberId, MainMenu mainMenu, Registry registry) {
     this.memberId = memberId;
     this.mainMenu = mainMenu;
