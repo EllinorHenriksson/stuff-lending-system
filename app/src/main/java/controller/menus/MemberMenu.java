@@ -7,6 +7,9 @@ import model.Registry;
 import view.Console;
 import view.menuchoices.MemberChoice;
 
+/**
+ * Represents a member menu.
+ */
 public class MemberMenu {
   private Console console = new Console();
   private DataFetcher dataFetcher = new DataFetcher();
@@ -17,6 +20,12 @@ public class MemberMenu {
 
   private Registry registry;
 
+  /**
+   * Initializing constructor.
+   *
+   * @param mainMenu The main menu to work with.
+   * @param registry The registry to work with.
+   */
   public MemberMenu(MainMenu mainMenu, Registry registry) {
     this.mainMenu = mainMenu;
     this.registry = registry;
@@ -25,24 +34,29 @@ public class MemberMenu {
     this.itemMenu = new ItemMenu(this, registry);
   }
 
-  public void doMemberMenu(String id) {
+  /**
+   * Gets the member menu choice from the user and executes it.
+   *
+   * @param memberId The ID of the current member.
+   */
+  public void doMemberMenu(String memberId) {
     MemberChoice choice = dataFetcher.getMemberChoice();
 
     switch (choice) {
       case DELETE: 
-        deleteMember(id);
+        deleteMember(memberId);
         break;
       case UPDATE:
-        updateMemberMenu.doUpdateMemberMenu(id);
+        updateMemberMenu.doUpdateMemberMenu(memberId);
         break;
       case INFO:
-        showMemberInfo(id);
+        showMemberInfo(memberId);
         break;
       case ADD:
-        addItem(id);
+        addItem(memberId);
         break;
       case SELECT:
-        selectItem(id);
+        selectItem(memberId);
         break;
       case MAIN:
         mainMenu.doMainMenu();
@@ -52,29 +66,44 @@ public class MemberMenu {
     }
   }
 
-  private void deleteMember(String id) {
+  /**
+   * Lets the user delete a member.
+   *
+   * @param memberId The ID of the member to delete.
+   */
+  private void deleteMember(String memberId) {
     try {
-      registry.removeMember(id);
+      registry.removeMember(memberId);
       console.printMessage("Member was successfully deleted!");
       mainMenu.doMainMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu(id);
+      doMemberMenu(memberId);
     }
   }
 
-  private void showMemberInfo(String id) {
+  /**
+   * Presents info about a member to the user.
+   *
+   * @param memberId The ID of the member to present.
+   */
+  private void showMemberInfo(String memberId) {
     try {
-      Member member = registry.getMember(id);
+      Member member = registry.getMember(memberId);
       console.printMemberInfo(member);
-      doMemberMenu(id);
+      doMemberMenu(memberId);
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu(id);
+      doMemberMenu(memberId);
     }
   }
 
-  private void addItem(String id) {
+  /**
+   * Lets the user add an item to a member.
+   *
+   * @param memberId - The ID of the member.
+   */
+  private void addItem(String memberId) {
     String name = dataFetcher.getName();
     String description = dataFetcher.getDescription();
     ItemType type = dataFetcher.getItemType();
@@ -82,15 +111,20 @@ public class MemberMenu {
 
     try {
       Item item = registry.createItem(name, description, type, costPerDay);
-      registry.addItemToMember(item, id);
+      registry.addItemToMember(item, memberId);
       console.printMessage("Item was successfully added!");
-      doMemberMenu(id);
+      doMemberMenu(memberId);
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu(id);
+      doMemberMenu(memberId);
     }
   }
 
+  /**
+   * Lets the user select an item to work further with.
+   *
+   * @param ownerId The ID of the member owning the item.
+   */
   private void selectItem(String ownerId) {
     String itemId = dataFetcher.getItemId();
     

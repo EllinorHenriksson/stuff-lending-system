@@ -11,11 +11,16 @@ import view.menuchoices.UpdateItemChoice;
 import view.menuchoices.UpdateMemberChoice;
 
 /**
- * Class for fetching data from the user.
+ * Represents a data fetcher that fetches data from the user.
  */
 public class DataFetcher {
   private Console console = new Console();
 
+  /**
+   * Gets the main menu choice from the user.
+   *
+   * @return The main menu choice.
+   */
   public MainChoice getMainChoice() {
     MainChoice choice = null;
     while (choice == null) {
@@ -30,6 +35,11 @@ public class DataFetcher {
     return choice;
   }
 
+  /**
+   * Gets the member menu choice from the user.
+   *
+   * @return The member menu choice.
+   */
   public MemberChoice getMemberChoice() {
     MemberChoice choice = null;
     while (choice == null) {
@@ -44,6 +54,11 @@ public class DataFetcher {
     return choice;
   }
 
+  /**
+   * Gets the update member menu choice from the user.
+   *
+   * @return The update member menu choice.
+   */
   public UpdateMemberChoice getUpdateMemberChoice() {
     UpdateMemberChoice choice = null;
     while (choice == null) {
@@ -58,6 +73,11 @@ public class DataFetcher {
     return choice;
   }
 
+  /**
+   * Gets the item menu choice from the user.
+   *
+   * @return The item menu choice.
+   */
   public ItemChoice getItemChoice() {
     ItemChoice choice = null;
     while (choice == null) {
@@ -72,6 +92,11 @@ public class DataFetcher {
     return choice;
   }
 
+  /**
+   * Gets the update item menu choice from the user.
+   *
+   * @return The update item menu choice.
+   */
   public UpdateItemChoice getUpdateItemChoice() {
     UpdateItemChoice choice = null;
     while (choice == null) {
@@ -86,6 +111,11 @@ public class DataFetcher {
     return choice;
   }
 
+  /**
+   * Gets the name (member or item) from the user.
+   *
+   * @return The name.
+   */
   public String getName() {
     String name = null;
     while (name == null) {
@@ -99,6 +129,11 @@ public class DataFetcher {
     return name;
   }
 
+  /**
+   * Gets the member email address from the user.
+   *
+   * @return The email address.
+   */
   public String getEmail() {
     String email = null;
     while (email == null) {
@@ -112,6 +147,11 @@ public class DataFetcher {
     return email;
   }
 
+  /**
+   * Gets the member phone number from the user.
+   *
+   * @return The phone number.
+   */
   public String getPhoneNumber() {
     String phoneNumber = null;
     while (phoneNumber == null) {
@@ -125,6 +165,11 @@ public class DataFetcher {
     return phoneNumber;
   }
 
+  /**
+   * Gets the number of days from the user.
+   *
+   * @return The number of days.
+   */
   public int getNumberOfDays() {
     int cost = 0;
     while (cost == 0) {
@@ -138,6 +183,11 @@ public class DataFetcher {
     return cost;  
   }
 
+  /**
+   * Gets the item description from the user.
+   *
+   * @return The item description.
+   */
   public String getDescription() {
     String description = null;
     while (description == null) {
@@ -151,6 +201,11 @@ public class DataFetcher {
     return description;
   }
 
+  /**
+   * Gets the item type from the user.
+   *
+   * @return The item type.
+   */
   public ItemType getItemType() {
     ItemType type = null;
     while (type == null) {
@@ -164,6 +219,11 @@ public class DataFetcher {
     return type;
   }
 
+  /**
+   * Gets the cost per day from the user.
+   *
+   * @return The cost per day.
+   */
   public int getCostPerDay() {
     int cost = 0;
     while (cost == 0) {
@@ -177,6 +237,11 @@ public class DataFetcher {
     return cost;  
   }
 
+  /**
+   * Gets the member ID from the user.
+   *
+   * @return The member ID.
+   */
   public String getMemberId() {
     String id = null;
     while (id == null) {
@@ -190,6 +255,11 @@ public class DataFetcher {
     return id;
   }
 
+  /**
+   * Gets the member ID of the lender from the user.
+   *
+   * @return The member ID of the lender.
+   */
   public String getLenderId() {
     String id = null;
     while (id == null) {
@@ -203,6 +273,11 @@ public class DataFetcher {
     return id;
   }
 
+  /**
+   * Gets the item ID from the user.
+   *
+   * @return The item ID.
+   */
   public String getItemId() {
     String id = null;
     while (id == null) {
@@ -216,6 +291,11 @@ public class DataFetcher {
     return id;
   }
 
+  /**
+   * Gets the interval from the user.
+   *
+   * @return The interval.
+   */
   public Interval getInterval() {
     Day startDay = null;
     while (startDay == null) {

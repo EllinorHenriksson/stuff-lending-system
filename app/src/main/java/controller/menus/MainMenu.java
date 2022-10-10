@@ -6,6 +6,9 @@ import model.Registry;
 import view.Console;
 import view.menuchoices.MainChoice;
 
+/**
+ * Represents a main menu.
+ */
 public class MainMenu {
   private Console console = new Console();
   private DataFetcher dataFetcher = new DataFetcher();
@@ -14,12 +17,21 @@ public class MainMenu {
   private DayCounter dayCounter;
   private MemberMenu memberMenu;
 
+  /**
+   * Initializing constructor.
+   *
+   * @param registry The registry to work with.
+   * @param dayCounter The day counter keeping track of the current day.
+   */
   public MainMenu(Registry registry, DayCounter dayCounter) {
     this.registry = registry;
     this.dayCounter = dayCounter;
     this.memberMenu = new MemberMenu(this, registry);
   }
 
+  /**
+   * Gets the main menu choice from the user and executes it.
+   */
   public void doMainMenu() {
     MainChoice choice = dataFetcher.getMainChoice();
 
@@ -47,16 +59,25 @@ public class MainMenu {
     }
   }
 
+  /**
+   * Prints a simple list of the registry's members.
+   */
   private void showSimpleList() {
     console.printMembersSimple(registry.getMembers());
     doMainMenu();
   }
 
+  /**
+   * Prints a list of the registry's members with full information.
+   */
   private void showFullList() {
     console.printMembersFull(registry.getMembers());
     doMainMenu();
   }
 
+  /**
+   * Gets personal info and adds the member to the registry.
+   */
   private void addMember() {
     String name = dataFetcher.getName();
     String email = dataFetcher.getEmail();
@@ -73,11 +94,14 @@ public class MainMenu {
     }
   }
   
+  /**
+   * Lets the user select a member to work further with.
+   */
   private void selectMember() {
-    String id = dataFetcher.getMemberId();
+    String memberId = dataFetcher.getMemberId();
 
     try {
-      Member member = registry.getMember(id);
+      Member member = registry.getMember(memberId);
       memberMenu.doMemberMenu(member.getId());
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
@@ -85,6 +109,9 @@ public class MainMenu {
     }
   }
 
+  /**
+   * Lets the user advance the time.
+   */
   private void advanceTime() {
     int numberOfDays = dataFetcher.getNumberOfDays();
     dayCounter.advanceDay(numberOfDays);

@@ -5,6 +5,9 @@ import model.Registry;
 import view.Console;
 import view.menuchoices.UpdateItemChoice;
 
+/**
+ * Represents an update item menu.
+ */
 public class UpdateItemMenu {
   private Console console = new Console();
   private DataFetcher dataFetcher = new DataFetcher();
@@ -12,11 +15,23 @@ public class UpdateItemMenu {
   private ItemMenu itemMenu;
   private Registry registry;
 
+  /**
+   * Initializing constructor.
+   *
+   * @param itemMenu The item menu to work with.
+   * @param registry The registry to work with.
+   */
   public UpdateItemMenu(ItemMenu itemMenu, Registry registry) {
     this.itemMenu = itemMenu;
     this.registry = registry;
   }
 
+  /**
+   * Gets the update item menu choice from the user and executes it.
+   *
+   * @param itemId The ID of the item to update.
+   * @param memberId The ID of the member owning the item.
+   */
   public void doUpdateItemMenu(String itemId, String memberId) {
     UpdateItemChoice choice = dataFetcher.getUpdateItemChoice();
 
@@ -41,6 +56,12 @@ public class UpdateItemMenu {
     }
   }
 
+  /**
+   * Lets the user update the item name.
+   *
+   * @param itemId The ID of the item to update.
+   * @param memberId The ID of the member owning the item.
+   */
   private void updateItemName(String itemId, String memberId) {
     String name = dataFetcher.getName();
     try {
@@ -53,6 +74,12 @@ public class UpdateItemMenu {
     }    
   }
 
+  /**
+   * Lets the user update the item description.
+   *
+   * @param itemId The ID of the item to update.
+   * @param memberId The ID of the member owning the item.
+   */
   private void updateItemDescription(String itemId, String memberId) {
     String description = dataFetcher.getDescription();
     try {
@@ -65,6 +92,12 @@ public class UpdateItemMenu {
     }    
   }
 
+  /**
+   * Lets the user update the item type.
+   *
+   * @param itemId The ID of the item to update.
+   * @param memberId The ID of the member owning the item.
+   */
   private void updateItemType(String itemId, String memberId) {
     ItemType itemType = dataFetcher.getItemType();
     try {
@@ -77,6 +110,12 @@ public class UpdateItemMenu {
     }    
   }
 
+  /**
+   * Lets the user update the item's cost per day.
+   *
+   * @param itemId The ID of the item to update.
+   * @param memberId The ID of the member owning the item.
+   */
   private void updateCostPerDay(String itemId, String memberId) {
     int costPerDay = dataFetcher.getCostPerDay();
     try {
