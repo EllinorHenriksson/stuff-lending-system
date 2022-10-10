@@ -1,5 +1,6 @@
 package controller.menus;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import model.ItemType;
 import model.Registry;
 import view.Console;
@@ -23,6 +24,7 @@ public class UpdateItemMenu {
    * @param itemMenu The item menu to work with.
    * @param registry The registry to work with.
    */
+  @SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "false positive.")
   public UpdateItemMenu(String itemId, ItemMenu itemMenu, Registry registry) {
     this.itemId = itemId;
     this.itemMenu = itemMenu;

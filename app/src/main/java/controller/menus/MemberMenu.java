@@ -1,5 +1,6 @@
 package controller.menus;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import model.Item;
 import model.ItemType;
 import model.Member;
@@ -27,6 +28,7 @@ public class MemberMenu {
    * @param mainMenu The main menu to work with.
    * @param registry The registry to work with.
    */
+  @SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "false positive.")
   public MemberMenu(String memberId, MainMenu mainMenu, Registry registry) {
     this.memberId = memberId;
     this.mainMenu = mainMenu;

@@ -1,59 +1,65 @@
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\App.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\DataFetcher.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\ItemMenu$1.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\ItemMenu.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\MainMenu$1.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\MainMenu.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\MemberMenu$1.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\MemberMenu.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\UpdateItemMenu$1.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\UpdateItemMenu.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\UpdateMemberMenu$1.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\menus\UpdateMemberMenu.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\User 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\User.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Contract 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Contract.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Day 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Day.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\DayCounter 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\DayCounter.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\IdGenerator 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\IdGenerator.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Interval 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Interval.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Item 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Item.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\ItemType 2.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\ItemType.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Member 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Member.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\persistence\IfPersistence 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\persistence\IfPersistence.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\persistence\Persistence 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\persistence\Persistence.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Registry 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Registry.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Validator 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Validator.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\Console 3.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\Console.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\Input.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\menuchoices\ItemChoice.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\menuchoices\MainChoice.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\menuchoices\MemberChoice.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\menuchoices\UpdateItemChoice.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\menuchoices\UpdateMemberChoice.class
-C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\Output.class
-ain/model/DayCounter 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/App 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MainMenu.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateItemMenu$1.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/DataFetcher 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MemberMenu.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateItemMenu 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MainMenu$1.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateMemberMenu$1 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/ItemMenu$1.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateMemberMenu.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MainMenu$1 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/DataFetcher.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/ItemMenu$1 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/ItemMenu.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateMemberMenu$1.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/MemberMenu$1.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateItemMenu.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateMemberMenu 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/menus/UpdateItemMenu$1 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/App.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/controller/User 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Interval 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/IdGenerator.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/DayCounter.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Registry 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Validator 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Contract 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/ItemType.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Validator.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Item.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Day.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Registry.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Contract 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Member.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Interval.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/ItemType 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Validator 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Registry 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Contract.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Item 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/IfPersistence.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/Persistence.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/Persistence 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/IfPersistence 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/persistence/Persistence 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/IdGenerator 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Item 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/DayCounter 3.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Day 3.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/model/Member 3.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/MemberChoice.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/UpdateMemberChoice.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/UpdateItemChoice 2.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/ItemChoice 2.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/ItemChoice.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/MainChoice.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/MemberChoice 2.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/menuchoices/UpdateItemChoice.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Output.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Input.class
 /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console 3.class
+/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/build/classes/java/main/view/Console 2.class

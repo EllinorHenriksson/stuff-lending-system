@@ -1,5 +1,6 @@
 package controller.menus;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import model.Registry;
 import view.Console;
 import view.menuchoices.UpdateMemberChoice;
@@ -21,6 +22,7 @@ public class UpdateMemberMenu {
    * @param memberMenu The member menu to work with.
    * @param registry The registry to work with.
    */
+  @SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "false positive.")
   public UpdateMemberMenu(String memberId, MemberMenu memberMenu, Registry registry) {
     this.memberId = memberId;
     this.memberMenu = memberMenu;

@@ -1,164 +1,81 @@
-o0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/App.java
-}0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/DataFetcher.java
-z0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/ItemMenu.java
-z0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/MainMenu.java
-|0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/MemberMenu.java
-Ä0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/UpdateItemMenu.java
-Ç0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/UpdateMemberMenu.java
-p0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/User.java
-o0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Contract.java
-j0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Day.java
-q0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/DayCounter.java
-r0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/IdGenerator.java
-o0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Interval.java
-k1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Item.java
- text:line: 4 column: column:1 
-fWrong lexicographical order for 'edu.umd.cs.findbugs.annotations.SuppressFBWarnings' import. Should 
-$  be before 'java.util.ArrayList'.
-
-o0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/ItemType.java
-m0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
-Ä0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/persistence/IfPersistence.java
-~0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/persistence/Persistence.java
-o0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Registry.java
-p0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Validator.java
-m0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Console.java
-k0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Input.java
-|0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/menuchoices/ItemChoice.java
-|0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/menuchoices/MainChoice.java
-~0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/menuchoices/MemberChoice.java
-Ç0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/menuchoices/UpdateItemChoice.java
-Ñ0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/menuchoices/UpdateMemberChoice.java
-l0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Output.java
-(0 FindBugs Issues in view/Console.java
-*0 FindBugs Issues in model/Registry.java
-72 FindBugs Issues in controller/menus/MemberMenu.java
-text:lines: 14-133 
-dnew controller.menus.MemberMenu(String, MainMenu, Registry) may expose internal representation by 
-B  storing an externally mutable object into MemberMenu.mainMenu 
-RMay expose internal representation by incorporating reference to mutable object 
-gThis code stores a reference to an externally mutable object into the internal representation of the 
-e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
-f  would compromise security or other important properties, you will need to do something different. 
-G  Storing a copy of the object is better approach in many situations.
-
-text:lines: 14-133 
-dnew controller.menus.MemberMenu(String, MainMenu, Registry) may expose internal representation by 
-B  storing an externally mutable object into MemberMenu.registry 
-RMay expose internal representation by incorporating reference to mutable object 
-gThis code stores a reference to an externally mutable object into the internal representation of the 
-e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
-f  would compromise security or other important properties, you will need to do something different. 
-G  Storing a copy of the object is better approach in many situations.
-
-&0 FindBugs Issues in view/Input.java
-%0 FindBugs Issues in model/Day.java
-,0 FindBugs Issues in model/DayCounter.java
-;2 FindBugs Issues in controller/menus/UpdateItemMenu.java
-text:lines: 12-117 
-enew controller.menus.UpdateItemMenu(String, ItemMenu, Registry) may expose internal representation 
-I  by storing an externally mutable object into UpdateItemMenu.itemMenu 
-RMay expose internal representation by incorporating reference to mutable object 
-gThis code stores a reference to an externally mutable object into the internal representation of the 
-e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
-f  would compromise security or other important properties, you will need to do something different. 
-G  Storing a copy of the object is better approach in many situations.
-
-text:lines: 12-117 
-enew controller.menus.UpdateItemMenu(String, ItemMenu, Registry) may expose internal representation 
-I  by storing an externally mutable object into UpdateItemMenu.registry 
-RMay expose internal representation by incorporating reference to mutable object 
-gThis code stores a reference to an externally mutable object into the internal representation of the 
-e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
-f  would compromise security or other important properties, you will need to do something different. 
-G  Storing a copy of the object is better approach in many situations.
-
-*0 FindBugs Issues in controller/App.java
-70 FindBugs Issues in view/menuchoices/ItemChoice.java
-80 FindBugs Issues in controller/menus/DataFetcher.java
-52 FindBugs Issues in controller/menus/MainMenu.java
-text:lines: 13-123 
-VquitProgram() invokes System.exit(...), which shuts down the entire virtual machine 
-"Method invokes System.exit(...) 
-fInvoking System.exit shuts down the entire Java virtual machine. This should only been done when it 
-e  is appropriate. Such calls make it hard or impossible for your code to be invoked by other code. 
-1  Consider throwing a RuntimeException instead.
-
-text:lines: 13-123 
-gnew controller.menus.MainMenu(Registry, DayCounter) may expose internal representation by storing an 
-5  externally mutable object into MainMenu.registry 
-RMay expose internal representation by incorporating reference to mutable object 
-gThis code stores a reference to an externally mutable object into the internal representation of the 
-e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
-f  would compromise security or other important properties, you will need to do something different. 
-G  Storing a copy of the object is better approach in many situations.
-
--0 FindBugs Issues in model/IdGenerator.java
-*0 FindBugs Issues in model/Contract.java
-90 FindBugs Issues in view/menuchoices/MemberChoice.java
-=0 FindBugs Issues in view/menuchoices/UpdateItemChoice.java
-?0 FindBugs Issues in view/menuchoices/UpdateMemberChoice.java
-*0 FindBugs Issues in model/Interval.java
-'0 FindBugs Issues in view/Output.java
-52 FindBugs Issues in controller/menus/ItemMenu.java
-text:lines: 13-112 
-Znew controller.menus.ItemMenu(String, String, MemberMenu, Registry) may expose internal 
-T  representation by storing an externally mutable object into ItemMenu.memberMenu 
-RMay expose internal representation by incorporating reference to mutable object 
-gThis code stores a reference to an externally mutable object into the internal representation of the 
-e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
-f  would compromise security or other important properties, you will need to do something different. 
-G  Storing a copy of the object is better approach in many situations.
-
-text:lines: 13-112 
-Znew controller.menus.ItemMenu(String, String, MemberMenu, Registry) may expose internal 
-R  representation by storing an externally mutable object into ItemMenu.registry 
-RMay expose internal representation by incorporating reference to mutable object 
-gThis code stores a reference to an externally mutable object into the internal representation of the 
-e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
-f  would compromise security or other important properties, you will need to do something different. 
-G  Storing a copy of the object is better approach in many situations.
-
-(0 FindBugs Issues in model/Member.java
-70 FindBugs Issues in view/menuchoices/MainChoice.java
-*0 FindBugs Issues in model/ItemType.java
-&1 FindBugs Issues in model/Item.java
-text:lines: 14-162 
-csetOwner(Member) may expose internal representation by storing an externally mutable object into 
-  Item.owner 
-RMay expose internal representation by incorporating reference to mutable object 
-gThis code stores a reference to an externally mutable object into the internal representation of the 
-e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
-f  would compromise security or other important properties, you will need to do something different. 
-G  Storing a copy of the object is better approach in many situations.
-
-+0 FindBugs Issues in model/Validator.java
-+1 FindBugs Issues in controller/User.java
-text:lines: 27-552 
-VquitProgram() invokes System.exit(...), which shuts down the entire virtual machine 
-"Method invokes System.exit(...) 
-fInvoking System.exit shuts down the entire Java virtual machine. This should only been done when it 
-e  is appropriate. Such calls make it hard or impossible for your code to be invoked by other code. 
-1  Consider throwing a RuntimeException instead.
-
-;0 FindBugs Issues in model/persistence/IfPersistence.java
-90 FindBugs Issues in model/persistence/Persistence.java
-=2 FindBugs Issues in controller/menus/UpdateMemberMenu.java
-text:lines: 11-97 
-Znew controller.menus.UpdateMemberMenu(String, MemberMenu, Registry) may expose internal 
-\  representation by storing an externally mutable object into UpdateMemberMenu.memberMenu 
-RMay expose internal representation by incorporating reference to mutable object 
-gThis code stores a reference to an externally mutable object into the internal representation of the 
-e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
-f  would compromise security or other important properties, you will need to do something different. 
-G  Storing a copy of the object is better approach in many situations.
-
-text:lines: 11-97 
-Znew controller.menus.UpdateMemberMenu(String, MemberMenu, Registry) may expose internal 
-Z  representation by storing an externally mutable object into UpdateMemberMenu.registry 
-RMay expose internal representation by incorporating reference to mutable object 
-gThis code stores a reference to an externally mutable object into the internal representation of the 
-e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
-f  would compromise security or other important properties, you will need to do something different. 
-G  Storing a copy of the object is better approach in many situations.
-
+ê0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/User.java
+ö0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MainMenu.java
+¢0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateMemberMenu.java
+ö0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/ItemMenu.java
+ù0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/DataFetcher.java
+ú0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MemberMenu.java
+†0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateItemMenu.java
+è0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/App.java
+è0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Contract.java
+í0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/IdGenerator.java
+è0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Interval.java
+ë0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/DayCounter.java
+ê0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Validator.java
+ä0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Day.java
+û0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/Persistence.java
+†0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/IfPersistence.java
+ç0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Member.java
+è0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/ItemType.java
+è0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Registry.java
+ã0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Item.java
+ú0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/ItemChoice.java
+û0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/MemberChoice.java
+¢0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/UpdateItemChoice.java
+ú0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/MainChoice.java
+§0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/UpdateMemberChoice.java
+å0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Output.java
+ã0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Input.java
+ç0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Console.java
+'0 FindBugs Issues in view/Console.java
+)0 FindBugs Issues in model/Registry.java
+60 FindBugs Issues in controller/menus/MemberMenu.java
+%0 FindBugs Issues in view/Input.java
+$0 FindBugs Issues in model/Day.java
++0 FindBugs Issues in model/DayCounter.java
+:2 FindBugs Issues in controller/menus/UpdateItemMenu.java
+text:lines: 9-90 
+_new controller.menus.UpdateItemMenu(ItemMenu, Registry) may expose internal representation by 
+E  storing an externally mutable object into UpdateItemMenu.itemMenu 
+QMay expose internal representation by incorporating reference to mutable object 
+fThis code stores a reference to an externally mutable object into the internal representation of the 
+d  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
+e  would compromise security or other important properties, you will need to do something different. 
+F  Storing a copy of the object is better approach in many situations.
+
+text:lines: 9-90 
+_new controller.menus.UpdateItemMenu(ItemMenu, Registry) may expose internal representation by 
+E  storing an externally mutable object into UpdateItemMenu.registry 
+QMay expose internal representation by incorporating reference to mutable object 
+fThis code stores a reference to an externally mutable object into the internal representation of the 
+d  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
+e  would compromise security or other important properties, you will need to do something different. 
+F  Storing a copy of the object is better approach in many situations.
+
+)0 FindBugs Issues in controller/App.java
+60 FindBugs Issues in view/menuchoices/ItemChoice.java
+70 FindBugs Issues in controller/menus/DataFetcher.java
+41 FindBugs Issues in controller/menus/MainMenu.java
+text:lines: 14-129 
+UquitProgram() invokes System.exit(...), which shuts down the entire virtual machine 
+!Method invokes System.exit(...) 
+eInvoking System.exit shuts down the entire Java virtual machine. This should only been done when it 
+d  is appropriate. Such calls make it hard or impossible for your code to be invoked by other code. 
+0  Consider throwing a RuntimeException instead.
+
+,0 FindBugs Issues in model/IdGenerator.java
+)0 FindBugs Issues in model/Contract.java
+80 FindBugs Issues in view/menuchoices/MemberChoice.java
+<0 FindBugs Issues in view/menuchoices/UpdateItemChoice.java
+>0 FindBugs Issues in view/menuchoices/UpdateMemberChoice.java
+)0 FindBugs Issues in model/Interval.java
+&0 FindBugs Issues in view/Output.java
+40 FindBugs Issues in controller/menus/ItemMenu.java
+'0 FindBugs Issues in model/Member.java
+60 FindBugs Issues in view/menuchoices/MainChoice.java
+)0 FindBugs Issues in model/ItemType.java
+%0 FindBugs Issues in model/Item.java
+*0 FindBugs Issues in model/Validator.java
+*0 FindBugs Issues in controller/User.java
+:0 FindBugs Issues in model/persistence/IfPersistence.java
+80 FindBugs Issues in model/persistence/Persistence.java
+<0 FindBugs Issues in controller/menus/UpdateMemberMenu.java
