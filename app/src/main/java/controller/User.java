@@ -34,6 +34,6 @@ public class User {
   public void startProgram() {
     persistence.loadDataToRegistry(registry);
     console.printCurrentDay(dayCounter.getCurrentDay());
-    mainMenu.doMainMenu();
+    mainMenu.doMenu();
   }
 }

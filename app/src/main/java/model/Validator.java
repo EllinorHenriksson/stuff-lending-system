@@ -8,6 +8,8 @@ import java.util.regex.Pattern;
 public class Validator {
   private int nameMinLength = 3;
   private int nameMaxLength = 50;
+  private int phoneNumberMinLength = 3;
+  private int phoneNumberMaxLength = 20;
   private int descriptionMinLength = 3;
   private int descriptionMaxLength = 200;
 
@@ -18,7 +20,8 @@ public class Validator {
    */
   public void validateName(String name) {
     checkNull(name, "Name must be specified.");
-    checkNameLength(name);
+    checkMinLength(name, nameMinLength);
+    checkMaxLength(name, nameMaxLength);
   }
 
   /**
@@ -29,7 +32,6 @@ public class Validator {
   public void validateEmail(String email) {
     String errorMessage = "Email must be specified.";
     checkNull(email, errorMessage);
-    checkStringLength(email, errorMessage);
     checkEmailPattern(email);
   }
 
@@ -41,7 +43,8 @@ public class Validator {
   public void validatePhoneNumber(String phoneNumber) {
     String errorMessage = "Phone number must be specified.";
     checkNull(phoneNumber, errorMessage);
-    checkStringLength(phoneNumber, errorMessage);
+    checkMinLength(phoneNumber, phoneNumberMinLength);
+    checkMaxLength(phoneNumber, phoneNumberMaxLength);
     checkPhoneNumberPattern(phoneNumber);
   }
 
@@ -53,7 +56,6 @@ public class Validator {
   public void validateId(String id) {
     String errorMessage = "Id must be specified.";
     checkNull(id, errorMessage);
-    checkStringLength(id, errorMessage);
     checkIdPattern(id);
   }
   
@@ -64,7 +66,8 @@ public class Validator {
    */
   public void validateDescription(String description) {
     checkNull(description, "Description must be specified.");
-    checkDescriptionLength(description);
+    checkMinLength(description, descriptionMinLength);
+    checkMaxLength(description, descriptionMaxLength);
   }
 
   /**
@@ -99,38 +102,6 @@ public class Validator {
     if (input == null) {
       throw new IllegalArgumentException(errorMessage);
     }
-  }
-
-  /**
-   * Checks the length of a string.
-   *
-   * @param input String.
-   * @param errorMessage String.
-   */
-  private void checkStringLength(String input, String errorMessage) {
-    if (input.length() == 0) {
-      throw new IllegalArgumentException(errorMessage);
-    }
-  }
-
-  /**
-   * Checs the length of a name.
-   *
-   * @param name String.
-   */
-  private void checkNameLength(String name) {
-    checkMinLength(name, nameMinLength);
-    checkMaxLength(name, nameMaxLength);
-  }
-
-  /**
-   * Checks the length of a description.
-   *
-   * @param description String.
-   */
-  private void checkDescriptionLength(String description) {
-    checkMinLength(description, descriptionMinLength);
-    checkMaxLength(description, descriptionMaxLength);
   }
 
   /**

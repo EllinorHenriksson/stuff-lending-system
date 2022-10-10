@@ -4,17 +4,12 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import model.DayCounter;
 import model.Member;
 import model.Registry;
-import view.Console;
 import view.menuchoices.MainChoice;
 
 /**
  * Represents a main menu.
  */
-public class MainMenu {
-  private Console console = new Console();
-  private DataFetcher dataFetcher = new DataFetcher();
-
-  private Registry registry;
+public class MainMenu extends Menu {
   private DayCounter dayCounter;
 
   /**
@@ -25,14 +20,14 @@ public class MainMenu {
    */
   @SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "false positive.")
   public MainMenu(Registry registry, DayCounter dayCounter) {
-    this.registry = registry;
+    super(registry);
     this.dayCounter = dayCounter;
   }
 
   /**
    * Gets the main menu choice from the user and executes it.
    */
-  public void doMainMenu() {
+  public void doMenu() {
     MainChoice choice = dataFetcher.getMainChoice();
 
     switch (choice) {
@@ -64,7 +59,7 @@ public class MainMenu {
    */
   private void showSimpleList() {
     console.printMembersSimple(registry.getMembers());
-    doMainMenu();
+    doMenu();
   }
 
   /**
@@ -72,7 +67,7 @@ public class MainMenu {
    */
   private void showFullList() {
     console.printMembersFull(registry.getMembers());
-    doMainMenu();
+    doMenu();
   }
 
   /**
@@ -87,10 +82,10 @@ public class MainMenu {
       Member member = registry.createMember(name, email, phoneNumber);
       registry.addMember(member);
       console.printMessage("Member was successfully added!");
-      doMainMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMainMenu();
+      doMenu();
     }
   }
   
@@ -103,10 +98,10 @@ public class MainMenu {
     try {
       Member member = registry.getMember(memberId);
       MemberMenu memberMenu =  new MemberMenu(member.getId(), this, registry);
-      memberMenu.doMemberMenu();
+      memberMenu.doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMainMenu();
+      doMenu();
     }
   }
 
@@ -117,7 +112,7 @@ public class MainMenu {
     int numberOfDays = dataFetcher.getNumberOfDays();
     dayCounter.advanceDay(numberOfDays);
     console.printCurrentDay(dayCounter.getCurrentDay());
-    doMainMenu();
+    doMenu();
   }
 
   /**

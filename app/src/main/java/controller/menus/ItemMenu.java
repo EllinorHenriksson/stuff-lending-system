@@ -4,21 +4,15 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import model.Interval;
 import model.Item;
 import model.Registry;
-import view.Console;
 import view.menuchoices.ItemChoice;
 
 /**
  * Represents an item menu.
  */
-public class ItemMenu {
-  private Console console = new Console();
-  private DataFetcher dataFetcher = new DataFetcher();
-
+public class ItemMenu extends Menu {
   private String itemId;
   private String memberId;
-
   private MemberMenu memberMenu;
-  private Registry registry;
 
   /**
    * Initializing constructor.
@@ -28,16 +22,16 @@ public class ItemMenu {
    */
   @SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "false positive.")
   public ItemMenu(String itemId, String memberId, MemberMenu memberMenu, Registry registry) {
+    super(registry);
     this.itemId = itemId;
     this.memberId = memberId;
     this.memberMenu = memberMenu;
-    this.registry = registry;
   }
 
   /**
    * Gets the item menu choice from the user and executes it.
    */
-  public void doItemMenu() {
+  public void doMenu() {
     ItemChoice choice = dataFetcher.getItemChoice();
 
     switch (choice) {
@@ -54,7 +48,7 @@ public class ItemMenu {
         establishContract();
         break;
       case MEMBER:
-        memberMenu.doMemberMenu();
+        memberMenu.doMenu();
         break;
       default:
         break;
@@ -68,10 +62,10 @@ public class ItemMenu {
     try {
       registry.removeItemFromMember(itemId, memberId);
       console.printMessage("Item was successfully deleted!");
-      memberMenu.doMemberMenu();
+      memberMenu.doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doItemMenu();
+      doMenu();
     }
   }
 
@@ -80,7 +74,7 @@ public class ItemMenu {
    */
   private void updateItem() {
     UpdateItemMenu updateItemMenu = new UpdateItemMenu(itemId, this, registry);
-    updateItemMenu.doUpdateItemMenu();
+    updateItemMenu.doMenu();
   }
 
   /**
@@ -90,10 +84,10 @@ public class ItemMenu {
     try {
       Item item = registry.getItem(itemId);
       console.printItemInfo(item);
-      doItemMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doItemMenu();
+      doMenu();
     }
   }
 
@@ -106,10 +100,10 @@ public class ItemMenu {
     try {
       registry.establishContractForItem(itemId, interval, lenderId);
       console.printMessage("Contract was successfully established!");
-      doItemMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doItemMenu();    
+      doMenu();    
     }
   }
 }

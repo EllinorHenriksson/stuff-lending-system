@@ -5,21 +5,14 @@ import model.Item;
 import model.ItemType;
 import model.Member;
 import model.Registry;
-import view.Console;
 import view.menuchoices.MemberChoice;
 
 /**
  * Represents a member menu.
  */
-public class MemberMenu {
-  private Console console = new Console();
-  private DataFetcher dataFetcher = new DataFetcher();
-
+public class MemberMenu extends Menu {
   private String memberId;
-
   private MainMenu mainMenu;
-
-  private Registry registry;
 
   /**
    * Initializing constructor.
@@ -30,15 +23,15 @@ public class MemberMenu {
    */
   @SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "false positive.")
   public MemberMenu(String memberId, MainMenu mainMenu, Registry registry) {
+    super(registry);
     this.memberId = memberId;
     this.mainMenu = mainMenu;
-    this.registry = registry;
   }
 
   /**
    * Gets the member menu choice from the user and executes it.
    */
-  public void doMemberMenu() {
+  public void doMenu() {
     MemberChoice choice = dataFetcher.getMemberChoice();
 
     switch (choice) {
@@ -58,7 +51,7 @@ public class MemberMenu {
         selectItem();
         break;
       case MAIN:
-        mainMenu.doMainMenu();
+        mainMenu.doMenu();
         break;
       default:
         break;
@@ -72,16 +65,16 @@ public class MemberMenu {
     try {
       registry.removeMember(memberId);
       console.printMessage("Member was successfully deleted!");
-      mainMenu.doMainMenu();
+      mainMenu.doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu();
+      doMenu();
     }
   }
 
   private void updateMember() {
     UpdateMemberMenu updateMemberMenu = new UpdateMemberMenu(memberId, this, registry);
-    updateMemberMenu.doUpdateMemberMenu();
+    updateMemberMenu.doMenu();
   }
 
   /**
@@ -91,10 +84,10 @@ public class MemberMenu {
     try {
       Member member = registry.getMember(memberId);
       console.printMemberInfo(member);
-      doMemberMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu();
+      doMenu();
     }
   }
 
@@ -111,10 +104,10 @@ public class MemberMenu {
       Item item = registry.createItem(name, description, type, costPerDay);
       registry.addItemToMember(item, memberId);
       console.printMessage("Item was successfully added!");
-      doMemberMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu();
+      doMenu();
     }
   }
 
@@ -127,10 +120,10 @@ public class MemberMenu {
     try {
       Item item = registry.getItem(itemId);
       ItemMenu itemMenu = new ItemMenu(item.getId(), memberId, this, registry);
-      itemMenu.doItemMenu();
+      itemMenu.doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu();
+      doMenu();
     }
   }
 }

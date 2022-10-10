@@ -3,20 +3,14 @@ package controller.menus;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import model.ItemType;
 import model.Registry;
-import view.Console;
 import view.menuchoices.UpdateItemChoice;
 
 /**
  * Represents an update item menu.
  */
-public class UpdateItemMenu {
-  private Console console = new Console();
-  private DataFetcher dataFetcher = new DataFetcher();
-
+public class UpdateItemMenu extends Menu {
   private String itemId;
-
   private ItemMenu itemMenu;
-  private Registry registry;
 
   /**
    * Initializing constructor.
@@ -26,15 +20,15 @@ public class UpdateItemMenu {
    */
   @SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "false positive.")
   public UpdateItemMenu(String itemId, ItemMenu itemMenu, Registry registry) {
+    super(registry);
     this.itemId = itemId;
     this.itemMenu = itemMenu;
-    this.registry = registry;
   }
 
   /**
    * Gets the update item menu choice from the user and executes it.
    */
-  public void doUpdateItemMenu() {
+  public void doMenu() {
     UpdateItemChoice choice = dataFetcher.getUpdateItemChoice();
 
     switch (choice) {
@@ -51,7 +45,7 @@ public class UpdateItemMenu {
         updateCostPerDay();
         break;
       case CANCEL:
-        itemMenu.doItemMenu();
+        itemMenu.doMenu();
         break;
       default:
         break;
@@ -66,10 +60,10 @@ public class UpdateItemMenu {
     try {
       registry.updateItemName(itemId, name);
       console.printMessage("Name was successfully updated!");
-      doUpdateItemMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      itemMenu.doItemMenu();
+      itemMenu.doMenu();
     }    
   }
 
@@ -81,10 +75,10 @@ public class UpdateItemMenu {
     try {
       registry.updateItemDescription(itemId, description);
       console.printMessage("Description was successfully updated!");
-      doUpdateItemMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      itemMenu.doItemMenu();
+      itemMenu.doMenu();
     }    
   }
 
@@ -96,10 +90,10 @@ public class UpdateItemMenu {
     try {
       registry.updateItemType(itemId, itemType);
       console.printMessage("Type was successfully updated!");
-      doUpdateItemMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      itemMenu.doItemMenu();
+      itemMenu.doMenu();
     }    
   }
 
@@ -111,10 +105,10 @@ public class UpdateItemMenu {
     try {
       registry.updateItemCostPerDay(itemId, costPerDay);
       console.printMessage("Cost per day was successfully updated!");
-      doUpdateItemMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      itemMenu.doItemMenu();
+      itemMenu.doMenu();
     }    
   }
 }

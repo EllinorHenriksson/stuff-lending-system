@@ -1,4 +1,4 @@
-package controller.menus;
+package controller;
 
 import model.Day;
 import model.Interval;

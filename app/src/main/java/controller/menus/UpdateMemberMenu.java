@@ -2,19 +2,14 @@ package controller.menus;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import model.Registry;
-import view.Console;
 import view.menuchoices.UpdateMemberChoice;
 
 /**
  * Represents an update memeber menu.
  */
-public class UpdateMemberMenu {
-  private Console console = new Console();
-  private DataFetcher dataFetcher = new DataFetcher();
-
+public class UpdateMemberMenu extends Menu {
   private String memberId;
   private MemberMenu memberMenu;
-  private Registry registry;
 
   /**
    * Initializing constructor.
@@ -24,15 +19,15 @@ public class UpdateMemberMenu {
    */
   @SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "false positive.")
   public UpdateMemberMenu(String memberId, MemberMenu memberMenu, Registry registry) {
+    super(registry);
     this.memberId = memberId;
     this.memberMenu = memberMenu;
-    this.registry = registry;
   }
 
   /**
    * Gets the update member menu choice from the user and executes it.
    */
-  public void doUpdateMemberMenu() {
+  public void doMenu() {
     UpdateMemberChoice choice = dataFetcher.getUpdateMemberChoice();
 
     switch (choice) {
@@ -46,7 +41,7 @@ public class UpdateMemberMenu {
         updatePhoneNumber();
         break;
       case CANCEL:
-        memberMenu.doMemberMenu();
+        memberMenu.doMenu();
         break;
       default:
         break;
@@ -61,10 +56,10 @@ public class UpdateMemberMenu {
     try {
       registry.updateMemberName(memberId, name);
       console.printMessage("Name was successfully updated!");
-      doUpdateMemberMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      memberMenu.doMemberMenu();
+      memberMenu.doMenu();
     }
   }
 
@@ -76,10 +71,10 @@ public class UpdateMemberMenu {
     try {
       registry.updateMemberEmail(memberId, email);
       console.printMessage("Email was successfully updated!");
-      doUpdateMemberMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      memberMenu.doMemberMenu();
+      memberMenu.doMenu();
     }
   }
 
@@ -91,10 +86,10 @@ public class UpdateMemberMenu {
     try {
       registry.updateMemberPhoneNumber(memberId, phoneNumber);
       console.printMessage("Phone number was successfully updated!");
-      doUpdateMemberMenu();
+      doMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      memberMenu.doMemberMenu();
+      memberMenu.doMenu();
     }
   }
 }

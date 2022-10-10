@@ -64,9 +64,7 @@ public class Item {
    * @param description String.
    */
   public void setDescription(String description) {
-    if (description == null) {
-      throw new IllegalArgumentException("The description must be specified.");
-    }
+    validator.validateDescription(description);
     this.description = description;
   }
 
@@ -103,9 +101,7 @@ public class Item {
    * @param costPerDay int.
    */
   public void setCostPerDay(int costPerDay) {
-    if (costPerDay < 0) {
-      throw new IllegalArgumentException("The cost per day must be a positive number.");
-    }
+    validator.checkPositive(costPerDay);
     this.costPerDay = costPerDay;
   }
 
@@ -143,9 +139,7 @@ public class Item {
    * @param creationDay Day.
    */
   private void setCreationDay(Day creationDay) {
-    if (creationDay == null) {
-      throw new IllegalArgumentException("The creation day must be specified.");
-    }
+    validator.checkNull(creationDay, "The creation day must be specified.");
     this.creationDay = creationDay;
   }
 
@@ -165,10 +159,7 @@ public class Item {
    */
   @SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "false positive.")
   public void setOwner(Member owner) {
-    if (owner == null) {
-      throw new IllegalArgumentException("Owner must be specified.");
-    }
-
+    validator.checkNull(owner, "Owner must be specified.");
     this.owner = owner;
   }
 
@@ -198,13 +189,8 @@ public class Item {
    * @return Contract.
    */
   public Contract createContract(Member lender, Interval interval) {
-    if (lender == null) {
-      throw new IllegalArgumentException("Lender must be specified.");
-    }
-
-    if (interval == null) {
-      throw new IllegalArgumentException("Interval must be specified.");
-    }
+    validator.checkNull(lender, "Lender must be specified.");
+    validator.checkNull(interval, "Interval must be specified.");
 
     if (isAvailable(interval)) {
       transferCredits(interval, lender);
@@ -212,7 +198,6 @@ public class Item {
     } else {
       throw new IllegalArgumentException("Item not available during the specified interval.");
     }
-
   }
 
   /**
