@@ -1,5 +1,6 @@
 package model;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.ArrayList;
 
 /**
@@ -162,6 +163,7 @@ public class Item {
    *
    * @param owner Member.
    */
+  @SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "false positive.")
   public void setOwner(Member owner) {
     if (owner == null) {
       throw new IllegalArgumentException("Owner must be specified.");

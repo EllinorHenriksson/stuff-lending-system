@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.426s</div>
+<div class="counter">0.880s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,13 +76,15 @@
 <a name="codeQuality()"></a>
 <h3 class="failures">codeQuality()</h3>
 <span class="code">
-<pre>org.opentest4j.AssertionFailedError: Max amount (5) of quality issues exceeded:46 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+<pre>org.opentest4j.AssertionFailedError: Max amount (5) of quality issues exceeded:13 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
 	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:193)
 	at app//CodeQualityTests.codeQuality(CodeQualityTests.java:70)
-	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
 	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
 	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
 	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
@@ -110,7 +112,7 @@
 	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.base@18.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
 	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -120,7 +122,7 @@
 	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.base@18.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
 	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
 	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -146,8 +148,10 @@
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
@@ -178,7 +182,7 @@
 </thead>
 <tr>
 <td class="failures">codeQuality()</td>
-<td class="failures">0.426s</td>
+<td class="failures">0.880s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -186,154 +190,53 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/User.java
-text:line: 9 column: column:1 
-Missing a Javadoc comment.
+<pre>0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/App.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/DataFetcher.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/ItemMenu.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/MainMenu.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/MemberMenu.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/UpdateItemMenu.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/menus/UpdateMemberMenu.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/controller/User.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Contract.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Day.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/DayCounter.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/IdGenerator.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Interval.java
+1 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Item.java
+text:line: 4 column: column:1 
+Wrong lexicographical order for 'edu.umd.cs.findbugs.annotations.SuppressFBWarnings' import. Should 
+  be before 'java.util.ArrayList'.
 
-text:line: 17 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 23 column: column:3 
-Missing a Javadoc comment.
-
-3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MainMenu.java
-text:line: 9 column: column:1 
-Missing a Javadoc comment.
-
-text:line: 17 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 23 column: column:3 
-Missing a Javadoc comment.
-
-2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateMemberMenu.java
-text:line: 7 column: column:1 
-Missing a Javadoc comment.
-
-text:line: 19 column: column:3 
-Missing a Javadoc comment.
-
-3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/ItemMenu.java
-text:line: 9 column: column:1 
-Missing a Javadoc comment.
-
-text:line: 17 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 24 column: column:3 
-Missing a Javadoc comment.
-
-16 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/DataFetcher.java
-text:line: 19 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 33 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 47 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 61 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 75 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 89 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 102 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 115 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 128 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 141 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 154 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 167 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 180 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 193 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 206 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 219 column: column:3 
-Missing a Javadoc comment.
-
-3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MemberMenu.java
-text:line: 10 column: column:1 
-Missing a Javadoc comment.
-
-text:line: 20 column: column:3 
-Missing a Javadoc comment.
-
-text:line: 28 column: column:3 
-Missing a Javadoc comment.
-
-2 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateItemMenu.java
-text:line: 8 column: column:1 
-Missing a Javadoc comment.
-
-text:line: 20 column: column:3 
-Missing a Javadoc comment.
-
-3 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/App.java
-text:line: 2 column: column:1 
-'import' should be separated from previous statement.
-
-text:line: 5 column: column:1 
-Missing a Javadoc comment.
-
-text:line: 6 column: column:3 
-Missing a Javadoc comment.
-
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Contract.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/IdGenerator.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Interval.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/DayCounter.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Validator.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Day.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/Persistence.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/IfPersistence.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Member.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/ItemType.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Registry.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Item.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/ItemChoice.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/MemberChoice.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/UpdateItemChoice.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/MainChoice.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/UpdateMemberChoice.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Output.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Input.java
-0 CheckStyle Issues in /Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Console.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/ItemType.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Member.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/persistence/IfPersistence.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/persistence/Persistence.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Registry.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/model/Validator.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Console.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Input.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/menuchoices/ItemChoice.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/menuchoices/MainChoice.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/menuchoices/MemberChoice.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/menuchoices/UpdateItemChoice.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/menuchoices/UpdateMemberChoice.java
+0 CheckStyle Issues in C:/Users/Ellinor/Documents/1dv607/assignments/a2/app/src/main/java/view/Output.java
 0 FindBugs Issues in view/Console.java
 0 FindBugs Issues in model/Registry.java
 2 FindBugs Issues in controller/menus/MemberMenu.java
-text:lines: 11-104 
-new controller.menus.MemberMenu(MainMenu, Registry) may expose internal representation by storing an 
-  externally mutable object into MemberMenu.mainMenu 
+text:lines: 14-133 
+new controller.menus.MemberMenu(String, MainMenu, Registry) may expose internal representation by 
+  storing an externally mutable object into MemberMenu.mainMenu 
 May expose internal representation by incorporating reference to mutable object 
 This code stores a reference to an externally mutable object into the internal representation of the 
   object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
   would compromise security or other important properties, you will need to do something different. 
   Storing a copy of the object is better approach in many situations.
 
-text:lines: 11-104 
-new controller.menus.MemberMenu(MainMenu, Registry) may expose internal representation by storing an 
-  externally mutable object into MemberMenu.registry 
+text:lines: 14-133 
+new controller.menus.MemberMenu(String, MainMenu, Registry) may expose internal representation by 
+  storing an externally mutable object into MemberMenu.registry 
 May expose internal representation by incorporating reference to mutable object 
 This code stores a reference to an externally mutable object into the internal representation of the 
   object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
@@ -344,18 +247,18 @@ This code stores a reference to an externally mutable object into the internal r
 0 FindBugs Issues in model/Day.java
 0 FindBugs Issues in model/DayCounter.java
 2 FindBugs Issues in controller/menus/UpdateItemMenu.java
-text:lines: 9-90 
-new controller.menus.UpdateItemMenu(ItemMenu, Registry) may expose internal representation by 
-  storing an externally mutable object into UpdateItemMenu.itemMenu 
+text:lines: 12-117 
+new controller.menus.UpdateItemMenu(String, ItemMenu, Registry) may expose internal representation 
+  by storing an externally mutable object into UpdateItemMenu.itemMenu 
 May expose internal representation by incorporating reference to mutable object 
 This code stores a reference to an externally mutable object into the internal representation of the 
   object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
   would compromise security or other important properties, you will need to do something different. 
   Storing a copy of the object is better approach in many situations.
 
-text:lines: 9-90 
-new controller.menus.UpdateItemMenu(ItemMenu, Registry) may expose internal representation by 
-  storing an externally mutable object into UpdateItemMenu.registry 
+text:lines: 12-117 
+new controller.menus.UpdateItemMenu(String, ItemMenu, Registry) may expose internal representation 
+  by storing an externally mutable object into UpdateItemMenu.registry 
 May expose internal representation by incorporating reference to mutable object 
 This code stores a reference to an externally mutable object into the internal representation of the 
   object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
@@ -366,14 +269,14 @@ This code stores a reference to an externally mutable object into the internal r
 0 FindBugs Issues in view/menuchoices/ItemChoice.java
 0 FindBugs Issues in controller/menus/DataFetcher.java
 2 FindBugs Issues in controller/menus/MainMenu.java
-text:lines: 10-97 
+text:lines: 13-123 
 quitProgram() invokes System.exit(...), which shuts down the entire virtual machine 
 Method invokes System.exit(...) 
 Invoking System.exit shuts down the entire Java virtual machine. This should only been done when it 
   is appropriate. Such calls make it hard or impossible for your code to be invoked by other code. 
   Consider throwing a RuntimeException instead.
 
-text:lines: 10-97 
+text:lines: 13-123 
 new controller.menus.MainMenu(Registry, DayCounter) may expose internal representation by storing an 
   externally mutable object into MainMenu.registry 
 May expose internal representation by incorporating reference to mutable object 
@@ -390,18 +293,18 @@ This code stores a reference to an externally mutable object into the internal r
 0 FindBugs Issues in model/Interval.java
 0 FindBugs Issues in view/Output.java
 2 FindBugs Issues in controller/menus/ItemMenu.java
-text:lines: 10-81 
-new controller.menus.ItemMenu(MemberMenu, Registry) may expose internal representation by storing an 
-  externally mutable object into ItemMenu.memberMenu 
+text:lines: 13-112 
+new controller.menus.ItemMenu(String, String, MemberMenu, Registry) may expose internal 
+  representation by storing an externally mutable object into ItemMenu.memberMenu 
 May expose internal representation by incorporating reference to mutable object 
 This code stores a reference to an externally mutable object into the internal representation of the 
   object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
   would compromise security or other important properties, you will need to do something different. 
   Storing a copy of the object is better approach in many situations.
 
-text:lines: 10-81 
-new controller.menus.ItemMenu(MemberMenu, Registry) may expose internal representation by storing an 
-  externally mutable object into ItemMenu.registry 
+text:lines: 13-112 
+new controller.menus.ItemMenu(String, String, MemberMenu, Registry) may expose internal 
+  representation by storing an externally mutable object into ItemMenu.registry 
 May expose internal representation by incorporating reference to mutable object 
 This code stores a reference to an externally mutable object into the internal representation of the 
   object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
@@ -412,7 +315,7 @@ This code stores a reference to an externally mutable object into the internal r
 0 FindBugs Issues in view/menuchoices/MainChoice.java
 0 FindBugs Issues in model/ItemType.java
 1 FindBugs Issues in model/Item.java
-text:lines: 17-282 
+text:lines: 14-162 
 setOwner(Member) may expose internal representation by storing an externally mutable object into 
   Item.owner 
 May expose internal representation by incorporating reference to mutable object 
@@ -422,22 +325,29 @@ This code stores a reference to an externally mutable object into the internal r
   Storing a copy of the object is better approach in many situations.
 
 0 FindBugs Issues in model/Validator.java
-0 FindBugs Issues in controller/User.java
+1 FindBugs Issues in controller/User.java
+text:lines: 27-552 
+quitProgram() invokes System.exit(...), which shuts down the entire virtual machine 
+Method invokes System.exit(...) 
+Invoking System.exit shuts down the entire Java virtual machine. This should only been done when it 
+  is appropriate. Such calls make it hard or impossible for your code to be invoked by other code. 
+  Consider throwing a RuntimeException instead.
+
 0 FindBugs Issues in model/persistence/IfPersistence.java
 0 FindBugs Issues in model/persistence/Persistence.java
 2 FindBugs Issues in controller/menus/UpdateMemberMenu.java
-text:lines: 8-74 
-new controller.menus.UpdateMemberMenu(MemberMenu, Registry) may expose internal representation by 
-  storing an externally mutable object into UpdateMemberMenu.memberMenu 
+text:lines: 11-97 
+new controller.menus.UpdateMemberMenu(String, MemberMenu, Registry) may expose internal 
+  representation by storing an externally mutable object into UpdateMemberMenu.memberMenu 
 May expose internal representation by incorporating reference to mutable object 
 This code stores a reference to an externally mutable object into the internal representation of the 
   object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
   would compromise security or other important properties, you will need to do something different. 
   Storing a copy of the object is better approach in many situations.
 
-text:lines: 8-74 
-new controller.menus.UpdateMemberMenu(MemberMenu, Registry) may expose internal representation by 
-  storing an externally mutable object into UpdateMemberMenu.registry 
+text:lines: 11-97 
+new controller.menus.UpdateMemberMenu(String, MemberMenu, Registry) may expose internal 
+  representation by storing an externally mutable object into UpdateMemberMenu.registry 
 May expose internal representation by incorporating reference to mutable object 
 This code stores a reference to an externally mutable object into the internal representation of the 
   object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
@@ -455,7 +365,7 @@ This code stores a reference to an externally mutable object into the internal r
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 9 okt. 2022 23:29:44</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 10 okt. 2022 11:34:48</p>
 </div>
 </div>
 </body>

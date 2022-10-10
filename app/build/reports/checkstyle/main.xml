@@ -1,94 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.38">
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/User.java">
-<error line="9" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="17" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="23" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\App.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MainMenu.java">
-<error line="9" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="17" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="23" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\DataFetcher.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateMemberMenu.java">
-<error line="7" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="19" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\ItemMenu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/ItemMenu.java">
-<error line="9" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="17" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="24" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\MainMenu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/DataFetcher.java">
-<error line="19" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="33" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="47" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="61" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="75" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="89" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="102" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="115" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="128" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="141" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="154" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="167" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="180" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="193" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="206" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="219" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\MemberMenu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/MemberMenu.java">
-<error line="10" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="20" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="28" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\UpdateItemMenu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/menus/UpdateItemMenu.java">
-<error line="8" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="20" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\menus\UpdateMemberMenu.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/controller/App.java">
-<error line="2" column="1" severity="warning" message="&apos;import&apos; should be separated from previous statement." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="5" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="6" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\controller\User.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Contract.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Contract.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/IdGenerator.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Day.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Interval.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\DayCounter.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/DayCounter.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\IdGenerator.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Validator.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Interval.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Day.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Item.java">
+<error line="4" column="1" severity="warning" message="Wrong lexicographical order for &apos;edu.umd.cs.findbugs.annotations.SuppressFBWarnings&apos; import. Should be before &apos;java.util.ArrayList&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/Persistence.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\ItemType.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/persistence/IfPersistence.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Member.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Member.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\persistence\IfPersistence.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/ItemType.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\persistence\Persistence.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Registry.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Registry.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/model/Item.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\model\Validator.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/ItemChoice.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\Console.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/MemberChoice.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\Input.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/UpdateItemChoice.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\menuchoices\ItemChoice.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/MainChoice.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\menuchoices\MainChoice.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/menuchoices/UpdateMemberChoice.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\menuchoices\MemberChoice.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Output.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\menuchoices\UpdateItemChoice.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Input.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\menuchoices\UpdateMemberChoice.java">
 </file>
-<file name="/Users/emmafransson/Documents/webbprogrammering/1dv607/assignments/assignment2/a2/app/src/main/java/view/Console.java">
+<file name="C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java\view\Output.java">
 </file>
 </checkstyle>

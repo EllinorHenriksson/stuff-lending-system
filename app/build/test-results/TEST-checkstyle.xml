@@ -1,144 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<testsuite package="org.checkstyle" time="0" tests="28" errors="35" name="checkstyle">
-<testcase time="0" name="controller/User.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 9 column: column:1 
-Missing a Javadoc comment.
-----------------
-line: 17 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 23 column: column:3 
-Missing a Javadoc comment.
-----------------
-]]></failure>
-</testcase><testcase time="0" name="controller/menus/MainMenu.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 9 column: column:1 
-Missing a Javadoc comment.
-----------------
-line: 17 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 23 column: column:3 
-Missing a Javadoc comment.
-----------------
-]]></failure>
-</testcase><testcase time="0" name="controller/menus/UpdateMemberMenu.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 7 column: column:1 
-Missing a Javadoc comment.
-----------------
-line: 19 column: column:3 
-Missing a Javadoc comment.
-----------------
-]]></failure>
-</testcase><testcase time="0" name="controller/menus/ItemMenu.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 9 column: column:1 
-Missing a Javadoc comment.
-----------------
-line: 17 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 24 column: column:3 
-Missing a Javadoc comment.
-----------------
-]]></failure>
+<testsuite package="org.checkstyle" time="0" tests="28" errors="1" name="checkstyle">
+<testcase time="0" name="controller/App.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="controller/menus/DataFetcher.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 19 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 33 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 47 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 61 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 75 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 89 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 102 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 115 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 128 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 141 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 154 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 167 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 180 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 193 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 206 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 219 column: column:3 
-Missing a Javadoc comment.
-----------------
-]]></failure>
+</testcase><testcase time="0" name="controller/menus/ItemMenu.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="controller/menus/MainMenu.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="controller/menus/MemberMenu.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 10 column: column:1 
-Missing a Javadoc comment.
-----------------
-line: 20 column: column:3 
-Missing a Javadoc comment.
-----------------
-line: 28 column: column:3 
-Missing a Javadoc comment.
-----------------
-]]></failure>
 </testcase><testcase time="0" name="controller/menus/UpdateItemMenu.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 8 column: column:1 
-Missing a Javadoc comment.
-----------------
-line: 20 column: column:3 
-Missing a Javadoc comment.
-----------------
-]]></failure>
-</testcase><testcase time="0" name="controller/App.java" classname="CheckStyle Issues">
-<failure message="issues" ><![CDATA[line: 2 column: column:1 
-'import' should be separated from previous statement.
-----------------
-line: 5 column: column:1 
-Missing a Javadoc comment.
-----------------
-line: 6 column: column:3 
-Missing a Javadoc comment.
-----------------
-]]></failure>
+</testcase><testcase time="0" name="controller/menus/UpdateMemberMenu.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="controller/User.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="model/Contract.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/Day.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/DayCounter.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="model/IdGenerator.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="model/Interval.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/DayCounter.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/Validator.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/Day.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/persistence/Persistence.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/persistence/IfPersistence.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/Member.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/ItemType.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="model/Registry.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="model/Item.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 4 column: column:1 
+Wrong lexicographical order for 
+  'edu.umd.cs.findbugs.annotations.SuppressFBWarnings' import. Should be 
+  before 'java.util.ArrayList'.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="model/ItemType.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/Member.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/persistence/IfPersistence.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/persistence/Persistence.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/Registry.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="model/Validator.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="view/Console.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="view/Input.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="view/menuchoices/ItemChoice.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="view/menuchoices/MainChoice.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="view/menuchoices/MemberChoice.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="view/menuchoices/UpdateItemChoice.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="view/menuchoices/MainChoice.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="view/menuchoices/UpdateMemberChoice.java" classname="CheckStyle Issues">
 </testcase><testcase time="0" name="view/Output.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="view/Input.java" classname="CheckStyle Issues">
-</testcase><testcase time="0" name="view/Console.java" classname="CheckStyle Issues">
 </testcase></testsuite>
