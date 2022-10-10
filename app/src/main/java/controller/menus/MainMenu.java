@@ -15,7 +15,6 @@ public class MainMenu {
 
   private Registry registry;
   private DayCounter dayCounter;
-  private MemberMenu memberMenu;
 
   /**
    * Initializing constructor.
@@ -26,7 +25,6 @@ public class MainMenu {
   public MainMenu(Registry registry, DayCounter dayCounter) {
     this.registry = registry;
     this.dayCounter = dayCounter;
-    this.memberMenu = new MemberMenu(this, registry);
   }
 
   /**
@@ -102,7 +100,8 @@ public class MainMenu {
 
     try {
       Member member = registry.getMember(memberId);
-      memberMenu.doMemberMenu(member.getId());
+      MemberMenu memberMenu =  new MemberMenu(member.getId(), this, registry);
+      memberMenu.doMemberMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
       doMainMenu();

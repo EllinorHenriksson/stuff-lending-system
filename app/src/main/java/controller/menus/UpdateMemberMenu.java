@@ -11,6 +11,7 @@ public class UpdateMemberMenu {
   private Console console = new Console();
   private DataFetcher dataFetcher = new DataFetcher();
 
+  private String memberId;
   private MemberMenu memberMenu;
   private Registry registry;
 
@@ -20,31 +21,30 @@ public class UpdateMemberMenu {
    * @param memberMenu The member menu to work with.
    * @param registry The registry to work with.
    */
-  public UpdateMemberMenu(MemberMenu memberMenu, Registry registry) {
+  public UpdateMemberMenu(String memberId, MemberMenu memberMenu, Registry registry) {
+    this.memberId = memberId;
     this.memberMenu = memberMenu;
     this.registry = registry;
   }
 
   /**
    * Gets the update member menu choice from the user and executes it.
-   *
-   * @param memberId The ID of the member to update.
    */
-  public void doUpdateMemberMenu(String memberId) {
+  public void doUpdateMemberMenu() {
     UpdateMemberChoice choice = dataFetcher.getUpdateMemberChoice();
 
     switch (choice) {
       case NAME: 
-        updateName(memberId);
+        updateName();
         break;
       case EMAIL:
-        updateEmail(memberId);
+        updateEmail();
         break;
       case PHONE:
-        updatePhoneNumber(memberId);
+        updatePhoneNumber();
         break;
       case CANCEL:
-        memberMenu.doMemberMenu(memberId);
+        memberMenu.doMemberMenu();
         break;
       default:
         break;
@@ -53,52 +53,46 @@ public class UpdateMemberMenu {
 
   /**
    * Lets the user update the member's name.
-   *
-   * @param memberId The ID of the member to update.
    */
-  private void updateName(String memberId) {
+  private void updateName() {
     String name = dataFetcher.getName();
     try {
       registry.updateMemberName(memberId, name);
       console.printMessage("Name was successfully updated!");
-      doUpdateMemberMenu(memberId);
+      doUpdateMemberMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      memberMenu.doMemberMenu(memberId);
+      memberMenu.doMemberMenu();
     }
   }
 
   /**
    * Lets the user update the member's email.
-   *
-   * @param memberId The ID of the member to update.
    */
-  private void updateEmail(String memberId) {
+  private void updateEmail() {
     String email = dataFetcher.getEmail();
     try {
       registry.updateMemberEmail(memberId, email);
       console.printMessage("Email was successfully updated!");
-      doUpdateMemberMenu(memberId);
+      doUpdateMemberMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      memberMenu.doMemberMenu(memberId);
+      memberMenu.doMemberMenu();
     }
   }
 
   /**
    * Lets the user update the member's phone number.
-   *
-   * @param memberId The ID of the member to update.
    */
-  private void updatePhoneNumber(String id) {
+  private void updatePhoneNumber() {
     String phoneNumber = dataFetcher.getPhoneNumber();
     try {
-      registry.updateMemberPhoneNumber(id, phoneNumber);
+      registry.updateMemberPhoneNumber(memberId, phoneNumber);
       console.printMessage("Phone number was successfully updated!");
-      doUpdateMemberMenu(id);
+      doUpdateMemberMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      memberMenu.doMemberMenu(id);
+      memberMenu.doMemberMenu();
     }
   }
 }

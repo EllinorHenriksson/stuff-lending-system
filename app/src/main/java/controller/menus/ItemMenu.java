@@ -13,9 +13,11 @@ public class ItemMenu {
   private Console console = new Console();
   private DataFetcher dataFetcher = new DataFetcher();
 
+  private String itemId;
+  private String memberId;
+
   private MemberMenu memberMenu;
   private Registry registry;
-  private UpdateItemMenu updateItemMenu;
 
   /**
    * Initializing constructor.
@@ -23,37 +25,34 @@ public class ItemMenu {
    * @param memberMenu The member menu to work with.
    * @param registry The registry to work with.
    */
-  public ItemMenu(MemberMenu memberMenu, Registry registry) {
+  public ItemMenu(String itemId, String memberId, MemberMenu memberMenu, Registry registry) {
+    this.itemId = itemId;
+    this.memberId = memberId;
     this.memberMenu = memberMenu;
     this.registry = registry;
-
-    updateItemMenu = new UpdateItemMenu(this, registry);
   }
 
   /**
    * Gets the item menu choice from the user and executes it.
-   *
-   * @param itemId The ID of the current item.
-   * @param memberId The ID of the member owning the current item.
    */
-  public void doItemMenu(String itemId, String memberId) {
+  public void doItemMenu() {
     ItemChoice choice = dataFetcher.getItemChoice();
 
     switch (choice) {
       case DELETE: 
-        deleteItem(itemId, memberId);
+        deleteItem();
         break;
       case UPDATE:
-        updateItemMenu.doUpdateItemMenu(itemId, memberId);
+        updateItem();
         break;
       case INFO:
-        showItemInfo(itemId, memberId);
+        showItemInfo();
         break;
       case CONTRACT:
-        establishContract(itemId, memberId);
+        establishContract();
         break;
       case MEMBER:
-        memberMenu.doMemberMenu(memberId);
+        memberMenu.doMemberMenu();
         break;
       default:
         break;
@@ -62,54 +61,53 @@ public class ItemMenu {
 
   /**
    * Lets the user remove an item from a member.
-   *
-   * @param itemId The ID of the item.
-   * @param memberId The ID of the member owning the item.
    */
-  private void deleteItem(String itemId, String memberId) {
+  private void deleteItem() {
     try {
       registry.removeItemFromMember(itemId, memberId);
       console.printMessage("Item was successfully deleted!");
-      memberMenu.doMemberMenu(memberId);
+      memberMenu.doMemberMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doItemMenu(itemId, memberId);
+      doItemMenu();
     }
   }
 
   /**
-   * Presents info about an item to the user.
-   *
-   * @param itemId - The item ID.
-   * @param memberId - The ID of the member owning the item.
+   * Lets the user update an item.
    */
-  private void showItemInfo(String itemId, String memberId) {
+  private void updateItem() {
+    UpdateItemMenu updateItemMenu = new UpdateItemMenu(itemId, this, registry);
+    updateItemMenu.doUpdateItemMenu();
+  }
+
+  /**
+   * Presents info about an item to the user.
+   */
+  private void showItemInfo() {
     try {
       Item item = registry.getItem(itemId);
       console.printItemInfo(item);
-      doItemMenu(itemId, memberId);
+      doItemMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doItemMenu(itemId, memberId);
+      doItemMenu();
     }
   }
 
   /**
    * Lets the user establish a lending contract for an item.
-   *
-   * @param itemId The ID of the item to lend.
-   * @param ownerId The ID of the member owning the item.
    */
-  private void establishContract(String itemId, String ownerId) {
+  private void establishContract() {
     String lenderId = dataFetcher.getLenderId();
     Interval interval = dataFetcher.getInterval();
     try {
       registry.establishContractForItem(itemId, interval, lenderId);
       console.printMessage("Contract was successfully established!");
-      doItemMenu(itemId, ownerId);
+      doItemMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doItemMenu(itemId, ownerId);    
+      doItemMenu();    
     }
   }
 }

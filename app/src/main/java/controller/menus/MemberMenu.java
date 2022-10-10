@@ -14,49 +14,46 @@ public class MemberMenu {
   private Console console = new Console();
   private DataFetcher dataFetcher = new DataFetcher();
 
+  private String memberId;
+
   private MainMenu mainMenu;
-  private UpdateMemberMenu updateMemberMenu;
-  private ItemMenu itemMenu;
 
   private Registry registry;
 
   /**
    * Initializing constructor.
    *
+   * @param memberId The ID of the current member.
    * @param mainMenu The main menu to work with.
    * @param registry The registry to work with.
    */
-  public MemberMenu(MainMenu mainMenu, Registry registry) {
+  public MemberMenu(String memberId, MainMenu mainMenu, Registry registry) {
+    this.memberId = memberId;
     this.mainMenu = mainMenu;
     this.registry = registry;
-
-    this.updateMemberMenu = new UpdateMemberMenu(this, registry);
-    this.itemMenu = new ItemMenu(this, registry);
   }
 
   /**
    * Gets the member menu choice from the user and executes it.
-   *
-   * @param memberId The ID of the current member.
    */
-  public void doMemberMenu(String memberId) {
+  public void doMemberMenu() {
     MemberChoice choice = dataFetcher.getMemberChoice();
 
     switch (choice) {
       case DELETE: 
-        deleteMember(memberId);
+        deleteMember();
         break;
       case UPDATE:
-        updateMemberMenu.doUpdateMemberMenu(memberId);
+        updateMember();
         break;
       case INFO:
-        showMemberInfo(memberId);
+        showMemberInfo();
         break;
       case ADD:
-        addItem(memberId);
+        addItem();
         break;
       case SELECT:
-        selectItem(memberId);
+        selectItem();
         break;
       case MAIN:
         mainMenu.doMainMenu();
@@ -68,42 +65,41 @@ public class MemberMenu {
 
   /**
    * Lets the user delete a member.
-   *
-   * @param memberId The ID of the member to delete.
    */
-  private void deleteMember(String memberId) {
+  private void deleteMember() {
     try {
       registry.removeMember(memberId);
       console.printMessage("Member was successfully deleted!");
       mainMenu.doMainMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu(memberId);
+      doMemberMenu();
     }
+  }
+
+  private void updateMember() {
+    UpdateMemberMenu updateMemberMenu = new UpdateMemberMenu(memberId, this, registry);
+    updateMemberMenu.doUpdateMemberMenu();
   }
 
   /**
    * Presents info about a member to the user.
-   *
-   * @param memberId The ID of the member to present.
    */
-  private void showMemberInfo(String memberId) {
+  private void showMemberInfo() {
     try {
       Member member = registry.getMember(memberId);
       console.printMemberInfo(member);
-      doMemberMenu(memberId);
+      doMemberMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu(memberId);
+      doMemberMenu();
     }
   }
 
   /**
    * Lets the user add an item to a member.
-   *
-   * @param memberId - The ID of the member.
    */
-  private void addItem(String memberId) {
+  private void addItem() {
     String name = dataFetcher.getName();
     String description = dataFetcher.getDescription();
     ItemType type = dataFetcher.getItemType();
@@ -113,27 +109,26 @@ public class MemberMenu {
       Item item = registry.createItem(name, description, type, costPerDay);
       registry.addItemToMember(item, memberId);
       console.printMessage("Item was successfully added!");
-      doMemberMenu(memberId);
+      doMemberMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu(memberId);
+      doMemberMenu();
     }
   }
 
   /**
    * Lets the user select an item to work further with.
-   *
-   * @param ownerId The ID of the member owning the item.
    */
-  private void selectItem(String ownerId) {
+  private void selectItem() {
     String itemId = dataFetcher.getItemId();
     
     try {
       Item item = registry.getItem(itemId);
-      itemMenu.doItemMenu(item.getId(), ownerId);
+      ItemMenu itemMenu = new ItemMenu(item.getId(), memberId, this, registry);
+      itemMenu.doItemMenu();
     } catch (Exception e) {
       console.printErrorMessage(e.getMessage());
-      doMemberMenu(ownerId);
+      doMemberMenu();
     }
   }
 }

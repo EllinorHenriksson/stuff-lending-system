@@ -300,6 +300,9 @@ public class Registry {
         }
       }
     }
+    if (item == null) {
+      throw new IllegalArgumentException("No item with the provided ID was found.");
+    }
     return item;
   }
 
