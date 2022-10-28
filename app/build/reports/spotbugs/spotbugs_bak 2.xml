@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.1" sequence="0" timestamp="1664982444029" analysisTimestamp="1664982444272" release="unspecified">
+  <Project projectName="app (spotbugsMain)">
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\App.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\User$1.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\controller\User.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Contract.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Day.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\DayCounter.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\IdGenerator.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Interval.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Item.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Member.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\persistence\IfPersistence.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\persistence\Persistence.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Registry.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Type.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\model\Validator.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\Console.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\ItemChoice.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\MainChoice.class</Jar>
+    <Jar>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\build\classes\java\main\view\MemberChoice.class</Jar>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\30.1.1-jre\87e0fd1df874ea3cbe577702fe6f17068b790fd8\guava-30.1.1-jre.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.8.0\6b83e4a33220272c3a08991498ba9dc09519f190\checker-qual-3.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.5.1\562d366678b89ce5d6b6b82c1a073880341e3fba\error_prone_annotations-2.5.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Ellinor\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.3\ba035118bc8bac37d7eff77700720999acd9986d\j2objc-annotations-1.3.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\resources</SrcDir>
+    <SrcDir>C:\Users\Ellinor\Documents\1dv607\assignments\a2\app\src\main\java</SrcDir>
+  </Project>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" instanceHash="960dfc2f51b759dbdefee8329bf9cb6f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="382">
+    <ShortMessage>Method invokes System.exit(...)</ShortMessage>
+    <LongMessage>controller.User.quitProgram() invokes System.exit(...), which shuts down the entire virtual machine</LongMessage>
+    <Class classname="controller.User" primary="true">
+      <SourceLine classname="controller.User" start="19" end="167" sourcefile="User.java" sourcepath="controller/User.java" relSourcepath="java\controller\User.java">
+        <Message>At User.java:[lines 19-167]</Message>
+      </SourceLine>
+      <Message>In class controller.User</Message>
+    </Class>
+    <Method classname="controller.User" name="quitProgram" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="controller.User" start="166" end="167" startBytecode="0" endBytecode="50" sourcefile="User.java" sourcepath="controller/User.java" relSourcepath="java\controller\User.java"/>
+      <Message>In method controller.User.quitProgram()</Message>
+    </Method>
+    <SourceLine classname="controller.User" primary="true" start="166" end="166" startBytecode="1" endBytecode="1" sourcefile="User.java" sourcepath="controller/User.java" relSourcepath="java\controller\User.java">
+      <Message>At User.java:[line 166]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="1859b8852a315822e30b99354f58f5f8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>model.Item.setOwner(Member) may expose internal representation by storing an externally mutable object into Item.owner</LongMessage>
+    <Class classname="model.Item" primary="true">
+      <SourceLine classname="model.Item" start="14" end="142" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+        <Message>At Item.java:[lines 14-142]</Message>
+      </SourceLine>
+      <Message>In class model.Item</Message>
+    </Class>
+    <Method classname="model.Item" name="setOwner" signature="(Lmodel/Member;)V" isStatic="false" primary="true">
+      <SourceLine classname="model.Item" start="72" end="77" startBytecode="0" endBytecode="92" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java"/>
+      <Message>In method model.Item.setOwner(Member)</Message>
+    </Method>
+    <Field classname="model.Item" name="owner" signature="Lmodel/Member;" isStatic="false" primary="true">
+      <SourceLine classname="model.Item" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+        <Message>In Item.java</Message>
+      </SourceLine>
+      <Message>Field model.Item.owner</Message>
+    </Field>
+    <LocalVariable name="owner" register="1" pc="16" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named owner</Message>
+    </LocalVariable>
+    <SourceLine classname="model.Item" primary="true" start="76" end="76" startBytecode="16" endBytecode="16" sourcefile="Item.java" sourcepath="model/Item.java" relSourcepath="java\model\Item.java">
+      <Message>At Item.java:[line 76]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_EXIT" abbrev="Dm" category="BAD_PRACTICE" cweid="382">
+    <ShortDescription>Method invokes System.exit(...)</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Invoking System.exit shuts down the entire Java virtual machine. This
+   should only been done when it is appropriate. Such calls make it
+   hard or impossible for your code to be invoked by other code.
+   Consider throwing a RuntimeException instead.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 5 Oct 2022 17:07:24 +0200" total_classes="19" referenced_classes="62" total_bugs="2" total_size="781" num_packages="5" java_version="17.0.1" vm_version="17.0.1+12" cpu_seconds="39.81" clock_seconds="21.40" peak_mbytes="151.32" alloc_mbytes="2022.00" gc_seconds="0.08" priority_2="2">
+    <FileStats path="App.java" bugCount="0" size="11"/>
+    <FileStats path="controller/User.java" bugCount="1" size="113" bugHash="3311ed5a7eed54c23a1ee4c5277c1193"/>
+    <FileStats path="model/Contract.java" bugCount="0" size="33"/>
+    <FileStats path="model/Day.java" bugCount="0" size="13"/>
+    <FileStats path="model/DayCounter.java" bugCount="0" size="11"/>
+    <FileStats path="model/IdGenerator.java" bugCount="0" size="16"/>
+    <FileStats path="model/Interval.java" bugCount="0" size="47"/>
+    <FileStats path="model/Item.java" bugCount="1" size="92" bugHash="98301c429665ff1c337efd3b186bb8a5"/>
+    <FileStats path="model/Member.java" bugCount="0" size="83"/>
+    <FileStats path="model/Registry.java" bugCount="0" size="94"/>
+    <FileStats path="model/Type.java" bugCount="0" size="20"/>
+    <FileStats path="model/Validator.java" bugCount="0" size="55"/>
+    <FileStats path="model/persistence/IfPersistence.java" bugCount="0" size="3"/>
+    <FileStats path="model/persistence/Persistence.java" bugCount="0" size="11"/>
+    <FileStats path="view/Console.java" bugCount="0" size="123"/>
+    <FileStats path="view/ItemChoice.java" bugCount="0" size="18"/>
+    <FileStats path="view/MainChoice.java" bugCount="0" size="20"/>
+    <FileStats path="view/MemberChoice.java" bugCount="0" size="18"/>
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="11">
+      <ClassStats class="App" sourceFile="App.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="controller" total_bugs="1" total_types="2" total_size="113" priority_2="1">
+      <ClassStats class="controller.User" sourceFile="User.java" interface="false" size="109" bugs="1" priority_2="1"/>
+      <ClassStats class="controller.User$1" sourceFile="User.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="model" total_bugs="1" total_types="10" total_size="464" priority_2="1">
+      <ClassStats class="model.Contract" sourceFile="Contract.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="model.Day" sourceFile="Day.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="model.DayCounter" sourceFile="DayCounter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="model.IdGenerator" sourceFile="IdGenerator.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="model.Interval" sourceFile="Interval.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="model.Item" sourceFile="Item.java" interface="false" size="92" bugs="1" priority_2="1"/>
+      <ClassStats class="model.Member" sourceFile="Member.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="model.Registry" sourceFile="Registry.java" interface="false" size="94" bugs="0"/>
+      <ClassStats class="model.Type" sourceFile="Type.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="model.Validator" sourceFile="Validator.java" interface="false" size="55" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="model.persistence" total_bugs="0" total_types="2" total_size="14">
+      <ClassStats class="model.persistence.IfPersistence" sourceFile="IfPersistence.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="model.persistence.Persistence" sourceFile="Persistence.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="view" total_bugs="0" total_types="4" total_size="179">
+      <ClassStats class="view.Console" sourceFile="Console.java" interface="false" size="123" bugs="0"/>
+      <ClassStats class="view.ItemChoice" sourceFile="ItemChoice.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="view.MainChoice" sourceFile="MainChoice.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="view.MemberChoice" sourceFile="MemberChoice.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="2106" invocations="615" avgMicrosecondsPerInvocation="3425" maxMicrosecondsPerInvocation="408733" standardDeviationMicrosecondsPerInvocation="20100"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1115" invocations="62" avgMicrosecondsPerInvocation="17994" maxMicrosecondsPerInvocation="198909" standardDeviationMicrosecondsPerInvocation="43358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1013" invocations="619" avgMicrosecondsPerInvocation="1637" maxMicrosecondsPerInvocation="233029" standardDeviationMicrosecondsPerInvocation="11821"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="869" invocations="139" avgMicrosecondsPerInvocation="6251" maxMicrosecondsPerInvocation="179532" standardDeviationMicrosecondsPerInvocation="24397"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="848" invocations="332" avgMicrosecondsPerInvocation="2556" maxMicrosecondsPerInvocation="187410" standardDeviationMicrosecondsPerInvocation="15698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="825" invocations="141" avgMicrosecondsPerInvocation="5853" maxMicrosecondsPerInvocation="122257" standardDeviationMicrosecondsPerInvocation="19205"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="641" invocations="140" avgMicrosecondsPerInvocation="4579" maxMicrosecondsPerInvocation="132815" standardDeviationMicrosecondsPerInvocation="17375"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="580" invocations="101" avgMicrosecondsPerInvocation="5751" maxMicrosecondsPerInvocation="152314" standardDeviationMicrosecondsPerInvocation="24375"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="550" invocations="139" avgMicrosecondsPerInvocation="3957" maxMicrosecondsPerInvocation="146669" standardDeviationMicrosecondsPerInvocation="15424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="487" invocations="135" avgMicrosecondsPerInvocation="3610" maxMicrosecondsPerInvocation="153404" standardDeviationMicrosecondsPerInvocation="18824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="446" invocations="141" avgMicrosecondsPerInvocation="3169" maxMicrosecondsPerInvocation="275226" standardDeviationMicrosecondsPerInvocation="24766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="437" invocations="139" avgMicrosecondsPerInvocation="3145" maxMicrosecondsPerInvocation="67514" standardDeviationMicrosecondsPerInvocation="8750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="423" invocations="62" avgMicrosecondsPerInvocation="6836" maxMicrosecondsPerInvocation="154752" standardDeviationMicrosecondsPerInvocation="26157"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="404" invocations="139" avgMicrosecondsPerInvocation="2909" maxMicrosecondsPerInvocation="109258" standardDeviationMicrosecondsPerInvocation="13646"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="404" invocations="62" avgMicrosecondsPerInvocation="6522" maxMicrosecondsPerInvocation="179132" standardDeviationMicrosecondsPerInvocation="27275"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="395" invocations="139" avgMicrosecondsPerInvocation="2847" maxMicrosecondsPerInvocation="63954" standardDeviationMicrosecondsPerInvocation="6863"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="367" invocations="62" avgMicrosecondsPerInvocation="5934" maxMicrosecondsPerInvocation="357250" standardDeviationMicrosecondsPerInvocation="44987"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="351" invocations="574" avgMicrosecondsPerInvocation="612" maxMicrosecondsPerInvocation="102589" standardDeviationMicrosecondsPerInvocation="5651"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="337" invocations="19" avgMicrosecondsPerInvocation="17758" maxMicrosecondsPerInvocation="202688" standardDeviationMicrosecondsPerInvocation="48494"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="295" invocations="62" avgMicrosecondsPerInvocation="4765" maxMicrosecondsPerInvocation="190038" standardDeviationMicrosecondsPerInvocation="24019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="283" invocations="19" avgMicrosecondsPerInvocation="14947" maxMicrosecondsPerInvocation="244547" standardDeviationMicrosecondsPerInvocation="54276"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="277" invocations="62" avgMicrosecondsPerInvocation="4474" maxMicrosecondsPerInvocation="62762" standardDeviationMicrosecondsPerInvocation="10277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="270" invocations="19" avgMicrosecondsPerInvocation="14211" maxMicrosecondsPerInvocation="214593" standardDeviationMicrosecondsPerInvocation="47354"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

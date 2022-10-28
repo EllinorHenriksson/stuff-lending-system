@@ -1,20 +1,22 @@
 package controller;
 
+import model.persistence.Persistence;
+
 /**
- * Responsible for staring the application.
+ * Represents the application.
  */
 public class App {
-  /**
-   * Application starting point.
 
-   * @param args command line arguments.
+  /**
+   * The main method of the application.
    */
   public static void main(String[] args) {
-    // adapt to start the application in your way
-    model.Simple m = new model.Simple();
-    Simple c = new Simple();
-    view.Simple v = new view.Simple();
-
-    c.doSomethingSimple(m, v);
+    try {
+      User user = new User(new Persistence());
+      user.startProgram();
+    } catch (Exception e) {
+      System.out.println(e.getMessage());
+      e.printStackTrace();
+    }
   }
 }
